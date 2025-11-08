@@ -264,7 +264,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
             return Bucketable.bucketMobPickup(player, pHand, this).orElse(InteractionResult.PASS);
         }
 
-        if (!level().isClientSide() && isFood(player.getMainHandItem())) {
+        if (!level().isClientSide() && isFood(player.getMainHandItem()) && getShelterTick() == 0) {
             if (this.random.nextInt(3) == 0 && !ForgeEventFactory.onAnimalTame(this, player)){
                 this.tame(player);
                 this.level().broadcastEntityEvent(this, (byte)7);

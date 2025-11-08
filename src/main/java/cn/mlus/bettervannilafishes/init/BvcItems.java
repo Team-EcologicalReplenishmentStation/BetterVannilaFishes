@@ -162,7 +162,9 @@ public class BvcItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> YELLOW_FIN_PUFFER = ITEMS.register("yellow_fin_puffer",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
-                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 60, 0), 1.0f).build())));
+                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
+                    .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final RegistryObject<Item> OBSCURE_PUFFER = ITEMS.register("obscure_puffer",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
