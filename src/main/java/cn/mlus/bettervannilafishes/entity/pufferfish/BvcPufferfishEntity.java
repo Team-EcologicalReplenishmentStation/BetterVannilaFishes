@@ -205,6 +205,16 @@ public abstract class BvcPufferfishEntity extends AbstractFish implements GeoEnt
         return super.getDimensions(pPose).scale(getScale(this.getPuffState()));
     }
 
+    @Override
+    public void aiStep() {
+        super.aiStep();
+        if (!this.isInWater()) {
+            this.setDeltaMovement(0, 0, 0);
+            this.setOnGround(true);
+            this.hasImpulse = false;
+        }
+    }
+
     private static float getScale(int pPuffState) {
         return pPuffState == 0 ? 0.5F : 0.65F;
     }

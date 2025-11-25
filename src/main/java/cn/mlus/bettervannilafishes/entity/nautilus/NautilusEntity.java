@@ -200,6 +200,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
         AnimationController<NautilusEntity> main = new AnimationController<>(this, "main", 10, state -> {
             RawAnimation builder = RawAnimation.begin();
+            if(isInWater()){
                 if(getFeedingTick() > 0){
                     if (state.isMoving()) {
                         builder.thenLoop("animation.swimming_feeding");
@@ -213,6 +214,10 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
                         builder.thenLoop("animation.idle");
                     }
                 }
+            }else {
+                builder.thenLoop("animation.flop");
+            }
+
             return state.setAndContinue(builder);
         });
 
