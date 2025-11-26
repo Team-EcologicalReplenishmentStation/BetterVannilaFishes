@@ -5,7 +5,7 @@ import cn.mlus.bettervannilafishes.init.BvfEntities;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.common.data.LanguageProvider;
 
 public class BvfChineseLanguangeProvider extends LanguageProvider {
     public BvfChineseLanguangeProvider(PackOutput output) {

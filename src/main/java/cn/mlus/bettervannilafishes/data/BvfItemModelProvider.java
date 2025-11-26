@@ -5,8 +5,9 @@ import cn.mlus.bettervannilafishes.init.BvfItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+
 public class BvfItemModelProvider extends ItemModelProvider {
     public BvfItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper){
         super(output, BetterVannilaFishes.MODID, existingFileHelper);

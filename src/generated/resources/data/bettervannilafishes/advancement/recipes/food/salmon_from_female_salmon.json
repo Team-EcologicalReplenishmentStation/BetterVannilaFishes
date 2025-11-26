@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_female_salmon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:female_salmon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:salmon_from_female_salmon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_female_salmon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:salmon_from_female_salmon"
+    ]
+  }
+}

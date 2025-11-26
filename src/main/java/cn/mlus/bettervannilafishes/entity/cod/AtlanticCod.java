@@ -13,6 +13,6 @@ public class AtlanticCod extends BvfCodEntity {
     }
 
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvfItems.ATLANTIC_COD_BUCKET.get());
+        return new ItemStack(BvfItems.ATLANTIC_COD_BUCKET);
     }
 }

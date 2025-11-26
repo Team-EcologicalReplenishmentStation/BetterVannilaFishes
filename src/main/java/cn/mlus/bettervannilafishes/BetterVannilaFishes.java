@@ -2,10 +2,9 @@ package cn.mlus.bettervannilafishes;
 
 import cn.mlus.bettervannilafishes.init.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import software.bernie.geckolib.GeckoLib;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
 
 import java.util.Locale;
 
@@ -13,17 +12,13 @@ import java.util.Locale;
 public class BetterVannilaFishes {
     public static final String MODID = "bettervannilafishes";
 
-    public BetterVannilaFishes(FMLJavaModLoadingContext context) {
-        GeckoLib.initialize();
-
-        IEventBus eventBus = context.getModEventBus();
-        BvfEntities.register(eventBus);
-        BvfBlocks.register(eventBus);
-        BvfBlockEntities.register(eventBus);
-        BvfItems.register(eventBus);
-        BvfCreativeTab.register(eventBus);
-        BvfBiomeModifierSerializers.register(eventBus);
-        BvfMobEffects.register(eventBus);
+    public BetterVannilaFishes(IEventBus modEventBus, ModContainer modContainer) {
+        BvfEntities.register(modEventBus);
+        BvfBlocks.register(modEventBus);
+        BvfBlockEntities.register(modEventBus);
+        BvfItems.register(modEventBus);
+        BvfBiomeModifierSerializers.register(modEventBus);
+        BvfMobEffects.register(modEventBus);
     }
 
     public static ResourceLocation prefix(String name) {

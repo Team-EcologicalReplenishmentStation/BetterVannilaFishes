@@ -13,6 +13,6 @@ public class FemaleSalmon extends BvfSalmonEntity {
     }
 
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvfItems.FEMALE_SALMON_BUCKET.get());
+        return new ItemStack(BvfItems.FEMALE_SALMON_BUCKET);
     }
 }

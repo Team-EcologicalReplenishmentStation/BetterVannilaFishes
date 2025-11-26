@@ -3,6 +3,7 @@ package cn.mlus.bettervannilafishes.block.be;
 import cn.mlus.bettervannilafishes.init.BvfBlockEntities;
 import cn.mlus.bettervannilafishes.init.BvfBlocks;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
@@ -13,8 +14,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEntity {
@@ -72,22 +73,22 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
     }
 
     @Override
-    public @NotNull CompoundTag getUpdateTag() {
-        return saveWithoutMetadata();
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider provider) {
+        return saveWithoutMetadata(provider);
     }
 
     @Override
-    public void load(@NotNull CompoundTag tag) {
-        super.load(tag);
-        if (tag.contains("Scale")) {
-            this.scale = tag.getFloat("Scale");
+    public void loadAdditional(@NotNull CompoundTag compoundTag, HolderLookup.@NotNull Provider provider) {
+        super.loadAdditional(compoundTag, provider);
+        if (compoundTag.contains("Scale")) {
+            this.scale = compoundTag.getFloat("Scale");
         }
     }
 
     @Override
-    protected void saveAdditional(@NotNull CompoundTag tag) {
-        super.saveAdditional(tag);
-        tag.putFloat("Scale", this.scale);
+    protected void saveAdditional(@NotNull CompoundTag compoundTag, HolderLookup.@NotNull Provider provider) {
+        super.saveAdditional(compoundTag, provider);
+        compoundTag.putFloat("Scale", this.scale);
     }
 
 }

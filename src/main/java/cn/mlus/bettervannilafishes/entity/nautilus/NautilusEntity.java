@@ -7,6 +7,7 @@ import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
 import cn.mlus.bettervannilafishes.entity.ai.BvfFollowOwnerGoal;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -15,6 +16,7 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -36,19 +38,22 @@ import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.event.ForgeEventFactory;
+
+import net.minecraft.world.level.pathfinder.PathType;
+import net.neoforged.neoforge.common.NeoForgeMod;
+import net.neoforged.neoforge.event.EventHooks;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.List;
@@ -60,7 +65,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
         animator = new BvfNautilusAnimator(this);
         this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10,0.02F,0.1F,true);
         this.lookControl = new SmoothSwimmingLookControl(this,10);
-        this.setPathfindingMalus(BlockPathTypes.WATER, 0.0F);
+        this.setPathfindingMalus(PathType.WATER, 0.0F);
     }
 
     protected @NotNull PathNavigation createNavigation(@NotNull Level pLevel) {
@@ -85,16 +90,18 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 6.0)
                 .add(Attributes.MOVEMENT_SPEED,0.4)
-                .add(ForgeMod.SWIM_SPEED.get(),1);
+                .add(NeoForgeMod.SWIM_SPEED,1);
     }
 
-    protected void defineSynchedData() {
-        super.defineSynchedData();
-        this.entityData.define(FROM_BUCKET, false);
-        this.entityData.define(FEEDING_TICK, 0);
-        this.entityData.define(SHELTER_TICK, 0);
-        this.entityData.define(COMMAND,0);
+    @Override
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(FROM_BUCKET, false);
+        builder.define(FEEDING_TICK, 0);
+        builder.define(SHELTER_TICK, 0);
+        builder.define(COMMAND,0);
     }
+
     public boolean fromBucket() {
         return this.entityData.get(FROM_BUCKET);
     }
@@ -128,8 +135,8 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
     }
 
     @Override
-    public void saveToBucketTag(ItemStack pStack) {
-        this.addAdditionalSaveData(pStack.getOrCreateTag());
+    public void saveToBucketTag(@NotNull ItemStack pStack) {
+        CustomData.update(DataComponents.BUCKET_ENTITY_DATA,pStack,this::addAdditionalSaveData);
     }
     @Override
     public void loadFromBucketTag(@NotNull CompoundTag pTag) {
@@ -150,17 +157,12 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
 
     @Override
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvfItems.NAUTILUS_BUCKET.get());
+        return new ItemStack(BvfItems.NAUTILUS_BUCKET);
     }
 
     @Override
     public @NotNull SoundEvent getPickupSound() {
         return SoundEvents.BUCKET_FILL_FISH;
-    }
-
-    @Override
-    public boolean canBreatheUnderwater() {
-        return true;
     }
 
     @Override
@@ -185,7 +187,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
                         entity -> entity instanceof Player);
                 entities.forEach(entity -> {
                     if (entity instanceof Player player) {
-                       player.addEffect(new MobEffectInstance(BvfMobEffects.NAUTILUS_BLESSING.get(),200,0,false,false,true));
+                       player.addEffect(new MobEffectInstance(BvfMobEffects.NAUTILUS_BLESSING,200,0,false,false,true));
                     }
                 });
             }
@@ -270,7 +272,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
         }
 
         if (!level().isClientSide() && isFood(player.getMainHandItem()) && getShelterTick() == 0) {
-            if (this.random.nextInt(3) == 0 && !ForgeEventFactory.onAnimalTame(this, player)){
+            if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, player)){
                 this.tame(player);
                 this.level().broadcastEntityEvent(this, (byte)7);
             }else{
@@ -310,11 +312,6 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
         return animator;
     }
 
-    @Override
-    public @NotNull MobType getMobType() {
-        return MobType.WATER;
-    }
-
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(@NotNull ServerLevel serverLevel, @NotNull AgeableMob ageableMob) {
@@ -326,7 +323,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
             if (p_289442_ instanceof Player player) {
                 return !player.isCreative() && !player.getItemInHand(InteractionHand.MAIN_HAND).is(Items.TROPICAL_FISH);
             } else {
-                return p_289442_.getMobType() != MobType.WATER;
+                return !p_289442_.getType().is(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH);
             }
         };
         targetingConditions = TargetingConditions.forNonCombat().ignoreInvisibilityTesting().ignoreLineOfSight().selector(SCARY_MOB);

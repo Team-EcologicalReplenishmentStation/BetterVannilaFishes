@@ -12,6 +12,6 @@ public class HaddockCod extends BvfCodEntity {
         super(pEntityType, pLevel);
     }
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvfItems.HADDOCK_COD_BUCKET.get());
+        return new ItemStack(BvfItems.HADDOCK_COD_BUCKET);
     }
 }

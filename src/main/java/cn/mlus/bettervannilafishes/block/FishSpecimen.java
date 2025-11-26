@@ -1,11 +1,14 @@
 package cn.mlus.bettervannilafishes.block;
 
 import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -23,19 +26,25 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
 
 public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
+    public static final MapCodec<FishSpecimen> CODEC = simpleCodec(FishSpecimen::new);
     public static final IntegerProperty HANGING = IntegerProperty.create("hanging", 0, 2);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public FishSpecimen(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.stateDefinition.any().setValue(HANGING, 0)
                 .setValue(FACING, Direction.NORTH));
+    }
+
+    @Override
+    protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
+        return CODEC;
     }
 
     @Override
@@ -122,8 +131,9 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
 
         BlockEntity blockEntity = level.getBlockEntity(pos);
         if (blockEntity instanceof FishSpecimenBlockEntity fishEntity) {
-            if (stack.hasTag() && stack.getTag().contains("Scale")) {
-                float scale = stack.getTag().getFloat("Scale");
+            CustomData data = stack.get(DataComponents.CUSTOM_DATA);
+            if (data != null && data.contains("Scale")) {
+                float scale = data.copyTag().getFloat("Scale");
                 fishEntity.setScale(scale);
             } else {
                 fishEntity.setScale(1.0F);
@@ -137,7 +147,7 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
             BlockEntity tileEntity = level.getBlockEntity(pos);
             if (tileEntity instanceof FishSpecimenBlockEntity entity) {
                 ItemStack drop = new ItemStack(state.getBlock());
-                drop.getOrCreateTag().putFloat("Scale", entity.getScale());
+                CustomData.update(DataComponents.CUSTOM_DATA,drop, data -> data.putFloat("Scale", entity.getScale()));
                 level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), drop));
                 level.updateNeighbourForOutputSignal(pos, this);
             }

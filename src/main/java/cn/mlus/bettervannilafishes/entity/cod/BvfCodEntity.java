@@ -60,7 +60,7 @@ public class BvfCodEntity extends BvfAbstractFish implements BvfEntity<BvfCodEnt
     }
 
     @Override
-    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData, @org.jetbrains.annotations.Nullable CompoundTag pDataTag) {
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData) {
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
@@ -70,7 +70,7 @@ public class BvfCodEntity extends BvfAbstractFish implements BvfEntity<BvfCodEnt
 
             this.setScale(Mth.randomBetween(this.random, 0.8f, 1f));
 
-            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         }
     }
 

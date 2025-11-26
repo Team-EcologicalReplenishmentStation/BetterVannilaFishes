@@ -15,6 +15,6 @@ public class ObscurePuffer extends BvfPufferfishEntity {
     @Override
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(
-                BvfItems.OBSCURE_PUFFER_BUCKET.get());
+                BvfItems.OBSCURE_PUFFER_BUCKET);
     }
 }

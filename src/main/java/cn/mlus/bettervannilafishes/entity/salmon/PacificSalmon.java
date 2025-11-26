@@ -13,6 +13,6 @@ public class PacificSalmon extends BvfSalmonEntity {
     }
 
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvfItems.PACIFIC_SALMON_BUCKET.get());
+        return new ItemStack(BvfItems.PACIFIC_SALMON_BUCKET);
     }
 }

@@ -1,27 +1,25 @@
 package cn.mlus.bettervannilafishes.data;
 
-import cn.aurorian.ers.EcologicalReplenishmentStation;
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.init.BvfItems;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.crafting.ConditionalRecipe;
-import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class BvfRecipeProvider extends RecipeProvider {
 
-    public BvfRecipeProvider(PackOutput output) {
-        super(output);
+    public BvfRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider) {
+        super(output, provider);
     }
 
     @Override
-    protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
+    protected void buildRecipes(@NotNull RecipeOutput pWriter) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.COD,1)
                 .requires(BvfItems.ATLANTIC_COD.get())
                 .unlockedBy(getHasName(BvfItems.ATLANTIC_COD.get()), has(BvfItems.ATLANTIC_COD.get()))
@@ -87,12 +85,7 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .save(pWriter, BetterVannilaFishes.prefix("female_salmon_specimen"));
     }
 
-    public ConditionalRecipe.Builder buildErsRecipe(ShapelessRecipeBuilder recipe, String path) {
-        return ConditionalRecipe.builder().addCondition(new ModLoadedCondition(EcologicalReplenishmentStation.MODID))
-                .addRecipe(consumer -> recipe.save(consumer, BetterVannilaFishes.prefix(path)));
-    }
-
-    private static void buildFoodProcessRecipes(Consumer<FinishedRecipe> recipeOutput, Item input, Item output, float xp) {
+    private static void buildFoodProcessRecipes(RecipeOutput recipeOutput, Item input, Item output, float xp) {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 200)
                 .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(getItemName(output) + "_smelting"));
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 100)

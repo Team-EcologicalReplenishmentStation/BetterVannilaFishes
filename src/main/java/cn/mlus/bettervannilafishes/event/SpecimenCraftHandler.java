@@ -1,23 +1,21 @@
 package cn.mlus.bettervannilafishes.event;
 
-import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.block.FishSpecimen;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraft.world.item.component.CustomData;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
-@Mod.EventBusSubscriber(modid = BetterVannilaFishes.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber
 public class SpecimenCraftHandler {
     @SubscribeEvent
     public static void onCrafting(PlayerEvent.ItemCraftedEvent event) {
-        Player player = event.getEntity();
-        if (player == null) return;
-
         CraftingContainer inv = (CraftingContainer) event.getInventory();
         ItemStack result = event.getCrafting();
 
@@ -26,8 +24,9 @@ public class SpecimenCraftHandler {
                 ItemStack stack = inv.getItem(i);
                 if(!stack.is(ItemTags.FISHES))
                     continue;
-                if (stack.hasTag() && stack.getTag().contains("Scale")) {
-                    result.getOrCreateTag().put("Scale", stack.getTag().get("Scale"));
+                CustomData customData = stack.get(DataComponents.CUSTOM_DATA);
+                if (customData != null && customData.contains("Scale")) {
+                    CustomData.update(DataComponents.CUSTOM_DATA, result, (data) -> data.put("Scale", customData.copyTag().get("Scale")));
                     break;
                 }
             }

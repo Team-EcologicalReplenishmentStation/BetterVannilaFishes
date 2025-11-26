@@ -5,7 +5,7 @@ import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
+import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.model.GeoModel;
 
 public class SpecimenModel<T extends BlockEntity & GeoAnimatable> extends GeoModel<T> {

@@ -1,21 +1,19 @@
 package cn.mlus.bettervannilafishes.data;
 
-import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.init.BvfBiomeModifierSerializers;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderSet;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraftforge.common.world.BiomeModifier;
-import net.minecraftforge.common.world.ModifiableBiomeInfo;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.world.BiomeModifier;
+import net.neoforged.neoforge.common.world.ModifiableBiomeInfo;
+import org.jetbrains.annotations.NotNull;
 
-public class BvfBiomeSpawnCostModifier implements BiomeModifier {
-
-    private static final RegistryObject<Codec<? extends BiomeModifier>> SERIALIZER = RegistryObject.create(BetterVannilaFishes.prefix("add_spawn_cost"), ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, BetterVannilaFishes.MODID);
+public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements BiomeModifier {
     @Override
-    public void modify(final Holder<Biome> biome, final Phase phase, final ModifiableBiomeInfo.BiomeInfo.Builder builder) {
+    public void modify(final @NotNull Holder<Biome> biome, final @NotNull Phase phase, final ModifiableBiomeInfo.BiomeInfo.@NotNull Builder builder) {
         if (phase == Phase.ADD) {
             if(biome.is(BiomeTags.IS_OCEAN)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_HADDOCK_COD.get(),0.7,0.1);
@@ -35,11 +33,8 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
     }
 
     @Override
-    public Codec<? extends BiomeModifier> codec() {
-        return SERIALIZER.get();
+    public @NotNull MapCodec<? extends BiomeModifier> codec() {
+        return BvfBiomeModifierSerializers.ADD_MOB_SPAWN_COST.get();
     }
 
-    public static Codec<BvfBiomeSpawnCostModifier> makeCodec() {
-        return Codec.unit(BvfBiomeSpawnCostModifier::new);
-    }
 }

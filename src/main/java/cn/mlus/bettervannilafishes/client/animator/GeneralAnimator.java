@@ -2,9 +2,9 @@ package cn.mlus.bettervannilafishes.client.animator;
 
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Mob;
+import software.bernie.geckolib.animatable.GeoAnimatable;
+import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
-import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
 
 import java.util.ArrayList;

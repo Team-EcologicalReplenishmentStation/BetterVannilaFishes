@@ -6,8 +6,6 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.pathfinder.NodeEvaluator;
 
 import java.util.EnumSet;
 
@@ -123,14 +121,7 @@ public class BvfFollowOwnerGoal extends Goal {
 
     private boolean canTeleportTo(BlockPos teleportPos) {
         Level level = mob.level();
-        NodeEvaluator nodeEvaluator = mob.getNavigation().getNodeEvaluator();
-        BlockPathTypes type = nodeEvaluator.getBlockPathType(level, teleportPos.getX(), teleportPos.getY(), teleportPos.getZ());
-//        if (type == BlockPathTypes.WATER && dino.getPathfindingMalus(type) == 0) {
-//            return level.noCollision(dino, dino.getBoundingBox().move(teleportPos.subtract(dino.blockPosition())));
-//        }
-        if (type != BlockPathTypes.WALKABLE) {
-            return false;
-        }
+
         if (!canFly && level.getBlockState(teleportPos).getBlock() instanceof LeavesBlock) {
             return false;
         }

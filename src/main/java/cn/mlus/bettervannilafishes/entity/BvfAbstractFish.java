@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.entity;
 
 import cn.mlus.bettervannilafishes.entity.ai.BvfFishMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.BvfFollowFlockLeaderGoal;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -25,15 +26,16 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.ForgeMod;
+
+import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Math;
 import software.bernie.geckolib.animatable.GeoEntity;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.List;
@@ -56,10 +58,10 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     protected static final EntityDataAccessor<Float> SCALE = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.FLOAT);
 
     @Override
-    protected void defineSynchedData() {
-        super.defineSynchedData();
-        entityData.define(DATA_VARIANT, 0);
-        entityData.define(SCALE, 1.0f);
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(DATA_VARIANT, 0);
+        builder.define(SCALE, 1.0f);
     }
 
     public float getScale(){
@@ -74,7 +76,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     @Override
     public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
         if(pStack.is(ItemTags.FISHES))
-            pStack.getOrCreateTag().putFloat("Scale", getScale());
+            pStack.getComponents().get(DataComponents.CUSTOM_DATA).getUnsafe().putFloat("Scale", getScale());
         return super.spawnAtLocation(pStack);
     }
 
@@ -104,7 +106,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     @Override
-    public @NotNull EntityDimensions getDimensions(@NotNull Pose pPose) {
+    public @NotNull EntityDimensions getDefaultDimensions(@NotNull Pose pPose) {
         float scale = getScale();
         return this.getType().getDimensions().scale(scale);
     }
@@ -138,7 +140,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 6.0)
                 .add(Attributes.MOVEMENT_SPEED,0.6)
-                .add(ForgeMod.SWIM_SPEED.get(),1);
+                .add(NeoForgeMod.SWIM_SPEED,1);
     }
 
     @Override
@@ -267,8 +269,8 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     @Nullable
-    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @Nullable SpawnGroupData pSpawnData, @Nullable CompoundTag pDataTag) {
-        super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @Nullable SpawnGroupData pSpawnData) {
+        super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         if (pSpawnData == null) {
             pSpawnData = new BvfAbstractFish.SchoolSpawnGroupData(this);
         } else {

@@ -14,6 +14,6 @@ public class YellowFinPuffer extends BvfPufferfishEntity {
 
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(
-                BvfItems.YELLOW_FIN_PUFFER_BUCKET.get());
+                BvfItems.YELLOW_FIN_PUFFER_BUCKET);
     }
 }

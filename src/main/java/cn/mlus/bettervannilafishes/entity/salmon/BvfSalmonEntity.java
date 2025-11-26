@@ -4,7 +4,6 @@ import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
@@ -33,7 +32,7 @@ public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvfEnti
     }
 
     @Override
-    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData, @org.jetbrains.annotations.Nullable CompoundTag pDataTag) {
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData) {
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
@@ -43,7 +42,7 @@ public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvfEnti
 
             this.setScale(Mth.randomBetween(this.random, 0.9f, 1.1f));
 
-            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         }
     }
 

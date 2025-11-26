@@ -10,6 +10,7 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -23,13 +24,13 @@ import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.ForgeMod;
+import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoEntity;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.List;
@@ -99,9 +100,10 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
     private static final Predicate<LivingEntity> SCARY_MOB;
     static final TargetingConditions targetingConditions;
 
-    protected void defineSynchedData() {
-        super.defineSynchedData();
-        this.entityData.define(PUFF_STATE, 0);
+    @Override
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(PUFF_STATE, 0);
     }
 
     public int getPuffState() {
@@ -124,7 +126,7 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 6.0)
                 .add(Attributes.MOVEMENT_SPEED,0.45)
-                .add(ForgeMod.SWIM_SPEED.get(),1);
+                .add(NeoForgeMod.SWIM_SPEED,1);
     }
 
     public void addAdditionalSaveData(@NotNull CompoundTag pCompound) {
@@ -201,7 +203,7 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
         return SoundEvents.PUFFER_FISH_FLOP;
     }
 
-    public @NotNull EntityDimensions getDimensions(@NotNull Pose pPose) {
+    public @NotNull EntityDimensions getDefaultDimensions(@NotNull Pose pPose) {
         return super.getDimensions(pPose).scale(getScale(this.getPuffState()));
     }
 
@@ -230,7 +232,7 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
             if (p_289442_ instanceof Player && ((Player)p_289442_).isCreative()) {
                 return false;
             } else {
-                return p_289442_.getType() == EntityType.AXOLOTL || p_289442_.getMobType() != MobType.WATER;
+                return !p_289442_.getType().is(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH);
             }
         };
         targetingConditions = TargetingConditions.forNonCombat().ignoreInvisibilityTesting().ignoreLineOfSight().selector(SCARY_MOB);
