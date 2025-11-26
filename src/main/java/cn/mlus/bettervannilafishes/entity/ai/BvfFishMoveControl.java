@@ -1,20 +1,20 @@
 package cn.mlus.bettervannilafishes.entity.ai;
 
-import cn.mlus.bettervannilafishes.entity.BvcAbstractFish;
+import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.MoveControl;
 
-public class BvcFishMoveControl extends MoveControl {
+public class BvfFishMoveControl extends MoveControl {
     private final int maxTurnX;
     private final int maxTurnY;
     private final float inWaterSpeedModifier;
     private final float outsideWaterSpeedModifier;
     private final boolean applyGravity;
 
-    private final BvcAbstractFish fish;
+    private final BvfAbstractFish fish;
 
-    public BvcFishMoveControl(BvcAbstractFish pMob) {
+    public BvfFishMoveControl(BvfAbstractFish pMob) {
         super(pMob);
         this.maxTurnX = 85;
         this.maxTurnY = 10;

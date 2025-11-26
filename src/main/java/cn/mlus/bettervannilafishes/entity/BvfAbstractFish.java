@@ -1,11 +1,13 @@
 package cn.mlus.bettervannilafishes.entity;
 
-import cn.mlus.bettervannilafishes.entity.ai.BvcFishMoveControl;
+import cn.mlus.bettervannilafishes.entity.ai.BvfFishMoveControl;
+import cn.mlus.bettervannilafishes.entity.ai.BvfFollowFlockLeaderGoal;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -21,6 +23,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
@@ -33,19 +36,24 @@ import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
-public abstract class BvcAbstractFish extends AbstractFish implements GeoEntity{
+public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
+    @Nullable
+    private BvfAbstractFish leader;
+    private int schoolSize = 1;
 
-    public BvcAbstractFish(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
+    public BvfAbstractFish(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new BvcFishMoveControl(this);
+        this.moveControl = new BvfFishMoveControl(this);
         this.lookControl = new SmoothSwimmingLookControl(this,10);
     }
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    protected static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(BvcAbstractFish.class, EntityDataSerializers.INT);
-    protected static final EntityDataAccessor<Float> SCALE = SynchedEntityData.defineId(BvcAbstractFish.class, EntityDataSerializers.FLOAT);
+    protected static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.INT);
+    protected static final EntityDataAccessor<Float> SCALE = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.FLOAT);
 
     @Override
     protected void defineSynchedData() {
@@ -108,7 +116,7 @@ public abstract class BvcAbstractFish extends AbstractFish implements GeoEntity{
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        AnimationController<BvcAbstractFish> main = new AnimationController<>(this, "main", 0, state -> {
+        AnimationController<BvfAbstractFish> main = new AnimationController<>(this, "main", 0, state -> {
             RawAnimation builder = RawAnimation.begin();
             if(isInWater()){
                 if (isSprinting()) {
@@ -185,10 +193,96 @@ public abstract class BvcAbstractFish extends AbstractFish implements GeoEntity{
         });
         this.goalSelector.addGoal(2, this.randomSwimmingGoal);
         this.goalSelector.addGoal(3, new TryFindWaterGoal(this));
+        this.goalSelector.addGoal(5, new BvfFollowFlockLeaderGoal(this));
     }
 
     @Override
     protected @NotNull BodyRotationControl createBodyControl() {
         return new GeneralBodyControl(this);
+    }
+
+    public int getMaxSchoolSize() {
+        return super.getMaxSpawnClusterSize();
+    }
+
+    protected boolean canRandomSwim() {
+        return !this.isFollower();
+    }
+
+    public boolean isFollower() {
+        return this.leader != null && this.leader.isAlive();
+    }
+
+    public BvfAbstractFish startFollowing(BvfAbstractFish pLeader) {
+        this.leader = pLeader;
+        pLeader.addFollower();
+        return pLeader;
+    }
+
+    public void stopFollowing() {
+        this.leader.removeFollower();
+        this.leader = null;
+    }
+
+    private void addFollower() {
+        ++this.schoolSize;
+    }
+
+    private void removeFollower() {
+        --this.schoolSize;
+    }
+
+    public boolean canBeFollowed() {
+        return this.hasFollowers() && this.schoolSize < this.getMaxSchoolSize();
+    }
+
+    public void tick() {
+        super.tick();
+        if (this.hasFollowers() && this.level().random.nextInt(200) == 1) {
+            List<? extends BvfAbstractFish> $$0 = this.level().getEntitiesOfClass(this.getClass(), this.getBoundingBox().inflate(14.0, 14.0, 14.0));
+            if ($$0.size() <= 1) {
+                this.schoolSize = 1;
+            }
+        }
+
+    }
+
+    public boolean hasFollowers() {
+        return this.schoolSize > 1;
+    }
+
+    public boolean inRangeOfLeader() {
+        return this.distanceToSqr(this.leader) <= 225.0;
+    }
+
+    public void pathToLeader() {
+        if (this.isFollower()) {
+            this.getNavigation().moveTo(this.leader, 1.0 + (double)this.random.nextFloat());
+        }
+
+    }
+
+    public void addFollowers(Stream<? extends BvfAbstractFish> pFollowers) {
+        pFollowers.limit(this.getMaxSchoolSize() - this.schoolSize).filter((p_27538_) -> p_27538_ != this).forEach((p_27536_) -> p_27536_.startFollowing(this));
+    }
+
+    @Nullable
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @Nullable SpawnGroupData pSpawnData, @Nullable CompoundTag pDataTag) {
+        super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+        if (pSpawnData == null) {
+            pSpawnData = new BvfAbstractFish.SchoolSpawnGroupData(this);
+        } else {
+            this.startFollowing(((BvfAbstractFish.SchoolSpawnGroupData)pSpawnData).leader);
+        }
+
+        return pSpawnData;
+    }
+
+    public static class SchoolSpawnGroupData implements SpawnGroupData {
+        public final BvfAbstractFish leader;
+
+        public SchoolSpawnGroupData(BvfAbstractFish pLeader) {
+            this.leader = pLeader;
+        }
     }
 }

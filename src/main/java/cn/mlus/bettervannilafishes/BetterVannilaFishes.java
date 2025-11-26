@@ -17,13 +17,13 @@ public class BetterVannilaFishes {
         GeckoLib.initialize();
 
         IEventBus eventBus = context.getModEventBus();
-        BvcEntities.register(eventBus);
-        BvcBlocks.register(eventBus);
-        BvcBlockEntities.register(eventBus);
-        BvcItems.register(eventBus);
-        BvcCreativeTab.register(eventBus);
-        BvcBiomeModifierSerializers.register(eventBus);
-        BvcMobEffects.register(eventBus);
+        BvfEntities.register(eventBus);
+        BvfBlocks.register(eventBus);
+        BvfBlockEntities.register(eventBus);
+        BvfItems.register(eventBus);
+        BvfCreativeTab.register(eventBus);
+        BvfBiomeModifierSerializers.register(eventBus);
+        BvfMobEffects.register(eventBus);
     }
 
     public static ResourceLocation prefix(String name) {

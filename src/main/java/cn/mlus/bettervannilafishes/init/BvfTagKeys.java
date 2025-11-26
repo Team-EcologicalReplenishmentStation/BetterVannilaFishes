@@ -5,10 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class BvcTagKeys {
+public class BvfTagKeys {
     public static final TagKey<Item> PUFFER = create("puffer");
 
-    public BvcTagKeys() {
+    public BvfTagKeys() {
     }
 
     private static TagKey<Item> create(String name) {

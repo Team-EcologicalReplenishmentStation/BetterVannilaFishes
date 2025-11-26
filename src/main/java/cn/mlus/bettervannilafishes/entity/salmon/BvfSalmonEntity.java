@@ -1,8 +1,8 @@
 package cn.mlus.bettervannilafishes.entity.salmon;
 
-import cn.mlus.bettervannilafishes.client.animator.BvcFishAnimator;
+import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.entity.BvcAbstractFish;
+import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvcEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
@@ -19,10 +19,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class BvcSalmonEntity extends BvcAbstractFish implements BvcEntity<BvcSalmonEntity> {
-    public BvcSalmonEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
+public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvcEntity<BvfSalmonEntity> {
+    public BvfSalmonEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        animator = new BvcFishAnimator<>(this);
+        animator = new BvfFishAnimator<>(this);
     }
 
     @Override
@@ -47,7 +47,7 @@ public abstract class BvcSalmonEntity extends BvcAbstractFish implements BvcEnti
         }
     }
 
-    private final GeneralAnimator<BvcSalmonEntity> animator;
+    private final GeneralAnimator<BvfSalmonEntity> animator;
 
     protected SoundEvent getAmbientSound() {
         return SoundEvents.SALMON_AMBIENT;
@@ -66,7 +66,7 @@ public abstract class BvcSalmonEntity extends BvcAbstractFish implements BvcEnti
     }
 
     @Override
-    public GeneralAnimator<BvcSalmonEntity> getAnimator() {
+    public GeneralAnimator<BvfSalmonEntity> getAnimator() {
         return animator;
     }
 }

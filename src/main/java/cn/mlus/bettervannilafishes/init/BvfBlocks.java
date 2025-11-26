@@ -8,7 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class BvcBlocks {
+public class BvfBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BetterVannilaFishes.MODID);
     public static final RegistryObject<Block> ATLANTIC_COD_SPECIMEN = BLOCKS.register("atlantic_cod_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));

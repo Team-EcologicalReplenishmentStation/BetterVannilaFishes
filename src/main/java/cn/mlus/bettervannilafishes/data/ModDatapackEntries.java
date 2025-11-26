@@ -12,7 +12,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, BvcBiomeModifier::register);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, BvfBiomeModifier::register);
 
     public ModDatapackEntries(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(BetterVannilaFishes.MODID));

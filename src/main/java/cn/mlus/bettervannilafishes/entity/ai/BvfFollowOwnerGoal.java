@@ -11,7 +11,7 @@ import net.minecraft.world.level.pathfinder.NodeEvaluator;
 
 import java.util.EnumSet;
 
-public class BvcFollowOwnerGoal extends Goal {
+public class BvfFollowOwnerGoal extends Goal {
     private final TamableAnimal mob;
     private final double speedModifier;
     private final float startDistanceSqr;
@@ -23,11 +23,11 @@ public class BvcFollowOwnerGoal extends Goal {
     private LivingEntity owner;
     private int timeToRecalcPath;
 
-    public BvcFollowOwnerGoal(TamableAnimal mob, float startDistance, float stopDistance, boolean canFly) {
+    public BvfFollowOwnerGoal(TamableAnimal mob, float startDistance, float stopDistance, boolean canFly) {
         this(mob, startDistance, stopDistance, 18, canFly);
     }
 
-    public BvcFollowOwnerGoal(TamableAnimal mob, float startDistance, float stopDistance, float teleportDistance, boolean canFly) {
+    public BvfFollowOwnerGoal(TamableAnimal mob, float startDistance, float stopDistance, float teleportDistance, boolean canFly) {
         this.mob = mob;
         this.speedModifier = 1.4;
         this.startDistanceSqr = startDistance * startDistance;

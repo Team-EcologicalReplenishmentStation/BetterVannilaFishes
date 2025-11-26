@@ -1,8 +1,8 @@
 package cn.mlus.bettervannilafishes.data;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
-import cn.mlus.bettervannilafishes.data.language.BvcChineseLanguangeProvider;
-import cn.mlus.bettervannilafishes.data.language.BvcEnglishLanguageProvider;
+import cn.mlus.bettervannilafishes.data.language.BvfChineseLanguangeProvider;
+import cn.mlus.bettervannilafishes.data.language.BvfEnglishLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -22,15 +22,15 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        generator.addProvider(event.includeClient(), new BvcItemModelProvider(output,helper));
-        generator.addProvider(event.includeClient(), new BvcEnglishLanguageProvider(output));
-        generator.addProvider(event.includeClient(), new BvcChineseLanguangeProvider(output));
-        generator.addProvider(event.includeServer(), new BvcRecipeProvider(output));
+        generator.addProvider(event.includeClient(), new BvfItemModelProvider(output,helper));
+        generator.addProvider(event.includeClient(), new BvfEnglishLanguageProvider(output));
+        generator.addProvider(event.includeClient(), new BvfChineseLanguangeProvider(output));
+        generator.addProvider(event.includeServer(), new BvfRecipeProvider(output));
         generator.addProvider(event.includeServer(), new ModDatapackEntries(output, lookupProvider));
-        generator.addProvider(event.includeServer(), new BvcLootTableProvider(output));
+        generator.addProvider(event.includeServer(), new BvfLootTableProvider(output));
 
-        BvcBlockTagProvider blockTagsProvider = new BvcBlockTagProvider(output, lookupProvider, helper);
+        BvfBlockTagProvider blockTagsProvider = new BvfBlockTagProvider(output, lookupProvider, helper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new BvcItemTagProvider(output, lookupProvider, blockTagsProvider.contentsGetter(), helper));
+        generator.addProvider(event.includeServer(), new BvfItemTagProvider(output, lookupProvider, blockTagsProvider.contentsGetter(), helper));
     }
 }

@@ -2,7 +2,7 @@ package cn.mlus.bettervannilafishes.init;
 
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
-import cn.mlus.bettervannilafishes.data.BvcBiomeSpawnCostModifier;
+import cn.mlus.bettervannilafishes.data.BvfBiomeSpawnCostModifier;
 import com.mojang.serialization.Codec;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,13 +10,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class BvcBiomeModifierSerializers {
+public class BvfBiomeModifierSerializers {
     private static final DeferredRegister<Codec<? extends BiomeModifier>> SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, BetterVannilaFishes.MODID);
 
     private static boolean isInitialised = false;
 
-    public static final RegistryObject<Codec<BvcBiomeSpawnCostModifier>> ADD_MOB_SPAWN_COST = SERIALIZERS.register(
-            "add_mob_spawn_cost", BvcBiomeSpawnCostModifier::makeCodec
+    public static final RegistryObject<Codec<BvfBiomeSpawnCostModifier>> ADD_MOB_SPAWN_COST = SERIALIZERS.register(
+            "add_mob_spawn_cost", BvfBiomeSpawnCostModifier::makeCodec
     );
 
     /**

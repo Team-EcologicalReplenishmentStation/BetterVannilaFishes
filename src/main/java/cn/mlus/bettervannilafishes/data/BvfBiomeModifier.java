@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.data;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
-import cn.mlus.bettervannilafishes.init.BvcEntities;
+import cn.mlus.bettervannilafishes.init.BvfEntities;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class BvcBiomeModifier
+public class BvfBiomeModifier
 {
     public static void register(BootstapContext<net.minecraftforge.common.world.BiomeModifier> context) {
         removeSpawn(context, "cod_ocean", BiomeTags.IS_OCEAN, EntityType.COD);
@@ -32,16 +32,16 @@ public class BvcBiomeModifier
         removeSpawn(context,"cod_river", BiomeTags.IS_RIVER, EntityType.COD);
         removeSpawn(context,"salmon_river", BiomeTags.IS_RIVER, EntityType.SALMON);
 
-        addSpawn(context,"haddock_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_HADDOCK_COD.get(),12,3,9));
-        addSpawn(context,"atlantic_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_ATLANTIC_COD.get(),10,3,9));
-        addSpawn(context,"pacific_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_PACIFIC_COD.get(),12,3,9));
-        addSpawn(context, "male_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_SALMON_MALE.get(), 12, 2, 6));
-        addSpawn(context, "female_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_SALMON_FEMALE.get(), 12, 2, 6));
-        addSpawn(context, "atlantic_salmon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.BVC_SALMON_PACIFIC.get(), 12, 3, 9));
-        addSpawn(context, "yellow_fin_puffer", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.YELLOW_FIN_PUFFER.get(), 7, 1, 1));
-        addSpawn(context, "obscure_puffer_ocean", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.OBSCURE_PUFFER.get(), 7, 1, 1));
-        addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvcEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
-        addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvcEntities.NAUTILUS.get(), 6, 1, 1));
+        addSpawn(context,"haddock_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_HADDOCK_COD.get(),12,3,9));
+        addSpawn(context,"atlantic_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_ATLANTIC_COD.get(),10,3,9));
+        addSpawn(context,"pacific_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_PACIFIC_COD.get(),12,3,9));
+        addSpawn(context, "male_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_MALE.get(), 12, 2, 6));
+        addSpawn(context, "female_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_FEMALE.get(), 12, 2, 6));
+        addSpawn(context, "atlantic_salmon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_PACIFIC.get(), 12, 3, 9));
+        addSpawn(context, "yellow_fin_puffer", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.YELLOW_FIN_PUFFER.get(), 7, 1, 1));
+        addSpawn(context, "obscure_puffer_ocean", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 7, 1, 1));
+        addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
+        addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));
     }
 
     private static void addSpawn(BootstapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {

@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.entity;
 
-import cn.mlus.bettervannilafishes.util.BvcUtils;
+import cn.mlus.bettervannilafishes.util.BvfUtils;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.control.BodyRotationControl;
@@ -20,7 +20,7 @@ public class GeneralBodyControl extends BodyRotationControl {
 
     @Override
     public void clientTick() {
-        if (BvcUtils.isMoving(mob)) {
+        if (BvfUtils.isMoving(mob)) {
             this.mob.yBodyRot = Mth.approachDegrees(this.mob.yBodyRot,this.mob.getYRot(),maxBodyRot);
             this.mob.yHeadRot = Mth.rotateIfNecessary(this.mob.yHeadRot, this.mob.yBodyRot, (float)this.mob.getMaxHeadYRot());
         } else {

@@ -10,8 +10,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class BvcBlockTagProvider extends BlockTagsProvider {
-    public BvcBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+public class BvfBlockTagProvider extends BlockTagsProvider {
+    public BvfBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, BetterVannilaFishes.MODID, existingFileHelper);
     }
 

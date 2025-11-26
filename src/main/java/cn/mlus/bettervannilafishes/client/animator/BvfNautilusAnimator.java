@@ -5,9 +5,9 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
 
-public class BvcNautilusAnimator extends GeneralAnimator<NautilusEntity>{
+public class BvfNautilusAnimator extends GeneralAnimator<NautilusEntity>{
     private final NautilusEntity entity;
-    public BvcNautilusAnimator(NautilusEntity entity) {
+    public BvfNautilusAnimator(NautilusEntity entity) {
         super(entity);
         this.entity = entity;
     }

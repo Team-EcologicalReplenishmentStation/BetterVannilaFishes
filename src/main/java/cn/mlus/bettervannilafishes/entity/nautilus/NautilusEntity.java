@@ -1,12 +1,12 @@
 package cn.mlus.bettervannilafishes.entity.nautilus;
 
-import cn.mlus.bettervannilafishes.client.animator.BvcNautilusAnimator;
+import cn.mlus.bettervannilafishes.client.animator.BvfNautilusAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvcEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
-import cn.mlus.bettervannilafishes.entity.ai.BvcFollowOwnerGoal;
-import cn.mlus.bettervannilafishes.init.BvcItems;
-import cn.mlus.bettervannilafishes.init.BvcMobEffects;
+import cn.mlus.bettervannilafishes.entity.ai.BvfFollowOwnerGoal;
+import cn.mlus.bettervannilafishes.init.BvfItems;
+import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -57,7 +57,7 @@ import java.util.function.Predicate;
 public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntity<NautilusEntity>, Bucketable {
     public NautilusEntity(EntityType<? extends TamableAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        animator = new BvcNautilusAnimator(this);
+        animator = new BvfNautilusAnimator(this);
         this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10,0.02F,0.1F,true);
         this.lookControl = new SmoothSwimmingLookControl(this,10);
         this.setPathfindingMalus(BlockPathTypes.WATER, 0.0F);
@@ -150,7 +150,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
 
     @Override
     public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(BvcItems.NAUTILUS_BUCKET.get());
+        return new ItemStack(BvfItems.NAUTILUS_BUCKET.get());
     }
 
     @Override
@@ -185,7 +185,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
                         entity -> entity instanceof Player);
                 entities.forEach(entity -> {
                     if (entity instanceof Player player) {
-                       player.addEffect(new MobEffectInstance(BvcMobEffects.NAUTILUS_BLESSING.get(),200,0,false,false,true));
+                       player.addEffect(new MobEffectInstance(BvfMobEffects.NAUTILUS_BLESSING.get(),200,0,false,false,true));
                     }
                 });
             }
@@ -248,7 +248,7 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntit
             }
         });
         this.goalSelector.addGoal(0, new ShelterGoal(this));
-        this.goalSelector.addGoal(1, new BvcFollowOwnerGoal(this, 6.0F, 3.0F, false){
+        this.goalSelector.addGoal(1, new BvfFollowOwnerGoal(this, 6.0F, 3.0F, false){
             @Override
             public boolean canUse() {
                 return super.canUse() && getShelterTick() == 0 && getCommand() == 0;

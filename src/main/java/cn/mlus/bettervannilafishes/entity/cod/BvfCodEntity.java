@@ -1,8 +1,8 @@
 package cn.mlus.bettervannilafishes.entity.cod;
 
-import cn.mlus.bettervannilafishes.client.animator.BvcFishAnimator;
+import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.entity.BvcAbstractFish;
+import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvcEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
@@ -21,14 +21,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import org.jetbrains.annotations.NotNull;
 
-public class BvcCodEntity extends BvcAbstractFish implements BvcEntity<BvcCodEntity> {
-    public BvcCodEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
+public class BvfCodEntity extends BvfAbstractFish implements BvcEntity<BvfCodEntity> {
+    public BvfCodEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        animator = new BvcFishAnimator<>(this);
+        animator = new BvfFishAnimator<>(this);
     }
 
-    private final GeneralAnimator<BvcCodEntity> animator;
-    public GeneralAnimator<BvcCodEntity> getAnimator() {
+    private final GeneralAnimator<BvfCodEntity> animator;
+    public GeneralAnimator<BvfCodEntity> getAnimator() {
         return animator;
     }
 
@@ -72,5 +72,10 @@ public class BvcCodEntity extends BvcAbstractFish implements BvcEntity<BvcCodEnt
 
             return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
         }
+    }
+
+    @Override
+    public int getMaxSchoolSize() {
+        return 7;
     }
 }

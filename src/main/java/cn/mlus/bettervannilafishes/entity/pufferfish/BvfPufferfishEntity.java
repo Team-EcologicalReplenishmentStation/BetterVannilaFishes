@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.entity.pufferfish;
 
-import cn.mlus.bettervannilafishes.client.animator.BvcPufferfishAnimator;
+import cn.mlus.bettervannilafishes.client.animator.BvfPufferfishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvcEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
@@ -35,20 +35,20 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import java.util.List;
 import java.util.function.Predicate;
 
-public abstract class BvcPufferfishEntity extends AbstractFish implements GeoEntity, BvcEntity<BvcPufferfishEntity> {
-    public BvcPufferfishEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
+public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEntity, BvcEntity<BvfPufferfishEntity> {
+    public BvfPufferfishEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.refreshDimensions();
         this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10,0.02F,0.1F,true);
         this.lookControl = new SmoothSwimmingLookControl(this,10);
-        animator = new BvcPufferfishAnimator(this);
+        animator = new BvfPufferfishAnimator(this);
     }
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        AnimationController<BvcPufferfishEntity> main = new AnimationController<>(this, "main", 20, state -> {
+        AnimationController<BvfPufferfishEntity> main = new AnimationController<>(this, "main", 20, state -> {
             RawAnimation builder = RawAnimation.begin();
             if(isInWater()){
                 if (state.isMoving()) {
@@ -69,7 +69,7 @@ public abstract class BvcPufferfishEntity extends AbstractFish implements GeoEnt
             return state.setAndContinue(builder);
         });
 
-        AnimationController<BvcPufferfishEntity> control = new AnimationController<>(this, "control", 0, state -> {
+        AnimationController<BvfPufferfishEntity> control = new AnimationController<>(this, "control", 0, state -> {
             RawAnimation builder = RawAnimation.begin();
 
             if(getPuffState() != 0){
@@ -225,7 +225,7 @@ public abstract class BvcPufferfishEntity extends AbstractFish implements GeoEnt
     }
 
     static {
-        PUFF_STATE = SynchedEntityData.defineId(BvcPufferfishEntity.class, EntityDataSerializers.INT);
+        PUFF_STATE = SynchedEntityData.defineId(BvfPufferfishEntity.class, EntityDataSerializers.INT);
         SCARY_MOB = (p_289442_) -> {
             if (p_289442_ instanceof Player && ((Player)p_289442_).isCreative()) {
                 return false;
@@ -236,17 +236,17 @@ public abstract class BvcPufferfishEntity extends AbstractFish implements GeoEnt
         targetingConditions = TargetingConditions.forNonCombat().ignoreInvisibilityTesting().ignoreLineOfSight().selector(SCARY_MOB);
     }
 
-    GeneralAnimator<BvcPufferfishEntity> animator;
+    GeneralAnimator<BvfPufferfishEntity> animator;
 
     @Override
-    public GeneralAnimator<BvcPufferfishEntity> getAnimator() {
+    public GeneralAnimator<BvfPufferfishEntity> getAnimator() {
         return animator;
     }
 
     private static class PufferfishPuffGoal extends Goal {
-        private final BvcPufferfishEntity fish;
+        private final BvfPufferfishEntity fish;
 
-        public PufferfishPuffGoal(BvcPufferfishEntity pFish) {
+        public PufferfishPuffGoal(BvfPufferfishEntity pFish) {
             this.fish = pFish;
         }
 

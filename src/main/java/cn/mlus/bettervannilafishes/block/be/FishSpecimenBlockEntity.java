@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.block.be;
 
-import cn.mlus.bettervannilafishes.init.BvcBlockEntities;
-import cn.mlus.bettervannilafishes.init.BvcBlocks;
+import cn.mlus.bettervannilafishes.init.BvfBlockEntities;
+import cn.mlus.bettervannilafishes.init.BvfBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -26,18 +26,18 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
 
     private static BlockEntityType<FishSpecimenBlockEntity> getBlockEntityType(BlockState pState) {
         BlockEntityType<FishSpecimenBlockEntity> type;
-        if(pState.is(BvcBlocks.ATLANTIC_COD_SPECIMEN.get())){
-            type = BvcBlockEntities.ATLANTIC_COD_SPECIMEN.get();
-        }else if(pState.is(BvcBlocks.PACIFIC_COD_SPECIMEN.get())) {
-            type = BvcBlockEntities.PACIFIC_COD_SPECIMEN.get();
-        }else if(pState.is(BvcBlocks.HADDOCK_COD_SPECIMEN.get())){
-            type = BvcBlockEntities.HADDOCK_COD_SPECIMEN.get();
-        }else if(pState.is(BvcBlocks.PACIFIC_SALMON_SPECIMEN.get())){
-            type = BvcBlockEntities.PACIFIC_SALMON_SPECIMEN.get();
-        }else if(pState.is(BvcBlocks.MALE_SALMON_SPECIMEN.get())){
-            type = BvcBlockEntities.MALE_SALMON_SPECIMEN.get();
+        if(pState.is(BvfBlocks.ATLANTIC_COD_SPECIMEN.get())){
+            type = BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.PACIFIC_COD_SPECIMEN.get())) {
+            type = BvfBlockEntities.PACIFIC_COD_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.HADDOCK_COD_SPECIMEN.get())){
+            type = BvfBlockEntities.HADDOCK_COD_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.PACIFIC_SALMON_SPECIMEN.get())){
+            type = BvfBlockEntities.PACIFIC_SALMON_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.MALE_SALMON_SPECIMEN.get())){
+            type = BvfBlockEntities.MALE_SALMON_SPECIMEN.get();
         }else{
-            type = BvcBlockEntities.FEMALE_SALMON_SPECIMEN.get();
+            type = BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get();
         }
         return type;
     }

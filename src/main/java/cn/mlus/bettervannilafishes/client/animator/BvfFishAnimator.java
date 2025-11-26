@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
-import cn.mlus.bettervannilafishes.entity.BvcAbstractFish;
+import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
@@ -8,8 +8,8 @@ import software.bernie.geckolib.model.GeoModel;
 
 import java.util.List;
 
-public class BvcFishAnimator<T extends BvcAbstractFish> extends GeneralAnimator<T> {
-    public BvcFishAnimator(T entity) {
+public class BvfFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<T> {
+    public BvfFishAnimator(T entity) {
         super(entity);
     }
 

@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
-import cn.mlus.bettervannilafishes.entity.pufferfish.BvcPufferfishEntity;
+import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
@@ -8,18 +8,18 @@ import software.bernie.geckolib.model.GeoModel;
 
 import java.util.List;
 
-public class BvcPufferfishAnimator extends GeneralAnimator<BvcPufferfishEntity>{
-    public BvcPufferfishAnimator(BvcPufferfishEntity entity) {
+public class BvfPufferfishAnimator extends GeneralAnimator<BvfPufferfishEntity>{
+    public BvfPufferfishAnimator(BvfPufferfishEntity entity) {
         super(entity);
     }
 
     @Override
-    public void animate(GeoModel<BvcPufferfishEntity> model, AnimationState<BvcPufferfishEntity> animationState) {
+    public void animate(GeoModel<BvfPufferfishEntity> model, AnimationState<BvfPufferfishEntity> animationState) {
         if(animationState.getAnimatable().getPuffState() == 0)
             animTail(model);
     }
 
-    protected void animTail(GeoModel<BvcPufferfishEntity> model){
+    protected void animTail(GeoModel<BvfPufferfishEntity> model){
         String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
