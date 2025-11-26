@@ -2,7 +2,7 @@ package cn.mlus.bettervannilafishes.entity.nautilus;
 
 import cn.mlus.bettervannilafishes.client.animator.BvfNautilusAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.entity.BvcEntity;
+import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
 import cn.mlus.bettervannilafishes.entity.ai.BvfFollowOwnerGoal;
 import cn.mlus.bettervannilafishes.init.BvfItems;
@@ -54,7 +54,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class NautilusEntity extends TamableAnimal implements GeoEntity, BvcEntity<NautilusEntity>, Bucketable {
+public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntity<NautilusEntity>, Bucketable {
     public NautilusEntity(EntityType<? extends TamableAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         animator = new BvfNautilusAnimator(this);

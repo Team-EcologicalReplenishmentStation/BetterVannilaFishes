@@ -3,7 +3,7 @@ package cn.mlus.bettervannilafishes.entity.salmon;
 import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
-import cn.mlus.bettervannilafishes.entity.BvcEntity;
+import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvcEntity<BvfSalmonEntity> {
+public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvfEntity<BvfSalmonEntity> {
     public BvfSalmonEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         animator = new BvfFishAnimator<>(this);

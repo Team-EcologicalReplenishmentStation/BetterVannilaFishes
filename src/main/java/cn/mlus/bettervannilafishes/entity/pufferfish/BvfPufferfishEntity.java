@@ -2,7 +2,7 @@ package cn.mlus.bettervannilafishes.entity.pufferfish;
 
 import cn.mlus.bettervannilafishes.client.animator.BvfPufferfishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.entity.BvcEntity;
+import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -35,7 +35,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import java.util.List;
 import java.util.function.Predicate;
 
-public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEntity, BvcEntity<BvfPufferfishEntity> {
+public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEntity, BvfEntity<BvfPufferfishEntity> {
     public BvfPufferfishEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.refreshDimensions();

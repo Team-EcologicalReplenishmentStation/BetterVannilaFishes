@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.client.model.entity;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
-import cn.mlus.bettervannilafishes.entity.BvcEntity;
+import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Mob;
@@ -9,7 +9,7 @@ import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
 
-public class BvfModel<T extends Mob & GeoAnimatable & BvcEntity<T>> extends GeoModel<T> {
+public class BvfModel<T extends Mob & GeoAnimatable & BvfEntity<T>> extends GeoModel<T> {
     @Override
     public ResourceLocation getModelResource(T entity) {
         return ResourceLocation.fromNamespaceAndPath(BetterVannilaFishes.MODID,"geo/entity/" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath() + ".geo.json");

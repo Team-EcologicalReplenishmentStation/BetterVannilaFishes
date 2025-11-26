@@ -2,7 +2,7 @@ package cn.mlus.bettervannilafishes.client.render.entity;
 
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.client.model.entity.BvfModel;
-import cn.mlus.bettervannilafishes.entity.BvcEntity;
+import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -11,7 +11,7 @@ import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
-public class BvcRenderer<T extends Mob & BvcEntity<T> & GeoAnimatable> extends GeoEntityRenderer<T> {
+public class BvcRenderer<T extends Mob & BvfEntity<T> & GeoAnimatable> extends GeoEntityRenderer<T> {
     public BvcRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new BvfModel<>());
         this.XRotDegree = 50;
