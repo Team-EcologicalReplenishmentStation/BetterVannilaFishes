@@ -24,27 +24,27 @@ public class BvfItemTagProvider extends ItemTagsProvider{
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(ItemTags.FISHES)
-                .add(BvfItems.HADDOCK_COD.value())
-                .add(BvfItems.ATLANTIC_COD.value())
-                .add(BvfItems.PACIFIC_COD.value())
-                .add(BvfItems.MALE_SALMON.value())
-                .add(BvfItems.FEMALE_SALMON.value())
-                .add(BvfItems.PACIFIC_SALMON.value())
-                .add(BvfItems.YELLOW_FIN_PUFFER.value())
-                .add(BvfItems.OBSCURE_PUFFER.value());
+                .add(BvfItems.HADDOCK_COD.get())
+                .add(BvfItems.ATLANTIC_COD.get())
+                .add(BvfItems.PACIFIC_COD.get())
+                .add(BvfItems.MALE_SALMON.get())
+                .add(BvfItems.FEMALE_SALMON.get())
+                .add(BvfItems.PACIFIC_SALMON.get())
+                .addTag(BvfTagKeys.PUFFER);
 
 //        this.tag(ErsTagKeys.KNOWN_FISH)
-//                .add(BvfItems.HADDOCK_COD.value())
-//                .add(BvfItems.ATLANTIC_COD.value())
-//                .add(BvfItems.PACIFIC_COD.value())
-//                .add(BvfItems.MALE_SALMON.value())
-//                .add(BvfItems.FEMALE_SALMON.value())
-//                .add(BvfItems.PACIFIC_SALMON.value())
-//                .add(BvfItems.YELLOW_FIN_PUFFER.value())
-//                .add(BvfItems.OBSCURE_PUFFER.value());
+//                .add(BvfItems.HADDOCK_COD.get())
+//                .add(BvfItems.ATLANTIC_COD.get())
+//                .add(BvfItems.PACIFIC_COD.get())
+//                .add(BvfItems.MALE_SALMON.get())
+//                .add(BvfItems.FEMALE_SALMON.get())
+//                .add(BvfItems.PACIFIC_SALMON.get())
+//                .add(BvfItems.YELLOW_FIN_PUFFER.get())
+//                .add(BvfItems.OBSCURE_PUFFER.get());
 
         this.tag(BvfTagKeys.PUFFER)
-                .add(BvfItems.YELLOW_FIN_PUFFER.value())
-                .add(BvfItems.OBSCURE_PUFFER.value());
+                .add(BvfItems.YELLOW_FIN_PUFFER.get())
+                .add(BvfItems.OBSCURE_PUFFER.get())
+                .add(BvfItems.PORCUPINE_FISH.get());
     }
 }

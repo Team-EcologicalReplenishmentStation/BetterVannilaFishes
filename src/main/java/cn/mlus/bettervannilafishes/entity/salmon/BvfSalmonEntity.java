@@ -9,7 +9,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -36,12 +35,7 @@ public abstract class BvfSalmonEntity extends BvfAbstractFish implements BvfEnti
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
-            if (pSpawnData == null) {
-                pSpawnData = new AgeableMob.AgeableMobGroupData(false);
-            }
-
             this.setScale(Mth.randomBetween(this.random, 0.9f, 1.1f));
-
             return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         }
     }

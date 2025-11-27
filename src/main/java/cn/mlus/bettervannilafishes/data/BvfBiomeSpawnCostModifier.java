@@ -22,6 +22,7 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_PACIFIC.get(),0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.YELLOW_FIN_PUFFER.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.OBSCURE_PUFFER.get(), 0.8,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.PORCUPINE_FISH.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.NAUTILUS.get(),0.7,0.2);
             }
             if(biome.is(BiomeTags.IS_RIVER)){

@@ -4,13 +4,11 @@ import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -64,12 +62,7 @@ public class BvfCodEntity extends BvfAbstractFish implements BvfEntity<BvfCodEnt
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
-            if (pSpawnData == null) {
-                pSpawnData = new AgeableMob.AgeableMobGroupData(false);
-            }
-
             this.setScale(Mth.randomBetween(this.random, 0.8f, 1f));
-
             return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         }
     }

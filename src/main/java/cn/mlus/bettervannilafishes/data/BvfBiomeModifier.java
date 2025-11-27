@@ -40,6 +40,7 @@ public class BvfBiomeModifier
         addSpawn(context, "female_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_FEMALE.get(), 12, 2, 6));
         addSpawn(context, "atlantic_salmon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_PACIFIC.get(), 12, 3, 9));
         addSpawn(context, "yellow_fin_puffer", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.YELLOW_FIN_PUFFER.get(), 7, 1, 1));
+        addSpawn(context, "porcupine_fish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.PORCUPINE_FISH.get(), 7, 1, 1));
         addSpawn(context, "obscure_puffer_ocean", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 7, 1, 1));
         addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
         addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));

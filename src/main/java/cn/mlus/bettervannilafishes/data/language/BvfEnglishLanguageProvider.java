@@ -24,6 +24,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"Pacific Salmon");
         this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"Yellow Fin Puffer");
         this.add(BvfEntities.OBSCURE_PUFFER.get(),"Obscure Puffer");
+        this.add(BvfEntities.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfEntities.NAUTILUS.get(),"Nautilus");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
@@ -34,6 +35,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get(),"Atlantic Salmon Spawn Egg");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get(),"Yellow Fin Puffer Spawn Egg");
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"Obscure Puffer Spawn Egg");
+        this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"Porcupine Fish Spawn Egg");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"Nautilus Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
@@ -43,6 +45,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_BUCKET.get(),"Pacific Salmon Bucket");
         this.add(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get(),"Yellow Fin Puffer Bucket");
         this.add(BvfItems.OBSCURE_PUFFER_BUCKET.get(),"Obscure Puffer Bucket");
+        this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"Porcupine Fish Bucket");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"Nautilus Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
@@ -52,6 +55,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON.get(), "Pacific Salmon");
         this.add(BvfItems.YELLOW_FIN_PUFFER.get(),"Yellow Fin Puffer");
         this.add(BvfItems.OBSCURE_PUFFER.get(),"Obscure Puffer");
+        this.add(BvfItems.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "Haddock Cod Specimen");

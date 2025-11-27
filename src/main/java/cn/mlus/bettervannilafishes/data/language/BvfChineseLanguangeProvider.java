@@ -21,6 +21,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"太平洋鲑鱼");
         this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"黄鳍东方鲀");
         this.add(BvfEntities.OBSCURE_PUFFER.get(),"暗纹东方鲀");
+        this.add(BvfEntities.PORCUPINE_FISH.get(),"刺豚");
         this.add(BvfEntities.NAUTILUS.get(),"鹦鹉螺");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "黑线鳕鱼生成蛋");
@@ -31,6 +32,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get(),"太平洋鲑鱼生成蛋");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get(),"黄鳍东方鲀生成蛋");
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"暗纹东方鲀生成蛋");
+        this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"刺豚生成蛋");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"鹦鹉螺生成蛋");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "黑线鳕鱼桶");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "大西洋鳕鱼桶");
@@ -40,6 +42,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_BUCKET.get(),"太平洋鲑鱼桶");
         this.add(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get(),"黄鳍东方鲀桶");
         this.add(BvfItems.OBSCURE_PUFFER_BUCKET.get(),"暗纹东方鲀桶");
+        this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"刺豚桶");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"鹦鹉螺桶");
         this.add(BvfItems.HADDOCK_COD.get(), "黑线鳕鱼");
         this.add(BvfItems.ATLANTIC_COD.get(), "大西洋鳕鱼");
@@ -49,6 +52,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON.get(), "太平洋鲑鱼");
         this.add(BvfItems.YELLOW_FIN_PUFFER.get(), "黄鳍东方鲀");
         this.add(BvfItems.OBSCURE_PUFFER.get(), "暗纹东方鲀");
+        this.add(BvfItems.PORCUPINE_FISH.get(), "刺豚");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "大西洋鳕鱼标本");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "太平洋鳕鱼标本");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "黑线鳕鱼标本");

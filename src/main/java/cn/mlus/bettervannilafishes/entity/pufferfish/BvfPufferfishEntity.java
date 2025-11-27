@@ -204,7 +204,7 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
     }
 
     public @NotNull EntityDimensions getDefaultDimensions(@NotNull Pose pPose) {
-        return super.getDimensions(pPose).scale(getScale(this.getPuffState()));
+        return super.getDefaultDimensions(pPose).scale(getScale(this.getPuffState()));
     }
 
     @Override

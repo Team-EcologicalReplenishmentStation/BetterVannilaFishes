@@ -23,6 +23,7 @@ import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.Vec3;
@@ -76,7 +77,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     @Override
     public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
         if(pStack.is(ItemTags.FISHES))
-            pStack.getComponents().get(DataComponents.CUSTOM_DATA).getUnsafe().putFloat("Scale", getScale());
+            CustomData.update(DataComponents.CUSTOM_DATA, pStack, (data) -> data.putFloat("Scale", getScale()));
         return super.spawnAtLocation(pStack);
     }
 
@@ -259,7 +260,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     public void pathToLeader() {
         if (this.isFollower()) {
-            this.getNavigation().moveTo(this.leader, 1.0 + (double)this.random.nextFloat());
+            this.getNavigation().moveTo(this.leader, this.random.nextIntBetweenInclusive(8,12) * 0.1f);
         }
 
     }
