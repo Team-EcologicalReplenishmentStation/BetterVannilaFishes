@@ -28,6 +28,20 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 BvfEntities.BVC_SALMON_PACIFIC.get(),
                 BvfEntities.OBSCURE_PUFFER.get(),
                 BvfEntities.YELLOW_FIN_PUFFER.get(),
-                BvfEntities.NAUTILUS.get());
+                BvfEntities.NAUTILUS.get()
+        );
+
+        this.tag(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH).add(
+                BvfEntities.NAUTILUS.get(),
+                BvfEntities.PORCUPINE_FISH.get(),
+                BvfEntities.OBSCURE_PUFFER.get(),
+                BvfEntities.YELLOW_FIN_PUFFER.get(),
+                BvfEntities.BVC_ATLANTIC_COD.get(),
+                BvfEntities.BVC_PACIFIC_COD.get(),
+                BvfEntities.BVC_HADDOCK_COD.get(),
+                BvfEntities.BVC_SALMON_FEMALE.get(),
+                BvfEntities.BVC_SALMON_MALE.get(),
+                BvfEntities.BVC_SALMON_PACIFIC.get()
+        );
     }
 }

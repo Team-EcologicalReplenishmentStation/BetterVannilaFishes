@@ -51,6 +51,7 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
@@ -223,6 +224,9 @@ public class NautilusEntity extends TamableAnimal implements GeoEntity, BvfEntit
 
         AnimationController<NautilusEntity> control = new AnimationController<>(this, "control", 0, state -> {
             RawAnimation builder = RawAnimation.begin();
+            if(isInWater())
+                return PlayState.STOP;
+
             if(getShelterTick() > 0){
                 builder.thenPlayAndHold("animation.shelter");
             }else {
