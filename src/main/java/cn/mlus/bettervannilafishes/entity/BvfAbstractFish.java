@@ -257,7 +257,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     public void pathToLeader() {
         if (this.isFollower()) {
-            this.getNavigation().moveTo(this.leader, 1.0 + (double)this.random.nextFloat());
+            this.getNavigation().moveTo(this.leader, this.random.nextIntBetweenInclusive(8,12) * 0.1f);
         }
 
     }
