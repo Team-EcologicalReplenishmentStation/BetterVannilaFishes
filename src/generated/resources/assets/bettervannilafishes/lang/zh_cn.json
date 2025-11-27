@@ -18,6 +18,7 @@
   "entity.bettervannilafishes.obscure_puffer": "暗纹东方鲀",
   "entity.bettervannilafishes.pacific_cod": "太平洋鳕鱼",
   "entity.bettervannilafishes.pacific_salmon": "太平洋鲑鱼",
+  "entity.bettervannilafishes.porcupine_fish": "刺豚",
   "entity.bettervannilafishes.yellow_fin_puffer": "黄鳍东方鲀",
   "item.bettervannilafishes.atlantic_cod": "大西洋鳕鱼",
   "item.bettervannilafishes.atlantic_cod_bucket": "大西洋鳕鱼桶",
@@ -43,6 +44,9 @@
   "item.bettervannilafishes.pacific_salmon": "太平洋鲑鱼",
   "item.bettervannilafishes.pacific_salmon_bucket": "太平洋鲑鱼桶",
   "item.bettervannilafishes.pacific_salmon_spawn_egg": "太平洋鲑鱼生成蛋",
+  "item.bettervannilafishes.porcupine_fish": "刺豚",
+  "item.bettervannilafishes.porcupine_fish_bucket": "刺豚桶",
+  "item.bettervannilafishes.porcupine_fish_spawn_egg": "刺豚生成蛋",
   "item.bettervannilafishes.yellow_fin_puffer": "黄鳍东方鲀",
   "item.bettervannilafishes.yellow_fin_puffer_bucket": "黄鳍东方鲀桶",
   "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "黄鳍东方鲀生成蛋"

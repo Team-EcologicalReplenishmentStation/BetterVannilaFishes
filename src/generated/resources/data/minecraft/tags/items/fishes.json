@@ -6,7 +6,6 @@
     "bettervannilafishes:male_salmon",
     "bettervannilafishes:female_salmon",
     "bettervannilafishes:pacific_salmon",
-    "bettervannilafishes:yellow_fin_puffer",
-    "bettervannilafishes:obscure_puffer"
+    "#bettervannilafishes:puffer"
   ]
 }

@@ -25,6 +25,7 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.BVC_SALMON_PACIFIC.get(), context -> new BvcRenderer<>(context, new SalmonModel()));
 		event.registerEntityRenderer(BvfEntities.YELLOW_FIN_PUFFER.get(), context -> new BvcRenderer<>(context, new PufferfishModel()));
 		event.registerEntityRenderer(BvfEntities.OBSCURE_PUFFER.get(), context -> new BvcRenderer<>(context, new PufferfishModel()));
+		event.registerEntityRenderer(BvfEntities.PORCUPINE_FISH.get(), BvcRenderer::new);
 		event.registerEntityRenderer(BvfEntities.NAUTILUS.get(), BvcRenderer::new);
 
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvcSpecimenRenderer());

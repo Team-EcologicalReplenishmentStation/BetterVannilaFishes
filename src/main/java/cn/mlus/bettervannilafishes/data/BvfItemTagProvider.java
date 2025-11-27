@@ -30,8 +30,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.MALE_SALMON.get())
                 .add(BvfItems.FEMALE_SALMON.get())
                 .add(BvfItems.PACIFIC_SALMON.get())
-                .add(BvfItems.YELLOW_FIN_PUFFER.get())
-                .add(BvfItems.OBSCURE_PUFFER.get());
+                .addTag(BvfTagKeys.PUFFER);
 
         this.tag(ErsTagKeys.KNOWN_FISH)
                 .add(BvfItems.HADDOCK_COD.get())
@@ -41,10 +40,12 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.FEMALE_SALMON.get())
                 .add(BvfItems.PACIFIC_SALMON.get())
                 .add(BvfItems.YELLOW_FIN_PUFFER.get())
-                .add(BvfItems.OBSCURE_PUFFER.get());
+                .add(BvfItems.OBSCURE_PUFFER.get())
+                .add(BvfItems.PORCUPINE_FISH.get());
 
         this.tag(BvfTagKeys.PUFFER)
                 .add(BvfItems.YELLOW_FIN_PUFFER.get())
-                .add(BvfItems.OBSCURE_PUFFER.get());
+                .add(BvfItems.OBSCURE_PUFFER.get())
+                .add(BvfItems.PORCUPINE_FISH.get());
     }
 }

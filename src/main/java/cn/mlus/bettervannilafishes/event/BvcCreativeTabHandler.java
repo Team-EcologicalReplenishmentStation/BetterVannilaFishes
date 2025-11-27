@@ -22,6 +22,7 @@ public class BvcCreativeTabHandler {
             event.accept(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get());
             event.accept(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get());
             event.accept(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get());
+            event.accept(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get());
             event.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
@@ -33,6 +34,7 @@ public class BvcCreativeTabHandler {
             event.accept(BvfItems.PACIFIC_SALMON.get());
             event.accept(BvfItems.YELLOW_FIN_PUFFER.get());
             event.accept(BvfItems.OBSCURE_PUFFER.get());
+            event.accept(BvfItems.PORCUPINE_FISH.get());
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(BvfItems.ENCHANTED_PUFFERFISH.get());
@@ -46,6 +48,7 @@ public class BvcCreativeTabHandler {
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.PACIFIC_SALMON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.YELLOW_FIN_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.OBSCURE_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.PORCUPINE_FISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.NAUTILUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 

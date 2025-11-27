@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettervannilafishes:porcupine_fish"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pufferfish"
+  }
+}

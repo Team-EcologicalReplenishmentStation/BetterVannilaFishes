@@ -18,6 +18,7 @@
   "entity.bettervannilafishes.obscure_puffer": "Obscure Puffer",
   "entity.bettervannilafishes.pacific_cod": "Pacific Cod",
   "entity.bettervannilafishes.pacific_salmon": "Pacific Salmon",
+  "entity.bettervannilafishes.porcupine_fish": "Porcupine Fish",
   "entity.bettervannilafishes.yellow_fin_puffer": "Yellow Fin Puffer",
   "item.bettervannilafishes.atlantic_cod": "Atlantic Cod",
   "item.bettervannilafishes.atlantic_cod_bucket": "Atlantic Cod Bucket",
@@ -43,6 +44,9 @@
   "item.bettervannilafishes.pacific_salmon": "Pacific Salmon",
   "item.bettervannilafishes.pacific_salmon_bucket": "Pacific Salmon Bucket",
   "item.bettervannilafishes.pacific_salmon_spawn_egg": "Atlantic Salmon Spawn Egg",
+  "item.bettervannilafishes.porcupine_fish": "Porcupine Fish",
+  "item.bettervannilafishes.porcupine_fish_bucket": "Porcupine Fish Bucket",
+  "item.bettervannilafishes.porcupine_fish_spawn_egg": "Porcupine Fish Spawn Egg",
   "item.bettervannilafishes.yellow_fin_puffer": "Yellow Fin Puffer",
   "item.bettervannilafishes.yellow_fin_puffer_bucket": "Yellow Fin Puffer Bucket",
   "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "Yellow Fin Puffer Spawn Egg"

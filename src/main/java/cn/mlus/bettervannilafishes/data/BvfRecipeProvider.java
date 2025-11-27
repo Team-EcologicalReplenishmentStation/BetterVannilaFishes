@@ -54,6 +54,10 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(BvfItems.OBSCURE_PUFFER.get())
                 .unlockedBy(getHasName(BvfItems.OBSCURE_PUFFER.get()), has(BvfItems.OBSCURE_PUFFER.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("pufferfish_from_obscure_puffer"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.PUFFERFISH,1)
+                .requires(BvfItems.PORCUPINE_FISH.get())
+                .unlockedBy(getHasName(BvfItems.PORCUPINE_FISH.get()), has(BvfItems.PORCUPINE_FISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("pufferfish_from_porcupine_fish"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ATLANTIC_COD_SPECIMEN.get(),1)
                 .requires(BvfItems.ATLANTIC_COD.get())

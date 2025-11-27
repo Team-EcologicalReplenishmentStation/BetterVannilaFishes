@@ -76,6 +76,13 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> PORCUPINE_FISH_BUCKET = ITEMS.register("porcupine_fish_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.PORCUPINE_FISH,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> NAUTILUS_BUCKET = ITEMS.register("nautilus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.NAUTILUS,
@@ -140,6 +147,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> PORCUPINE_FISH_SPAWN_EGG = ITEMS.register("porcupine_fish_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.PORCUPINE_FISH,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> NAUTILUS_SPAWN_EGG = ITEMS.register("nautilus_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.NAUTILUS,
@@ -166,6 +180,11 @@ public class BvfItems {
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final RegistryObject<Item> OBSCURE_PUFFER = ITEMS.register("obscure_puffer",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
+                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
+                    .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
+    public static final RegistryObject<Item> PORCUPINE_FISH = ITEMS.register("porcupine_fish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
