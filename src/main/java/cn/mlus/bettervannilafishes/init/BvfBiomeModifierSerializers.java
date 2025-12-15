@@ -18,7 +18,7 @@ public class BvfBiomeModifierSerializers {
 
     private static boolean isInitialised = false;
 
-    public static final DeferredHolder<MapCodec<? extends BiomeModifier>, MapCodec<BvfBiomeSpawnCostModifier>> ADD_MOB_SPAWN_COST = SERIALIZERS.register("inferium_ore", () ->
+    public static final DeferredHolder<MapCodec<? extends BiomeModifier>, MapCodec<BvfBiomeSpawnCostModifier>> ADD_MOB_SPAWN_COST = SERIALIZERS.register("bvf_mob_cost", () ->
             RecordCodecBuilder.mapCodec(builder -> builder.group(
                     Biome.LIST_CODEC.fieldOf("biomes").forGetter(BvfBiomeSpawnCostModifier::biomes)
             ).apply(builder, BvfBiomeSpawnCostModifier::new)));

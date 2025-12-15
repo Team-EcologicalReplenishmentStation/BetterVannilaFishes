@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.event;
 
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
+import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
@@ -33,6 +34,7 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.OBSCURE_PUFFER.get(), BvfPufferfishEntity.createAttributes().build());
         event.put(BvfEntities.PORCUPINE_FISH.get(), BvfPufferfishEntity.createAttributes().build());
         event.put(BvfEntities.NAUTILUS.get(), NautilusEntity.createAttributes().build());
+        event.put(BvfEntities.FEATHER_STAR.get(), FeatherStarEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -48,6 +50,7 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.OBSCURE_PUFFER.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.PORCUPINE_FISH.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.NAUTILUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(BvfEntities.FEATHER_STAR.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.OCEAN_FLOOR, EntityAttributeHandler::checkCustomWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 
     public static boolean checkCodSpawnRules(

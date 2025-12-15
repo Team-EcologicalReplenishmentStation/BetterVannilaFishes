@@ -2,9 +2,8 @@ package cn.mlus.bettervannilafishes.event;
 
 import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.inventory.CraftingContainer;
+import net.minecraft.world.Container;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
@@ -16,7 +15,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 public class SpecimenCraftHandler {
     @SubscribeEvent
     public static void onCrafting(PlayerEvent.ItemCraftedEvent event) {
-        CraftingContainer inv = (CraftingContainer) event.getInventory();
+        Container inv = event.getInventory();
         ItemStack result = event.getCrafting();
 
         if (result.getItem() instanceof BlockItem item && item.getBlock() instanceof FishSpecimen) {

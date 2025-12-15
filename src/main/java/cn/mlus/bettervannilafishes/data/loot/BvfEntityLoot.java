@@ -30,57 +30,61 @@ public class BvfEntityLoot extends VanillaEntityLoot {
         this.add(BvfEntities.BVC_HADDOCK_COD.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.HADDOCK_COD.value()))
+                        .add(LootItem.lootTableItem(BvfItems.HADDOCK_COD.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_ATLANTIC_COD.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.ATLANTIC_COD.value()))
+                        .add(LootItem.lootTableItem(BvfItems.ATLANTIC_COD.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_PACIFIC_COD.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PACIFIC_COD.value()))
+                        .add(LootItem.lootTableItem(BvfItems.PACIFIC_COD.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_SALMON_MALE.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.MALE_SALMON.value()))
+                        .add(LootItem.lootTableItem(BvfItems.MALE_SALMON.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_SALMON_FEMALE.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.FEMALE_SALMON.value()))
+                        .add(LootItem.lootTableItem(BvfItems.FEMALE_SALMON.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PACIFIC_SALMON.value()))
+                        .add(LootItem.lootTableItem(BvfItems.PACIFIC_SALMON.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.YELLOW_FIN_PUFFER.value()))));
+                        .add(LootItem.lootTableItem(BvfItems.YELLOW_FIN_PUFFER.get()))));
         this.add(BvfEntities.OBSCURE_PUFFER.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.OBSCURE_PUFFER.value()))));
+                        .add(LootItem.lootTableItem(BvfItems.OBSCURE_PUFFER.get()))));
         this.add(BvfEntities.PORCUPINE_FISH.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PORCUPINE_FISH.value()))));
+                        .add(LootItem.lootTableItem(BvfItems.PORCUPINE_FISH.get()))));
         this.add(BvfEntities.NAUTILUS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(Items.NAUTILUS_SHELL))));
+        this.add(BvfEntities.FEATHER_STAR.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.FEATHER_STAR_TENTACLE.get()))));
     }
 
-    protected void add(@NotNull Holder<EntityType<?>> typeProvider, @NotNull LootTable.Builder table) {
+    protected void add(Holder<EntityType<?>> typeProvider, LootTable.Builder table) {
         add(typeProvider.value(), table);
     }
 
     @Override
-    protected void add(@NotNull EntityType<?> type, @NotNull LootTable.Builder table) {
+    protected void add(EntityType<?> type, LootTable.Builder table) {
         //Overwrite the core register method to add to our list of known entity types
         //Note: This isn't the actual core method as that one takes a ResourceLocation, but all our things wil pass through this one
         super.add(type, table);

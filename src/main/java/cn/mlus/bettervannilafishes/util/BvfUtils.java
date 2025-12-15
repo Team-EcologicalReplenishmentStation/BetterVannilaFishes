@@ -7,7 +7,7 @@ import net.minecraft.world.entity.Mob;
 public class BvfUtils {
 
     public static boolean isMoving(Mob mob) {
-        return mob.getX() != mob.xOld || mob.getZ() != mob.zOld;
+        return mob.getX() != mob.xOld || mob.getZ() != mob.zOld || mob.getY() != mob.yOld;
     }
 
     public static float rotlerp(float pSourceAngle, float pTargetAngle, float pMaximumChange) {

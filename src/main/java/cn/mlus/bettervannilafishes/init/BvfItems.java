@@ -90,6 +90,13 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> FEATHER_STAR_BUCKET = ITEMS.register("feather_star_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.FEATHER_STAR.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     //Spawn Egg
     public static final DeferredHolder<Item,Item> HADDOCK_COD_SPAWN_EGG = ITEMS.register("haddock_cod_spawn_egg",
             () -> new DeferredSpawnEggItem(
@@ -161,6 +168,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> FEATHER_STAR_SPAWN_EGG = ITEMS.register("feather_star_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.FEATHER_STAR,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     //Food
     public static final DeferredHolder<Item,Item> HADDOCK_COD = ITEMS.register("haddock_cod",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -189,6 +203,9 @@ public class BvfItems {
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
+
+    public static final DeferredHolder<Item,Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
+            () -> new Item(new Item.Properties()));
     //Specimen
     public static final DeferredHolder<Item,Item> ATLANTIC_COD_SPECIMEN = ITEMS.register("atlantic_cod_specimen",
             () -> new BlockItem(BvfBlocks.ATLANTIC_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));

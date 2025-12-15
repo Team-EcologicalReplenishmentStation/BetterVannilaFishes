@@ -44,6 +44,7 @@ public class BvfBiomeModifier
         addSpawn(context, "obscure_puffer_ocean", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 7, 1, 1));
         addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
         addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));
+        addSpawn(context, "feather_star", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.FEATHER_STAR.get(), 8, 2, 4));
     }
 
     private static void addSpawn(BootstrapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {
