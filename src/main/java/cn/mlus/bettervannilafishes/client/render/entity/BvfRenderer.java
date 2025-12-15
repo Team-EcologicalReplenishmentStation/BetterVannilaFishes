@@ -11,23 +11,23 @@ import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
-public class BvcRenderer<T extends Mob & BvfEntity<T> & GeoAnimatable> extends GeoEntityRenderer<T> {
-    public BvcRenderer(EntityRendererProvider.Context renderManager) {
+public class BvfRenderer<T extends Mob & BvfEntity<T> & GeoAnimatable> extends GeoEntityRenderer<T> {
+    public BvfRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new BvfModel<>());
         this.XRotDegree = 50;
     }
 
-    public BvcRenderer(EntityRendererProvider.Context renderManager, float XRotDegree) {
+    public BvfRenderer(EntityRendererProvider.Context renderManager, float XRotDegree) {
         super(renderManager, new BvfModel<>());
         this.XRotDegree = XRotDegree;
     }
 
-    public BvcRenderer(EntityRendererProvider.Context renderManager, GeoModel<T> model) {
+    public BvfRenderer(EntityRendererProvider.Context renderManager, GeoModel<T> model) {
         super(renderManager, model);
         this.XRotDegree = 50;
     }
 
-    public BvcRenderer(EntityRendererProvider.Context renderManager, GeoModel<T> model, float XRotDegree) {
+    public BvfRenderer(EntityRendererProvider.Context renderManager, GeoModel<T> model, float XRotDegree) {
         super(renderManager, model);
         this.XRotDegree = XRotDegree;
     }

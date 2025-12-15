@@ -3,8 +3,8 @@ package cn.mlus.bettervannilafishes.event;
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -18,7 +18,7 @@ public class SpecimenCraftHandler {
         Player player = event.getEntity();
         if (player == null) return;
 
-        CraftingContainer inv = (CraftingContainer) event.getInventory();
+        Container inv = event.getInventory();
         ItemStack result = event.getCrafting();
 
         if (result.getItem() instanceof BlockItem item && item.getBlock() instanceof FishSpecimen) {

@@ -68,6 +68,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(Items.NAUTILUS_SHELL))));
+        this.add(BvfEntities.FEATHER_STAR.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.FEATHER_STAR_TENTACLE.get()))));
     }
 
     @Override

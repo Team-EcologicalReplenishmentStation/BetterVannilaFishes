@@ -24,6 +24,7 @@ public class BvcCreativeTabHandler {
             event.accept(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get());
             event.accept(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get());
             event.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
+            event.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(BvfItems.HADDOCK_COD.get());
@@ -36,6 +37,10 @@ public class BvcCreativeTabHandler {
             event.accept(BvfItems.OBSCURE_PUFFER.get());
             event.accept(BvfItems.PORCUPINE_FISH.get());
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
+        }
+
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(BvfItems.ENCHANTED_PUFFERFISH.get());
         }
