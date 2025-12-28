@@ -209,12 +209,11 @@ public abstract class BvfPufferfishEntity extends AbstractFish implements GeoEnt
 
     @Override
     public void aiStep() {
-        super.aiStep();
         if (!this.isInWater()) {
-            this.setDeltaMovement(0, 0, 0);
-            this.setOnGround(true);
+            this.setOnGround(false);
             this.hasImpulse = false;
         }
+        super.aiStep();
     }
 
     private static float getScale(int pPuffState) {
