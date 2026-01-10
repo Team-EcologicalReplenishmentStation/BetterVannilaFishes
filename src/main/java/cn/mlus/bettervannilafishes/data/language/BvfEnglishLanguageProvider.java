@@ -26,6 +26,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfEntities.NAUTILUS.get(),"Nautilus");
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
+        this.add(BvfEntities.SPEARFISH.get(),"Spearfish");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -37,6 +38,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"Obscure Puffer Spawn Egg");
         this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"Porcupine Fish Spawn Egg");
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
+        this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"Nautilus Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
@@ -49,6 +51,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"Porcupine Fish Bucket");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"Nautilus Bucket");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
+        this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -58,6 +61,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.YELLOW_FIN_PUFFER.get(),"Yellow Fin Puffer");
         this.add(BvfItems.OBSCURE_PUFFER.get(),"Obscure Puffer");
         this.add(BvfItems.PORCUPINE_FISH.get(),"Porcupine Fish");
+        this.add(BvfItems.SPEARFISH.get(),"Spearfish");
+        this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(),"Feather Star Tentacle");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
@@ -65,9 +70,11 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_SPECIMEN.get(), "Pacific Salmon Specimen");
         this.add(BvfItems.MALE_SALMON_SPECIMEN.get(),"Male Salmon Specimen");
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
+        this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");
+        this.add(BvfMobEffects.PURIFICATION.get(), "Purification");
 
         this.add("bvc.command.hanging", "Hanging Out now");
         this.add("bvc.command.follow", "Following now");

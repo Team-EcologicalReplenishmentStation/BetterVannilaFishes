@@ -52,7 +52,9 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
     protected static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.INT);
+
     protected static final EntityDataAccessor<Float> SCALE = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.FLOAT);
 
     @Override
@@ -67,7 +69,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     public void setScale(float scale){
-        entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.1f));
+        entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.2f));
     }
 
     @Nullable
@@ -136,9 +138,9 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 6.0)
-                .add(Attributes.MOVEMENT_SPEED,0.6)
-                .add(ForgeMod.SWIM_SPEED.get(),1);
+                .add(Attributes.MAX_HEALTH, 12.0)
+                .add(Attributes.MOVEMENT_SPEED,0.7)
+                .add(ForgeMod.SWIM_SPEED.get(),1.2);
     }
 
     @Override

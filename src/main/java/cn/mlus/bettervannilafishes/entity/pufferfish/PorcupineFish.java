@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
-public class PorcupineFish extends BvfPufferfishEntity{
+public class PorcupineFish extends BvfPufferfishEntity {
     public PorcupineFish(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }

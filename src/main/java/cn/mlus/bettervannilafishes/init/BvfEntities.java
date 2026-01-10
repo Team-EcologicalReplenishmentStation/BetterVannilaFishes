@@ -12,6 +12,7 @@ import cn.mlus.bettervannilafishes.entity.pufferfish.YellowFinPuffer;
 import cn.mlus.bettervannilafishes.entity.salmon.FemaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.MaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
+import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -54,22 +55,31 @@ public class BvfEntities {
             () -> EntityType.Builder.of(YellowFinPuffer::new, MobCategory.WATER_AMBIENT)
                     .sized(1F,0.9F)
                     .build(BetterVannilaFishes.prefix("yellow_fin_puffer").toString()));
+
     public static final RegistryObject<EntityType<ObscurePuffer>> OBSCURE_PUFFER = ENTITIES.register("obscure_puffer",
             () -> EntityType.Builder.of(ObscurePuffer::new, MobCategory.WATER_AMBIENT)
                     .sized(1F,0.9F)
                     .build(BetterVannilaFishes.prefix("obscure_puffer").toString()));
+
     public static final RegistryObject<EntityType<PorcupineFish>> PORCUPINE_FISH = ENTITIES.register("porcupine_fish",
             () -> EntityType.Builder.of(PorcupineFish::new, MobCategory.WATER_AMBIENT)
                     .sized(1F,0.9F)
                     .build(BetterVannilaFishes.prefix("porcupine_fish").toString()));
+
     public static final RegistryObject<EntityType<NautilusEntity>> NAUTILUS = ENTITIES.register("nautilus",
             () -> EntityType.Builder.of(NautilusEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(0.55F,0.55F)
                     .build(BetterVannilaFishes.prefix("nautilus").toString()));
+
     public static final RegistryObject<EntityType<FeatherStarEntity>> FEATHER_STAR = ENTITIES.register("feather_star",
             () -> EntityType.Builder.of(FeatherStarEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.3F,0.8F)
                     .build(BetterVannilaFishes.prefix("feather_star").toString()));
+
+    public static final RegistryObject<EntityType<SpearfishEntity>> SPEARFISH = ENTITIES.register("spearfish",
+            () -> EntityType.Builder.of(SpearfishEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.5F,0.5F)
+                    .build(BetterVannilaFishes.prefix("spearfish").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

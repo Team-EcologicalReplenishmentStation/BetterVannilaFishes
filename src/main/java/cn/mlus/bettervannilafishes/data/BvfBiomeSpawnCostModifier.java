@@ -26,6 +26,8 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.OBSCURE_PUFFER.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PORCUPINE_FISH.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.NAUTILUS.get(),0.7,0.2);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.FEATHER_STAR.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.1);
             }
             if(biome.is(BiomeTags.IS_RIVER)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_MALE.get(),0.7,0.1);
