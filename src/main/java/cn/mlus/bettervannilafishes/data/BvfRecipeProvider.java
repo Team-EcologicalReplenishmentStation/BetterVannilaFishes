@@ -87,6 +87,13 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.PACIFIC_SALMON.get()), has(BvfItems.MALE_SALMON.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("female_salmon_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.SPEARFISH_SPECIMEN.get(),1)
+                .requires(BvfItems.SPEARFISH.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.SPEARFISH.get()), has(BvfItems.SPEARFISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("spearfish_specimen"));
+
+        buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
     }
 
     private static void buildFoodProcessRecipes(RecipeOutput recipeOutput, Item input, Item output, float xp) {

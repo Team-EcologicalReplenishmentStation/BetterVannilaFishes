@@ -37,8 +37,10 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
             type = BvfBlockEntities.PACIFIC_SALMON_SPECIMEN.get();
         }else if(pState.is(BvfBlocks.MALE_SALMON_SPECIMEN.get())){
             type = BvfBlockEntities.MALE_SALMON_SPECIMEN.get();
-        }else{
+        }else if(pState.is(BvfBlocks.FEMALE_SALMON_SPECIMEN.get())){
             type = BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get();
+        }else {
+            type = BvfBlockEntities.SPEARFISH_SPECIMEN.get();
         }
         return type;
     }

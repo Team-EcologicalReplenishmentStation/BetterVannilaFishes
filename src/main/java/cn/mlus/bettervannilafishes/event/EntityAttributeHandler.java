@@ -4,11 +4,15 @@ import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
+import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biomes;
@@ -35,6 +39,7 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.PORCUPINE_FISH.get(), BvfPufferfishEntity.createAttributes().build());
         event.put(BvfEntities.NAUTILUS.get(), NautilusEntity.createAttributes().build());
         event.put(BvfEntities.FEATHER_STAR.get(), FeatherStarEntity.createAttributes().build());
+        event.put(BvfEntities.SPEARFISH.get(), SpearfishEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -51,6 +56,7 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.PORCUPINE_FISH.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.NAUTILUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.FEATHER_STAR.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.OCEAN_FLOOR, EntityAttributeHandler::checkCustomWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(BvfEntities.SPEARFISH.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 
     public static boolean checkCodSpawnRules(

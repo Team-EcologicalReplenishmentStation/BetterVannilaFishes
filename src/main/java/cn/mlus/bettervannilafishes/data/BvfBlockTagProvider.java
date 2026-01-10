@@ -3,7 +3,6 @@ package cn.mlus.bettervannilafishes.data;
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;

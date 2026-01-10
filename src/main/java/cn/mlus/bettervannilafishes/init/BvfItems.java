@@ -97,6 +97,13 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> SPEARFISH_BUCKET = ITEMS.register("spearfish_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.SPEARFISH.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     //Spawn Egg
     public static final DeferredHolder<Item,Item> HADDOCK_COD_SPAWN_EGG = ITEMS.register("haddock_cod_spawn_egg",
             () -> new DeferredSpawnEggItem(
@@ -175,6 +182,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> SPEARFISH_SPAWN_EGG = ITEMS.register("spearfish_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.SPEARFISH,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     //Food
     public static final DeferredHolder<Item,Item> HADDOCK_COD = ITEMS.register("haddock_cod",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -203,6 +217,10 @@ public class BvfItems {
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
+    public static final DeferredHolder<Item,Item> SPEARFISH = ITEMS.register("spearfish",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
 
     public static final DeferredHolder<Item,Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
@@ -219,6 +237,8 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.MALE_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> FEMALE_SALMON_SPECIMEN = ITEMS.register("female_salmon_specimen",
             () -> new BlockItem(BvfBlocks.FEMALE_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> SPEARFISH_SPECIMEN = ITEMS.register("spearfish_specimen",
+            () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final DeferredHolder<Item,Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));

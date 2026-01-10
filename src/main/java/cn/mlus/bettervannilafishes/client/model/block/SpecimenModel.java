@@ -1,4 +1,4 @@
-package cn.mlus.bettervannilafishes.client.model.entity;
+package cn.mlus.bettervannilafishes.client.model.block;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.block.FishSpecimen;

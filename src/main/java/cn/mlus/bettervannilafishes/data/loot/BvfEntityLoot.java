@@ -77,6 +77,11 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.FEATHER_STAR_TENTACLE.get()))));
+        this.add(BvfEntities.SPEARFISH.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.SPEARFISH.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
     }
 
     protected void add(Holder<EntityType<?>> typeProvider, LootTable.Builder table) {

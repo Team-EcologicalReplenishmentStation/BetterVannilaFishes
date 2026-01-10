@@ -41,10 +41,6 @@ public class BvfCodEntity extends BvfAbstractFish implements BvfEntity<BvfCodEnt
         return new ItemStack(Items.COD_BUCKET);
     }
 
-    protected SoundEvent getAmbientSound() {
-        return SoundEvents.COD_AMBIENT;
-    }
-
     protected SoundEvent getDeathSound() {
         return SoundEvents.COD_DEATH;
     }

@@ -8,7 +8,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
-
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -30,6 +29,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.MALE_SALMON.get())
                 .add(BvfItems.FEMALE_SALMON.get())
                 .add(BvfItems.PACIFIC_SALMON.get())
+                .add(BvfItems.SPEARFISH.get())
                 .addTag(BvfTagKeys.PUFFER);
 
 //        this.tag(ErsTagKeys.KNOWN_FISH)

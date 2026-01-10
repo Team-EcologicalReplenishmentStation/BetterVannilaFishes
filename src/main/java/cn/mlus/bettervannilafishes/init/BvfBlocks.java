@@ -2,7 +2,6 @@ package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.block.FishSpecimen;
-import net.minecraft.core.Holder;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -21,6 +20,8 @@ public class BvfBlocks {
     public static final DeferredHolder<Block,Block> MALE_SALMON_SPECIMEN = BLOCKS.register("male_salmon_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> FEMALE_SALMON_SPECIMEN = BLOCKS.register("female_salmon_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> SPEARFISH_SPECIMEN = BLOCKS.register("spearfish_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
 
     public static void register(IEventBus eventBus) {

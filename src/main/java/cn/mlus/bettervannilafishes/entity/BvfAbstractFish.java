@@ -27,7 +27,6 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.Vec3;
-
 import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -55,7 +54,9 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
     protected static final EntityDataAccessor<Integer> DATA_VARIANT = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.INT);
+
     protected static final EntityDataAccessor<Float> SCALE = SynchedEntityData.defineId(BvfAbstractFish.class, EntityDataSerializers.FLOAT);
 
     @Override
@@ -70,7 +71,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
     }
 
     public void setScale(float scale){
-        entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.1f));
+        entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.2f));
     }
 
     @Nullable
@@ -139,9 +140,9 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 6.0)
-                .add(Attributes.MOVEMENT_SPEED,0.6)
-                .add(NeoForgeMod.SWIM_SPEED,1);
+                .add(Attributes.MAX_HEALTH, 12.0)
+                .add(Attributes.MOVEMENT_SPEED,0.7)
+                .add(NeoForgeMod.SWIM_SPEED,1.2);
     }
 
     @Override

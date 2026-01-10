@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.client.render.entity;
 
 import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
-import cn.mlus.bettervannilafishes.client.model.entity.SpecimenModel;
+import cn.mlus.bettervannilafishes.client.model.block.SpecimenModel;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.renderer.MultiBufferSource;

@@ -12,6 +12,7 @@ import cn.mlus.bettervannilafishes.entity.pufferfish.YellowFinPuffer;
 import cn.mlus.bettervannilafishes.entity.salmon.FemaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.MaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
+import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -70,6 +71,11 @@ public class BvfEntities {
             () -> EntityType.Builder.of(FeatherStarEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.3F,0.8F)
                     .build(BetterVannilaFishes.prefix("feather_star").toString()));
+
+    public static final DeferredHolder<EntityType<?>,EntityType<SpearfishEntity>> SPEARFISH = ENTITIES.register("spearfish",
+            () -> EntityType.Builder.of(SpearfishEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.5F,0.5F)
+                    .build(BetterVannilaFishes.prefix("spearfish").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

@@ -3,6 +3,7 @@ package cn.mlus.bettervannilafishes.client;
 import cn.mlus.bettervannilafishes.client.model.entity.CodModel;
 import cn.mlus.bettervannilafishes.client.model.entity.PufferfishModel;
 import cn.mlus.bettervannilafishes.client.model.entity.SalmonModel;
+import cn.mlus.bettervannilafishes.client.model.entity.SpearfishModel;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfRenderer;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfSpecimenRenderer;
 import cn.mlus.bettervannilafishes.init.BvfBlockEntities;
@@ -26,7 +27,8 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.OBSCURE_PUFFER.get(), context -> new BvfRenderer<>(context, new PufferfishModel()));
 		event.registerEntityRenderer(BvfEntities.PORCUPINE_FISH.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.NAUTILUS.get(), BvfRenderer::new);
-		event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
+        event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
+		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
 
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
@@ -34,6 +36,7 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.MALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.SPEARFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 	}
 
 }

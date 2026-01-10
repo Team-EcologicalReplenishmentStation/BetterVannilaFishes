@@ -8,7 +8,6 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class BvfLootTableProvider extends LootTableProvider {
