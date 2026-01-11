@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "bettervannilafishes:spearfish"
-            ]
+            "items": "bettervannilafishes:spearfish"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_spearfish",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_spearfish"
     ]
   ],
   "rewards": {
     "recipes": [
       "bettervannilafishes:cooked_spearfish_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

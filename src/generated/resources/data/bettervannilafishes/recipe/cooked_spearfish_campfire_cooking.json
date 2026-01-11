@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "bettervannilafishes:spearfish"
   },
-  "result": "bettervannilafishes:cooked_spearfish"
+  "result": {
+    "count": 1,
+    "id": "bettervannilafishes:cooked_spearfish"
+  }
 }
