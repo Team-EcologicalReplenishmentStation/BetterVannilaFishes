@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.effect.BvfBleedingEffect;
 import cn.mlus.bettervannilafishes.effect.NautilusBlessingEffect;
 import cn.mlus.bettervannilafishes.effect.PurificationEffect;
 import net.minecraft.core.registries.Registries;
@@ -20,6 +21,7 @@ public class BvfMobEffects {
     public static final DeferredHolder<MobEffect,MobEffect> NAUTILUS_BLESSING = MOB_EFFECTS.register("nautilus_blessing", () -> new NautilusBlessingEffect(MobEffectCategory.BENEFICIAL, 0x808080)
             .addAttributeModifier(Attributes.ATTACK_SPEED, NAUTILUS_BLESSING_MODIFIER, 0.10000000149011612, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
     public static final DeferredHolder<MobEffect,MobEffect> PURIFICATION = MOB_EFFECTS.register("purification", () -> new PurificationEffect(MobEffectCategory.BENEFICIAL, 0x0000FF));
+    public static final DeferredHolder<MobEffect,MobEffect> BLEEDING = MOB_EFFECTS.register("bleeding", () -> new BvfBleedingEffect(MobEffectCategory.HARMFUL, 0xFF0000));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

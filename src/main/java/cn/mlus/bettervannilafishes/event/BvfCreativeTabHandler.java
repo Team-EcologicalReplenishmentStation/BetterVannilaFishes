@@ -25,6 +25,7 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
             event.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
             event.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
+            event.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(BvfItems.HADDOCK_COD.get());
@@ -38,6 +39,8 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.PORCUPINE_FISH.get());
             event.accept(BvfItems.SPEARFISH.get());
             event.accept(BvfItems.COOKED_SPEARFISH.get());
+            event.accept(BvfItems.GALEOCERDO_CUVIER.get());
+            event.accept(BvfItems.SHARK_FIN.get());
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
@@ -59,6 +62,7 @@ public class BvfCreativeTabHandler {
             event.insertAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.NAUTILUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

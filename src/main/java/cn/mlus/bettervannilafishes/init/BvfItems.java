@@ -104,6 +104,13 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER_BUCKET = ITEMS.register("galeocerdo_cuvier_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.GALEOCERDO_CUVIER.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     //Spawn Egg
     public static final DeferredHolder<Item,Item> HADDOCK_COD_SPAWN_EGG = ITEMS.register("haddock_cod_spawn_egg",
             () -> new DeferredSpawnEggItem(
@@ -189,6 +196,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER_SPAWN_EGG = ITEMS.register("galeocerdo_cuvier_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.GALEOCERDO_CUVIER,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     //Food
     public static final DeferredHolder<Item,Item> HADDOCK_COD = ITEMS.register("haddock_cod",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -221,6 +235,12 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
+                    .build())));
+    public static final  DeferredHolder<Item,Item> SHARK_FIN = ITEMS.register("shark_fin",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredHolder<Item,Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));

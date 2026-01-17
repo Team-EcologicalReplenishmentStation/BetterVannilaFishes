@@ -5,6 +5,7 @@ import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
 import cn.mlus.bettervannilafishes.entity.cod.HaddockCod;
 import cn.mlus.bettervannilafishes.entity.cod.PacificCod;
 import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
+import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.ObscurePuffer;
 import cn.mlus.bettervannilafishes.entity.pufferfish.PorcupineFish;
@@ -76,6 +77,10 @@ public class BvfEntities {
             () -> EntityType.Builder.of(SpearfishEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.5F,0.5F)
                     .build(BetterVannilaFishes.prefix("spearfish").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<GaleocerdoCuvierEntity>> GALEOCERDO_CUVIER = ENTITIES.register("galeocerdo_cuvier",
+            () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(2.5F,1.6F)
+                    .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

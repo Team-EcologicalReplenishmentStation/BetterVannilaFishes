@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.data;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
+import cn.mlus.bettervannilafishes.init.BvfTagKeys;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.EntityTypeTagsProvider;
@@ -43,5 +44,8 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 BvfEntities.BVC_SALMON_MALE.get(),
                 BvfEntities.BVC_SALMON_PACIFIC.get()
         );
+
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get());
+        this.tag(BvfTagKeys.TOP_PREDATOR).add(BvfEntities.GALEOCERDO_CUVIER.get());
     }
 }

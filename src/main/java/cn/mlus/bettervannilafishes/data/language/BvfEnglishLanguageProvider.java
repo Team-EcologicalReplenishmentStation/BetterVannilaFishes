@@ -16,18 +16,19 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        this.add(BvfEntities.BVC_HADDOCK_COD.get(),"Haddock Cod");
-        this.add(BvfEntities.BVC_ATLANTIC_COD.get(),"Atlantic Cod");
-        this.add(BvfEntities.BVC_PACIFIC_COD.get(),"Pacific Cod");
+        this.add(BvfEntities.BVC_HADDOCK_COD.get(),"Melanogrammus aeglefinus");
+        this.add(BvfEntities.BVC_ATLANTIC_COD.get(),"Gadus morhua");
+        this.add(BvfEntities.BVC_PACIFIC_COD.get(),"Gadus macrocephalus");
         this.add(BvfEntities.BVC_SALMON_MALE.get(),"Male Salmon");
         this.add(BvfEntities.BVC_SALMON_FEMALE.get(),"Female Salmon");
-        this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"Pacific Salmon");
-        this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"Yellow Fin Puffer");
-        this.add(BvfEntities.OBSCURE_PUFFER.get(),"Obscure Puffer");
-        this.add(BvfEntities.PORCUPINE_FISH.get(),"Porcupine Fish");
+        this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"Oncorhynchus nerka");
+        this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"Diodon holocanthus");
+        this.add(BvfEntities.OBSCURE_PUFFER.get(),"Takifugu obscurus");
+        this.add(BvfEntities.PORCUPINE_FISH.get(),"Diodon holocanthus");
         this.add(BvfEntities.NAUTILUS.get(),"Nautilus");
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
-        this.add(BvfEntities.SPEARFISH.get(),"Spearfish");
+        this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
+        this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -40,6 +41,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"Porcupine Fish Spawn Egg");
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
+        this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"Nautilus Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
@@ -53,6 +55,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"Nautilus Bucket");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
+        this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -64,6 +67,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfItems.SPEARFISH.get(),"Spearfish");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
+        this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
+        this.add(BvfItems.SHARK_FIN.get(),"Shark's Fin");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(),"Feather Star Tentacle");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
@@ -76,6 +81,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");
         this.add(BvfMobEffects.PURIFICATION.get(), "Purification");
+        this.add(BvfMobEffects.BLEEDING.get(), "Bleeding");
 
         this.add("bvc.command.hanging", "Hanging Out now");
         this.add("bvc.command.follow", "Following now");
