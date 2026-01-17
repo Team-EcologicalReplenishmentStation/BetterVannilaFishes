@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.data;
 
 import cn.aurorian.ers.EcologicalReplenishmentStation;
+import cn.aurorian.ers.init.ErsItems;
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import net.minecraft.data.PackOutput;
@@ -96,6 +97,11 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .save(pWriter, BetterVannilaFishes.prefix("spearfish_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
+
+        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
+                .requires(BvfItems.SPEARFISH.get())
+                .unlockedBy(getHasName(BvfItems.SPEARFISH.get()),has(BvfItems.SPEARFISH.get())),"fish_fillet_from_spearfish")
+                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_spearfish"));
     }
 
     public ConditionalRecipe.Builder buildErsRecipe(ShapelessRecipeBuilder recipe, String path) {

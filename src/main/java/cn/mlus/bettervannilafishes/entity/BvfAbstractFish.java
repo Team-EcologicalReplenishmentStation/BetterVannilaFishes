@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.entity;
 
 import cn.mlus.bettervannilafishes.entity.ai.BvfFishMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.BvfFollowFlockLeaderGoal;
+import cn.mlus.bettervannilafishes.init.BvfTagKeys;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -161,8 +162,8 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             }
         };
 
-        Predicate<Entity> var = EntitySelector.NO_SPECTATORS;
-        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, Player.class, 16.0F, 1f, 2f, var::test){
+        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.PREDATOR) || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 16.0F, 1f, 2f, var::test){
             @Override
             public boolean canUse() {
                 super.canUse();

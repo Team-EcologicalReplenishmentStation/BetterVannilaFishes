@@ -31,6 +31,7 @@ public class DataGenerators {
 
         BvfBlockTagProvider blockTagsProvider = new BvfBlockTagProvider(output, lookupProvider, helper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
+        generator.addProvider(event.includeServer(), new BvfEntityTypeTagProvider(output, lookupProvider, BetterVannilaFishes.MODID, helper));
         generator.addProvider(event.includeServer(), new BvfItemTagProvider(output, lookupProvider, blockTagsProvider.contentsGetter(), helper));
     }
 }

@@ -7,6 +7,7 @@ import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
 import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.init.BvfItems;
+import cn.mlus.bettervannilafishes.init.BvfTagKeys;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -20,15 +21,13 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.control.BodyRotationControl;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.PanicGoal;
-import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.world.entity.ai.goal.TryFindWaterGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.ai.util.DefaultRandomPos;
 import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
@@ -43,6 +42,7 @@ import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 
 import java.util.UUID;
+import java.util.function.Predicate;
 
 public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<SpearfishEntity> {
     public SpearfishEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
@@ -111,9 +111,30 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
             }
         };
 
+        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 16.0F, 1f, 2f, var::test) {
+            @Override
+            public boolean canUse() {
+                super.canUse();
+                if (this.toAvoid == null) {
+                    return false;
+                } else {
+                    Vec3 $$0 = DefaultRandomPos.getPosAway(this.mob, 32, 7, this.toAvoid.position());
+                    if ($$0 == null) {
+                        return false;
+                    } else if (this.toAvoid.distanceToSqr($$0.x, $$0.y, $$0.z) < this.toAvoid.distanceToSqr(this.mob)) {
+                        return false;
+                    } else {
+                        this.path = this.pathNav.createPath($$0.x, $$0.y, $$0.z, 0);
+                        return this.path != null;
+                    }
+                }
+            }
+        });
+
         this.goalSelector.addGoal(2, this.randomSwimmingGoal);
         this.goalSelector.addGoal(3, new TryFindWaterGoal(this));
-        this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 1.2, false){
+        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false){
             @Override
             public boolean canUse() {
                 return super.canUse() && (this.mob.getTarget() instanceof AbstractFish || getHealth() < 5F);
@@ -131,7 +152,7 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
                 this.mob.setSprinting(false);
             }
         });
-        this.goalSelector.addGoal(5, new MoveTowardsFoodGoal(this,1.2f,2f));
+        this.goalSelector.addGoal(3, new MoveTowardsFoodGoal(this,1.2f,20f));
 
         this.targetSelector.addGoal(0, new HurtByTargetGoal(this));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 200, true, false, (p) -> !(p instanceof SpearfishEntity)));

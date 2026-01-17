@@ -26,6 +26,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.NAUTILUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
         this.simpleItem(BvfItems.SPEARFISH_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -39,6 +40,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.NAUTILUS_BUCKET.get());
         this.simpleItem(BvfItems.FEATHER_STAR_BUCKET.get());
         this.simpleItem(BvfItems.SPEARFISH_BUCKET.get());
+        this.simpleItem(BvfItems.GALEOCERDO_CUVIER_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -52,6 +54,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEATHER_STAR_TENTACLE.get());
         this.simpleItem(BvfItems.SPEARFISH.get());
         this.simpleItem(BvfItems.COOKED_SPEARFISH.get());
+        this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
+        this.simpleItem(BvfItems.SHARK_FIN.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_SPECIMEN.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_SPECIMEN.get());

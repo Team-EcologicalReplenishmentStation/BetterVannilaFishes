@@ -8,8 +8,8 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.renderer.GeoBlockRenderer;
 
-public class BvcSpecimenRenderer extends GeoBlockRenderer<FishSpecimenBlockEntity> {
-    public BvcSpecimenRenderer() {
+public class BvfSpecimenRenderer extends GeoBlockRenderer<FishSpecimenBlockEntity> {
+    public BvfSpecimenRenderer() {
         super(new SpecimenModel<>());
     }
 

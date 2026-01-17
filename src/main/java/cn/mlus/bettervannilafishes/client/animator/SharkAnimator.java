@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
-import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
+import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
@@ -8,30 +8,41 @@ import software.bernie.geckolib.model.GeoModel;
 
 import java.util.List;
 
-public class SpearFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<T> {
-    public SpearFishAnimator(T entity) {
+public class SharkAnimator <T extends BvfWaterAnimal> extends GeneralAnimator<T>{
+    public SharkAnimator(T entity) {
         super(entity);
     }
 
     @Override
     public void animate(GeoModel<T> model, AnimationState<T> animationState) {
+//        animateBody(model);
         animTail(model);
     }
 
+    protected void animateBody(GeoModel<T> model){
+        String boneName = "root";
+        GeoBone bone = model.getBone(boneName).get();
+
+        float angleLimit = 70;
+        float pitchOfs = Mth.clamp(pitchTrail.get(partialTicks, 0, 1) * 10, -angleLimit, angleLimit);
+
+        bone.setRotZ((float) (Math.toRadians(pitchOfs)));
+    }
+
     protected void animTail(GeoModel<T> model){
-        String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
+        String[] tailBoneNames = {"tail_1","tail_2","tail_3","tail_4","tail_5"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
             GeoBone tail = tailBones.get(i);
             float reversedIndex = tailBones.size() - i;
             float logFactor = (float)(Math.log(reversedIndex + 1) / Math.log(tailBones.size() + 1));
 
-            float angleLimit = 160 * logFactor;
-            float pitchOfs = Mth.clamp(pitchTrail.get(partialTicks, 0, i + 5) * 0.1f, -angleLimit, angleLimit);
-            float yawOfs = Mth.clamp(yawTrail.get(partialTicks, 0, i + 5) * 0.1f, -angleLimit, angleLimit);
+            float angleLimit = 40 * logFactor;
+            float pitchOfs = Mth.clamp(pitchTrail.get(partialTicks, 0, i + 5) * 0.09f, -angleLimit, angleLimit);
+            float yawOfs = Mth.clamp(yawTrail.get(partialTicks, 0, i + 5) * 0.09f, -angleLimit, angleLimit);
 
             if (i < 3) {
-                float extraRotationFactor = 6.5f - (i * 0.3f);
+                float extraRotationFactor = 5.5f - (i * 0.3f);
                 pitchOfs *= extraRotationFactor;
                 yawOfs *= extraRotationFactor;
             }else {
