@@ -78,6 +78,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "鹦鹉螺祝福");
         this.add(BvfMobEffects.PURIFICATION.get(), "净化");
+        this.add(BvfMobEffects.BLEEDING.get(), "流血");
 
         this.add("bvc.command.hanging", "闲逛");
         this.add("bvc.command.follow", "跟随");

@@ -95,9 +95,9 @@ public class GaleocerdoCuvierEntity extends BvfWaterAnimal implements BvfEntity<
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 80.0)
                 .add(Attributes.ATTACK_DAMAGE, 15)
-                .add(Attributes.MOVEMENT_SPEED,1.5)
+                .add(Attributes.MOVEMENT_SPEED,1.2)
                 .add(Attributes.FOLLOW_RANGE,64)
-                .add(ForgeMod.SWIM_SPEED.get(),1.1);
+                .add(ForgeMod.SWIM_SPEED.get(),1);
     }
 
     public GeneralAnimator<GaleocerdoCuvierEntity> getAnimator() {

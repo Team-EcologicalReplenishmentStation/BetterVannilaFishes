@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai;
 
-import cn.aurorian.ers.effect.ErsBleedingEffect;
 import cn.aurorian.ers.util.TickHelper;
+import cn.mlus.bettervannilafishes.effect.BvfBleedingEffect;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
 import net.minecraft.world.InteractionHand;
@@ -31,7 +31,7 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(3);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(4);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(0.7);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
             TickHelper.tickLater(this.mob.level(),15, () ->{
                 this.mob.swing(InteractionHand.MAIN_HAND);
                 this.mob.doHurtTarget(pEnemy);
-                ErsBleedingEffect.giveBleedingEffect(pEnemy,2,5);
+                BvfBleedingEffect.giveBleedingEffect(pEnemy,2,5);
                 this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
                 ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
             });

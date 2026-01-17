@@ -80,6 +80,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");
         this.add(BvfMobEffects.PURIFICATION.get(), "Purification");
+        this.add(BvfMobEffects.BLEEDING.get(), "Bleeding");
 
         this.add("bvc.command.hanging", "Hanging Out now");
         this.add("bvc.command.follow", "Following now");
