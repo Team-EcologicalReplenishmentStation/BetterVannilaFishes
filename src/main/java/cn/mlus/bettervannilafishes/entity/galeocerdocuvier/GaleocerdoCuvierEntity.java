@@ -11,6 +11,8 @@ import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavig
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.Util;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -30,8 +32,10 @@ import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.entity.animal.WaterAnimal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.neoforged.neoforge.common.NeoForgeMod;
@@ -60,6 +64,37 @@ public class GaleocerdoCuvierEntity extends BvfWaterAnimal implements BvfEntity<
     protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_VARIANT, 0);
+    }
+
+    @Override
+    public void readAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
+        if (pCompound.contains("Variant", 99)) {
+            this.setVariant(Variant.byId(pCompound.getInt("Variant")));
+        }
+    }
+
+    @Override
+    public void addAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.addAdditionalSaveData(pCompound);
+        pCompound.putInt("Variant", this.getVariant().getId());
+    }
+
+    @Override
+    public void saveToBucketTag(@NotNull ItemStack pStack) {
+        CustomData.update(DataComponents.BUCKET_ENTITY_DATA,pStack,this::addAdditionalSaveData);
+    }
+    @Override
+    public void loadFromBucketTag(@NotNull CompoundTag pTag) {
+        this.readAdditionalSaveData(pTag);
+    }
+
+    @Nullable
+    @Override
+    public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
+        if(pStack.is(BvfItems.GALEOCERDO_CUVIER.get()))
+            CustomData.update(DataComponents.CUSTOM_DATA,pStack, data -> data.putInt("Variant", getVariant().id));
+        return super.spawnAtLocation(pStack);
     }
 
     @Override

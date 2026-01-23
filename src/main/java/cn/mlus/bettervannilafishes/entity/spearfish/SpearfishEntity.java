@@ -243,7 +243,7 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
 
     @Override
     protected @NotNull BodyRotationControl createBodyControl() {
-        return new GeneralBodyControl(this,8);
+        return new GeneralBodyControl(this);
     }
 
     @Nullable

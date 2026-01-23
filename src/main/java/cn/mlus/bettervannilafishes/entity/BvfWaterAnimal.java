@@ -93,7 +93,7 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
 
     @Override
     protected @NotNull BodyRotationControl createBodyControl() {
-        return new GeneralBodyControl(this,8);
+        return new GeneralBodyControl(this);
     }
 
     public void saveToBucketTag(@NotNull ItemStack pStack) {

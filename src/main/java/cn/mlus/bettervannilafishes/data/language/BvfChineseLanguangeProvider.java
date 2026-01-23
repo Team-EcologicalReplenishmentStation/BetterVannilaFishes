@@ -74,6 +74,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.MALE_SALMON_SPECIMEN.get(), "雄性鲑鱼标本");
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(), "雌性鲑鱼标本");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(), "条纹枪鱼标本");
+        this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(), "居氏鼬鲨标本");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "附魔河豚");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "鹦鹉螺祝福");

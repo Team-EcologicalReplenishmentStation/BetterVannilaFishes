@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_galeocerdo_cuvier": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:galeocerdo_cuvier"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:galeocerdo_cuvier_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_galeocerdo_cuvier"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:galeocerdo_cuvier_specimen"
+    ]
+  }
+}
