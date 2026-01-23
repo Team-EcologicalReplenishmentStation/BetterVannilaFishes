@@ -64,6 +64,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.MALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.FEMALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
+        this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {

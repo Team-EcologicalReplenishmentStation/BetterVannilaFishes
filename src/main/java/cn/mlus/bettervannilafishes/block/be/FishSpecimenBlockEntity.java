@@ -20,6 +20,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private float scale = 1f;
+    private int variant = 0;
     public FishSpecimenBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(getBlockEntityType(pBlockState), pPos, pBlockState);
     }
@@ -38,8 +39,10 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
             type = BvfBlockEntities.MALE_SALMON_SPECIMEN.get();
         }else if(pState.is(BvfBlocks.FEMALE_SALMON_SPECIMEN.get())){
             type = BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get();
-        }else {
+        }else if(pState.is(BvfBlocks.SPEARFISH_SPECIMEN.get())){
             type = BvfBlockEntities.SPEARFISH_SPECIMEN.get();
+        }else {
+            type = BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get();
         }
         return type;
     }
@@ -59,6 +62,15 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
 
     public void setScale(float value) {
         this.scale = value;
+        markUpdated();
+    }
+
+    public int getVariant() {
+        return variant;
+    }
+
+    public void setVariant(int variant) {
+        this.variant = variant;
         markUpdated();
     }
 
@@ -84,12 +96,17 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
         if (tag.contains("Scale")) {
             this.scale = tag.getFloat("Scale");
         }
+
+        if(tag.contains("Variant")){
+            this.variant = tag.getInt("Variant");
+        }
     }
 
     @Override
     protected void saveAdditional(@NotNull CompoundTag tag) {
         super.saveAdditional(tag);
         tag.putFloat("Scale", this.scale);
+        tag.putInt("Variant", this.variant);
     }
 
 }

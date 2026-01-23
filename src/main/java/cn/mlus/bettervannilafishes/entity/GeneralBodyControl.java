@@ -9,7 +9,7 @@ public class GeneralBodyControl extends BodyRotationControl {
     Mob mob;
     int maxBodyRot;
     public GeneralBodyControl(Mob pMob) {
-        this(pMob, 5);
+        this(pMob, 8);
     }
 
     public GeneralBodyControl(Mob pMob, int maxRotationStep) {

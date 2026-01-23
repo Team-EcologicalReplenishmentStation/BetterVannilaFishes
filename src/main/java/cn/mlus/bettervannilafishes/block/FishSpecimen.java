@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.block;
 
 import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
+import cn.mlus.bettervannilafishes.init.BvfBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;
@@ -128,6 +129,13 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
             } else {
                 fishEntity.setScale(1.0F);
             }
+
+            if (stack.hasTag() && stack.getTag().contains("Variant")) {
+                int variant = stack.getTag().getInt("Variant");
+                fishEntity.setVariant(variant);
+            } else {
+                fishEntity.setVariant(0);
+            }
         }
     }
 
@@ -138,6 +146,7 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
             if (tileEntity instanceof FishSpecimenBlockEntity entity) {
                 ItemStack drop = new ItemStack(state.getBlock());
                 drop.getOrCreateTag().putFloat("Scale", entity.getScale());
+                drop.getOrCreateTag().putInt("Variant", entity.getVariant());
                 level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), drop));
                 level.updateNeighbourForOutputSignal(pos, this);
             }
@@ -148,11 +157,16 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
 
     @Override
     public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
-        return state.getValue(HANGING) == 2 ? HANGING_AABB : AABB;
+        return state.getValue(HANGING) == 2 ?
+                state.is(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get()) ? state.getValue(FACING).get2DDataValue() % 2 == 0 ? HANGING_AABB2 : HANGING_AABB3
+                        : HANGING_AABB
+                : AABB;
     }
     private static final VoxelShape AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-
     private static final VoxelShape HANGING_AABB = Block.box(0.0D, -26.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+
+    private static final VoxelShape HANGING_AABB2 = Block.box(0.0D, -18.0D, -32.0D, 16.0D, 16.0D, 48.0D);
+    private static final VoxelShape HANGING_AABB3 = Block.box(-32.0D, -18.0D, 0.0D, 48.0D, 16.0D, 16.0D);
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {

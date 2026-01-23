@@ -31,6 +31,7 @@ import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.entity.animal.WaterAnimal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -61,6 +62,37 @@ public class GaleocerdoCuvierEntity extends BvfWaterAnimal implements BvfEntity<
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(DATA_VARIANT, 0);
+    }
+
+    @Override
+    public void readAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
+        if (pCompound.contains("Variant", 99)) {
+            this.setVariant(Variant.byId(pCompound.getInt("Variant")));
+        }
+    }
+
+    @Override
+    public void addAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.addAdditionalSaveData(pCompound);
+        pCompound.putInt("Variant", this.getVariant().getId());
+    }
+
+    @Override
+    public void saveToBucketTag(ItemStack pStack) {
+        this.addAdditionalSaveData(pStack.getOrCreateTag());
+    }
+    @Override
+    public void loadFromBucketTag(@NotNull CompoundTag pTag) {
+        this.readAdditionalSaveData(pTag);
+    }
+
+    @Nullable
+    @Override
+    public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
+        if(pStack.is(BvfItems.GALEOCERDO_CUVIER.get()))
+            pStack.getOrCreateTag().putFloat("Variant", getVariant().id);
+        return super.spawnAtLocation(pStack);
     }
 
     @Override

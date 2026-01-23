@@ -288,4 +288,14 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             this.leader = pLeader;
         }
     }
+
+    @Override
+    public void saveToBucketTag(ItemStack pStack) {
+        this.addAdditionalSaveData(pStack.getOrCreateTag());
+    }
+    @Override
+    public void loadFromBucketTag(@NotNull CompoundTag pTag) {
+        this.readAdditionalSaveData(pTag);
+    }
+
 }

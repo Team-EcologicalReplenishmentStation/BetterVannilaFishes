@@ -1,7 +1,6 @@
 package cn.mlus.bettervannilafishes.effect;
 
 import cn.aurorian.ers.init.ErsDamageSource;
-
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;

@@ -76,6 +76,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.MALE_SALMON_SPECIMEN.get(),"Male Salmon Specimen");
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
+        this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");

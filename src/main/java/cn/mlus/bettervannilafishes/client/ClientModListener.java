@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.client;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.client.model.block.TigerSharkSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.entity.*;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfRenderer;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfSpecimenRenderer;
@@ -36,6 +37,7 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.MALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.SPEARFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new TigerSharkSpecimenModel()));
 	}
 
 }

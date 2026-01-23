@@ -141,6 +141,15 @@
 					]
 				},
 				{
+					"name": "fin_C",
+					"parent": "tail_2",
+					"pivot": [0, 8, -3.5],
+					"rotation": [-12.5, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 10.35, 18.55], "size": [1, 2.5, 4.5], "inflate": -0.25, "uv": [20, 23]}
+					]
+				},
+				{
 					"name": "tail_3",
 					"parent": "tail_2",
 					"pivot": [0, 4.5, 29.5],
@@ -188,6 +197,15 @@
 					]
 				},
 				{
+					"name": "fin_B",
+					"parent": "tail_1",
+					"pivot": [0, 8, -3.5],
+					"rotation": [-10, 0, 0],
+					"cubes": [
+						{"origin": [-0.525, 8.35, 8.75], "size": [1.05, 3.5, 10.5], "inflate": -0.25, "uv": [48, 13]}
+					]
+				},
+				{
 					"name": "dorsal_fin",
 					"parent": "body",
 					"pivot": [0, 8, -3.5],
@@ -204,22 +222,6 @@
 					"cubes": [
 						{"origin": [-0.55, 7.75, 1.25], "size": [1.1, 5.5, 2.5], "inflate": -0.25, "uv": [0, 53]},
 						{"origin": [-0.55, 7.75, 3.25], "size": [1.1, 4.5, 6.5], "inflate": -0.25, "uv": [60, 0]}
-					]
-				},
-				{
-					"name": "fin_B",
-					"parent": "fin_A",
-					"pivot": [0, 9, 9.5],
-					"cubes": [
-						{"origin": [-0.525, 8.75, 9.25], "size": [1.05, 3.5, 10.5], "inflate": -0.25, "uv": [48, 13]}
-					]
-				},
-				{
-					"name": "fin_C",
-					"parent": "fin_B",
-					"pivot": [0, 10, 19.5],
-					"cubes": [
-						{"origin": [-0.5, 9.75, 19.25], "size": [1, 2.5, 4.5], "inflate": -0.25, "uv": [20, 23]}
 					]
 				},
 				{

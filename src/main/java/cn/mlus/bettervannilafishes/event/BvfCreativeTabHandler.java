@@ -74,6 +74,7 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.MALE_SALMON_SPECIMEN.get());
             event.accept(BvfItems.FEMALE_SALMON_SPECIMEN.get());
             event.accept(BvfItems.SPEARFISH_SPECIMEN.get());
+            event.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
         }
     }
 }
