@@ -1,6 +1,5 @@
 package cn.mlus.bettervannilafishes.entity.galeocerdocuvier;
 
-import cn.aurorian.ers.init.ErsMobEffects;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.client.animator.SharkAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
@@ -10,6 +9,7 @@ import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai.SharkMeleeAttackGoal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
 import cn.mlus.bettervannilafishes.init.BvfItems;
+import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -154,7 +154,7 @@ public class GaleocerdoCuvierEntity extends BvfWaterAnimal implements BvfEntity<
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 400,true,false,
                 Entity::isInWater));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, LivingEntity.class,true,
-                entity -> entity.hasEffect(ErsMobEffects.BLEEDING.get()) && entity.getType() != this.getType()));
+                entity -> entity.hasEffect(BvfMobEffects.BLEEDING.get()) && entity.getType() != this.getType()));
     }
 
     @Override
