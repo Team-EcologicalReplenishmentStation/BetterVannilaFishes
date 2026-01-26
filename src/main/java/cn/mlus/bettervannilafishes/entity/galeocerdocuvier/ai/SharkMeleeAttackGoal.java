@@ -1,9 +1,9 @@
 package cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai;
 
-import cn.aurorian.ers.util.TickHelper;
 import cn.mlus.bettervannilafishes.effect.BvfBleedingEffect;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
+import cn.mlus.bettervannilafishes.util.TickHelper;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
