@@ -1,6 +1,6 @@
 package cn.mlus.bettervannilafishes.effect;
 
-import cn.aurorian.ers.init.ErsDamageSource;
+import cn.mlus.bettervannilafishes.init.BvfDamageSource;
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -51,7 +51,7 @@ public class BvfBleedingEffect extends MobEffect {
             still.put(pLivingEntity, false);
         }
 
-        pLivingEntity.hurt(ErsDamageSource.getDamageSource(pLivingEntity.level(),ErsDamageSource.DIE_OF_BLEED), pLivingEntity.getMaxHealth() * 0.01f * (pAmplifier + 1) * modifier);
+        pLivingEntity.hurt(BvfDamageSource.getDamageSource(pLivingEntity.level(),BvfDamageSource.DIE_OF_BLEED), pLivingEntity.getMaxHealth() * 0.01f * (pAmplifier + 1) * modifier);
 
         previousPositions.clear();
         previousPositions.put(pLivingEntity, currentPosition);
