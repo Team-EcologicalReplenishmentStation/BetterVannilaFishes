@@ -46,5 +46,13 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.YELLOW_FIN_PUFFER.get())
                 .add(BvfItems.OBSCURE_PUFFER.get())
                 .add(BvfItems.PORCUPINE_FISH.get());
+
+        this.tag(ItemTags.FISHES)
+                .add(BvfItems.ACANTHURUS_ACHILLES.get())
+                .add(BvfItems.ACANTHURUS_LEUCOSTERNON.get())
+                .add(BvfItems.ACANTHURUS_LINEATUS.get())
+                .add(BvfItems.ACANTHURUS_NIGRICANS.get())
+                .add(BvfItems.ACANTHURUS_TRIOSTEGUS.get())
+                .add(BvfItems.PARACANTHURUS_HEPATUS.get());
     }
 }

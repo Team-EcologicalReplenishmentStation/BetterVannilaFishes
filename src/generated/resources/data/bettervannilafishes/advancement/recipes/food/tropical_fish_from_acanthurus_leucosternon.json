@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acanthurus_leucosternon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:acanthurus_leucosternon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_acanthurus_leucosternon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acanthurus_leucosternon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_acanthurus_leucosternon"
+    ]
+  }
+}

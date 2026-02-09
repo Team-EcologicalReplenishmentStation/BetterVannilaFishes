@@ -57,6 +57,31 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(BvfItems.PORCUPINE_FISH.get()), has(BvfItems.PORCUPINE_FISH.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("pufferfish_from_porcupine_fish"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ACANTHURUS_ACHILLES.get())
+                .unlockedBy(getHasName(BvfItems.ACANTHURUS_ACHILLES.get()), has(BvfItems.ACANTHURUS_ACHILLES.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_achilles"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.PARACANTHURUS_HEPATUS.get())
+                .unlockedBy(getHasName(BvfItems.PARACANTHURUS_HEPATUS.get()), has(BvfItems.PARACANTHURUS_HEPATUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_paracanthurus_hepatus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ACANTHURUS_LEUCOSTERNON.get())
+                .unlockedBy(getHasName(BvfItems.ACANTHURUS_LEUCOSTERNON.get()), has(BvfItems.ACANTHURUS_LEUCOSTERNON.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_leucosternon"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ACANTHURUS_LINEATUS.get())
+                .unlockedBy(getHasName(BvfItems.ACANTHURUS_LINEATUS.get()), has(BvfItems.ACANTHURUS_LINEATUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_lineatus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ACANTHURUS_NIGRICANS.get())
+                .unlockedBy(getHasName(BvfItems.ACANTHURUS_NIGRICANS.get()), has(BvfItems.ACANTHURUS_NIGRICANS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_nigricans"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ACANTHURUS_TRIOSTEGUS.get())
+                .unlockedBy(getHasName(BvfItems.ACANTHURUS_TRIOSTEGUS.get()), has(BvfItems.ACANTHURUS_TRIOSTEGUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_triostegus"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ATLANTIC_COD_SPECIMEN.get(),1)
                 .requires(BvfItems.ATLANTIC_COD.get())
                 .requires(Items.HONEYCOMB)

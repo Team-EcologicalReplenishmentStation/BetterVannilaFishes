@@ -93,6 +93,32 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries,UniformGenerator.between(0.0F, 1.0F))));
+
+        // Surgeonfish (刺尾鱼) - 掉落各自的物品
+        this.add(BvfEntities.ACANTHURUS_ACHILLES.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_ACHILLES.get()))));
+        this.add(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LEUCOSTERNON.get()))));
+        this.add(BvfEntities.PARACANTHURUS_HEPATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.PARACANTHURUS_HEPATUS.get()))));
+        this.add(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_TRIOSTEGUS.get()))));
+        this.add(BvfEntities.ACANTHURUS_NIGRICANS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_NIGRICANS.get()))));
+        this.add(BvfEntities.ACANTHURUS_LINEATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LINEATUS.get()))));
     }
 
     protected void add(Holder<EntityType<?>> typeProvider, LootTable.Builder table) {
