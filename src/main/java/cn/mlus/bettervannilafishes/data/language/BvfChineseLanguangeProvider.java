@@ -26,6 +26,13 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.FEATHER_STAR.get(),"海羽星");
         this.add(BvfEntities.SPEARFISH.get(),"条纹枪鱼");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"居氏鼬鲨");
+        // Surgeonfish (刺尾鱼)
+        this.add(BvfEntities.ACANTHURUS_ACHILLES.get(),"心斑刺尾鱼");
+        this.add(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),"白胸刺尾鱼");
+        this.add(BvfEntities.PARACANTHURUS_HEPATUS.get(),"黄尾副刺尾鱼");
+        this.add(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),"横带刺尾鱼");
+        this.add(BvfEntities.ACANTHURUS_NIGRICANS.get(),"白颊刺尾鱼");
+        this.add(BvfEntities.ACANTHURUS_LINEATUS.get(),"彩带刺尾鱼");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "黑线鳕鱼生成蛋");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "大西洋鳕鱼生成蛋");
@@ -40,6 +47,13 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"海羽星生成蛋");
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"条纹枪鱼生成蛋");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"居氏鼬鲨生成蛋");
+        // Surgeonfish Spawn Eggs
+        this.add(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get(),"心斑刺尾鱼生成蛋");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get(),"白胸刺尾鱼生成蛋");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get(),"黄尾刺尾鱼生成蛋");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get(),"横带刺尾鱼生成蛋");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get(),"白颊刺尾鱼生成蛋");
+        this.add(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get(),"彩带刺尾鱼生成蛋");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "黑线鳕鱼桶");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "大西洋鳕鱼桶");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "太平洋鳕鱼桶");
@@ -53,6 +67,12 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"海羽星桶");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"四鳍旗鱼桶");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"居氏鼬鲨桶");
+        this.add(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get(),"心斑刺尾鱼桶");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get(),"白胸刺尾鱼桶");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get(),"黄尾副刺尾鱼桶");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get(),"横带刺尾鱼桶");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get(),"白颊刺尾鱼桶");
+        this.add(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get(),"彩带刺尾鱼桶");
         this.add(BvfItems.HADDOCK_COD.get(), "黑线鳕鱼");
         this.add(BvfItems.ATLANTIC_COD.get(), "大西洋鳕鱼");
         this.add(BvfItems.PACIFIC_COD.get(), "太平洋鳕鱼");
@@ -67,6 +87,13 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.GALEOCERDO_CUVIER.get(), "居氏鼬鲨");
         this.add(BvfItems.SHARK_FIN.get(), "鱼翅");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(), "海羽星触手");
+        // Surgeonfish Food
+        this.add(BvfItems.ACANTHURUS_ACHILLES.get(),"心斑刺尾鱼");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON.get(),"白胸刺尾鱼");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS.get(),"黄尾副刺尾鱼");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS.get(),"横带刺尾鱼");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS.get(),"白颊刺尾鱼");
+        this.add(BvfItems.ACANTHURUS_LINEATUS.get(),"彩带刺尾鱼");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "大西洋鳕鱼标本");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "太平洋鳕鱼标本");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "黑线鳕鱼标本");

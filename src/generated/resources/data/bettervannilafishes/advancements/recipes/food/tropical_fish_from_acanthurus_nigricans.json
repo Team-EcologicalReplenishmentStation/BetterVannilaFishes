@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acanthurus_nigricans": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:acanthurus_nigricans"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_acanthurus_nigricans"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_acanthurus_nigricans",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_acanthurus_nigricans"
+    ]
+  },
+  "sends_telemetry_event": false
+}

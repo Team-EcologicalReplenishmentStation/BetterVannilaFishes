@@ -27,6 +27,13 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
             event.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
             event.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+            // Surgeonfish (刺尾鱼)
+            event.accept(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get());
+            event.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get());
+            event.accept(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get());
+            event.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
+            event.accept(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
+            event.accept(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(BvfItems.HADDOCK_COD.get());
@@ -42,6 +49,13 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.COOKED_SPEARFISH.get());
             event.accept(BvfItems.GALEOCERDO_CUVIER.get());
             event.accept(BvfItems.SHARK_FIN.get());
+            // Surgeonfish (刺尾鱼)
+            event.accept(BvfItems.ACANTHURUS_ACHILLES.get());
+            event.accept(BvfItems.ACANTHURUS_LEUCOSTERNON.get());
+            event.accept(BvfItems.PARACANTHURUS_HEPATUS.get());
+            event.accept(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
+            event.accept(BvfItems.ACANTHURUS_NIGRICANS.get());
+            event.accept(BvfItems.ACANTHURUS_LINEATUS.get());
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
@@ -64,6 +78,13 @@ public class BvfCreativeTabHandler {
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            // Surgeonfish (刺尾鱼)
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_ACHILLES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_LINEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

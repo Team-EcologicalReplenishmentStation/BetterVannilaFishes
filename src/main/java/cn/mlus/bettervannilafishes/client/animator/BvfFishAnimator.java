@@ -19,6 +19,10 @@ public class BvfFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<
     }
 
     protected void animTail(GeoModel<T> model){
+        if(!entity.isInWater()){
+            return;
+        }
+
         String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){

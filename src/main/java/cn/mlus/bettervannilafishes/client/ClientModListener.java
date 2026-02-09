@@ -30,6 +30,14 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
 		event.registerEntityRenderer(BvfEntities.GALEOCERDO_CUVIER.get(), context -> new BvfRenderer<>(context, new GaleocerdoCuvierModel()));
 
+		// Surgeonfish (刺尾鱼)
+		event.registerEntityRenderer(BvfEntities.ACANTHURUS_ACHILLES.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.PARACANTHURUS_HEPATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.ACANTHURUS_NIGRICANS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LINEATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.HADDOCK_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());

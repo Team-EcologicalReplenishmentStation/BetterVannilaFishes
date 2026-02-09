@@ -24,13 +24,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(ItemTags.FISHES)
-                .add(BvfItems.HADDOCK_COD.get())
-                .add(BvfItems.ATLANTIC_COD.get())
-                .add(BvfItems.PACIFIC_COD.get())
-                .add(BvfItems.MALE_SALMON.get())
-                .add(BvfItems.FEMALE_SALMON.get())
-                .add(BvfItems.PACIFIC_SALMON.get())
-                .add(BvfItems.SPEARFISH.get())
+                .addTag(ErsTagKeys.KNOWN_FISH)
                 .addTag(BvfTagKeys.PUFFER);
 
         this.tag(ErsTagKeys.KNOWN_FISH)
@@ -43,7 +37,13 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.YELLOW_FIN_PUFFER.get())
                 .add(BvfItems.OBSCURE_PUFFER.get())
                 .add(BvfItems.PORCUPINE_FISH.get())
-                .add(BvfItems.SPEARFISH.get());
+                .add(BvfItems.SPEARFISH.get())
+                .add(BvfItems.ACANTHURUS_ACHILLES.get())
+                .add(BvfItems.ACANTHURUS_LEUCOSTERNON.get())
+                .add(BvfItems.ACANTHURUS_LINEATUS.get())
+                .add(BvfItems.ACANTHURUS_NIGRICANS.get())
+                .add(BvfItems.ACANTHURUS_TRIOSTEGUS.get())
+                .add(BvfItems.PARACANTHURUS_HEPATUS.get());
 
         this.tag(BvfTagKeys.PUFFER)
                 .add(BvfItems.YELLOW_FIN_PUFFER.get())

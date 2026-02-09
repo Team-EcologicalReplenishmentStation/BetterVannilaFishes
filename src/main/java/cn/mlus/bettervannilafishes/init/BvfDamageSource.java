@@ -7,8 +7,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.level.Level;
 
-import java.util.Locale;
-
 public class BvfDamageSource {
     public static final ResourceKey<DamageType> DIE_OF_BLEED = ResourceKey.create(Registries.DAMAGE_TYPE, BetterVannilaFishes.prefix("bleeding"));
 

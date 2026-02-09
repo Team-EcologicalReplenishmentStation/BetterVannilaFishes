@@ -14,6 +14,7 @@ import cn.mlus.bettervannilafishes.entity.salmon.FemaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.MaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
+import cn.mlus.bettervannilafishes.entity.surgeonfish.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -85,6 +86,31 @@ public class BvfEntities {
             () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(2.5F,1.6F)
                     .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
+
+    public static final RegistryObject<EntityType<AcanthurusAchilles>> ACANTHURUS_ACHILLES = ENTITIES.register("acanthurus_achilles",
+            () -> EntityType.Builder.of(AcanthurusAchilles::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("acanthurus_achilles").toString()));
+    public static final RegistryObject<EntityType<AcanthurusLeucosternon>> ACANTHURUS_LEUCOSTERNON = ENTITIES.register("acanthurus_leucosternon",
+            () -> EntityType.Builder.of(AcanthurusLeucosternon::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("acanthurus_leucosternon").toString()));
+    public static final RegistryObject<EntityType<ParacanthurusHepatus>> PARACANTHURUS_HEPATUS = ENTITIES.register("paracanthurus_hepatus",
+            () -> EntityType.Builder.of(ParacanthurusHepatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("paracanthurus_hepatus").toString()));
+    public static final RegistryObject<EntityType<AcanthurusTriostegus>> ACANTHURUS_TRIOSTEGUS = ENTITIES.register("acanthurus_triostegus",
+            () -> EntityType.Builder.of(AcanthurusTriostegus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("acanthurus_triostegus").toString()));
+    public static final RegistryObject<EntityType<AcanthurusNigricans>> ACANTHURUS_NIGRICANS = ENTITIES.register("acanthurus_nigricans",
+            () -> EntityType.Builder.of(AcanthurusNigricans::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("acanthurus_nigricans").toString()));
+    public static final RegistryObject<EntityType<AcanthurusLineatus>> ACANTHURUS_LINEATUS = ENTITIES.register("acanthurus_lineatus",
+            () -> EntityType.Builder.of(AcanthurusLineatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("acanthurus_lineatus").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

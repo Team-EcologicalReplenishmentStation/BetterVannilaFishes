@@ -28,6 +28,13 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
+        // Surgeonfish (刺尾鱼)
+        this.add(BvfEntities.ACANTHURUS_ACHILLES.get(),"Acanthurus achilles");
+        this.add(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),"Acanthurus leucosternon");
+        this.add(BvfEntities.PARACANTHURUS_HEPATUS.get(),"Paracanthurus hepatus");
+        this.add(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),"Acanthurus triostegus");
+        this.add(BvfEntities.ACANTHURUS_NIGRICANS.get(),"Acanthurus nigricans");
+        this.add(BvfEntities.ACANTHURUS_LINEATUS.get(),"Acanthurus lineatus");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -42,6 +49,13 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"Nautilus Spawn Egg");
+        // Surgeonfish Spawn Eggs
+        this.add(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get(),"Achilles Tang Spawn Egg");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get(),"Powder Blue Tang Spawn Egg");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get(),"Blue Crane Spawn Egg");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get(),"Convict Tang Spawn Egg");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get(),"Whitecheek Surgeonfish Spawn Egg");
+        this.add(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get(),"Lined Surgeonfish Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -55,6 +69,12 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
+        this.add(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get(),"Achilles Tang Bucket");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get(),"Powder Blue Tang Bucket");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get(),"Blue Crane Bucket");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get(),"Convict Tang Bucket");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get(),"Whitecheek Surgeonfish Bucket");
+        this.add(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get(),"Lined Surgeonfish Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -69,6 +89,13 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
         this.add(BvfItems.SHARK_FIN.get(),"Shark's Fin");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(),"Feather Star Tentacle");
+        // Surgeonfish Food
+        this.add(BvfItems.ACANTHURUS_ACHILLES.get(),"Achilles Tang");
+        this.add(BvfItems.ACANTHURUS_LEUCOSTERNON.get(),"Powder Blue Tang");
+        this.add(BvfItems.PARACANTHURUS_HEPATUS.get(),"Blue Tang");
+        this.add(BvfItems.ACANTHURUS_TRIOSTEGUS.get(),"Convict Tang");
+        this.add(BvfItems.ACANTHURUS_NIGRICANS.get(),"Whitecheek Surgeonfish");
+        this.add(BvfItems.ACANTHURUS_LINEATUS.get(),"Lined Surgeonfish");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "Haddock Cod Specimen");

@@ -46,6 +46,13 @@ public class BvfBiomeModifier
         addSpawn(context, "feather_star", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.FEATHER_STAR.get(), 8, 2, 4));
         addSpawn(context, "spearfish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.SPEARFISH.get(), 6, 1, 2));
         addSpawn(context, "galeocerdo_cuvier", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.GALEOCERDO_CUVIER.get(), 4, 1, 1));
+        // Surgeonfish (刺尾鱼) - 在海洋生成
+        addSpawn(context, "acanthurus_achilles", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_ACHILLES.get(), 6, 2, 4));
+        addSpawn(context, "acanthurus_leucosternon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), 6, 2, 4));
+        addSpawn(context, "paracanthurus_hepatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.PARACANTHURUS_HEPATUS.get(), 6, 2, 4));
+        addSpawn(context, "acanthurus_triostegus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), 6, 2, 4));
+        addSpawn(context, "acanthurus_nigricans", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_NIGRICANS.get(), 6, 2, 4));
+        addSpawn(context, "acanthurus_lineatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_LINEATUS.get(), 6, 2, 4));
     }
 
     private static void addSpawn(BootstapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {
