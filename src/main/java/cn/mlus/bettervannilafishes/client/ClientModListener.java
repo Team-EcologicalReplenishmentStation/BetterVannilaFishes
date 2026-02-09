@@ -29,8 +29,6 @@ public final class ClientModListener {
         event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
 		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
 		event.registerEntityRenderer(BvfEntities.GALEOCERDO_CUVIER.get(), context -> new BvfRenderer<>(context, new GaleocerdoCuvierModel()));
-
-		// Surgeonfish (刺尾鱼)
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_ACHILLES.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.PARACANTHURUS_HEPATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));

@@ -328,7 +328,6 @@ public class BvfItems {
 
     public static final RegistryObject<Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
-    // Surgeonfish Food (刺尾鱼食物)
     public static final RegistryObject<Item> ACANTHURUS_ACHILLES = ITEMS.register("acanthurus_achilles",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_LEUCOSTERNON = ITEMS.register("acanthurus_leucosternon",

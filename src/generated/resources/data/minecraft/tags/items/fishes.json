@@ -1,6 +1,21 @@
 {
   "values": [
-    "#ers:known_fish",
+    "bettervannilafishes:haddock_cod",
+    "bettervannilafishes:atlantic_cod",
+    "bettervannilafishes:pacific_cod",
+    "bettervannilafishes:male_salmon",
+    "bettervannilafishes:female_salmon",
+    "bettervannilafishes:pacific_salmon",
+    "bettervannilafishes:yellow_fin_puffer",
+    "bettervannilafishes:obscure_puffer",
+    "bettervannilafishes:porcupine_fish",
+    "bettervannilafishes:spearfish",
+    "bettervannilafishes:acanthurus_achilles",
+    "bettervannilafishes:acanthurus_leucosternon",
+    "bettervannilafishes:acanthurus_lineatus",
+    "bettervannilafishes:acanthurus_nigricans",
+    "bettervannilafishes:acanthurus_triostegus",
+    "bettervannilafishes:paracanthurus_hepatus",
     "#bettervannilafishes:puffer"
   ]
 }
