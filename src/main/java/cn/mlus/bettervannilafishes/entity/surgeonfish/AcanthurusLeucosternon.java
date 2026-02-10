@@ -12,6 +12,16 @@ public class AcanthurusLeucosternon extends BvfSurgeonfishEntity {
         super(pEntityType, pLevel);
     }
 
+    @Override
+    public float getMinScale() {
+        return 0.8f;
+    }
+
+    @Override
+    public float getMaxScale() {
+        return 1.0f;
+    }
+
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get());
     }

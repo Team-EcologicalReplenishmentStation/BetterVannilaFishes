@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettervannilafishes:gymnogeophagus_balzanii"
+    }
+  ],
+  "result": {
+    "item": "minecraft:tropical_fish"
+  }
+}

@@ -83,6 +83,54 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(BvfItems.ACANTHURUS_TRIOSTEGUS.get())
                 .unlockedBy(getHasName(BvfItems.ACANTHURUS_TRIOSTEGUS.get()), has(BvfItems.ACANTHURUS_TRIOSTEGUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_acanthurus_triostegus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AUSTRALOHEROS_FACETUS.get())
+                .unlockedBy(getHasName(BvfItems.AUSTRALOHEROS_FACETUS.get()), has(BvfItems.AUSTRALOHEROS_FACETUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_australoheros_facetus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.CICHLASOMA_BIMACULATUM.get())
+                .unlockedBy(getHasName(BvfItems.CICHLASOMA_BIMACULATUM.get()), has(BvfItems.CICHLASOMA_BIMACULATUM.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_cichlasoma_bimaculatum"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.KROBIA_GUIANENSIS.get())
+                .unlockedBy(getHasName(BvfItems.KROBIA_GUIANENSIS.get()), has(BvfItems.KROBIA_GUIANENSIS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_krobia_guianensis"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AEQUIDENS_TETRAMERUS.get())
+                .unlockedBy(getHasName(BvfItems.AEQUIDENS_TETRAMERUS.get()), has(BvfItems.AEQUIDENS_TETRAMERUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_aequidens_tetramerus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.GYMNOGEOPHAGUS_BALZANII.get())
+                .unlockedBy(getHasName(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()), has(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_gymnogeophagus_balzanii"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ASTRONOTUS_OCELLATUS.get())
+                .unlockedBy(getHasName(BvfItems.ASTRONOTUS_OCELLATUS.get()), has(BvfItems.ASTRONOTUS_OCELLATUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_astronotus_ocellatus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AMPHIPRION_OCELLARIS.get())
+                .unlockedBy(getHasName(BvfItems.AMPHIPRION_OCELLARIS.get()), has(BvfItems.AMPHIPRION_OCELLARIS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_ocellaris"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.PREMNAS_BIACULEATUS.get())
+                .unlockedBy(getHasName(BvfItems.PREMNAS_BIACULEATUS.get()), has(BvfItems.PREMNAS_BIACULEATUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_premnas_biaculeatus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AMPHIPRION_POLYMNUS.get())
+                .unlockedBy(getHasName(BvfItems.AMPHIPRION_POLYMNUS.get()), has(BvfItems.AMPHIPRION_POLYMNUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_polymnus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AMPHIPRION_PERIDERAION.get())
+                .unlockedBy(getHasName(BvfItems.AMPHIPRION_PERIDERAION.get()), has(BvfItems.AMPHIPRION_PERIDERAION.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_perideraion"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AMPHIPRION_CLARKII.get())
+                .unlockedBy(getHasName(BvfItems.AMPHIPRION_CLARKII.get()), has(BvfItems.AMPHIPRION_CLARKII.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_clarkii"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.AMPHIPRION_PERCULA.get())
+                .unlockedBy(getHasName(BvfItems.AMPHIPRION_PERCULA.get()), has(BvfItems.AMPHIPRION_PERCULA.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_percula"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ATLANTIC_COD_SPECIMEN.get(),1)
                 .requires(BvfItems.ATLANTIC_COD.get())

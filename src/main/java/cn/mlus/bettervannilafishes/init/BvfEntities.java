@@ -1,6 +1,8 @@
 package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.entity.cichlid.*;
+import cn.mlus.bettervannilafishes.entity.clownfish.*;
 import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
 import cn.mlus.bettervannilafishes.entity.cod.HaddockCod;
 import cn.mlus.bettervannilafishes.entity.cod.PacificCod;
@@ -111,6 +113,54 @@ public class BvfEntities {
             () -> EntityType.Builder.of(AcanthurusLineatus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
                     .build(BetterVannilaFishes.prefix("acanthurus_lineatus").toString()));
+    public static final RegistryObject<EntityType<AustraloherosFacetus>> AUSTRALOHEROS_FACETUS = ENTITIES.register("australoheros_facetus",
+            () -> EntityType.Builder.of(AustraloherosFacetus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("australoheros_facetus").toString()));
+    public static final RegistryObject<EntityType<CichlasomaBimaculatum>> CICHLASOMA_BIMACULATUM = ENTITIES.register("cichlasoma_bimaculatum",
+            () -> EntityType.Builder.of(CichlasomaBimaculatum::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("cichlasoma_bimaculatum").toString()));
+    public static final RegistryObject<EntityType<KrobiaGuianensis>> KROBIA_GUIANENSIS = ENTITIES.register("krobia_guianensis",
+            () -> EntityType.Builder.of(KrobiaGuianensis::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("krobia_guianensis").toString()));
+    public static final RegistryObject<EntityType<AequidensTetramerus>> AEQUIDENS_TETRAMERUS = ENTITIES.register("aequidens_tetramerus",
+            () -> EntityType.Builder.of(AequidensTetramerus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("aequidens_tetramerus").toString()));
+    public static final RegistryObject<EntityType<GymnogeophaghusBalzanii>> GYMNOGEOPHAGUS_BALZANII = ENTITIES.register("gymnogeophagus_balzanii",
+            () -> EntityType.Builder.of(GymnogeophaghusBalzanii::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("gymnogeophagus_balzanii").toString()));
+    public static final RegistryObject<EntityType<AstronotusOcellatus>> ASTRONOTUS_OCELLATUS = ENTITIES.register("astronotus_ocellatus",
+            () -> EntityType.Builder.of(AstronotusOcellatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("astronotus_ocellatus").toString()));
+    public static final RegistryObject<EntityType<AmphiprionOcellaris>> AMPHIPRION_OCELLARIS = ENTITIES.register("amphiprion_ocellaris",
+            () -> EntityType.Builder.of(AmphiprionOcellaris::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_ocellaris").toString()));
+    public static final RegistryObject<EntityType<PremnasBiaculeatus>> PREMNAS_BIACULEATUS = ENTITIES.register("premnas_biaculeatus",
+            () -> EntityType.Builder.of(PremnasBiaculeatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("premnas_biaculeatus").toString()));
+    public static final RegistryObject<EntityType<AmphiprionPolymnus>> AMPHIPRION_POLYMNUS = ENTITIES.register("amphiprion_polymnus",
+            () -> EntityType.Builder.of(AmphiprionPolymnus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_polymnus").toString()));
+    public static final RegistryObject<EntityType<AmphiprionPerideraion>> AMPHIPRION_PERIDERAION = ENTITIES.register("amphiprion_perideraion",
+            () -> EntityType.Builder.of(AmphiprionPerideraion::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_perideraion").toString()));
+    public static final RegistryObject<EntityType<AmphiprionClarkii>> AMPHIPRION_CLARKII = ENTITIES.register("amphiprion_clarkii",
+            () -> EntityType.Builder.of(AmphiprionClarkii::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_clarkii").toString()));
+    public static final RegistryObject<EntityType<AmphiprionPercula>> AMPHIPRION_PERCULA = ENTITIES.register("amphiprion_percula",
+            () -> EntityType.Builder.of(AmphiprionPercula::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_percula").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

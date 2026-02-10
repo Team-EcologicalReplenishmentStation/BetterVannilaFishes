@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettervannilafishes:premnas_biaculeatus"
+    }
+  ],
+  "result": {
+    "item": "minecraft:tropical_fish"
+  }
+}

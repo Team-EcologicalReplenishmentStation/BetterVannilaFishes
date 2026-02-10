@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bettervannilafishes:premnas_biaculeatus"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "bettervannilafishes:entities/premnas_biaculeatus"
+}

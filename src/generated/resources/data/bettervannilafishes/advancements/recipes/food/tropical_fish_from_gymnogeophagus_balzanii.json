@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gymnogeophagus_balzanii": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:gymnogeophagus_balzanii"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_gymnogeophagus_balzanii"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gymnogeophagus_balzanii",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_gymnogeophagus_balzanii"
+    ]
+  },
+  "sends_telemetry_event": false
+}

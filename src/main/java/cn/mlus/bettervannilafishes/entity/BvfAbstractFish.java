@@ -8,7 +8,9 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -48,7 +50,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     public BvfAbstractFish(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new BvfFishMoveControl(this);
+        this.moveControl = new BvfFishMoveControl(this,true);
         this.lookControl = new SmoothSwimmingLookControl(this,10);
     }
 
@@ -73,11 +75,20 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
         entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.2f));
     }
 
+    private boolean killedByTrident = false;
+
+    @Override
+    public void die(DamageSource pDamageSource) {
+        this.killedByTrident = pDamageSource.is(DamageTypes.TRIDENT);
+        super.die(pDamageSource);
+    }
+
     @Nullable
     @Override
     public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
-        if(pStack.is(ItemTags.FISHES))
+        if (pStack.is(ItemTags.FISHES) && this.killedByTrident) {
             pStack.getOrCreateTag().putFloat("Scale", getScale());
+        }
         return super.spawnAtLocation(pStack);
     }
 
@@ -154,7 +165,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     @Override
     protected void registerGoals() {
-        this.randomSwimmingGoal = new RandomSwimmingGoal(this,1,40){
+        this.randomSwimmingGoal = new RandomSwimmingGoal(this,1,200){
             @Nullable
             @Override
             protected Vec3 getPosition() {
@@ -168,6 +179,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             public boolean canUse() {
                 super.canUse();
                 if (this.toAvoid == null) {
+                    this.mob.setSprinting(false);
                     return false;
                 } else {
                     Vec3 $$0 = DefaultRandomPos.getPosAway(this.mob, 32, 7, this.toAvoid.position());

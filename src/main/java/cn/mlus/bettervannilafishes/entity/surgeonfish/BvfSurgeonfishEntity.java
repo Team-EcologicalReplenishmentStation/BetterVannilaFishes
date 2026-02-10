@@ -5,6 +5,8 @@ import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
+import cn.mlus.bettervannilafishes.entity.ai.BvfFishMoveControl;
+import cn.mlus.bettervannilafishes.util.BvfUtils;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -15,13 +17,13 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.BodyRotationControl;
-import net.minecraft.world.entity.ai.control.SmoothSwimmingMoveControl;
 import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraftforge.common.ForgeMod;
@@ -30,10 +32,12 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
 
-public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<BvfSurgeonfishEntity> {
+import java.util.UUID;
+
+public abstract class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<BvfSurgeonfishEntity> {
     public BvfSurgeonfishEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new SmoothSwimmingMoveControl(this, 85, 10, 0.02F, 0.1F, true);
+        this.moveControl = new BvfFishMoveControl(this,false);
         animator = new BvfFishAnimator<>(this);
     }
 
@@ -56,10 +60,10 @@ public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<B
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        AnimationController<BvfSurgeonfishEntity> main = new AnimationController<>(this, "main", 0, state -> {
+        AnimationController<BvfSurgeonfishEntity> main = new AnimationController<>(this, "main", 5, state -> {
             RawAnimation builder = RawAnimation.begin();
             if(isInWater()){
-                if(state.isMoving()){
+                if(BvfUtils.isMoving(this)){
                     if (isSprinting()) {
                         builder.thenLoop("animation.swim");
                     } else {
@@ -68,7 +72,6 @@ public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<B
                 }else {
                     builder.thenLoop("animation.idle");
                 }
-
             }else {
                 builder.thenLoop("animation.flop");
             }
@@ -81,14 +84,12 @@ public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<B
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 12.0)
-                .add(Attributes.MOVEMENT_SPEED,0.5)
-                .add(ForgeMod.SWIM_SPEED.get(),0.8);
+                .add(Attributes.MAX_HEALTH, 6.0)
+                .add(Attributes.MOVEMENT_SPEED,0.4)
+                .add(ForgeMod.SWIM_SPEED.get(),0.6);
     }
 
-    public @NotNull ItemStack getBucketItemStack() {
-        return new ItemStack(Items.TROPICAL_FISH_BUCKET);
-    }
+    public abstract @NotNull ItemStack getBucketItemStack();
 
     protected SoundEvent getDeathSound() {
         return SoundEvents.TROPICAL_FISH_DEATH;
@@ -102,12 +103,16 @@ public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<B
         return SoundEvents.TROPICAL_FISH_FLOP;
     }
 
+    public abstract float getMinScale();
+
+    public abstract float getMaxScale();
+
     @Override
     public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData, @org.jetbrains.annotations.Nullable CompoundTag pDataTag) {
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
-            this.setScale(Mth.randomBetween(this.random, 0.8f, 1f));
+            this.setScale(Mth.randomBetween(this.random, getMinScale(), getMaxScale()));
             return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
         }
     }
@@ -115,5 +120,21 @@ public class BvfSurgeonfishEntity extends BvfAbstractFish implements BvfEntity<B
     @Override
     public int getMaxSchoolSize() {
         return 6;
+    }
+
+    private static final UUID SPEED_MODIFIER_SPRINTING_UUID = UUID.fromString("662A6B8D-DA3E-4C1C-8813-96EA6097278D");
+    private static final AttributeModifier SPEED_MODIFIER_SPRINTING = new AttributeModifier(SPEED_MODIFIER_SPRINTING_UUID, "Sprinting speed boost", 0.70D,AttributeModifier.Operation.MULTIPLY_TOTAL);
+
+    @Override
+    public void setSprinting(boolean pSprinting) {
+        this.setSharedFlag(3, pSprinting);
+        AttributeInstance attributeinstance = this.getAttribute(Attributes.MOVEMENT_SPEED);
+        if (attributeinstance.getModifier(SPEED_MODIFIER_SPRINTING_UUID) != null) {
+            attributeinstance.removeModifier(SPEED_MODIFIER_SPRINTING);
+        }
+
+        if (pSprinting) {
+            attributeinstance.addTransientModifier(SPEED_MODIFIER_SPRINTING);
+        }
     }
 }

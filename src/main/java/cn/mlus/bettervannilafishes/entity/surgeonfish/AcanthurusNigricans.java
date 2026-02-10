@@ -12,6 +12,16 @@ public class AcanthurusNigricans extends BvfSurgeonfishEntity {
         super(pEntityType, pLevel);
     }
 
+    @Override
+    public float getMinScale() {
+        return 0.9f;
+    }
+
+    @Override
+    public float getMaxScale() {
+        return 1.1f;
+    }
+
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get());
     }

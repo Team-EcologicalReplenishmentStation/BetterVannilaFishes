@@ -11,10 +11,11 @@ public class BvfFishMoveControl extends MoveControl {
     private final float inWaterSpeedModifier;
     private final float outsideWaterSpeedModifier;
     private final boolean applyGravity;
+    private final boolean neverStop;
 
     private final BvfAbstractFish fish;
 
-    public BvfFishMoveControl(BvfAbstractFish pMob) {
+    public BvfFishMoveControl(BvfAbstractFish pMob,boolean neverStop) {
         super(pMob);
         this.maxTurnX = 85;
         this.maxTurnY = 10;
@@ -22,6 +23,7 @@ public class BvfFishMoveControl extends MoveControl {
         this.outsideWaterSpeedModifier = 0.1F;
         this.applyGravity = true;
         this.fish = pMob;
+        this.neverStop = neverStop;
     }
 
     public void tick() {
@@ -67,7 +69,7 @@ public class BvfFishMoveControl extends MoveControl {
 
             }
         } else {
-            if(this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
+            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
                 this.fish.randomSwimmingGoal.trigger();
         }
     }

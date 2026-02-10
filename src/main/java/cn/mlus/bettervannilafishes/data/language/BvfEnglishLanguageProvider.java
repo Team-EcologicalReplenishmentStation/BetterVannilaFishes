@@ -35,6 +35,20 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),"Acanthurus triostegus");
         this.add(BvfEntities.ACANTHURUS_NIGRICANS.get(),"Acanthurus nigricans");
         this.add(BvfEntities.ACANTHURUS_LINEATUS.get(),"Acanthurus lineatus");
+        // Cichlid (丽鱼)
+        this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(),"Australoheros facetus");
+        this.add(BvfEntities.CICHLASOMA_BIMACULATUM.get(),"Cichlasoma bimaculatum");
+        this.add(BvfEntities.KROBIA_GUIANENSIS.get(),"Krobia guianensis");
+        this.add(BvfEntities.AEQUIDENS_TETRAMERUS.get(),"Aequidens tetramerus");
+        this.add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),"Gymnogeophagus balzanii");
+        this.add(BvfEntities.ASTRONOTUS_OCELLATUS.get(),"Astronotus ocellatus");
+        // Clownfish (小丑鱼/双锯鱼)
+        this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(),"Amphiprion ocellaris");
+        this.add(BvfEntities.PREMNAS_BIACULEATUS.get(),"Premnas biaculeatus");
+        this.add(BvfEntities.AMPHIPRION_POLYMNUS.get(),"Amphiprion polymnus");
+        this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(),"Amphiprion perideraion");
+        this.add(BvfEntities.AMPHIPRION_CLARKII.get(),"Amphiprion clarkii");
+        this.add(BvfEntities.AMPHIPRION_PERCULA.get(),"Amphiprion percula");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -56,6 +70,20 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get(),"Convict Tang Spawn Egg");
         this.add(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get(),"Whitecheek Surgeonfish Spawn Egg");
         this.add(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get(),"Lined Surgeonfish Spawn Egg");
+        // Cichlid Spawn Eggs
+        this.add(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get(),"Chameleon Cichlid Spawn Egg");
+        this.add(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get(),"Black Acara Spawn Egg");
+        this.add(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get(),"Guyana Eartheater Spawn Egg");
+        this.add(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get(),"Saddle Cichlid Spawn Egg");
+        this.add(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get(),"Paraguay Eartheater Spawn Egg");
+        this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get(),"Oscar Spawn Egg");
+        // Clownfish Spawn Eggs
+        this.add(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get(),"Ocellaris Clownfish Spawn Egg");
+        this.add(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get(),"Spine-cheeked Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get(),"Saddleback Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get(),"Pink Skunk Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get(),"Clark's Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get(),"Orange Clownfish Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -75,6 +103,20 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get(),"Convict Tang Bucket");
         this.add(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get(),"Whitecheek Surgeonfish Bucket");
         this.add(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get(),"Lined Surgeonfish Bucket");
+        // Cichlid Buckets
+        this.add(BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get(),"Chameleon Cichlid Bucket");
+        this.add(BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get(),"Black Acara Bucket");
+        this.add(BvfItems.KROBIA_GUIANENSIS_BUCKET.get(),"Guyana Eartheater Bucket");
+        this.add(BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get(),"Saddle Cichlid Bucket");
+        this.add(BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get(),"Paraguay Eartheater Bucket");
+        this.add(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get(),"Oscar Bucket");
+        // Clownfish Buckets
+        this.add(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get(),"Ocellaris Clownfish Bucket");
+        this.add(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get(),"Spine-cheeked Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get(),"Saddleback Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get(),"Pink Skunk Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_CLARKII_BUCKET.get(),"Clark's Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_PERCULA_BUCKET.get(),"Orange Clownfish Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -96,6 +138,20 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ACANTHURUS_TRIOSTEGUS.get(),"Convict Tang");
         this.add(BvfItems.ACANTHURUS_NIGRICANS.get(),"Whitecheek Surgeonfish");
         this.add(BvfItems.ACANTHURUS_LINEATUS.get(),"Lined Surgeonfish");
+        // Cichlid Food
+        this.add(BvfItems.AUSTRALOHEROS_FACETUS.get(),"Chameleon Cichlid");
+        this.add(BvfItems.CICHLASOMA_BIMACULATUM.get(),"Black Acara");
+        this.add(BvfItems.KROBIA_GUIANENSIS.get(),"Guyana Eartheater");
+        this.add(BvfItems.AEQUIDENS_TETRAMERUS.get(),"Saddle Cichlid");
+        this.add(BvfItems.GYMNOGEOPHAGUS_BALZANII.get(),"Paraguay Eartheater");
+        this.add(BvfItems.ASTRONOTUS_OCELLATUS.get(),"Oscar");
+        // Clownfish Food
+        this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"Ocellaris Clownfish");
+        this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"Spine-cheeked Clownfish");
+        this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"Saddleback Clownfish");
+        this.add(BvfItems.AMPHIPRION_PERIDERAION.get(),"Pink Skunk Clownfish");
+        this.add(BvfItems.AMPHIPRION_CLARKII.get(),"Clark's Clownfish");
+        this.add(BvfItems.AMPHIPRION_PERCULA.get(),"Orange Clownfish");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "Haddock Cod Specimen");

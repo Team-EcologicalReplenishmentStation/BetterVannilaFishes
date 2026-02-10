@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aequidens_tetramerus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:aequidens_tetramerus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_aequidens_tetramerus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_aequidens_tetramerus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_aequidens_tetramerus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

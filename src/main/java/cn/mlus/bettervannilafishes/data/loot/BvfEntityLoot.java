@@ -113,6 +113,56 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LINEATUS.get()))));
+        // Cichlid (丽鱼) - 掉落各自的物品
+        this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AUSTRALOHEROS_FACETUS.get()))));
+        this.add(BvfEntities.CICHLASOMA_BIMACULATUM.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CICHLASOMA_BIMACULATUM.get()))));
+        this.add(BvfEntities.KROBIA_GUIANENSIS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.KROBIA_GUIANENSIS.get()))));
+        this.add(BvfEntities.AEQUIDENS_TETRAMERUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AEQUIDENS_TETRAMERUS.get()))));
+        this.add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()))));
+        this.add(BvfEntities.ASTRONOTUS_OCELLATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
+        // Clownfish (小丑鱼/双锯鱼) - 掉落各自的物品
+        this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_OCELLARIS.get()))));
+        this.add(BvfEntities.PREMNAS_BIACULEATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.PREMNAS_BIACULEATUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_POLYMNUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_POLYMNUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERIDERAION.get()))));
+        this.add(BvfEntities.AMPHIPRION_CLARKII.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CLARKII.get()))));
+        this.add(BvfEntities.AMPHIPRION_PERCULA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERCULA.get()))));
     }
 
     @Override
