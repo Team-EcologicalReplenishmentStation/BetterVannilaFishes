@@ -12,6 +12,16 @@ public class AcanthurusTriostegus extends BvfSurgeonfishEntity {
         super(pEntityType, pLevel);
     }
 
+    @Override
+    public float getMinScale() {
+        return 1.0f;
+    }
+
+    @Override
+    public float getMaxScale() {
+        return 1.2f;
+    }
+
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get());
     }

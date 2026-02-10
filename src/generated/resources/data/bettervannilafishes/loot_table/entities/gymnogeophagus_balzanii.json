@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bettervannilafishes:gymnogeophagus_balzanii"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "bettervannilafishes:entities/gymnogeophagus_balzanii"
+}

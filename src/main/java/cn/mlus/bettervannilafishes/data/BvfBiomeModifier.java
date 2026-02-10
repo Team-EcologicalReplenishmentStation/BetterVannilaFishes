@@ -29,7 +29,7 @@ public class BvfBiomeModifier
         removeSpawn(context, "cod_ocean", BiomeTags.IS_OCEAN, EntityType.COD);
         removeSpawn(context,"salmon_ocean", BiomeTags.IS_OCEAN, EntityType.SALMON);
         removeSpawn(context,"pufferfish_ocean", BiomeTags.IS_OCEAN, EntityType.PUFFERFISH);
-//        removeSpawn(context,"tropical_fish_ocean", BiomeTags.IS_OCEAN, EntityType.TROPICAL_FISH);
+        removeSpawn(context,"tropical_fish_ocean", BiomeTags.IS_OCEAN, EntityType.TROPICAL_FISH);
         removeSpawn(context,"cod_river", BiomeTags.IS_RIVER, EntityType.COD);
         removeSpawn(context,"salmon_river", BiomeTags.IS_RIVER, EntityType.SALMON);
 
@@ -53,6 +53,18 @@ public class BvfBiomeModifier
         addSpawn(context, "acanthurus_triostegus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), 6, 2, 4));
         addSpawn(context, "acanthurus_nigricans", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_NIGRICANS.get(), 6, 2, 4));
         addSpawn(context, "acanthurus_lineatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_LINEATUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_ocellaris", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_OCELLARIS.get(), 6, 2, 4));
+        addSpawn(context, "premnas_biaculeatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.PREMNAS_BIACULEATUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_polymnus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_POLYMNUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_perideraion", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_PERIDERAION.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_clarkii", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_CLARKII.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_percula", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_PERCULA.get(), 6, 2, 4));
+        addSpawn(context, "australoheros_facetus", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.AUSTRALOHEROS_FACETUS.get(), 6, 1, 2));
+        addSpawn(context, "cichlasoma_bimaculatum", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.CICHLASOMA_BIMACULATUM.get(), 6, 1, 2));
+        addSpawn(context, "krobia_guianensis", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.KROBIA_GUIANENSIS.get(), 6, 1, 2));
+        addSpawn(context, "aequidens_tetramerus", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.AEQUIDENS_TETRAMERUS.get(), 6, 1, 2));
+        addSpawn(context, "gymnogeophagus_balzanii", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), 6, 1, 2));
+        addSpawn(context, "astronotus_ocellatus", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.ASTRONOTUS_OCELLATUS.get(), 6, 1, 2));
     }
 
     private static void addSpawn(BootstrapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {

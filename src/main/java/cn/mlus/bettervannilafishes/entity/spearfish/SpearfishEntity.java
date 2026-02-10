@@ -238,7 +238,6 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
         if (sprinting) {
             attributeinstance.addTransientModifier(SPEED_MODIFIER_SPRINTING);
         }
-
     }
 
     @Override

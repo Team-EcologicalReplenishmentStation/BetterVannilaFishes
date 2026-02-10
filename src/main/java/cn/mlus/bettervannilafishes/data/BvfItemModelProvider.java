@@ -34,6 +34,18 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -54,6 +66,18 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get());
+        this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get());
+        this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get());
+        this.simpleItem(BvfItems.KROBIA_GUIANENSIS_BUCKET.get());
+        this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get());
+        this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get());
+        this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get());
+        this.simpleItem(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CLARKII_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERCULA_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -75,6 +99,19 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS.get());
+        this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS.get());
+        this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM.get());
+        this.simpleItem(BvfItems.KROBIA_GUIANENSIS.get());
+        this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS.get());
+        this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
+        this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS.get());
+        // Clownfish (小丑鱼/双锯鱼) Food
+        this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS.get());
+        this.simpleItem(BvfItems.PREMNAS_BIACULEATUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CLARKII.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERCULA.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_SPECIMEN.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_SPECIMEN.get());

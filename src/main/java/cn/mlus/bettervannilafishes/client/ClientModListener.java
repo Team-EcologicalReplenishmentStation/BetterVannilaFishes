@@ -36,6 +36,20 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_NIGRICANS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LINEATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		// Cichlid (丽鱼)
+		event.registerEntityRenderer(BvfEntities.AUSTRALOHEROS_FACETUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.CICHLASOMA_BIMACULATUM.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.KROBIA_GUIANENSIS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.AEQUIDENS_TETRAMERUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.ASTRONOTUS_OCELLATUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		// Clownfish (小丑鱼/双锯鱼)
+		event.registerEntityRenderer(BvfEntities.AMPHIPRION_OCELLARIS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
+		event.registerEntityRenderer(BvfEntities.PREMNAS_BIACULEATUS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
+		event.registerEntityRenderer(BvfEntities.AMPHIPRION_POLYMNUS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
+		event.registerEntityRenderer(BvfEntities.AMPHIPRION_PERIDERAION.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
+		event.registerEntityRenderer(BvfEntities.AMPHIPRION_CLARKII.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
+		event.registerEntityRenderer(BvfEntities.AMPHIPRION_PERCULA.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
 
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
