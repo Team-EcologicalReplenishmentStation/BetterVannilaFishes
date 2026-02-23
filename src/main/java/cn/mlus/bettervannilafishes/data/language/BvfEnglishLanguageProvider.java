@@ -47,6 +47,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(),"Amphiprion perideraion");
         this.add(BvfEntities.AMPHIPRION_CLARKII.get(),"Amphiprion clarkii");
         this.add(BvfEntities.AMPHIPRION_PERCULA.get(),"Amphiprion percula");
+        this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"Dosidicus gigas");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -79,6 +80,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get(),"Pink Skunk Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get(),"Clark's Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get(),"Orange Clownfish Spawn Egg");
+        this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"Humboldt Squid Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -110,6 +112,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get(),"Pink Skunk Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_CLARKII_BUCKET.get(),"Clark's Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_PERCULA_BUCKET.get(),"Orange Clownfish Bucket");
+        this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"Humboldt Squid Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -123,6 +126,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
         this.add(BvfItems.SHARK_FIN.get(),"Shark's Fin");
+        this.add(BvfItems.HUMBOLDT_SQUID.get(),"Humboldt Squid");
+        this.add(BvfItems.COOKED_HUMBOLDT_SQUID.get(),"Cooked Humboldt Squid");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(),"Feather Star Tentacle");
         this.add(BvfItems.ACANTHURUS_ACHILLES.get(),"Achilles Tang");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON.get(),"Powder Blue Tang");
@@ -150,6 +155,12 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
+        this.add(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),"Chameleon Cichlid Specimen");
+        this.add(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get(),"Black Acara Specimen");
+        this.add(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get(),"Guyana Eartheater Specimen");
+        this.add(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get(),"Saddle Cichlid Specimen");
+        this.add(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(),"Paraguay Eartheater Specimen");
+        this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),"Oscar Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");
@@ -158,6 +169,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
 
         this.add("bvc.command.hanging", "Hanging Out now");
         this.add("bvc.command.follow", "Following now");
+
+        this.add("itemGroup.bvf_group", "Better Vannila Fishes");
 
         this.add("advancements.bettervannilafishes.monster_go_away.title","Monsters and demons, Go Away");
         this.add("advancements.bettervannilafishes.monster_go_away.desc","Craft an Enchanted Pufferfish to fight against monsters.");

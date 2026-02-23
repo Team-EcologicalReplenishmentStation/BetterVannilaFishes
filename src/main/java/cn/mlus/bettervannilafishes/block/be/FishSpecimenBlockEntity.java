@@ -42,6 +42,18 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
             type = BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get();
         }else if(pState.is(BvfBlocks.SPEARFISH_SPECIMEN.get())){
             type = BvfBlockEntities.SPEARFISH_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get())){
+            type = BvfBlockEntities.AUSTRALOHEROS_FACETUS_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.CICHLASOMA_BIMACULATUM_SPECIMEN.get())){
+            type = BvfBlockEntities.CICHLASOMA_BIMACULATUM_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.KROBIA_GUIANENSIS_SPECIMEN.get())){
+            type = BvfBlockEntities.KROBIA_GUIANENSIS_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.AEQUIDENS_TETRAMERUS_SPECIMEN.get())){
+            type = BvfBlockEntities.AEQUIDENS_TETRAMERUS_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get())){
+            type = BvfBlockEntities.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get();
+        }else if(pState.is(BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get())){
+            type = BvfBlockEntities.ASTRONOTUS_OCELLATUS_SPECIMEN.get();
         }else {
             type = BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get();
         }

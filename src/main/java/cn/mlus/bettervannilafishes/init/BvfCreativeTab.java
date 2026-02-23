@@ -1,0 +1,137 @@
+package cn.mlus.bettervannilafishes.init;
+
+import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+public class BvfCreativeTab {
+    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BetterVannilaFishes.MODID);
+    public static DeferredHolder<CreativeModeTab,CreativeModeTab> BVF_TAB = TABS.register("main", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.bvf_group"))
+            .icon(() -> BvfItems.MALE_SALMON_SPECIMEN.get().getDefaultInstance())
+            .displayItems((par, output) -> {
+               output.accept(BvfItems.HADDOCK_COD_SPAWN_EGG.get());
+               output.accept(BvfItems.ATLANTIC_COD_SPAWN_EGG.get());
+               output.accept(BvfItems.PACIFIC_COD_SPAWN_EGG.get());
+               output.accept(BvfItems.MALE_SALMON_SPAWN_EGG.get());
+               output.accept(BvfItems.FEMALE_SALMON_SPAWN_EGG.get());
+               output.accept(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get());
+               output.accept(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get());
+               output.accept(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get());
+               output.accept(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get());
+               output.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
+               output.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
+               output.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
+               output.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+               output.accept(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get());
+               output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get());
+               output.accept(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
+               output.accept(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
+               output.accept(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get());
+               output.accept(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get());
+               output.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get());
+               output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get());
+               output.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get());
+               output.accept(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
+               output.accept(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get());
+                //Bucket
+               output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.PACIFIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.MALE_SALMON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.FEMALE_SALMON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.PACIFIC_SALMON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.OBSCURE_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.PORCUPINE_FISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.NAUTILUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.KROBIA_GUIANENSIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_CLARKII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_PERCULA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.DOSIDICUS_GIGAS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                //Food
+               output.accept(BvfItems.HADDOCK_COD.get());
+               output.accept(BvfItems.ATLANTIC_COD.get());
+               output.accept(BvfItems.PACIFIC_COD.get());
+               output.accept(BvfItems.MALE_SALMON.get());
+               output.accept(BvfItems.FEMALE_SALMON.get());
+               output.accept(BvfItems.PACIFIC_SALMON.get());
+               output.accept(BvfItems.YELLOW_FIN_PUFFER.get());
+               output.accept(BvfItems.OBSCURE_PUFFER.get());
+               output.accept(BvfItems.PORCUPINE_FISH.get());
+               output.accept(BvfItems.SPEARFISH.get());
+               output.accept(BvfItems.COOKED_SPEARFISH.get());
+               output.accept(BvfItems.GALEOCERDO_CUVIER.get());
+               output.accept(BvfItems.SHARK_FIN.get());
+               output.accept(BvfItems.ACANTHURUS_ACHILLES.get());
+               output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON.get());
+               output.accept(BvfItems.PARACANTHURUS_HEPATUS.get());
+               output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
+               output.accept(BvfItems.ACANTHURUS_NIGRICANS.get());
+               output.accept(BvfItems.ACANTHURUS_LINEATUS.get());
+               output.accept(BvfItems.AUSTRALOHEROS_FACETUS.get());
+               output.accept(BvfItems.CICHLASOMA_BIMACULATUM.get());
+               output.accept(BvfItems.KROBIA_GUIANENSIS.get());
+               output.accept(BvfItems.AEQUIDENS_TETRAMERUS.get());
+               output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
+               output.accept(BvfItems.ASTRONOTUS_OCELLATUS.get());
+               output.accept(BvfItems.AMPHIPRION_OCELLARIS.get());
+               output.accept(BvfItems.PREMNAS_BIACULEATUS.get());
+               output.accept(BvfItems.AMPHIPRION_POLYMNUS.get());
+               output.accept(BvfItems.AMPHIPRION_PERIDERAION.get());
+               output.accept(BvfItems.AMPHIPRION_CLARKII.get());
+               output.accept(BvfItems.AMPHIPRION_PERCULA.get());
+               output.accept(BvfItems.HUMBOLDT_SQUID.get());
+               output.accept(BvfItems.COOKED_HUMBOLDT_SQUID.get());
+               output.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
+                //Specimen
+               output.accept(BvfItems.HADDOCK_COD_SPECIMEN.get());
+               output.accept(BvfItems.ATLANTIC_COD_SPECIMEN.get());
+               output.accept(BvfItems.PACIFIC_COD_SPECIMEN.get());
+               output.accept(BvfItems.PACIFIC_SALMON_SPECIMEN.get());
+               output.accept(BvfItems.MALE_SALMON_SPECIMEN.get());
+               output.accept(BvfItems.FEMALE_SALMON_SPECIMEN.get());
+               output.accept(BvfItems.SPEARFISH_SPECIMEN.get());
+               output.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+               output.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get());
+               output.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get());
+               output.accept(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get());
+               output.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get());
+               output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get());
+               output.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get());
+            }).build());
+    
+    public static void register(IEventBus eventBus) {
+        TABS.register(eventBus);
+    }
+}

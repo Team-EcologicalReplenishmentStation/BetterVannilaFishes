@@ -16,6 +16,7 @@ import cn.mlus.bettervannilafishes.entity.salmon.FemaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.MaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
+import cn.mlus.bettervannilafishes.entity.squid.DosidicusGigasEntity;
 import cn.mlus.bettervannilafishes.entity.surgeonfish.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
@@ -157,6 +158,10 @@ public class BvfEntities {
             () -> EntityType.Builder.of(AmphiprionPercula::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
                     .build(BetterVannilaFishes.prefix("amphiprion_percula").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<DosidicusGigasEntity>> DOSIDICUS_GIGAS = ENTITIES.register("dosidicus_gigas",
+            () -> EntityType.Builder.of(DosidicusGigasEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.5F, 0.9F)
+                    .build(BetterVannilaFishes.prefix("dosidicus_gigas").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

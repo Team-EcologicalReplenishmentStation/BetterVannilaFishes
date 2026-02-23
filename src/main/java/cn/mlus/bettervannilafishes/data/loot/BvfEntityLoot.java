@@ -94,7 +94,16 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries,UniformGenerator.between(0.0F, 1.0F))));
 
-        // Surgeonfish (刺尾鱼) - 掉落各自的物品
+        this.add(BvfEntities.DOSIDICUS_GIGAS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.HUMBOLDT_SQUID.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot())))
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.INK_SAC))
+                        .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))));
+
         this.add(BvfEntities.ACANTHURUS_ACHILLES.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -119,7 +128,6 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LINEATUS.get()))));
-        // Cichlid (丽鱼) - 掉落各自的物品
         this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -144,7 +152,6 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
-        // Clownfish (小丑鱼/双锯鱼) - 掉落各自的物品
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))

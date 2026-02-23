@@ -17,6 +17,7 @@ public class BetterVannilaFishes {
         BvfBlocks.register(modEventBus);
         BvfBlockEntities.register(modEventBus);
         BvfItems.register(modEventBus);
+        BvfCreativeTab.register(modEventBus);
         BvfBiomeModifierSerializers.register(modEventBus);
         BvfMobEffects.register(modEventBus);
     }

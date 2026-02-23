@@ -46,6 +46,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -78,6 +79,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_BUCKET.get());
+        this.simpleItem(BvfItems.DOSIDICUS_GIGAS_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -93,6 +95,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.COOKED_SPEARFISH.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
         this.simpleItem(BvfItems.SHARK_FIN.get());
+        this.simpleItem(BvfItems.HUMBOLDT_SQUID.get());
+        this.simpleItem(BvfItems.COOKED_HUMBOLDT_SQUID.get());
         this.simpleItem(BvfItems.ACANTHURUS_ACHILLES.get());
         this.simpleItem(BvfItems.ACANTHURUS_LEUCOSTERNON.get());
         this.simpleItem(BvfItems.PARACANTHURUS_HEPATUS.get());
@@ -105,7 +109,6 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS.get());
         this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
         this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS.get());
-        // Clownfish (小丑鱼/双锯鱼) Food
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS.get());
@@ -121,6 +124,12 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEMALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+        this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get());
+        this.simpleItem(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get());
+        this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {

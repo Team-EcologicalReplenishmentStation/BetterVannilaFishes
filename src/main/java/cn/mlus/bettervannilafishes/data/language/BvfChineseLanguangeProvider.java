@@ -44,6 +44,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(),"希氏双锯鱼");
         this.add(BvfEntities.AMPHIPRION_CLARKII.get(),"海葵双锯鱼");
         this.add(BvfEntities.AMPHIPRION_PERCULA.get(),"颈环双锯鱼");
+        this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"美洲大赤鱿");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "黑线鳕鱼生成蛋");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "大西洋鳕鱼生成蛋");
@@ -76,6 +77,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get(),"希氏双锯鱼生成蛋");
         this.add(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get(),"海葵双锯鱼生成蛋");
         this.add(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get(),"颈环双锯鱼生成蛋");
+        this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"美洲大赤鱿生成蛋");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "黑线鳕鱼桶");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "大西洋鳕鱼桶");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "太平洋鳕鱼桶");
@@ -107,6 +109,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get(),"希氏双锯鱼桶");
         this.add(BvfItems.AMPHIPRION_CLARKII_BUCKET.get(),"海葵双锯鱼桶");
         this.add(BvfItems.AMPHIPRION_PERCULA_BUCKET.get(),"颈环双锯鱼桶");
+        this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"美洲大赤鱿桶");
         this.add(BvfItems.HADDOCK_COD.get(), "黑线鳕鱼");
         this.add(BvfItems.ATLANTIC_COD.get(), "大西洋鳕鱼");
         this.add(BvfItems.PACIFIC_COD.get(), "太平洋鳕鱼");
@@ -120,6 +123,8 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.COOKED_SPEARFISH.get(),"熟条纹枪鱼");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(), "居氏鼬鲨");
         this.add(BvfItems.SHARK_FIN.get(), "鱼翅");
+        this.add(BvfItems.HUMBOLDT_SQUID.get(), "洪堡乌贼");
+        this.add(BvfItems.COOKED_HUMBOLDT_SQUID.get(), "熟洪堡乌贼");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(), "海羽星触手");
         this.add(BvfItems.ACANTHURUS_ACHILLES.get(),"心斑刺尾鱼");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON.get(),"白胸刺尾鱼");
@@ -147,6 +152,12 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(), "雌性鲑鱼标本");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(), "条纹枪鱼标本");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(), "居氏鼬鲨标本");
+        this.add(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get(), "阿根廷丽鱼标本");
+        this.add(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get(), "多鳞丽鱼标本");
+        this.add(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get(), "凯氏丽鱼标本");
+        this.add(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get(), "南美丽鱼标本");
+        this.add(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(), "松丽鱼标本");
+        this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get(), "眼点丽鱼标本");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "附魔河豚");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "鹦鹉螺祝福");
@@ -155,6 +166,8 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
 
         this.add("bvc.command.hanging", "闲逛");
         this.add("bvc.command.follow", "跟随");
+
+        this.add("itemGroup.bvf_group","更好的原版鱼类");
 
         this.add("advancements.bettervannilafishes.monster_go_away.title","妖魔鬼怪快离开");
         this.add("advancements.bettervannilafishes.monster_go_away.desc","制作一个附魔河豚来对抗怪物。");

@@ -25,6 +25,18 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> GALEOCERDO_CUVIER_SPECIMEN = BLOCKS.register("galeocerdo_cuvier_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> AUSTRALOHEROS_FACETUS_SPECIMEN = BLOCKS.register("australoheros_facetus_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> CICHLASOMA_BIMACULATUM_SPECIMEN = BLOCKS.register("cichlasoma_bimaculatum_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> KROBIA_GUIANENSIS_SPECIMEN = BLOCKS.register("krobia_guianensis_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> AEQUIDENS_TETRAMERUS_SPECIMEN = BLOCKS.register("aequidens_tetramerus_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> GYMNOGEOPHAGUS_BALZANII_SPECIMEN = BLOCKS.register("gymnogeophagus_balzanii_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> ASTRONOTUS_OCELLATUS_SPECIMEN = BLOCKS.register("astronotus_ocellatus_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -25,25 +25,35 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PORCUPINE_FISH.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.NAUTILUS.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.FEATHER_STAR.get(),0.7,0.1);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.1);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.7,0.4);
-            }
-            if(biome.is(BiomeTags.IS_RIVER)){
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_MALE.get(),0.7,0.1);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_FEMALE.get(),0.7,0.1);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.OBSCURE_PUFFER.get(), 0.8,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.3);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.7,0.5);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_OCELLARIS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PREMNAS_BIACULEATUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_POLYMNUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_PERIDERAION.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_CLARKII.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_PERCULA.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_ACHILLES.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.PARACANTHURUS_HEPATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_NIGRICANS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_LINEATUS.get(),0.7,0.1);
+
+            }
+            if(biome.is(BiomeTags.IS_RIVER)){
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_MALE.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_FEMALE.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.OBSCURE_PUFFER.get(), 0.8,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AUSTRALOHEROS_FACETUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CICHLASOMA_BIMACULATUM.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.KROBIA_GUIANENSIS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AEQUIDENS_TETRAMERUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ASTRONOTUS_OCELLATUS.get(),0.7,0.1);
+            }
+            if(biome.is(BiomeTags.IS_DEEP_OCEAN)){
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.DOSIDICUS_GIGAS.get(),0.7,0.2);
             }
         }
     }

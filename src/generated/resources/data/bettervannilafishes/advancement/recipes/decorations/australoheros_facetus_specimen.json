@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_australoheros_facetus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:australoheros_facetus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:australoheros_facetus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_australoheros_facetus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:australoheros_facetus_specimen"
+    ]
+  }
+}
