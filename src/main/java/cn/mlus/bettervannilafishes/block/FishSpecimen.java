@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -29,12 +30,16 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
+import java.util.function.Supplier;
 
 public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
     public static final IntegerProperty HANGING = IntegerProperty.create("hanging", 0, 2);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public FishSpecimen(Properties pProperties) {
+    private final Supplier<BlockEntityType<FishSpecimenBlockEntity>> blockEntityType;
+
+    public FishSpecimen(Properties pProperties, Supplier<BlockEntityType<FishSpecimenBlockEntity>> blockEntityType) {
         super(pProperties);
+        this.blockEntityType = blockEntityType;
         this.registerDefaultState(this.stateDefinition.any().setValue(HANGING, 0)
                 .setValue(FACING, Direction.NORTH));
     }
@@ -186,6 +191,10 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
     @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.ENTITYBLOCK_ANIMATED;
+    }
+
+    public BlockEntityType<FishSpecimenBlockEntity> getBlockEntityType() {
+        return blockEntityType.get();
     }
 
     @Nullable

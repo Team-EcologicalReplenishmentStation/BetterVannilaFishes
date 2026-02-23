@@ -27,27 +27,25 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
             event.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
             event.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
-            // Surgeonfish (刺尾鱼)
             event.accept(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get());
             event.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get());
             event.accept(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get());
             event.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
             event.accept(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
             event.accept(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
-            // Cichlid (丽鱼)
             event.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get());
             event.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get());
             event.accept(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get());
             event.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get());
             event.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get());
             event.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get());
-            // Clownfish (小丑鱼/双锯鱼)
             event.accept(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get());
             event.accept(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get());
             event.accept(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get());
             event.accept(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
             event.accept(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
             event.accept(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
+            event.accept(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(BvfItems.HADDOCK_COD.get());
@@ -63,27 +61,26 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.COOKED_SPEARFISH.get());
             event.accept(BvfItems.GALEOCERDO_CUVIER.get());
             event.accept(BvfItems.SHARK_FIN.get());
-            // Surgeonfish (刺尾鱼)
             event.accept(BvfItems.ACANTHURUS_ACHILLES.get());
             event.accept(BvfItems.ACANTHURUS_LEUCOSTERNON.get());
             event.accept(BvfItems.PARACANTHURUS_HEPATUS.get());
             event.accept(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
             event.accept(BvfItems.ACANTHURUS_NIGRICANS.get());
             event.accept(BvfItems.ACANTHURUS_LINEATUS.get());
-            // Cichlid (丽鱼)
             event.accept(BvfItems.AUSTRALOHEROS_FACETUS.get());
             event.accept(BvfItems.CICHLASOMA_BIMACULATUM.get());
             event.accept(BvfItems.KROBIA_GUIANENSIS.get());
             event.accept(BvfItems.AEQUIDENS_TETRAMERUS.get());
             event.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
             event.accept(BvfItems.ASTRONOTUS_OCELLATUS.get());
-            // Clownfish (小丑鱼/双锯鱼)
             event.accept(BvfItems.AMPHIPRION_OCELLARIS.get());
             event.accept(BvfItems.PREMNAS_BIACULEATUS.get());
             event.accept(BvfItems.AMPHIPRION_POLYMNUS.get());
             event.accept(BvfItems.AMPHIPRION_PERIDERAION.get());
             event.accept(BvfItems.AMPHIPRION_CLARKII.get());
             event.accept(BvfItems.AMPHIPRION_PERCULA.get());
+            event.accept(BvfItems.HUMBOLDT_SQUID.get());
+            event.accept(BvfItems.COOKED_HUMBOLDT_SQUID);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
@@ -106,27 +103,25 @@ public class BvfCreativeTabHandler {
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            // Surgeonfish (刺尾鱼)
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_ACHILLES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ACANTHURUS_LINEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            // Cichlid (丽鱼)
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.KROBIA_GUIANENSIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            // Clownfish (小丑鱼/双锯鱼)
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.PREMNAS_BIACULEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AMPHIPRION_CLARKII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.AMPHIPRION_PERCULA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(Items.AXOLOTL_BUCKET.getDefaultInstance(), BvfItems.DOSIDICUS_GIGAS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
@@ -138,6 +133,12 @@ public class BvfCreativeTabHandler {
             event.accept(BvfItems.FEMALE_SALMON_SPECIMEN.get());
             event.accept(BvfItems.SPEARFISH_SPECIMEN.get());
             event.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+            event.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get());
+            event.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get());
+            event.accept(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get());
+            event.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get());
+            event.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get());
+            event.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get());
         }
     }
 }

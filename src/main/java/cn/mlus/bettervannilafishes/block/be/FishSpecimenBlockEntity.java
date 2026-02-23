@@ -1,7 +1,6 @@
 package cn.mlus.bettervannilafishes.block.be;
 
-import cn.mlus.bettervannilafishes.init.BvfBlockEntities;
-import cn.mlus.bettervannilafishes.init.BvfBlocks;
+import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -26,25 +25,7 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
     }
 
     private static BlockEntityType<FishSpecimenBlockEntity> getBlockEntityType(BlockState pState) {
-        BlockEntityType<FishSpecimenBlockEntity> type;
-        if(pState.is(BvfBlocks.ATLANTIC_COD_SPECIMEN.get())){
-            type = BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.PACIFIC_COD_SPECIMEN.get())) {
-            type = BvfBlockEntities.PACIFIC_COD_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.HADDOCK_COD_SPECIMEN.get())){
-            type = BvfBlockEntities.HADDOCK_COD_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.PACIFIC_SALMON_SPECIMEN.get())){
-            type = BvfBlockEntities.PACIFIC_SALMON_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.MALE_SALMON_SPECIMEN.get())){
-            type = BvfBlockEntities.MALE_SALMON_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.FEMALE_SALMON_SPECIMEN.get())){
-            type = BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get();
-        }else if(pState.is(BvfBlocks.SPEARFISH_SPECIMEN.get())){
-            type = BvfBlockEntities.SPEARFISH_SPECIMEN.get();
-        }else {
-            type = BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get();
-        }
-        return type;
+        return ((FishSpecimen) pState.getBlock()).getBlockEntityType();
     }
 
     @Override

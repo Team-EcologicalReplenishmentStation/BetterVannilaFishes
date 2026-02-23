@@ -111,6 +111,13 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> DOSIDICUS_GIGAS_BUCKET = ITEMS.register("dosidicus_gigas_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.DOSIDICUS_GIGAS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> ACANTHURUS_ACHILLES_BUCKET = ITEMS.register("acanthurus_achilles_bucket",
             () -> new MobBucketItem(
                     BvfEntities.ACANTHURUS_ACHILLES,
@@ -329,6 +336,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> DOSIDICUS_GIGAS_SPAWN_EGG = ITEMS.register("dosidicus_gigas_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.DOSIDICUS_GIGAS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> ACANTHURUS_ACHILLES_SPAWN_EGG = ITEMS.register("acanthurus_achilles_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.ACANTHURUS_ACHILLES,
@@ -493,6 +507,10 @@ public class BvfItems {
                     .build())));
     public static final RegistryObject<Item> SHARK_FIN = ITEMS.register("shark_fin",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HUMBOLDT_SQUID = ITEMS.register("humboldt_squid",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+    public static final RegistryObject<Item> COOKED_HUMBOLDT_SQUID = ITEMS.register("cooked_humboldt_squid",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.7f).build())));
 
     public static final RegistryObject<Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
@@ -549,6 +567,18 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AUSTRALOHEROS_FACETUS_SPECIMEN = ITEMS.register("australoheros_facetus_specimen",
+            () -> new BlockItem(BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CICHLASOMA_BIMACULATUM_SPECIMEN = ITEMS.register("cichlasoma_bimaculatum_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLASOMA_BIMACULATUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> KROBIA_GUIANENSIS_SPECIMEN = ITEMS.register("krobia_guianensis_specimen",
+            () -> new BlockItem(BvfBlocks.KROBIA_GUIANENSIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AEQUIDENS_TETRAMERUS_SPECIMEN = ITEMS.register("aequidens_tetramerus_specimen",
+            () -> new BlockItem(BvfBlocks.AEQUIDENS_TETRAMERUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> GYMNOGEOPHAGUS_BALZANII_SPECIMEN = ITEMS.register("gymnogeophagus_balzanii_specimen",
+            () -> new BlockItem(BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ASTRONOTUS_OCELLATUS_SPECIMEN = ITEMS.register("astronotus_ocellatus_specimen",
+            () -> new BlockItem(BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final RegistryObject<Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));

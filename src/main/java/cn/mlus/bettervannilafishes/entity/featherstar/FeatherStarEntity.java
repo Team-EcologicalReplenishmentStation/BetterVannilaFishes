@@ -116,7 +116,7 @@ public class FeatherStarEntity extends WaterAnimal implements GeoEntity, BvfEnti
         AnimationController<FeatherStarEntity> main = new AnimationController<>(this, "main", 10, state -> {
             RawAnimation builder = RawAnimation.begin();
             if(isInWater()){
-                if(BvfUtils.isMoving(this)){
+                if(BvfUtils.isYMoving(this)){
                     if (!isJumpingSync()) {
                         builder.thenLoop("animation.fall");
                     } else {

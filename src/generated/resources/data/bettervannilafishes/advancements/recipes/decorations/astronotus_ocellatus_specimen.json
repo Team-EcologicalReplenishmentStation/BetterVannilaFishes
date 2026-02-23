@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_astronotus_ocellatus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:astronotus_ocellatus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:astronotus_ocellatus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_astronotus_ocellatus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:astronotus_ocellatus_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

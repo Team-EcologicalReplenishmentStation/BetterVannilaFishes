@@ -52,6 +52,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.AMPHIPRION_PERIDERAION.get())
                 .add(BvfItems.AMPHIPRION_CLARKII.get())
                 .add(BvfItems.AMPHIPRION_PERCULA.get())
+                .add(BvfItems.HUMBOLDT_SQUID.get())
                 .addTag(BvfTagKeys.PUFFER);
 
         this.tag(ErsTagKeys.KNOWN_FISH)

@@ -44,8 +44,8 @@ public class BvfBiomeModifier
         addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
         addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));
         addSpawn(context, "feather_star", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.FEATHER_STAR.get(), 8, 2, 4));
-        addSpawn(context, "spearfish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.SPEARFISH.get(), 6, 1, 2));
-        addSpawn(context, "galeocerdo_cuvier", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.GALEOCERDO_CUVIER.get(), 4, 1, 1));
+        addSpawn(context, "spearfish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.SPEARFISH.get(), 5, 1, 2));
+        addSpawn(context, "galeocerdo_cuvier", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.GALEOCERDO_CUVIER.get(), 3, 1, 1));
         addSpawn(context, "acanthurus_achilles", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_ACHILLES.get(), 6, 2, 4));
         addSpawn(context, "acanthurus_leucosternon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), 6, 2, 4));
         addSpawn(context, "paracanthurus_hepatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.PARACANTHURUS_HEPATUS.get(), 6, 2, 4));
@@ -64,6 +64,7 @@ public class BvfBiomeModifier
         addSpawn(context, "aequidens_tetramerus", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.AEQUIDENS_TETRAMERUS.get(), 6, 1, 2));
         addSpawn(context, "gymnogeophagus_balzanii", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), 6, 1, 2));
         addSpawn(context, "astronotus_ocellatus", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.ASTRONOTUS_OCELLATUS.get(), 6, 1, 2));
+        addSpawn(context, "dosidicus_gigas", BiomeTags.IS_DEEP_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.DOSIDICUS_GIGAS.get(), 5, 1, 3));
     }
 
     private static void addSpawn(BootstapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {

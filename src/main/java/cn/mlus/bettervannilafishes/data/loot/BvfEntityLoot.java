@@ -88,7 +88,6 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
                         .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
         );
-        // Surgeonfish (刺尾鱼) - 掉落各自的物品
         this.add(BvfEntities.ACANTHURUS_ACHILLES.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -138,7 +137,6 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
-        // Clownfish (小丑鱼/双锯鱼) - 掉落各自的物品
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -163,6 +161,15 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERCULA.get()))));
+        this.add(BvfEntities.DOSIDICUS_GIGAS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.HUMBOLDT_SQUID.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE))))
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.INK_SAC))
+                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F)))));
     }
 
     @Override

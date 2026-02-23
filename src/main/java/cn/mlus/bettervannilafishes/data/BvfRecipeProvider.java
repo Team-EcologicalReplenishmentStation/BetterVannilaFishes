@@ -172,8 +172,39 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.GALEOCERDO_CUVIER.get()), has(BvfItems.GALEOCERDO_CUVIER.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("galeocerdo_cuvier_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),1)
+                .requires(BvfItems.AUSTRALOHEROS_FACETUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.AUSTRALOHEROS_FACETUS.get()), has(BvfItems.AUSTRALOHEROS_FACETUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("australoheros_facetus_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get(),1)
+                .requires(BvfItems.CICHLASOMA_BIMACULATUM.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.CICHLASOMA_BIMACULATUM.get()), has(BvfItems.CICHLASOMA_BIMACULATUM.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("cichlasoma_bimaculatum_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get(),1)
+                .requires(BvfItems.KROBIA_GUIANENSIS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.KROBIA_GUIANENSIS.get()), has(BvfItems.KROBIA_GUIANENSIS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("krobia_guianensis_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get(),1)
+                .requires(BvfItems.AEQUIDENS_TETRAMERUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.AEQUIDENS_TETRAMERUS.get()), has(BvfItems.AEQUIDENS_TETRAMERUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("aequidens_tetramerus_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(),1)
+                .requires(BvfItems.GYMNOGEOPHAGUS_BALZANII.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()), has(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("gymnogeophagus_balzanii_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),1)
+                .requires(BvfItems.ASTRONOTUS_OCELLATUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.ASTRONOTUS_OCELLATUS.get()), has(BvfItems.ASTRONOTUS_OCELLATUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("astronotus_ocellatus_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
 
         buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
                 .requires(BvfItems.SPEARFISH.get())

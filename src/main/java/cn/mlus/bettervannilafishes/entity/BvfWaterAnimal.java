@@ -66,7 +66,7 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
 
     @Override
     protected void registerGoals() {
-        this.randomSwimmingGoal = new RandomSwimmingGoal(this,1,40){
+        this.randomSwimmingGoal = new RandomSwimmingGoal(this,1,200){
             @Nullable
             @Override
             protected Vec3 getPosition() {
