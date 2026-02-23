@@ -150,5 +150,6 @@
   "item.bettervannilafishes.spearfish_spawn_egg": "条纹枪鱼生成蛋",
   "item.bettervannilafishes.yellow_fin_puffer": "黄鳍东方鲀",
   "item.bettervannilafishes.yellow_fin_puffer_bucket": "黄鳍东方鲀桶",
-  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "黄鳍东方鲀生成蛋"
+  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "黄鳍东方鲀生成蛋",
+  "itemGroup.bvf_group": "更好的原版鱼类"
 }

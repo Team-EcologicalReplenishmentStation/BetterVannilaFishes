@@ -167,6 +167,8 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add("bvc.command.hanging", "闲逛");
         this.add("bvc.command.follow", "跟随");
 
+        this.add("itemGroup.bvf_group", "更好的原版鱼类");
+
         this.add("advancements.bettervannilafishes.monster_go_away.title","妖魔鬼怪快离开");
         this.add("advancements.bettervannilafishes.monster_go_away.desc","制作一个附魔河豚来对抗怪物。");
     }

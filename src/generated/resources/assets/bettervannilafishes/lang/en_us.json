@@ -150,5 +150,6 @@
   "item.bettervannilafishes.spearfish_spawn_egg": "Spearfish Spawn Egg",
   "item.bettervannilafishes.yellow_fin_puffer": "Yellow Fin Puffer",
   "item.bettervannilafishes.yellow_fin_puffer_bucket": "Yellow Fin Puffer Bucket",
-  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "Yellow Fin Puffer Spawn Egg"
+  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "Yellow Fin Puffer Spawn Egg",
+  "itemGroup.bvf_group": "Better Vannila Fishes"
 }

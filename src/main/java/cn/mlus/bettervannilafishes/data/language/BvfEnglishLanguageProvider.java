@@ -169,6 +169,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add("bvc.command.hanging", "Hanging Out now");
         this.add("bvc.command.follow", "Following now");
 
+        this.add("itemGroup.bvf_group", "Better Vannila Fishes");
+
         this.add("advancements.bettervannilafishes.monster_go_away.title","Monsters and demons, Go Away");
         this.add("advancements.bettervannilafishes.monster_go_away.desc","Craft an Enchanted Pufferfish to fight against monsters.");
     }
