@@ -20,6 +20,7 @@ public class BetterVannilaFishes {
         BvfCreativeTab.register(modEventBus);
         BvfBiomeModifierSerializers.register(modEventBus);
         BvfMobEffects.register(modEventBus);
+        BvfLootModifiers.register(modEventBus);
     }
 
     public static ResourceLocation prefix(String name) {

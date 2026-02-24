@@ -13,7 +13,8 @@ import java.util.concurrent.CompletableFuture;
 public class BvfLootTableProvider extends LootTableProvider {
     public BvfLootTableProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> provider) {
         super(pOutput, Collections.emptySet(), List.of(
-                new SubProviderEntry(BvfEntityLoot::new, LootContextParamSets.ENTITY)),provider);
+                new SubProviderEntry(BvfEntityLoot::new, LootContextParamSets.ENTITY)),
+                provider);
     }
 
 }

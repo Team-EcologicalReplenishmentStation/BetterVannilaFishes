@@ -30,6 +30,8 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.FEMALE_SALMON.get())
                 .add(BvfItems.PACIFIC_SALMON.get())
                 .add(BvfItems.SPEARFISH.get())
+                .add(BvfItems.GALEOCERDO_CUVIER.get())
+                .add(BvfItems.HUMBOLDT_SQUID.get())
                 .add(BvfItems.ACANTHURUS_ACHILLES.get())
                 .add(BvfItems.ACANTHURUS_LEUCOSTERNON.get())
                 .add(BvfItems.ACANTHURUS_LINEATUS.get())
