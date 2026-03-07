@@ -5,6 +5,7 @@ import cn.mlus.bettervannilafishes.util.TickHelper;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
@@ -57,7 +58,9 @@ public class SquidMeleeAttackGoal extends MeleeAttackGoal {
             TickHelper.tickLater(this.mob.level(),15, () ->{
                 this.mob.swing(InteractionHand.MAIN_HAND);
                 this.mob.doHurtTarget(pEnemy);
-                pEnemy.startRiding(this.mob,true);
+                boolean canCatch = pEnemy.getDimensions(Pose.STANDING).height() * pEnemy.getDimensions(Pose.STANDING).width() * pEnemy.getDimensions(Pose.STANDING).width() <= 0.649;
+                if(canCatch)
+                    pEnemy.startRiding(this.mob,true);
                 this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
             });
         }
