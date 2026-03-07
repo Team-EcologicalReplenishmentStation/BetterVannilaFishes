@@ -89,7 +89,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"六斑刺豚桶");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"鹦鹉螺桶");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"海羽星桶");
-        this.add(BvfItems.SPEARFISH_BUCKET.get(),"四鳍旗鱼桶");
+        this.add(BvfItems.SPEARFISH_BUCKET.get(),"条纹枪鱼桶");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"居氏鼬鲨桶");
         this.add(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get(),"心斑刺尾鱼桶");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get(),"白胸刺尾鱼桶");

@@ -31,7 +31,8 @@ public class BvfBiomeModifier
         removeSpawn(context,"tropical_fish_ocean", BiomeTags.IS_OCEAN, EntityType.TROPICAL_FISH);
         removeSpawn(context,"cod_river", BiomeTags.IS_RIVER, EntityType.COD);
         removeSpawn(context,"salmon_river", BiomeTags.IS_RIVER, EntityType.SALMON);
-        removeSpawn(context,"squid", BiomeTags.IS_OCEAN, EntityType.SQUID);
+        removeSpawn(context,"squid_ocean", BiomeTags.IS_OCEAN, EntityType.SQUID);
+        removeSpawn(context,"squid_river", BiomeTags.IS_RIVER, EntityType.SQUID);
 
         addSpawn(context,"haddock_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_HADDOCK_COD.get(),12,3,9));
         addSpawn(context,"atlantic_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_ATLANTIC_COD.get(),10,3,9));

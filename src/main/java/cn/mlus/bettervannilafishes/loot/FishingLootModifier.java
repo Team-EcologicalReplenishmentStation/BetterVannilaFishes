@@ -23,7 +23,6 @@ public class FishingLootModifier extends LootModifier {
     public static final Codec<FishingLootModifier> CODEC = RecordCodecBuilder.create(instance ->
             codecStart(instance).apply(instance, FishingLootModifier::new));
 
-    /** 原版钓鱼中会产出的鱼类物品，用于识别「本次钓到了鱼」 */
     private static final Set<Item> VANILLA_FISH = Set.of(
             Items.COD, Items.SALMON, Items.TROPICAL_FISH, Items.PUFFERFISH
     );
