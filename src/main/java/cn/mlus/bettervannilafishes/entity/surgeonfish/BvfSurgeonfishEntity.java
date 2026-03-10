@@ -126,7 +126,32 @@ public abstract class BvfSurgeonfishEntity extends BvfAbstractFish implements Bv
     @Override
     public void setSprinting(boolean sprinting) {
         super.setSprinting(sprinting);
+        if (this.level().isClientSide) {
+            return;
+        }
+
+        if (this.level().getServer() == null) {
+            return;
+        }
+
+        if (this.level().getServer().isSameThread()) {
+            this.applySprintingSpeedModifier(sprinting);
+            return;
+        }
+
+        this.level().getServer().execute(() -> {
+            if (!this.isRemoved()) {
+                this.applySprintingSpeedModifier(this.isSprinting());
+            }
+        });
+    }
+
+    private void applySprintingSpeedModifier(boolean sprinting) {
         AttributeInstance attributeinstance = this.getAttribute(Attributes.MOVEMENT_SPEED);
+        if (attributeinstance == null) {
+            return;
+        }
+
         attributeinstance.removeModifier(SPEED_MODIFIER_SPRINTING.id());
         if (sprinting) {
             attributeinstance.addTransientModifier(SPEED_MODIFIER_SPRINTING);
