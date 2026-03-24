@@ -64,7 +64,6 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
                     float $$11 = getTurningSpeedFactor($$10);
                     this.mob.setSpeed($$5 * this.outsideWaterSpeedModifier * $$11);
                 }
-
             }
         } else {
             if(this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())

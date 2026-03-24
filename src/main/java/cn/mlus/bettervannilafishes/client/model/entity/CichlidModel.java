@@ -12,11 +12,6 @@ public class CichlidModel extends BvfModel<BvfCichlidEntity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(BvfCichlidEntity entity) {
-        return ResourceLocation.fromNamespaceAndPath(BetterVannilaFishes.MODID, "textures/entity/" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath() + ".png");
-    }
-
-    @Override
     public ResourceLocation getAnimationResource(BvfCichlidEntity entity) {
         return ResourceLocation.fromNamespaceAndPath(BetterVannilaFishes.MODID, "animations/entity/cichlid.animation.json");
     }

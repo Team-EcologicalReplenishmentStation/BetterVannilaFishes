@@ -37,6 +37,12 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_NIGRICANS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LINEATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_STRIATUS.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_UNIMACULATUS.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_AURIGA.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_COLLARE.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_RETICULATUS.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
+		event.registerEntityRenderer(BvfEntities.CHAETODON_SPECULUM.get(), context -> new BvfRenderer<>(context, new ButterflyfishModel()));
 		event.registerEntityRenderer(BvfEntities.AUSTRALOHEROS_FACETUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
 		event.registerEntityRenderer(BvfEntities.CICHLASOMA_BIMACULATUM.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
 		event.registerEntityRenderer(BvfEntities.KROBIA_GUIANENSIS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));

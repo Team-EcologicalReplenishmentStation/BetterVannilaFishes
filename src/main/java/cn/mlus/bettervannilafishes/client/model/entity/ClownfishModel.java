@@ -12,11 +12,6 @@ public class ClownfishModel extends BvfModel<BvfClownfishEntity> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(BvfClownfishEntity entity) {
-        return ResourceLocation.fromNamespaceAndPath(BetterVannilaFishes.MODID, "textures/entity/" + BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).getPath() + ".png");
-    }
-
-    @Override
     public ResourceLocation getAnimationResource(BvfClownfishEntity entity) {
         return ResourceLocation.fromNamespaceAndPath(BetterVannilaFishes.MODID, "animations/entity/clownfish.animation.json");
     }

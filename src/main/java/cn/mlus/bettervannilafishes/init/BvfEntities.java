@@ -18,6 +18,7 @@ import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import cn.mlus.bettervannilafishes.entity.squid.DosidicusGigasEntity;
 import cn.mlus.bettervannilafishes.entity.surgeonfish.*;
+import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -114,6 +115,30 @@ public class BvfEntities {
             () -> EntityType.Builder.of(AcanthurusLineatus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
                     .build(BetterVannilaFishes.prefix("acanthurus_lineatus").toString()));
+    public static final RegistryObject<EntityType<ChaetodonStriatus>> CHAETODON_STRIATUS = ENTITIES.register("chaetodon_striatus",
+            () -> EntityType.Builder.of(ChaetodonStriatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_striatus").toString()));
+    public static final RegistryObject<EntityType<ChaetodonUnimaculatus>> CHAETODON_UNIMACULATUS = ENTITIES.register("chaetodon_unimaculatus",
+            () -> EntityType.Builder.of(ChaetodonUnimaculatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_unimaculatus").toString()));
+    public static final RegistryObject<EntityType<ChaetodonAuriga>> CHAETODON_AURIGA = ENTITIES.register("chaetodon_auriga",
+            () -> EntityType.Builder.of(ChaetodonAuriga::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_auriga").toString()));
+    public static final RegistryObject<EntityType<ChaetodonCollare>> CHAETODON_COLLARE = ENTITIES.register("chaetodon_collare",
+            () -> EntityType.Builder.of(ChaetodonCollare::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_collare").toString()));
+    public static final RegistryObject<EntityType<ChaetodonReticulatus>> CHAETODON_RETICULATUS = ENTITIES.register("chaetodon_reticulatus",
+            () -> EntityType.Builder.of(ChaetodonReticulatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_reticulatus").toString()));
+    public static final RegistryObject<EntityType<ChaetodonSpeculum>> CHAETODON_SPECULUM = ENTITIES.register("chaetodon_speculum",
+            () -> EntityType.Builder.of(ChaetodonSpeculum::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("chaetodon_speculum").toString()));
     public static final RegistryObject<EntityType<AustraloherosFacetus>> AUSTRALOHEROS_FACETUS = ENTITIES.register("australoheros_facetus",
             () -> EntityType.Builder.of(AustraloherosFacetus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)

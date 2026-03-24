@@ -112,6 +112,30 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LINEATUS.get()))));
+        this.add(BvfEntities.CHAETODON_STRIATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_STRIATUS.get()))));
+        this.add(BvfEntities.CHAETODON_UNIMACULATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_UNIMACULATUS.get()))));
+        this.add(BvfEntities.CHAETODON_AURIGA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_AURIGA.get()))));
+        this.add(BvfEntities.CHAETODON_COLLARE.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_COLLARE.get()))));
+        this.add(BvfEntities.CHAETODON_RETICULATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_RETICULATUS.get()))));
+        this.add(BvfEntities.CHAETODON_SPECULUM.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_SPECULUM.get()))));
         // Cichlid (丽鱼) - 掉落各自的物品
         this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()

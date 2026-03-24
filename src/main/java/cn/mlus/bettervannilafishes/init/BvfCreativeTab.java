@@ -47,6 +47,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
                output.accept(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
                output.accept(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_STRIATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_AURIGA_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_COLLARE_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_RETICULATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_SPECULUM_SPAWN_EGG.get());
                 //Bucket
                output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -80,6 +86,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AMPHIPRION_CLARKII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AMPHIPRION_PERCULA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.DOSIDICUS_GIGAS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_STRIATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_AURIGA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_COLLARE_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_RETICULATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_SPECULUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 //Food
                output.accept(BvfItems.HADDOCK_COD.get());
                output.accept(BvfItems.ATLANTIC_COD.get());
@@ -115,6 +127,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.HUMBOLDT_SQUID.get());
                output.accept(BvfItems.COOKED_HUMBOLDT_SQUID.get());
                output.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
+               output.accept(BvfItems.CHAETODON_STRIATUS.get());
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS.get());
+               output.accept(BvfItems.CHAETODON_AURIGA.get());
+               output.accept(BvfItems.CHAETODON_COLLARE.get());
+               output.accept(BvfItems.CHAETODON_RETICULATUS.get());
+               output.accept(BvfItems.CHAETODON_SPECULUM.get());
                 //Specimen
                output.accept(BvfItems.HADDOCK_COD_SPECIMEN.get());
                output.accept(BvfItems.ATLANTIC_COD_SPECIMEN.get());
