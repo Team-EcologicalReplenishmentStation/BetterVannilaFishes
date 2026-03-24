@@ -27,6 +27,12 @@
     "bettervannilafishes:paracanthurus_hepatus",
     "bettervannilafishes:acanthurus_triostegus",
     "bettervannilafishes:acanthurus_nigricans",
-    "bettervannilafishes:acanthurus_lineatus"
+    "bettervannilafishes:acanthurus_lineatus",
+    "bettervannilafishes:chaetodon_striatus",
+    "bettervannilafishes:chaetodon_unimaculatus",
+    "bettervannilafishes:chaetodon_auriga",
+    "bettervannilafishes:chaetodon_collare",
+    "bettervannilafishes:chaetodon_reticulatus",
+    "bettervannilafishes:chaetodon_speculum"
   ]
 }

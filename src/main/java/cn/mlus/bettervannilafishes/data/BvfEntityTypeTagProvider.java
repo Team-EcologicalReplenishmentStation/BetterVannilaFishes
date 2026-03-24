@@ -47,7 +47,13 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 BvfEntities.PARACANTHURUS_HEPATUS.get(),
                 BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),
                 BvfEntities.ACANTHURUS_NIGRICANS.get(),
-                BvfEntities.ACANTHURUS_LINEATUS.get()
+                BvfEntities.ACANTHURUS_LINEATUS.get(),
+                BvfEntities.CHAETODON_STRIATUS.get(),
+                BvfEntities.CHAETODON_UNIMACULATUS.get(),
+                BvfEntities.CHAETODON_AURIGA.get(),
+                BvfEntities.CHAETODON_COLLARE.get(),
+                BvfEntities.CHAETODON_RETICULATUS.get(),
+                BvfEntities.CHAETODON_SPECULUM.get()
         );
 
         this.tag(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH).add(
@@ -78,7 +84,13 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 BvfEntities.PARACANTHURUS_HEPATUS.get(),
                 BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),
                 BvfEntities.ACANTHURUS_NIGRICANS.get(),
-                BvfEntities.ACANTHURUS_LINEATUS.get()
+                BvfEntities.ACANTHURUS_LINEATUS.get(),
+                BvfEntities.CHAETODON_STRIATUS.get(),
+                BvfEntities.CHAETODON_UNIMACULATUS.get(),
+                BvfEntities.CHAETODON_AURIGA.get(),
+                BvfEntities.CHAETODON_COLLARE.get(),
+                BvfEntities.CHAETODON_RETICULATUS.get(),
+                BvfEntities.CHAETODON_SPECULUM.get()
         );
 
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get());

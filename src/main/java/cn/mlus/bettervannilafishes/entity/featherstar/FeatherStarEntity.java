@@ -194,6 +194,11 @@ public class FeatherStarEntity extends WaterAnimal implements GeoEntity, BvfEnti
         return cache;
     }
 
+    @Override
+    public boolean removeWhenFarAway(double pDistanceToClosestPlayer) {
+        return !fromBucket();
+    }
+
 
     @Override
     public @NotNull InteractionResult mobInteract(@NotNull Player player, @NotNull InteractionHand pHand) {

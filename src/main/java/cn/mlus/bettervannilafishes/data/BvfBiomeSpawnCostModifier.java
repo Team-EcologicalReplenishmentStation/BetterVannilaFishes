@@ -39,6 +39,12 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_NIGRICANS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ACANTHURUS_LINEATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_STRIATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_UNIMACULATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_AURIGA.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_COLLARE.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_RETICULATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_SPECULUM.get(),0.7,0.1);
 
             }
             if(biome.is(BiomeTags.IS_RIVER)){

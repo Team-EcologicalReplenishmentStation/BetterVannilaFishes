@@ -34,6 +34,12 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_STRIATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_UNIMACULATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_AURIGA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_COLLARE_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_RETICULATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHAETODON_SPECULUM_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get());
         this.simpleItem(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get());
@@ -67,6 +73,12 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_STRIATUS_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_UNIMACULATUS_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_AURIGA_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_COLLARE_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_RETICULATUS_BUCKET.get());
+        this.simpleItem(BvfItems.CHAETODON_SPECULUM_BUCKET.get());
         this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get());
         this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get());
         this.simpleItem(BvfItems.KROBIA_GUIANENSIS_BUCKET.get());
@@ -103,6 +115,12 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
         this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS.get());
         this.simpleItem(BvfItems.ACANTHURUS_LINEATUS.get());
+        this.simpleItem(BvfItems.CHAETODON_STRIATUS.get());
+        this.simpleItem(BvfItems.CHAETODON_UNIMACULATUS.get());
+        this.simpleItem(BvfItems.CHAETODON_AURIGA.get());
+        this.simpleItem(BvfItems.CHAETODON_COLLARE.get());
+        this.simpleItem(BvfItems.CHAETODON_RETICULATUS.get());
+        this.simpleItem(BvfItems.CHAETODON_SPECULUM.get());
         this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS.get());
         this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM.get());
         this.simpleItem(BvfItems.KROBIA_GUIANENSIS.get());

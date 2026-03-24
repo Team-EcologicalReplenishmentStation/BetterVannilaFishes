@@ -153,6 +153,48 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> CHAETODON_STRIATUS_BUCKET = ITEMS.register("chaetodon_striatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_STRIATUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_UNIMACULATUS_BUCKET = ITEMS.register("chaetodon_unimaculatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_UNIMACULATUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_AURIGA_BUCKET = ITEMS.register("chaetodon_auriga_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_AURIGA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE_BUCKET = ITEMS.register("chaetodon_collare_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_COLLARE.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS_BUCKET = ITEMS.register("chaetodon_reticulatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_RETICULATUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM_BUCKET = ITEMS.register("chaetodon_speculum_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHAETODON_SPECULUM.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_BUCKET = ITEMS.register("australoheros_facetus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AUSTRALOHEROS_FACETUS.get(),
@@ -378,6 +420,48 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> CHAETODON_STRIATUS_SPAWN_EGG = ITEMS.register("chaetodon_striatus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_STRIATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_UNIMACULATUS_SPAWN_EGG = ITEMS.register("chaetodon_unimaculatus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_UNIMACULATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_AURIGA_SPAWN_EGG = ITEMS.register("chaetodon_auriga_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_AURIGA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE_SPAWN_EGG = ITEMS.register("chaetodon_collare_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_COLLARE,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS_SPAWN_EGG = ITEMS.register("chaetodon_reticulatus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_RETICULATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM_SPAWN_EGG = ITEMS.register("chaetodon_speculum_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CHAETODON_SPECULUM,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_SPAWN_EGG = ITEMS.register("australoheros_facetus_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AUSTRALOHEROS_FACETUS,
@@ -525,6 +609,18 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS = ITEMS.register("acanthurus_nigricans",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LINEATUS = ITEMS.register("acanthurus_lineatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_STRIATUS = ITEMS.register("chaetodon_striatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_UNIMACULATUS = ITEMS.register("chaetodon_unimaculatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_AURIGA = ITEMS.register("chaetodon_auriga",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE = ITEMS.register("chaetodon_collare",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS = ITEMS.register("chaetodon_reticulatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM = ITEMS.register("chaetodon_speculum",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS = ITEMS.register("australoheros_facetus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));

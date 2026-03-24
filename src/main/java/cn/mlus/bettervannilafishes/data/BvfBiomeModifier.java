@@ -55,6 +55,12 @@ public class BvfBiomeModifier
         addSpawn(context, "acanthurus_triostegus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_TRIOSTEGUS.get(), 6, 2, 4));
         addSpawn(context, "acanthurus_nigricans", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_NIGRICANS.get(), 6, 2, 4));
         addSpawn(context, "acanthurus_lineatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ACANTHURUS_LINEATUS.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_striatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_STRIATUS.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_unimaculatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_UNIMACULATUS.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_auriga", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_AURIGA.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_collare", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_COLLARE.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_reticulatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_RETICULATUS.get(), 6, 2, 4));
+        addSpawn(context, "chaetodon_speculum", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.CHAETODON_SPECULUM.get(), 6, 2, 4));
         addSpawn(context, "amphiprion_ocellaris", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_OCELLARIS.get(), 6, 2, 4));
         addSpawn(context, "premnas_biaculeatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.PREMNAS_BIACULEATUS.get(), 6, 2, 4));
         addSpawn(context, "amphiprion_polymnus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_POLYMNUS.get(), 6, 2, 4));

@@ -1,0 +1,28 @@
+package cn.mlus.bettervannilafishes.entity.butterflyfish;
+
+import cn.mlus.bettervannilafishes.init.BvfItems;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.animal.AbstractFish;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
+
+public class ChaetodonReticulatus extends BvfButterflyfishEntity {
+    public ChaetodonReticulatus(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
+        super(pEntityType, pLevel);
+    }
+
+    @Override
+    public float getMinScale() {
+        return 0.9f;
+    }
+
+    @Override
+    public float getMaxScale() {
+        return 1.1f;
+    }
+
+    public @NotNull ItemStack getBucketItemStack() {
+        return new ItemStack(BvfItems.CHAETODON_RETICULATUS_BUCKET.get());
+    }
+}

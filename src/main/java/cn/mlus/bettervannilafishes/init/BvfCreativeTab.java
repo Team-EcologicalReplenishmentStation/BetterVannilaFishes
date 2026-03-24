@@ -33,6 +33,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_SPAWN_EGG.get());
                output.accept(BvfItems.ACANTHURUS_NIGRICANS_SPAWN_EGG.get());
                output.accept(BvfItems.ACANTHURUS_LINEATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_STRIATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_AURIGA_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_COLLARE_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_RETICULATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHAETODON_SPECULUM_SPAWN_EGG.get());
                output.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPAWN_EGG.get());
                output.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPAWN_EGG.get());
                output.accept(BvfItems.KROBIA_GUIANENSIS_SPAWN_EGG.get());
@@ -66,6 +72,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ACANTHURUS_NIGRICANS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ACANTHURUS_LINEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_STRIATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_AURIGA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_COLLARE_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_RETICULATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHAETODON_SPECULUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AUSTRALOHEROS_FACETUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.CICHLASOMA_BIMACULATUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.KROBIA_GUIANENSIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -99,6 +111,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.ACANTHURUS_TRIOSTEGUS.get());
                output.accept(BvfItems.ACANTHURUS_NIGRICANS.get());
                output.accept(BvfItems.ACANTHURUS_LINEATUS.get());
+               output.accept(BvfItems.CHAETODON_STRIATUS.get());
+               output.accept(BvfItems.CHAETODON_UNIMACULATUS.get());
+               output.accept(BvfItems.CHAETODON_AURIGA.get());
+               output.accept(BvfItems.CHAETODON_COLLARE.get());
+               output.accept(BvfItems.CHAETODON_RETICULATUS.get());
+               output.accept(BvfItems.CHAETODON_SPECULUM.get());
                output.accept(BvfItems.AUSTRALOHEROS_FACETUS.get());
                output.accept(BvfItems.CICHLASOMA_BIMACULATUM.get());
                output.accept(BvfItems.KROBIA_GUIANENSIS.get());

@@ -70,7 +70,7 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
             @Nullable
             @Override
             protected Vec3 getPosition() {
-                return BehaviorUtils.getRandomSwimmablePos(this.mob, 45, 7);
+                return BehaviorUtils.getRandomSwimmablePos(this.mob, 35, 7);
             }
         };
 
