@@ -111,6 +111,27 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS_BUCKET = ITEMS.register("epinephelus_lanceolatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_LANCEOLATUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> EPINEPHELUS_ITAJARA_BUCKET = ITEMS.register("epinephelus_itajara_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_ITAJARA,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> EPINEPHELUS_MELANOSTIGMA_BUCKET = ITEMS.register("epinephelus_melanostigma_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_MELANOSTIGMA,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> DOSIDICUS_GIGAS_BUCKET = ITEMS.register("dosidicus_gigas_bucket",
             () -> new MobBucketItem(
                     BvfEntities.DOSIDICUS_GIGAS,
@@ -378,6 +399,27 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS_SPAWN_EGG = ITEMS.register("epinephelus_lanceolatus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_LANCEOLATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> EPINEPHELUS_ITAJARA_SPAWN_EGG = ITEMS.register("epinephelus_itajara_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_ITAJARA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG = ITEMS.register("epinephelus_melanostigma_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_MELANOSTIGMA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> DOSIDICUS_GIGAS_SPAWN_EGG = ITEMS.register("dosidicus_gigas_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.DOSIDICUS_GIGAS,
@@ -589,6 +631,18 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
+    public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS = ITEMS.register("epinephelus_lanceolatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .build())));
+    public static final RegistryObject<Item> EPINEPHELUS_ITAJARA = ITEMS.register("epinephelus_itajara",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .build())));
+    public static final RegistryObject<Item> EPINEPHELUS_MELANOSTIGMA = ITEMS.register("epinephelus_melanostigma",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .build())));
+    public static final RegistryObject<Item> COOKED_EPINEPHELUS = ITEMS.register("cooked_epinephelus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f)
+                    .build())));
     public static final RegistryObject<Item> SHARK_FIN = ITEMS.register("shark_fin",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUMBOLDT_SQUID = ITEMS.register("humboldt_squid",
@@ -663,6 +717,12 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS_SPECIMEN = ITEMS.register("epinephelus_lanceolatus_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> EPINEPHELUS_ITAJARA_SPECIMEN = ITEMS.register("epinephelus_itajara_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_ITAJARA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = ITEMS.register("epinephelus_melanostigma_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> AUSTRALOHEROS_FACETUS_SPECIMEN = ITEMS.register("australoheros_facetus_specimen",
             () -> new BlockItem(BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> CICHLASOMA_BIMACULATUM_SPECIMEN = ITEMS.register("cichlasoma_bimaculatum_specimen",

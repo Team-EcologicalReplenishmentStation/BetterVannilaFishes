@@ -11,11 +11,13 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
     private final float inWaterSpeedModifier;
     private final float outsideWaterSpeedModifier;
     private final boolean applyGravity;
+    private final boolean neverStop;
 
     private final BvfWaterAnimal fish;
 
-    public BvfWaterAnimalMoveControl(BvfWaterAnimal pMob) {
+    public BvfWaterAnimalMoveControl(boolean neverStop, BvfWaterAnimal pMob) {
         super(pMob);
+        this.neverStop = neverStop;
         this.maxTurnX = 85;
         this.maxTurnY = 10;
         this.inWaterSpeedModifier = 0.02F;
@@ -66,7 +68,7 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
                 }
             }
         } else {
-            if(this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
+            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
                 this.fish.randomSwimmingGoal.trigger();
         }
     }

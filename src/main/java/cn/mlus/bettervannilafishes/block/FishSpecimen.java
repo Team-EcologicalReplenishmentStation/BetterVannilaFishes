@@ -162,8 +162,9 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
 
     @Override
     public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        boolean largeSpecimen = state.is(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get());
         return state.getValue(HANGING) == 2 ?
-                state.is(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get()) ? state.getValue(FACING).get2DDataValue() % 2 == 0 ? HANGING_AABB2 : HANGING_AABB3
+                largeSpecimen ? state.getValue(FACING).get2DDataValue() % 2 == 0 ? HANGING_AABB2 : HANGING_AABB3
                         : HANGING_AABB
                 : AABB;
     }

@@ -28,6 +28,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
+        this.add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),"Epinephelus lanceolatus");
+        this.add(BvfEntities.EPINEPHELUS_ITAJARA.get(),"Epinephelus itajara");
+        this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),"Epinephelus melanostigma");
         this.add(BvfEntities.ACANTHURUS_ACHILLES.get(),"Acanthurus achilles");
         this.add(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),"Acanthurus leucosternon");
         this.add(BvfEntities.PARACANTHURUS_HEPATUS.get(),"Paracanthurus hepatus");
@@ -66,6 +69,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
+        this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get(),"Giant Grouper Spawn Egg");
+        this.add(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get(),"Goliath Grouper Spawn Egg");
+        this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get(),"Blackspotted Grouper Spawn Egg");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"Nautilus Spawn Egg");
         this.add(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get(),"Achilles Tang Spawn Egg");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get(),"Powder Blue Tang Spawn Egg");
@@ -105,6 +111,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
+        this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get(),"Giant Grouper Bucket");
+        this.add(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get(),"Goliath Grouper Bucket");
+        this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get(),"Blackspotted Grouper Bucket");
         this.add(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get(),"Achilles Tang Bucket");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get(),"Powder Blue Tang Bucket");
         this.add(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get(),"Blue Crane Bucket");
@@ -142,6 +151,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH.get(),"Spearfish");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
+        this.add(BvfItems.EPINEPHELUS_LANCEOLATUS.get(),"Giant Grouper");
+        this.add(BvfItems.EPINEPHELUS_ITAJARA.get(),"Goliath Grouper");
+        this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),"Blackspotted Grouper");
+        this.add(BvfItems.COOKED_EPINEPHELUS.get(),"Cooked Grouper");
         this.add(BvfItems.SHARK_FIN.get(),"Shark's Fin");
         this.add(BvfItems.HUMBOLDT_SQUID.get(),"Humboldt Squid");
         this.add(BvfItems.COOKED_HUMBOLDT_SQUID.get(),"Cooked Humboldt Squid");
@@ -178,6 +191,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
+        this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),"Giant Grouper Specimen");
+        this.add(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get(),"Goliath Grouper Specimen");
+        this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),"Blackspotted Grouper Specimen");
         this.add(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),"Chameleon Cichlid Specimen");
         this.add(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get(),"Black Acara Specimen");
         this.add(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get(),"Guyana Eartheater Specimen");

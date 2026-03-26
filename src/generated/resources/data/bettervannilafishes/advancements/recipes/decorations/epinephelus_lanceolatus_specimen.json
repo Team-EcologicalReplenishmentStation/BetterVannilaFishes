@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_epinephelus_lanceolatus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:epinephelus_lanceolatus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:epinephelus_lanceolatus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_epinephelus_lanceolatus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:epinephelus_lanceolatus_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

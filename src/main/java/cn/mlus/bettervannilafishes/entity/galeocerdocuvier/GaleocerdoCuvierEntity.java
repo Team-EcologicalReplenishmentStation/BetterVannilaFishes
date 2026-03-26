@@ -50,7 +50,7 @@ import java.util.function.IntFunction;
 public class GaleocerdoCuvierEntity extends BvfWaterAnimal implements BvfEntity<GaleocerdoCuvierEntity>, Bucketable, VariantHolder<GaleocerdoCuvierEntity.Variant> {
     public GaleocerdoCuvierEntity(EntityType<? extends WaterAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new BvfWaterAnimalMoveControl(this);
+        this.moveControl = new BvfWaterAnimalMoveControl(true,this);
         this.lookControl = new SmoothSwimmingLookControl(this, 10);
         animator = new SharkAnimator<>(this);
     }

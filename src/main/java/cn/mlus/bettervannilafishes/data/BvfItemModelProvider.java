@@ -27,6 +27,9 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
         this.simpleItem(BvfItems.SPEARFISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get());
         this.simpleItem(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get());
@@ -65,6 +68,9 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEATHER_STAR_BUCKET.get());
         this.simpleItem(BvfItems.SPEARFISH_BUCKET.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_BUCKET.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get());
         this.simpleItem(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get());
         this.simpleItem(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get());
@@ -103,6 +109,10 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.SPEARFISH.get());
         this.simpleItem(BvfItems.COOKED_SPEARFISH.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get());
+        this.simpleItem(BvfItems.COOKED_EPINEPHELUS.get());
         this.simpleItem(BvfItems.SHARK_FIN.get());
         this.simpleItem(BvfItems.HUMBOLDT_SQUID.get());
         this.simpleItem(BvfItems.COOKED_HUMBOLDT_SQUID.get());
@@ -141,6 +151,9 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEMALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());
+        this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get());
         this.simpleItem(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get());
         this.simpleItem(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get());
         this.simpleItem(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get());
