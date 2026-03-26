@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.client;
 
 import cn.mlus.bettervannilafishes.client.model.block.CichlidSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.CodSpecimenModel;
+import cn.mlus.bettervannilafishes.client.model.block.EpinephelusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.TigerSharkSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.entity.*;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfRenderer;
@@ -31,7 +32,9 @@ public final class ClientModListener {
         event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
 		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
 		event.registerEntityRenderer(BvfEntities.GALEOCERDO_CUVIER.get(), context -> new BvfRenderer<>(context, new GaleocerdoCuvierModel()));
-
+		event.registerEntityRenderer(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), context -> new BvfRenderer<>(context, new EpinephelusModel()));
+		event.registerEntityRenderer(BvfEntities.EPINEPHELUS_ITAJARA.get(), context -> new BvfRenderer<>(context, new EpinephelusModel()));
+		event.registerEntityRenderer(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(), context -> new BvfRenderer<>(context, new EpinephelusModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_ACHILLES.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
 		event.registerEntityRenderer(BvfEntities.PARACANTHURUS_HEPATUS.get(), context -> new BvfRenderer<>(context, new SurgeonfishModel()));
@@ -66,6 +69,9 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.SPEARFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new TigerSharkSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_ITAJARA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.AUSTRALOHEROS_FACETUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.CICHLASOMA_BIMACULATUM_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.KROBIA_GUIANENSIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));

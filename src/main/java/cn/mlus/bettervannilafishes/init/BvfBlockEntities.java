@@ -26,6 +26,12 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SPEARFISH_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GALEOCERDO_CUVIER_SPECIMEN = BLOCK_ENTITIES.register("galeocerdo_cuvier_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_LANCEOLATUS_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_lanceolatus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_ITAJARA_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_itajara_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_ITAJARA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_melanostigma_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AUSTRALOHEROS_FACETUS_SPECIMEN = BLOCK_ENTITIES.register("australoheros_facetus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLASOMA_BIMACULATUM_SPECIMEN = BLOCK_ENTITIES.register("cichlasoma_bimaculatum_specimen",

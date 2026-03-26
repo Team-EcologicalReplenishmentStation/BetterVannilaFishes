@@ -8,6 +8,9 @@ import cn.mlus.bettervannilafishes.entity.cod.HaddockCod;
 import cn.mlus.bettervannilafishes.entity.cod.PacificCod;
 import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
+import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusItajara;
+import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusLanceolatus;
+import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusMelanostigma;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.ObscurePuffer;
 import cn.mlus.bettervannilafishes.entity.pufferfish.PorcupineFish;
@@ -86,6 +89,18 @@ public class BvfEntities {
             () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(2.5F,1.6F)
                     .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
+    public static final RegistryObject<EntityType<EpinephelusLanceolatus>> EPINEPHELUS_LANCEOLATUS = ENTITIES.register("epinephelus_lanceolatus",
+            () -> EntityType.Builder.of(EpinephelusLanceolatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(2.5F, 1.6F)
+                    .build(BetterVannilaFishes.prefix("epinephelus_lanceolatus").toString()));
+    public static final RegistryObject<EntityType<EpinephelusItajara>> EPINEPHELUS_ITAJARA = ENTITIES.register("epinephelus_itajara",
+            () -> EntityType.Builder.of(EpinephelusItajara::new, MobCategory.WATER_AMBIENT)
+                    .sized(2.5F, 1.6F)
+                    .build(BetterVannilaFishes.prefix("epinephelus_itajara").toString()));
+    public static final RegistryObject<EntityType<EpinephelusMelanostigma>> EPINEPHELUS_MELANOSTIGMA = ENTITIES.register("epinephelus_melanostigma",
+            () -> EntityType.Builder.of(EpinephelusMelanostigma::new, MobCategory.WATER_AMBIENT)
+                    .sized(2.5F, 1.6F)
+                    .build(BetterVannilaFishes.prefix("epinephelus_melanostigma").toString()));
 
     public static final DeferredHolder<EntityType<?>,EntityType<AcanthurusAchilles>> ACANTHURUS_ACHILLES = ENTITIES.register("acanthurus_achilles",
             () -> EntityType.Builder.of(AcanthurusAchilles::new, MobCategory.WATER_AMBIENT)

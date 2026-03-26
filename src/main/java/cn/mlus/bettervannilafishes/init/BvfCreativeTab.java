@@ -27,6 +27,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
                output.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+               output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
+               output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get());
                output.accept(BvfItems.ACANTHURUS_ACHILLES_SPAWN_EGG.get());
                output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_SPAWN_EGG.get());
                output.accept(BvfItems.PARACANTHURUS_HEPATUS_SPAWN_EGG.get());
@@ -66,6 +69,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ACANTHURUS_ACHILLES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.PARACANTHURUS_HEPATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -104,6 +110,10 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SPEARFISH.get());
                output.accept(BvfItems.COOKED_SPEARFISH.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER.get());
+               output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS.get());
+               output.accept(BvfItems.EPINEPHELUS_ITAJARA.get());
+               output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA.get());
+               output.accept(BvfItems.COOKED_EPINEPHELUS.get());
                output.accept(BvfItems.SHARK_FIN.get());
                output.accept(BvfItems.ACANTHURUS_ACHILLES.get());
                output.accept(BvfItems.ACANTHURUS_LEUCOSTERNON.get());
@@ -141,6 +151,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.FEMALE_SALMON_SPECIMEN.get());
                output.accept(BvfItems.SPEARFISH_SPECIMEN.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+               output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
+               output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());
+               output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get());
                output.accept(BvfItems.AUSTRALOHEROS_FACETUS_SPECIMEN.get());
                output.accept(BvfItems.CICHLASOMA_BIMACULATUM_SPECIMEN.get());
                output.accept(BvfItems.KROBIA_GUIANENSIS_SPECIMEN.get());

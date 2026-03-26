@@ -25,6 +25,12 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> GALEOCERDO_CUVIER_SPECIMEN = BLOCKS.register("galeocerdo_cuvier_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> EPINEPHELUS_LANCEOLATUS_SPECIMEN = BLOCKS.register("epinephelus_lanceolatus_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> EPINEPHELUS_ITAJARA_SPECIMEN = BLOCKS.register("epinephelus_itajara_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = BLOCKS.register("epinephelus_melanostigma_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> AUSTRALOHEROS_FACETUS_SPECIMEN = BLOCKS.register("australoheros_facetus_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> CICHLASOMA_BIMACULATUM_SPECIMEN = BLOCKS.register("cichlasoma_bimaculatum_specimen",

@@ -111,6 +111,27 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_LANCEOLATUS_BUCKET = ITEMS.register("epinephelus_lanceolatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA_BUCKET = ITEMS.register("epinephelus_itajara_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_ITAJARA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_BUCKET = ITEMS.register("epinephelus_melanostigma_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final DeferredHolder<Item,Item> ACANTHURUS_ACHILLES_BUCKET = ITEMS.register("acanthurus_achilles_bucket",
             () -> new MobBucketItem(
                     BvfEntities.ACANTHURUS_ACHILLES.get(),
@@ -378,6 +399,27 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_LANCEOLATUS_SPAWN_EGG = ITEMS.register("epinephelus_lanceolatus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_LANCEOLATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA_SPAWN_EGG = ITEMS.register("epinephelus_itajara_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_ITAJARA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG = ITEMS.register("epinephelus_melanostigma_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.EPINEPHELUS_MELANOSTIGMA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> ACANTHURUS_ACHILLES_SPAWN_EGG = ITEMS.register("acanthurus_achilles_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.ACANTHURUS_ACHILLES,
@@ -589,6 +631,18 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_LANCEOLATUS = ITEMS.register("epinephelus_lanceolatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+                    .build())));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA = ITEMS.register("epinephelus_itajara",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+                    .build())));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA = ITEMS.register("epinephelus_melanostigma",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+                    .build())));
+    public static final DeferredHolder<Item,Item> COOKED_EPINEPHELUS = ITEMS.register("cooked_epinephelus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f)
+                    .build())));
     public static final  DeferredHolder<Item,Item> SHARK_FIN = ITEMS.register("shark_fin",
             () -> new Item(new Item.Properties()));
 
@@ -663,6 +717,12 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_LANCEOLATUS_SPECIMEN = ITEMS.register("epinephelus_lanceolatus_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA_SPECIMEN = ITEMS.register("epinephelus_itajara_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_ITAJARA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = ITEMS.register("epinephelus_melanostigma_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_SPECIMEN = ITEMS.register("australoheros_facetus_specimen",
             () -> new BlockItem(BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM_SPECIMEN = ITEMS.register("cichlasoma_bimaculatum_specimen",
