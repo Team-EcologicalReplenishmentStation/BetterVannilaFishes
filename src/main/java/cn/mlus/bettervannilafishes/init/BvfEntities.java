@@ -95,15 +95,15 @@ public class BvfEntities {
                     .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
     public static final RegistryObject<EntityType<EpinephelusLanceolatus>> EPINEPHELUS_LANCEOLATUS = ENTITIES.register("epinephelus_lanceolatus",
             () -> EntityType.Builder.of(EpinephelusLanceolatus::new, MobCategory.WATER_AMBIENT)
-                    .sized(2.5F, 1.6F)
+                    .sized(1.5F, 0.95F)
                     .build(BetterVannilaFishes.prefix("epinephelus_lanceolatus").toString()));
     public static final RegistryObject<EntityType<EpinephelusItajara>> EPINEPHELUS_ITAJARA = ENTITIES.register("epinephelus_itajara",
             () -> EntityType.Builder.of(EpinephelusItajara::new, MobCategory.WATER_AMBIENT)
-                    .sized(2.5F, 1.6F)
+                    .sized(1.5F, 0.95F)
                     .build(BetterVannilaFishes.prefix("epinephelus_itajara").toString()));
     public static final RegistryObject<EntityType<EpinephelusMelanostigma>> EPINEPHELUS_MELANOSTIGMA = ENTITIES.register("epinephelus_melanostigma",
             () -> EntityType.Builder.of(EpinephelusMelanostigma::new, MobCategory.WATER_AMBIENT)
-                    .sized(2.5F, 1.6F)
+                    .sized(1.5F, 0.95F)
                     .build(BetterVannilaFishes.prefix("epinephelus_melanostigma").toString()));
 
     public static final RegistryObject<EntityType<AcanthurusAchilles>> ACANTHURUS_ACHILLES = ENTITIES.register("acanthurus_achilles",

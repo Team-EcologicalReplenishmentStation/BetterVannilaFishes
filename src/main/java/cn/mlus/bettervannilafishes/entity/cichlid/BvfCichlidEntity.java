@@ -82,7 +82,7 @@ public abstract class BvfCichlidEntity extends BvfAbstractFish implements BvfEnt
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 8.0)
                 .add(Attributes.MOVEMENT_SPEED, 0.5)
-                .add(ForgeMod.SWIM_SPEED.get(), 0.8);
+                .add(ForgeMod.SWIM_SPEED.get(), 1f);
     }
 
     public abstract @NotNull ItemStack getBucketItemStack();
