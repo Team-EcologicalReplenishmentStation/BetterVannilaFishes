@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "bettervannilafishes:epinephelus_melanostigma"
   },
-  "result": "bettervannilafishes:cooked_epinephelus"
+  "result": {
+    "count": 1,
+    "id": "bettervannilafishes:cooked_epinephelus"
+  }
 }

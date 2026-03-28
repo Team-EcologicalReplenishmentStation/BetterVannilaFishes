@@ -96,7 +96,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.OBSCURE_PUFFER.get())
                 .add(BvfItems.PORCUPINE_FISH.get());
 
-        this.tag(ItemTags.AXOLOTL_TEMPT_ITEMS)
+        this.tag(ItemTags.AXOLOTL_FOOD)
                 .add(BvfItems.HADDOCK_COD_BUCKET.get())
                 .add(BvfItems.ATLANTIC_COD_BUCKET.get())
                 .add(BvfItems.PACIFIC_COD_BUCKET.get())

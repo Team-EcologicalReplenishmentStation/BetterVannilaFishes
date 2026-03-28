@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "bettervannilafishes:epinephelus_lanceolatus"
-            ]
+            "items": "bettervannilafishes:epinephelus_lanceolatus"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_epinephelus_lanceolatus",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_epinephelus_lanceolatus"
     ]
   ],
   "rewards": {
     "recipes": [
       "bettervannilafishes:epinephelus_lanceolatus_specimen"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

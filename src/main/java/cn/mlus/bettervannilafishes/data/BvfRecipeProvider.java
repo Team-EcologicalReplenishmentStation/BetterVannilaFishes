@@ -219,27 +219,6 @@ public class BvfRecipeProvider extends RecipeProvider {
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),BvfItems.COOKED_EPINEPHELUS.get(),0.35f);
-
-        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
-                .requires(BvfItems.SPEARFISH.get())
-                .unlockedBy(getHasName(BvfItems.SPEARFISH.get()),has(BvfItems.SPEARFISH.get())),"fish_fillet_from_spearfish")
-                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_spearfish"));
-        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 10)
-                .requires(BvfItems.GALEOCERDO_CUVIER.get())
-                .unlockedBy(getHasName(BvfItems.SPEARFISH.get()),has(BvfItems.GALEOCERDO_CUVIER.get())),"fish_fillet_from_tiger_shark")
-                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_tiger_shark"));
-        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 10)
-                .requires(BvfItems.EPINEPHELUS_LANCEOLATUS.get())
-                .unlockedBy(getHasName(BvfItems.EPINEPHELUS_LANCEOLATUS.get()), has(BvfItems.EPINEPHELUS_LANCEOLATUS.get())),"fish_fillet_from_epinephelus_lanceolatus")
-                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_epinephelus_lanceolatus"));
-        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 10)
-                .requires(BvfItems.EPINEPHELUS_ITAJARA.get())
-                .unlockedBy(getHasName(BvfItems.EPINEPHELUS_ITAJARA.get()), has(BvfItems.EPINEPHELUS_ITAJARA.get())),"fish_fillet_from_epinephelus_itajara")
-                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_epinephelus_itajara"));
-        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 10)
-                .requires(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())
-                .unlockedBy(getHasName(BvfItems.EPINEPHELUS_MELANOSTIGMA.get()), has(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())),"fish_fillet_from_epinephelus_melanostigma")
-                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_epinephelus_melanostigma"));
     }
 
     private static void buildFoodProcessRecipes(RecipeOutput recipeOutput, Item input, Item output, float xp) {

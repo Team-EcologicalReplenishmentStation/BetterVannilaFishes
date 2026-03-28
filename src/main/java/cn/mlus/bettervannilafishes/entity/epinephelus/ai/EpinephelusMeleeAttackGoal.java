@@ -8,7 +8,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraftforge.common.ForgeMod;
+import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
@@ -31,7 +31,7 @@ public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
+        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(2);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(0.8);
+        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(0.8);
     }
 
     @Override
@@ -51,17 +51,15 @@ public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
-    protected void checkAndPerformAttack(@NotNull LivingEntity pEnemy, double pDistToEnemySqr) {
-        double d0 = this.getAttackReachSqr(pEnemy) - 3;
-        if (pDistToEnemySqr <= d0 && this.getTicksUntilNextAttack() <= 0) {
-            this.resetAttackCooldown();
-            this.mob.triggerAnim("extra","attack");
-            TickHelper.tickLater(this.mob.level(),15, () ->{
-                this.mob.swing(InteractionHand.MAIN_HAND);
-                this.mob.doHurtTarget(pEnemy);
-                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
-                ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
-            });
-        }
+    protected void checkAndPerformAttack(@NotNull LivingEntity target) {
+        this.resetAttackCooldown();
+        this.mob.triggerAnim("extra","attack");
+        TickHelper.tickLater(this.mob.level(),15, () ->{
+            this.mob.swing(InteractionHand.MAIN_HAND);
+            this.mob.doHurtTarget(target);
+            BvfBleedingEffect.giveBleedingEffect(target,1,4);
+            this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(target,0,-1);
+        });
     }
 }

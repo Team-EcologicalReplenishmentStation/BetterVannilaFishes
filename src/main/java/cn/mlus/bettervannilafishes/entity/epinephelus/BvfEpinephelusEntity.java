@@ -2,14 +2,13 @@ package cn.mlus.bettervannilafishes.entity.epinephelus;
 
 import cn.mlus.bettervannilafishes.client.animator.EpinehelusAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.client.animator.SharkAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.entity.epinephelus.ai.EpinephelusMeleeAttackGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai.SharkMeleeAttackGoal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -39,16 +38,16 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraftforge.common.ForgeMod;
+import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.joml.Math;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
 
 public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements BvfEntity<BvfEpinephelusEntity>, Bucketable {
     public BvfEpinephelusEntity(EntityType<? extends WaterAnimal> pEntityType, Level pLevel) {
@@ -70,9 +69,9 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
     }
 
     @Override
-    protected void defineSynchedData() {
-        super.defineSynchedData();
-        entityData.define(SCALE, 1.0f);
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(SCALE, 1.0f);
     }
 
     public float getScale(){
@@ -80,7 +79,7 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
     }
 
     public void setScale(float scale){
-        entityData.set(SCALE, Math.clamp(scale, 0.8f, 1.2f));
+        entityData.set(SCALE, Mth.clamp(scale, 0.8f, 1.2f));
     }
 
     @Override
@@ -116,7 +115,7 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
                 .add(Attributes.ATTACK_DAMAGE, 8)
                 .add(Attributes.MOVEMENT_SPEED, 0.8)
                 .add(Attributes.FOLLOW_RANGE, 64)
-                .add(ForgeMod.SWIM_SPEED.get(), 0.8);
+                .add(NeoForgeMod.SWIM_SPEED, 0.8);
     }
 
     @Override
@@ -164,7 +163,7 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
     @Override
     public ItemEntity spawnAtLocation(@NotNull ItemStack pStack) {
         if (pStack.is(ItemTags.FISHES) && this.killedByTrident) {
-            pStack.getOrCreateTag().putFloat("Scale", getScale());
+            CustomData.update(DataComponents.CUSTOM_DATA, pStack, data -> data.putFloat("Scale", getScale()));
         }
         return super.spawnAtLocation(pStack);
     }
@@ -183,12 +182,12 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
     public abstract float getMaxScale();
 
     @Override
-    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData, @org.jetbrains.annotations.Nullable CompoundTag pDataTag) {
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor pLevel, @NotNull DifficultyInstance pDifficulty, @NotNull MobSpawnType pReason, @org.jetbrains.annotations.Nullable SpawnGroupData pSpawnData) {
         if (pReason == MobSpawnType.BUCKET) {
             return pSpawnData;
         } else {
             this.setScale(Mth.randomBetween(this.random, getMinScale(), getMaxScale()));
-            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+            return super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData);
         }
     }
 

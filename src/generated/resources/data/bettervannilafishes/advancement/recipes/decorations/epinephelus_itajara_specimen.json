@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "bettervannilafishes:epinephelus_itajara"
-            ]
+            "items": "bettervannilafishes:epinephelus_itajara"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_epinephelus_itajara",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_epinephelus_itajara"
     ]
   ],
   "rewards": {
     "recipes": [
       "bettervannilafishes:epinephelus_itajara_specimen"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -1,5 +1,16 @@
 {
   "type": "minecraft:entity",
+  "functions": [
+    {
+      "count": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      },
+      "enchantment": "minecraft:looting",
+      "function": "minecraft:enchanted_count_increase"
+    }
+  ],
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -17,16 +28,6 @@
         {
           "type": "minecraft:item",
           "name": "bettervannilafishes:shark_fin"
-        }
-      ],
-      "functions": [
-        {
-          "count": {
-            "type": "minecraft:uniform",
-            "max": 1.0,
-            "min": 0.0
-          },
-          "function": "minecraft:looting_enchant"
         }
       ],
       "rolls": 1.0

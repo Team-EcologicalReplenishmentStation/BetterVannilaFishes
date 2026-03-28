@@ -100,8 +100,8 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_LANCEOLATUS.get())))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))))
-                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)));
+                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
+                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
 
         this.add(BvfEntities.EPINEPHELUS_ITAJARA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -109,8 +109,8 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_ITAJARA.get())))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))))
-                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)));
+                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
+                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
 
         this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -118,8 +118,8 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))))
-                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)));
+                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
+                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
 
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "bettervannilafishes:epinephelus_melanostigma"
-            ]
+            "items": "bettervannilafishes:epinephelus_melanostigma"
           }
         ]
       },
@@ -22,14 +20,13 @@
   },
   "requirements": [
     [
-      "has_epinephelus_melanostigma",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_epinephelus_melanostigma"
     ]
   ],
   "rewards": {
     "recipes": [
       "bettervannilafishes:cooked_epinephelus_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
