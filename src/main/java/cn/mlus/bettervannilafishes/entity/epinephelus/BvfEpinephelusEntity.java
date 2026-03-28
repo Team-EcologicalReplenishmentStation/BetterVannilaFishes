@@ -114,9 +114,9 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 40.0)
                 .add(Attributes.ATTACK_DAMAGE, 8)
-                .add(Attributes.MOVEMENT_SPEED, 1.2)
+                .add(Attributes.MOVEMENT_SPEED, 0.8)
                 .add(Attributes.FOLLOW_RANGE, 64)
-                .add(ForgeMod.SWIM_SPEED.get(), 1);
+                .add(ForgeMod.SWIM_SPEED.get(), 0.8);
     }
 
     @Override

@@ -31,7 +31,7 @@ public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(4);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class EpinephelusMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(0.8);
     }
 
     @Override
