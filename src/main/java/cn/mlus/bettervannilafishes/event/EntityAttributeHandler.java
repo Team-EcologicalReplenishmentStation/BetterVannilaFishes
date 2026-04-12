@@ -2,10 +2,12 @@ package cn.mlus.bettervannilafishes.event;
 
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.BvfButterflyfishEntity;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
 import cn.mlus.bettervannilafishes.entity.cichlid.BvfCichlidEntity;
 import cn.mlus.bettervannilafishes.entity.clownfish.BvfClownfishEntity;
-import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.epinephelus.BvfEpinephelusEntity;
+import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
@@ -69,6 +71,8 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.AEQUIDENS_TETRAMERUS.get(), BvfCichlidEntity.createAttributes().build());
         event.put(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), BvfCichlidEntity.createAttributes().build());
         event.put(BvfEntities.ASTRONOTUS_OCELLATUS.get(), BvfCichlidEntity.createAttributes().build());
+        event.put(BvfEntities.CHANNA_MICROPELTES.get(), ChannaMicropeltes.createAttributes().build());
+        event.put(BvfEntities.CHANNA_ARGUS.get(), ChannaArgus.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_OCELLARIS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.PREMNAS_BIACULEATUS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_POLYMNUS.get(), BvfClownfishEntity.createAttributes().build());
@@ -114,6 +118,8 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.AEQUIDENS_TETRAMERUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.ASTRONOTUS_OCELLATUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(BvfEntities.CHANNA_MICROPELTES.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRareWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(BvfEntities.CHANNA_ARGUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRareWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_OCELLARIS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.PREMNAS_BIACULEATUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_POLYMNUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
@@ -156,6 +162,19 @@ public class EntityAttributeHandler {
         if(rollSpawn(3, random, spawnType)) {
             return checkSurfaceWaterAnimalSpawnRules(level,pos);
         }else {
+            return false;
+        }
+    }
+
+    public static boolean checkRareWaterSpawnRules(
+            EntityType<? extends WaterAnimal> type,
+            LevelAccessor level,
+            MobSpawnType spawnType,
+            BlockPos pos,
+            RandomSource random) {
+        if(rollSpawn(3, random, spawnType)) {
+            return checkSurfaceWaterAnimalSpawnRules(level,pos);
+        } else {
             return false;
         }
     }

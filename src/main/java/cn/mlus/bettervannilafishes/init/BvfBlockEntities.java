@@ -44,6 +44,10 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ASTRONOTUS_OCELLATUS_SPECIMEN = BLOCK_ENTITIES.register("astronotus_ocellatus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHANNA_MICROPELTES_SPECIMEN = BLOCK_ENTITIES.register("channa_micropeltes_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHANNA_MICROPELTES_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHANNA_ARGUS_SPECIMEN = BLOCK_ENTITIES.register("channa_argus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHANNA_ARGUS_SPECIMEN.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

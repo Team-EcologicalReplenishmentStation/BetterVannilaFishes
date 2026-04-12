@@ -202,6 +202,16 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
+        this.add(BvfEntities.CHANNA_MICROPELTES.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHANNA_MICROPELTES.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
+        this.add(BvfEntities.CHANNA_ARGUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHANNA_ARGUS.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))

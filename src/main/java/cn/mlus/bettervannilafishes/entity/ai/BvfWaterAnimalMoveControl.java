@@ -27,10 +27,6 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
     }
 
     public void tick() {
-        if (this.applyGravity && this.mob.isInWater()) {
-            this.mob.setDeltaMovement(this.mob.getDeltaMovement().add(0.0, 0.005, 0.0));
-        }
-
         if (this.operation == Operation.MOVE_TO && !this.mob.getNavigation().isDone()) {
             double $$0 = this.wantedX - this.mob.getX();
             double $$1 = this.wantedY - this.mob.getY();

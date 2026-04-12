@@ -7,6 +7,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.ModifiableBiomeInfo;
 import org.jetbrains.annotations.NotNull;
@@ -26,7 +27,7 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.NAUTILUS.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.FEATHER_STAR.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.3);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.7,0.5);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.8,0.8);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_OCELLARIS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PREMNAS_BIACULEATUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_POLYMNUS.get(),0.7,0.1);
@@ -45,9 +46,9 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_COLLARE.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_RETICULATUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHAETODON_SPECULUM.get(),0.7,0.1);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),0.7,0.2);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_ITAJARA.get(),0.7,0.2);
-                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),0.7,0.2);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),0.7,0.7);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_ITAJARA.get(),0.7,0.7);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),0.7,0.7);
 
             }
             if(biome.is(BiomeTags.IS_RIVER)){
@@ -60,6 +61,12 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AEQUIDENS_TETRAMERUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ASTRONOTUS_OCELLATUS.get(),0.7,0.1);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_ARGUS.get(),0.8,0.3);
+            }
+            if(biome.is(Biomes.SWAMP) || biome.is(Biomes.MANGROVE_SWAMP)){
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_ARGUS.get(),0.8,0.3);
             }
             if(biome.is(BiomeTags.IS_DEEP_OCEAN)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.DOSIDICUS_GIGAS.get(),0.7,0.2);

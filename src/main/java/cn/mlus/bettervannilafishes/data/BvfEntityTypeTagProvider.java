@@ -56,7 +56,9 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 BvfEntities.CHAETODON_AURIGA.get(),
                 BvfEntities.CHAETODON_COLLARE.get(),
                 BvfEntities.CHAETODON_RETICULATUS.get(),
-                BvfEntities.CHAETODON_SPECULUM.get()
+                BvfEntities.CHAETODON_SPECULUM.get(),
+                BvfEntities.CHANNA_ARGUS.get(),
+                BvfEntities.CHANNA_MICROPELTES.get()
         );
 
         this.tag(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH).add(
@@ -101,6 +103,8 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
 
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.DOSIDICUS_GIGAS.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_MICROPELTES.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_ARGUS.get());
         this.tag(BvfTagKeys.TOP_PREDATOR)
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())
@@ -135,6 +139,8 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.AEQUIDENS_TETRAMERUS.get())
                 .add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get())
                 .add(BvfEntities.ASTRONOTUS_OCELLATUS.get())
+                .add(BvfEntities.CHANNA_MICROPELTES.get())
+                .add(BvfEntities.CHANNA_ARGUS.get())
                 .add(BvfEntities.AMPHIPRION_OCELLARIS.get())
                 .add(BvfEntities.PREMNAS_BIACULEATUS.get())
                 .add(BvfEntities.AMPHIPRION_POLYMNUS.get())

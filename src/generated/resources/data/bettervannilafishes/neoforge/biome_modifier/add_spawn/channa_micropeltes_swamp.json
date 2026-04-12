@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:swamp",
+  "spawners": {
+    "type": "bettervannilafishes:channa_micropeltes",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 2
+  }
+}

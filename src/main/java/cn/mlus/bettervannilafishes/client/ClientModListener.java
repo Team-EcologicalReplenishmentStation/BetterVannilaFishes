@@ -53,6 +53,8 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.AEQUIDENS_TETRAMERUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
 		event.registerEntityRenderer(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
 		event.registerEntityRenderer(BvfEntities.ASTRONOTUS_OCELLATUS.get(), context -> new BvfRenderer<>(context, new CichlidModel()));
+		event.registerEntityRenderer(BvfEntities.CHANNA_MICROPELTES.get(), BvfRenderer::new);
+		event.registerEntityRenderer(BvfEntities.CHANNA_ARGUS.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.AMPHIPRION_OCELLARIS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
 		event.registerEntityRenderer(BvfEntities.PREMNAS_BIACULEATUS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
 		event.registerEntityRenderer(BvfEntities.AMPHIPRION_POLYMNUS.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
@@ -78,6 +80,8 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.AEQUIDENS_TETRAMERUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.ASTRONOTUS_OCELLATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CichlidSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHANNA_MICROPELTES_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHANNA_ARGUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 	}
 
 }

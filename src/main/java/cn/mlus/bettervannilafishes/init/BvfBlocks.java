@@ -43,6 +43,10 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
     public static final DeferredHolder<Block,Block> ASTRONOTUS_OCELLATUS_SPECIMEN = BLOCKS.register("astronotus_ocellatus_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> CHANNA_MICROPELTES_SPECIMEN = BLOCKS.register("channa_micropeltes_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
+    public static final DeferredHolder<Block,Block> CHANNA_ARGUS_SPECIMEN = BLOCKS.register("channa_argus_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
