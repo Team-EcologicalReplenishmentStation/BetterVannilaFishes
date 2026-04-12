@@ -49,12 +49,12 @@
 				},
 				"Left_fin": {
 					"rotation": {
-						"vector": [76, "-77+math.sin(query.life_time*216-30)*1", -76]
+						"vector": ["-math.cos(query.life_time*108+30)*30", "-30-math.sin(query.life_time*108+30)*60", "-20-math.sin(query.life_time*108+30)*15"]
 					}
 				},
 				"Right_fin": {
 					"rotation": {
-						"vector": [76, "77+math.sin(query.life_time*216-30)*1", 76]
+						"vector": ["-math.cos(query.life_time*108+30)*30", "30+math.sin(query.life_time*108+30)*60", "20+math.sin(query.life_time*108+30)*15"]
 					}
 				},
 				"Left_fin_2": {
@@ -243,6 +243,5 @@
 				}
 			}
 		}
-	},
-	"geckolib_format_version": 2
+	}
 }

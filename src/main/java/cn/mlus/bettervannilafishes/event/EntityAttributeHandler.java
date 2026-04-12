@@ -2,16 +2,18 @@ package cn.mlus.bettervannilafishes.event;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
+import cn.mlus.bettervannilafishes.entity.butterflyfish.BvfButterflyfishEntity;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
 import cn.mlus.bettervannilafishes.entity.cichlid.BvfCichlidEntity;
 import cn.mlus.bettervannilafishes.entity.clownfish.BvfClownfishEntity;
-import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.epinephelus.BvfEpinephelusEntity;
+import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import cn.mlus.bettervannilafishes.entity.squid.DosidicusGigasEntity;
-import cn.mlus.bettervannilafishes.entity.butterflyfish.BvfButterflyfishEntity;
 import cn.mlus.bettervannilafishes.entity.surgeonfish.BvfSurgeonfishEntity;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
 import net.minecraft.core.BlockPos;
@@ -69,6 +71,8 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.AEQUIDENS_TETRAMERUS.get(), BvfCichlidEntity.createAttributes().build());
         event.put(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), BvfCichlidEntity.createAttributes().build());
         event.put(BvfEntities.ASTRONOTUS_OCELLATUS.get(), BvfCichlidEntity.createAttributes().build());
+        event.put(BvfEntities.CHANNA_MICROPELTES.get(), ChannaMicropeltes.createAttributes().build());
+        event.put(BvfEntities.CHANNA_ARGUS.get(), ChannaArgus.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_OCELLARIS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.PREMNAS_BIACULEATUS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_POLYMNUS.get(), BvfClownfishEntity.createAttributes().build());
@@ -93,9 +97,9 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.FEATHER_STAR.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.OCEAN_FLOOR, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.SPEARFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.GALEOCERDO_CUVIER.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
-        event.register(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
-        event.register(BvfEntities.EPINEPHELUS_ITAJARA.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
-        event.register(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkDeepWarmOceanSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.EPINEPHELUS_ITAJARA.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkDeepWarmOceanSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkDeepWarmOceanSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.ACANTHURUS_ACHILLES.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.ACANTHURUS_LEUCOSTERNON.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.PARACANTHURUS_HEPATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
@@ -114,6 +118,8 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.AEQUIDENS_TETRAMERUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.ASTRONOTUS_OCELLATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.CHANNA_MICROPELTES.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRareWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.CHANNA_ARGUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRareWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_OCELLARIS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.PREMNAS_BIACULEATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_POLYMNUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
@@ -147,6 +153,18 @@ public class EntityAttributeHandler {
         return checkSurfaceWaterAnimalSpawnRules(level,pos);
     }
 
+    public static boolean checkDeepWarmOceanSpawnRules(
+            EntityType<? extends Mob> type,
+            LevelAccessor level,
+            MobSpawnType spawnType,
+            BlockPos pos,
+            RandomSource random) {
+        if(!level.getBiome(pos).is(Biomes.WARM_OCEAN) && !level.getBiome(pos).is(Biomes.LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.DEEP_LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.RIVER)){
+            return false;
+        }
+        return checkDeepWaterAnimalSpawnRules(level,pos);
+    }
+
     public static boolean checkDeepOceanSpawnRules(
             EntityType<? extends Mob> type,
             LevelAccessor level,
@@ -172,9 +190,28 @@ public class EntityAttributeHandler {
         }
     }
 
+    public static boolean checkRareWaterSpawnRules(
+            EntityType<? extends WaterAnimal> type,
+            LevelAccessor level,
+            MobSpawnType spawnType,
+            BlockPos pos,
+            RandomSource random) {
+        if(rollSpawn(6, random, spawnType)) {
+            return checkSurfaceWaterAnimalSpawnRules(level,pos);
+        } else {
+            return false;
+        }
+    }
+
     public static boolean checkSurfaceWaterAnimalSpawnRules(LevelAccessor pLevel, BlockPos pPos) {
         int $$5 = pLevel.getSeaLevel();
         int $$6 = $$5 - 13;
+        return pPos.getY() >= $$6 && pPos.getY() <= $$5 && pLevel.getFluidState(pPos.below()).is(FluidTags.WATER) && pLevel.getBlockState(pPos.above()).is(Blocks.WATER);
+    }
+
+    public static boolean checkDeepWaterAnimalSpawnRules(LevelAccessor pLevel, BlockPos pPos) {
+        int $$5 = pLevel.getSeaLevel() - 13;
+        int $$6 = $$5 - 26;
         return pPos.getY() >= $$6 && pPos.getY() <= $$5 && pLevel.getFluidState(pPos.below()).is(FluidTags.WATER) && pLevel.getBlockState(pPos.above()).is(Blocks.WATER);
     }
 
@@ -186,3 +223,4 @@ public class EntityAttributeHandler {
         }
     }
 }
+

@@ -71,6 +71,8 @@ public class FishingLootModifier extends LootModifier {
             BvfItems.AEQUIDENS_TETRAMERUS,
             BvfItems.GYMNOGEOPHAGUS_BALZANII,
             BvfItems.ASTRONOTUS_OCELLATUS,
+            BvfItems.CHANNA_MICROPELTES,
+            BvfItems.CHANNA_ARGUS,
             BvfItems.AMPHIPRION_OCELLARIS,
             BvfItems.PREMNAS_BIACULEATUS,
             BvfItems.AMPHIPRION_POLYMNUS,
@@ -99,3 +101,4 @@ public class FishingLootModifier extends LootModifier {
         return BvfLootModifiers.FISHING_LOOT.get();
     }
 }
+

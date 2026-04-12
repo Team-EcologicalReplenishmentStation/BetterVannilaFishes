@@ -108,6 +108,14 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(BvfItems.ASTRONOTUS_OCELLATUS.get()), has(BvfItems.ASTRONOTUS_OCELLATUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_astronotus_ocellatus"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.CHANNA_MICROPELTES.get())
+                .unlockedBy(getHasName(BvfItems.CHANNA_MICROPELTES.get()), has(BvfItems.CHANNA_MICROPELTES.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_channa_micropeltes"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.CHANNA_ARGUS.get())
+                .unlockedBy(getHasName(BvfItems.CHANNA_ARGUS.get()), has(BvfItems.CHANNA_ARGUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_channa_argus"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
                 .requires(BvfItems.AMPHIPRION_OCELLARIS.get())
                 .unlockedBy(getHasName(BvfItems.AMPHIPRION_OCELLARIS.get()), has(BvfItems.AMPHIPRION_OCELLARIS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_ocellaris"));
@@ -217,10 +225,22 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.ASTRONOTUS_OCELLATUS.get()), has(BvfItems.ASTRONOTUS_OCELLATUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("astronotus_ocellatus_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.CHANNA_MICROPELTES_SPECIMEN.get(),1)
+                .requires(BvfItems.CHANNA_MICROPELTES.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.CHANNA_MICROPELTES.get()), has(BvfItems.CHANNA_MICROPELTES.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("channa_micropeltes_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.CHANNA_ARGUS_SPECIMEN.get(),1)
+                .requires(BvfItems.CHANNA_ARGUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.CHANNA_ARGUS.get()), has(BvfItems.CHANNA_ARGUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("channa_argus_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),BvfItems.COOKED_EPINEPHELUS.get(),0.35f);
+        buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_MICROPELTES.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
+        buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_ARGUS.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
 
         buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
                 .requires(BvfItems.SPEARFISH.get())
@@ -257,4 +277,16 @@ public class BvfRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 600)
                 .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(getItemName(output) + "_campfire_cooking"));
     }
+
+    private static void buildFoodProcessRecipesWithSource(Consumer<FinishedRecipe> recipeOutput, Item input, Item output, float xp) {
+        String outputName = getItemName(output);
+        String inputName = getItemName(input);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 200)
+                .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(outputName + "_from_" + inputName + "_smelting"));
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 100)
+                .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(outputName + "_from_" + inputName + "_smoking"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 600)
+                .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(outputName + "_from_" + inputName + "_campfire_cooking"));
+    }
 }
+

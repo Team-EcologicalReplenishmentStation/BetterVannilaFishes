@@ -2,13 +2,11 @@ package cn.mlus.bettervannilafishes.entity.epinephelus;
 
 import cn.mlus.bettervannilafishes.client.animator.EpinehelusAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
-import cn.mlus.bettervannilafishes.client.animator.SharkAnimator;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.entity.epinephelus.ai.EpinephelusMeleeAttackGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai.SharkMeleeAttackGoal;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -21,11 +19,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.SmoothSwimmingLookControl;
@@ -90,9 +84,9 @@ public abstract class BvfEpinephelusEntity extends BvfWaterAnimal implements Bvf
             if (isInWater()) {
                 if(state.isMoving()){
                     if (isAggressive()) {
-                        builder.thenLoop("animation.swim");
-                    } else {
                         builder.thenLoop("animation.quickly_swim");
+                    } else {
+                        builder.thenLoop("animation.swim");
                     }
                 }else {
                     builder.thenLoop("animation.idle");

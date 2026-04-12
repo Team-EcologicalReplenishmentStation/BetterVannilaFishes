@@ -265,6 +265,20 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> CHANNA_MICROPELTES_BUCKET = ITEMS.register("channa_micropeltes_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHANNA_MICROPELTES,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> CHANNA_ARGUS_BUCKET = ITEMS.register("channa_argus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CHANNA_ARGUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS_BUCKET = ITEMS.register("amphiprion_ocellaris_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -553,6 +567,20 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> CHANNA_MICROPELTES_SPAWN_EGG = ITEMS.register("channa_micropeltes_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.CHANNA_MICROPELTES,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> CHANNA_ARGUS_SPAWN_EGG = ITEMS.register("channa_argus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.CHANNA_ARGUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS_SPAWN_EGG = ITEMS.register("amphiprion_ocellaris_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -688,6 +716,12 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ASTRONOTUS_OCELLATUS = ITEMS.register("astronotus_ocellatus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> CHANNA_MICROPELTES = ITEMS.register("channa_micropeltes",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> CHANNA_ARGUS = ITEMS.register("channa_argus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> COOKED_CHANNA = ITEMS.register("cooked_channa",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PREMNAS_BIACULEATUS = ITEMS.register("premnas_biaculeatus",
@@ -735,6 +769,10 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ASTRONOTUS_OCELLATUS_SPECIMEN = ITEMS.register("astronotus_ocellatus_specimen",
             () -> new BlockItem(BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHANNA_MICROPELTES_SPECIMEN = ITEMS.register("channa_micropeltes_specimen",
+            () -> new BlockItem(BvfBlocks.CHANNA_MICROPELTES_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHANNA_ARGUS_SPECIMEN = ITEMS.register("channa_argus_specimen",
+            () -> new BlockItem(BvfBlocks.CHANNA_ARGUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final RegistryObject<Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));
@@ -742,3 +780,4 @@ public class BvfItems {
         ITEMS.register(eventBus);
     }
 }
+

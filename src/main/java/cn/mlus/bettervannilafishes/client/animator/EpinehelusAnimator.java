@@ -1,6 +1,5 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
-import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.epinephelus.BvfEpinephelusEntity;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -24,7 +23,7 @@ public class EpinehelusAnimator<T extends BvfEpinephelusEntity> extends GeneralA
             return;
         }
 
-        String[] tailBoneNames = {"tail_1","tail_2","tail_3","tail_4"};
+        String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
             GeoBone tail = tailBones.get(i);

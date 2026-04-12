@@ -370,12 +370,12 @@
 				},
 				"Left_fin": {
 					"rotation": {
-						"vector": [-97, "-49.5-math.sin(query.life_time*180-30)", 41]
+						"vector": [17.5, "-2-math.sin(query.life_time*180-30)", 38.5]
 					}
 				},
 				"Right_fin": {
 					"rotation": {
-						"vector": [-97, "49.5-math.sin(query.life_time*180-30)", -41]
+						"vector": [17.5, "2-math.sin(query.life_time*180-30)", -38.5]
 					}
 				},
 				"Left_fin_2": {
@@ -953,6 +953,5 @@
 				}
 			}
 		}
-	},
-	"geckolib_format_version": 2
+	}
 }

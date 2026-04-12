@@ -2,7 +2,6 @@ package cn.mlus.bettervannilafishes.client.model.entity;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.entity.cichlid.BvfCichlidEntity;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 
 public class CichlidModel extends BvfModel<BvfCichlidEntity> {

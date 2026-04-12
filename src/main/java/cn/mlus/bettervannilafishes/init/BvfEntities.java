@@ -1,16 +1,19 @@
 package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
+import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
 import cn.mlus.bettervannilafishes.entity.cichlid.*;
 import cn.mlus.bettervannilafishes.entity.clownfish.*;
 import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
 import cn.mlus.bettervannilafishes.entity.cod.HaddockCod;
 import cn.mlus.bettervannilafishes.entity.cod.PacificCod;
-import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusItajara;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusLanceolatus;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusMelanostigma;
+import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
+import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.ObscurePuffer;
 import cn.mlus.bettervannilafishes.entity.pufferfish.PorcupineFish;
@@ -21,7 +24,6 @@ import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import cn.mlus.bettervannilafishes.entity.squid.DosidicusGigasEntity;
 import cn.mlus.bettervannilafishes.entity.surgeonfish.*;
-import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -178,6 +180,14 @@ public class BvfEntities {
             () -> EntityType.Builder.of(AstronotusOcellatus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
                     .build(BetterVannilaFishes.prefix("astronotus_ocellatus").toString()));
+    public static final RegistryObject<EntityType<ChannaMicropeltes>> CHANNA_MICROPELTES = ENTITIES.register("channa_micropeltes",
+            () -> EntityType.Builder.of(ChannaMicropeltes::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("channa_micropeltes").toString()));
+    public static final RegistryObject<EntityType<ChannaArgus>> CHANNA_ARGUS = ENTITIES.register("channa_argus",
+            () -> EntityType.Builder.of(ChannaArgus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("channa_argus").toString()));
     public static final RegistryObject<EntityType<AmphiprionOcellaris>> AMPHIPRION_OCELLARIS = ENTITIES.register("amphiprion_ocellaris",
             () -> EntityType.Builder.of(AmphiprionOcellaris::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
@@ -211,3 +221,4 @@ public class BvfEntities {
         ENTITIES.register(eventBus);
     }
 }
+

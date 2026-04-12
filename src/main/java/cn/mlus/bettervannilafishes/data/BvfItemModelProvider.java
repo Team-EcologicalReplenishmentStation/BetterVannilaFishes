@@ -48,6 +48,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get());
@@ -89,6 +91,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get());
         this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get());
         this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get());
+        this.simpleItem(BvfItems.CHANNA_MICROPELTES_BUCKET.get());
+        this.simpleItem(BvfItems.CHANNA_ARGUS_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get());
@@ -136,6 +140,9 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS.get());
         this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
         this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS.get());
+        this.simpleItem(BvfItems.CHANNA_MICROPELTES.get());
+        this.simpleItem(BvfItems.CHANNA_ARGUS.get());
+        this.simpleItem(BvfItems.COOKED_CHANNA.get());
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS.get());
@@ -160,6 +167,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get());
         this.simpleItem(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get());
         this.simpleItem(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {
@@ -168,3 +177,4 @@ public class BvfItemModelProvider extends ItemModelProvider {
                 .texture("layer0", this.modLoc("item/" + path));
     }
 }
+

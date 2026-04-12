@@ -19,7 +19,7 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
-        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get()).add(BvfEntities.DOSIDICUS_GIGAS.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get()).add(BvfEntities.DOSIDICUS_GIGAS.get()).add(BvfEntities.CHANNA_MICROPELTES.get()).add(BvfEntities.CHANNA_ARGUS.get());
         this.tag(BvfTagKeys.TOP_PREDATOR)
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())
@@ -54,6 +54,8 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.AEQUIDENS_TETRAMERUS.get())
                 .add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get())
                 .add(BvfEntities.ASTRONOTUS_OCELLATUS.get())
+                .add(BvfEntities.CHANNA_MICROPELTES.get())
+                .add(BvfEntities.CHANNA_ARGUS.get())
                 .add(BvfEntities.AMPHIPRION_OCELLARIS.get())
                 .add(BvfEntities.PREMNAS_BIACULEATUS.get())
                 .add(BvfEntities.AMPHIPRION_POLYMNUS.get())
@@ -62,3 +64,4 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.AMPHIPRION_PERCULA.get());
     }
 }
+

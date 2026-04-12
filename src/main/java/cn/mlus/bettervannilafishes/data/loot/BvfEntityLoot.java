@@ -188,6 +188,16 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
+        this.add(BvfEntities.CHANNA_MICROPELTES.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHANNA_MICROPELTES.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE)))));
+        this.add(BvfEntities.CHANNA_ARGUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.CHANNA_ARGUS.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE)))));
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -228,3 +238,4 @@ public class BvfEntityLoot extends VanillaEntityLoot {
         return ForgeRegistries.ENTITY_TYPES.getValues().stream().filter(entities -> Objects.requireNonNull(ForgeRegistries.ENTITY_TYPES.getKey(entities)).getNamespace().equals(BetterVannilaFishes.MODID));
     }
 }
+

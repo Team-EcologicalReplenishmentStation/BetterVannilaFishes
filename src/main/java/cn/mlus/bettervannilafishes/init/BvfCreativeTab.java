@@ -43,6 +43,8 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPAWN_EGG.get());
                output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG.get());
                output.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get());
+               output.accept(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get());
                output.accept(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get());
                output.accept(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get());
                output.accept(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get());
@@ -85,6 +87,8 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AEQUIDENS_TETRAMERUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHANNA_MICROPELTES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.CHANNA_ARGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -128,6 +132,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AEQUIDENS_TETRAMERUS.get());
                output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII.get());
                output.accept(BvfItems.ASTRONOTUS_OCELLATUS.get());
+               output.accept(BvfItems.CHANNA_MICROPELTES.get());
+               output.accept(BvfItems.CHANNA_ARGUS.get());
+               output.accept(BvfItems.COOKED_CHANNA.get());
                output.accept(BvfItems.AMPHIPRION_OCELLARIS.get());
                output.accept(BvfItems.PREMNAS_BIACULEATUS.get());
                output.accept(BvfItems.AMPHIPRION_POLYMNUS.get());
@@ -161,9 +168,12 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AEQUIDENS_TETRAMERUS_SPECIMEN.get());
                output.accept(BvfItems.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get());
                output.accept(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get());
+                   output.accept(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
+                   output.accept(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
             }).build());
     
     public static void register(IEventBus eventBus) {
         TABS.register(eventBus);
     }
 }
+
