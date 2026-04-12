@@ -60,7 +60,6 @@ public class ChannaMeleeAttackGoal extends MeleeAttackGoal {
                 this.mob.swing(InteractionHand.MAIN_HAND);
                 this.mob.doHurtTarget(pEnemy);
                 this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
-                ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
             });
         }
     }
