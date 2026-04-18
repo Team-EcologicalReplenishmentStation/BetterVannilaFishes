@@ -52,6 +52,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.ASTRONOTUS_OCELLATUS.get(),"Astronotus ocellatus");
         this.add(BvfEntities.CHANNA_MICROPELTES.get(),"Channa micropeltes");
         this.add(BvfEntities.CHANNA_ARGUS.get(),"Channa argus");
+        this.add(BvfEntities.ELOPICHTHYS_BAMBUSA.get(),"Elopichthys bambusa");
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(),"Amphiprion ocellaris");
         this.add(BvfEntities.PREMNAS_BIACULEATUS.get(),"Premnas biaculeatus");
         this.add(BvfEntities.AMPHIPRION_POLYMNUS.get(),"Amphiprion polymnus");
@@ -96,6 +97,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get(),"Oscar Spawn Egg");
         this.add(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get(),"Channa micropeltes Spawn Egg");
         this.add(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get(),"Channa argus Spawn Egg");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPAWN_EGG.get(),"Elopichthys bambusa Spawn Egg");
         this.add(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get(),"Ocellaris Clownfish Spawn Egg");
         this.add(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get(),"Spine-cheeked Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get(),"Saddleback Clownfish Spawn Egg");
@@ -139,6 +141,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get(),"Oscar Bucket");
         this.add(BvfItems.CHANNA_MICROPELTES_BUCKET.get(),"Channa micropeltes Bucket");
         this.add(BvfItems.CHANNA_ARGUS_BUCKET.get(),"Channa argus Bucket");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_BUCKET.get(),"Richardson Bucket");
         this.add(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get(),"Ocellaris Clownfish Bucket");
         this.add(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get(),"Spine-cheeked Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get(),"Saddleback Clownfish Bucket");
@@ -186,7 +189,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS.get(),"Oscar");
         this.add(BvfItems.CHANNA_MICROPELTES.get(),"Channa micropeltes");
         this.add(BvfItems.CHANNA_ARGUS.get(),"Channa argus");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA.get(),"Richardson");
         this.add(BvfItems.COOKED_CHANNA.get(),"Cooked Snakehead");
+        this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"Cooked Richardson");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"Ocellaris Clownfish");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"Spine-cheeked Clownfish");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"Saddleback Clownfish");
@@ -212,6 +217,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),"Oscar Specimen");
         this.add(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get(),"Channa micropeltes Specimen");
         this.add(BvfItems.CHANNA_ARGUS_SPECIMEN.get(),"Channa argus Specimen");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),"Richardson Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");

@@ -49,6 +49,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.ASTRONOTUS_OCELLATUS.get(),"眼点丽鱼");
         this.add(BvfEntities.CHANNA_MICROPELTES.get(),"小盾鳢");
         this.add(BvfEntities.CHANNA_ARGUS.get(),"乌鳢");
+        this.add(BvfEntities.ELOPICHTHYS_BAMBUSA.get(),"鳡鱼");
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(),"眼斑双锯鱼");
         this.add(BvfEntities.PREMNAS_BIACULEATUS.get(),"棘颊双锯鱼");
         this.add(BvfEntities.AMPHIPRION_POLYMNUS.get(),"鞍斑双锯鱼");
@@ -93,6 +94,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPAWN_EGG.get(),"眼点丽鱼生成蛋");
         this.add(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get(),"小盾鳢生成蛋");
         this.add(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get(),"乌鳢生成蛋");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPAWN_EGG.get(),"鳡鱼生成蛋");
         this.add(BvfItems.AMPHIPRION_OCELLARIS_SPAWN_EGG.get(),"眼斑双锯鱼生成蛋");
         this.add(BvfItems.PREMNAS_BIACULEATUS_SPAWN_EGG.get(),"棘颊双锯鱼生成蛋");
         this.add(BvfItems.AMPHIPRION_POLYMNUS_SPAWN_EGG.get(),"鞍斑双锯鱼生成蛋");
@@ -136,6 +138,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_BUCKET.get(),"眼点丽鱼桶");
         this.add(BvfItems.CHANNA_MICROPELTES_BUCKET.get(),"小盾鳢桶");
         this.add(BvfItems.CHANNA_ARGUS_BUCKET.get(),"乌鳢桶");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_BUCKET.get(),"鳡鱼桶");
         this.add(BvfItems.AMPHIPRION_OCELLARIS_BUCKET.get(),"眼斑双锯鱼桶");
         this.add(BvfItems.PREMNAS_BIACULEATUS_BUCKET.get(),"棘颊双锯鱼桶");
         this.add(BvfItems.AMPHIPRION_POLYMNUS_BUCKET.get(),"鞍斑双锯鱼桶");
@@ -183,7 +186,9 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS.get(),"眼点丽鱼");
         this.add(BvfItems.CHANNA_MICROPELTES.get(),"小盾鳢");
         this.add(BvfItems.CHANNA_ARGUS.get(),"乌鳢");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA.get(),"鳡鱼");
         this.add(BvfItems.COOKED_CHANNA.get(),"熟鳢");
+        this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"熟鳡鱼");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"眼斑双锯鱼");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"棘颊双锯鱼");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"鞍斑双锯鱼");
@@ -209,6 +214,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.ASTRONOTUS_OCELLATUS_SPECIMEN.get(), "眼点丽鱼标本");
         this.add(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get(), "小盾鳢标本");
         this.add(BvfItems.CHANNA_ARGUS_SPECIMEN.get(), "乌鳢标本");
+        this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(), "鳡鱼标本");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "附魔河豚");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "鹦鹉螺祝福");

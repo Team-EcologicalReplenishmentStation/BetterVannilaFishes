@@ -10,7 +10,6 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
     private final int maxTurnY;
     private final float inWaterSpeedModifier;
     private final float outsideWaterSpeedModifier;
-    private final boolean applyGravity;
     private final boolean neverStop;
 
     private final BvfWaterAnimal fish;
@@ -22,7 +21,6 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
         this.maxTurnY = 10;
         this.inWaterSpeedModifier = 0.02F;
         this.outsideWaterSpeedModifier = 0F;
-        this.applyGravity = true;
         this.fish = pMob;
     }
 
@@ -38,7 +36,8 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
                 float $$4 = (float)(Mth.atan2($$2, $$0) * 57.2957763671875) - 90.0F;
 
                 this.mob.setYRot(this.rotlerp(this.mob.getYRot(), $$4, (float)this.maxTurnY));
-                this.mob.yHeadRot = this.mob.yBodyRot;
+                this.mob.yBodyRot = this.mob.getYRot();
+                this.mob.yHeadRot = this.mob.getYRot();
                 float $$5 = (float)(this.speedModifier * this.mob.getAttributeValue(Attributes.MOVEMENT_SPEED));
                 if (this.mob.isInWater()) {
 

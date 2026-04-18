@@ -1,7 +1,6 @@
 package cn.mlus.bettervannilafishes.entity.channa.ai;
 
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
 import cn.mlus.bettervannilafishes.util.TickHelper;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;

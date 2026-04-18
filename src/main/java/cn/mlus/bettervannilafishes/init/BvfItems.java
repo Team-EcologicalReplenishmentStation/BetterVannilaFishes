@@ -272,6 +272,13 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> ELOPICHTHYS_BAMBUSA_BUCKET = ITEMS.register("elopichthys_bambusa_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.ELOPICHTHYS_BAMBUSA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS_BUCKET = ITEMS.register("amphiprion_ocellaris_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_OCELLARIS.get(),
@@ -574,6 +581,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> ELOPICHTHYS_BAMBUSA_SPAWN_EGG = ITEMS.register("elopichthys_bambusa_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.ELOPICHTHYS_BAMBUSA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS_SPAWN_EGG = ITEMS.register("amphiprion_ocellaris_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -720,7 +734,11 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
     public static final DeferredHolder<Item,Item> CHANNA_ARGUS = ITEMS.register("channa_argus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+    public static final DeferredHolder<Item,Item> ELOPICHTHYS_BAMBUSA = ITEMS.register("elopichthys_bambusa",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
     public static final DeferredHolder<Item,Item> COOKED_CHANNA = ITEMS.register("cooked_channa",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_ELOPICHTHYS_BAMBUSA = ITEMS.register("cooked_elopichthys_bambusa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -773,6 +791,8 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.CHANNA_MICROPELTES_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHANNA_ARGUS_SPECIMEN = ITEMS.register("channa_argus_specimen",
             () -> new BlockItem(BvfBlocks.CHANNA_ARGUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> ELOPICHTHYS_BAMBUSA_SPECIMEN = ITEMS.register("elopichthys_bambusa_specimen",
+            () -> new BlockItem(BvfBlocks.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final DeferredHolder<Item,Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));

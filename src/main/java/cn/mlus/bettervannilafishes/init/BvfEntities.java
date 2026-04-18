@@ -9,6 +9,7 @@ import cn.mlus.bettervannilafishes.entity.clownfish.*;
 import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
 import cn.mlus.bettervannilafishes.entity.cod.HaddockCod;
 import cn.mlus.bettervannilafishes.entity.cod.PacificCod;
+import cn.mlus.bettervannilafishes.entity.elopichthys.ElopichthysBambusa;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusItajara;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusLanceolatus;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusMelanostigma;
@@ -184,6 +185,10 @@ public class BvfEntities {
             () -> EntityType.Builder.of(ChannaArgus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.8F, 0.55F)
                     .build(BetterVannilaFishes.prefix("channa_argus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<ElopichthysBambusa>> ELOPICHTHYS_BAMBUSA = ENTITIES.register("elopichthys_bambusa",
+            () -> EntityType.Builder.of(ElopichthysBambusa::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("elopichthys_bambusa").toString()));
     public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionOcellaris>> AMPHIPRION_OCELLARIS = ENTITIES.register("amphiprion_ocellaris",
             () -> EntityType.Builder.of(AmphiprionOcellaris::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
