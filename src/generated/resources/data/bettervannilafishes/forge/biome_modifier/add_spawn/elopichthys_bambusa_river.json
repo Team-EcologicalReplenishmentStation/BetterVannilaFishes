@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "minecraft:river",
+  "spawners": {
+    "type": "bettervannilafishes:elopichthys_bambusa",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 2
+  }
+}

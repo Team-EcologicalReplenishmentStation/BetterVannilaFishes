@@ -198,6 +198,11 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.CHANNA_ARGUS.get()))
                         .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE)))));
+        this.add(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.ELOPICHTHYS_BAMBUSA.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE)))));
         this.add(BvfEntities.AMPHIPRION_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))

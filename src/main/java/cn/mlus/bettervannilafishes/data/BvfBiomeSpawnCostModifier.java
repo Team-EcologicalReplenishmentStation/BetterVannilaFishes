@@ -65,6 +65,7 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ASTRONOTUS_OCELLATUS.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_ARGUS.get(),0.8,0.3);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ELOPICHTHYS_BAMBUSA.get(),1.2,0.6);
             }
             if(biome.is(Biomes.SWAMP) || biome.is(Biomes.MANGROVE_SWAMP)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);

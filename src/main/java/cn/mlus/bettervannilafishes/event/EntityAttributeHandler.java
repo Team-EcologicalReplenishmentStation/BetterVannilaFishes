@@ -5,6 +5,7 @@ import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.BvfButterflyfishEntity;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
+import cn.mlus.bettervannilafishes.entity.elopichthys.ElopichthysBambusa;
 import cn.mlus.bettervannilafishes.entity.cichlid.BvfCichlidEntity;
 import cn.mlus.bettervannilafishes.entity.clownfish.BvfClownfishEntity;
 import cn.mlus.bettervannilafishes.entity.epinephelus.BvfEpinephelusEntity;
@@ -73,6 +74,7 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.ASTRONOTUS_OCELLATUS.get(), BvfCichlidEntity.createAttributes().build());
         event.put(BvfEntities.CHANNA_MICROPELTES.get(), ChannaMicropeltes.createAttributes().build());
         event.put(BvfEntities.CHANNA_ARGUS.get(), ChannaArgus.createAttributes().build());
+        event.put(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), ElopichthysBambusa.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_OCELLARIS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.PREMNAS_BIACULEATUS.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_POLYMNUS.get(), BvfClownfishEntity.createAttributes().build());
@@ -120,6 +122,7 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.ASTRONOTUS_OCELLATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.CHANNA_MICROPELTES.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.CHANNA_ARGUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_OCELLARIS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.PREMNAS_BIACULEATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_POLYMNUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);

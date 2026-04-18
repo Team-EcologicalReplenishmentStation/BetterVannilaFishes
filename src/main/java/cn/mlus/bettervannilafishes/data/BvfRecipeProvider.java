@@ -116,6 +116,10 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(BvfItems.CHANNA_ARGUS.get()), has(BvfItems.CHANNA_ARGUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_channa_argus"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.ELOPICHTHYS_BAMBUSA.get())
+                .unlockedBy(getHasName(BvfItems.ELOPICHTHYS_BAMBUSA.get()), has(BvfItems.ELOPICHTHYS_BAMBUSA.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_elopichthys_bambusa"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
                 .requires(BvfItems.AMPHIPRION_OCELLARIS.get())
                 .unlockedBy(getHasName(BvfItems.AMPHIPRION_OCELLARIS.get()), has(BvfItems.AMPHIPRION_OCELLARIS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_amphiprion_ocellaris"));
@@ -235,12 +239,18 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.CHANNA_ARGUS.get()), has(BvfItems.CHANNA_ARGUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("channa_argus_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),1)
+                .requires(BvfItems.ELOPICHTHYS_BAMBUSA.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.ELOPICHTHYS_BAMBUSA.get()), has(BvfItems.ELOPICHTHYS_BAMBUSA.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("elopichthys_bambusa_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),BvfItems.COOKED_EPINEPHELUS.get(),0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_MICROPELTES.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_ARGUS.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
+        buildFoodProcessRecipesWithSource(pWriter, BvfItems.ELOPICHTHYS_BAMBUSA.get(), BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(), 0.35f);
 
         buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
                 .requires(BvfItems.SPEARFISH.get())

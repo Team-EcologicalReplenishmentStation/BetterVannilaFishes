@@ -48,6 +48,8 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHANNA_MICROPELTES_SPECIMEN));
     public static final RegistryObject<Block> CHANNA_ARGUS_SPECIMEN = BLOCKS.register("channa_argus_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHANNA_ARGUS_SPECIMEN));
+    public static final RegistryObject<Block> ELOPICHTHYS_BAMBUSA_SPECIMEN = BLOCKS.register("elopichthys_bambusa_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ELOPICHTHYS_BAMBUSA_SPECIMEN));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

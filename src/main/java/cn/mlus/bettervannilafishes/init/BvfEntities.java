@@ -4,6 +4,7 @@ import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
+import cn.mlus.bettervannilafishes.entity.elopichthys.ElopichthysBambusa;
 import cn.mlus.bettervannilafishes.entity.cichlid.*;
 import cn.mlus.bettervannilafishes.entity.clownfish.*;
 import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
@@ -188,6 +189,10 @@ public class BvfEntities {
             () -> EntityType.Builder.of(ChannaArgus::new, MobCategory.WATER_AMBIENT)
                     .sized(0.8F, 0.55F)
                     .build(BetterVannilaFishes.prefix("channa_argus").toString()));
+    public static final RegistryObject<EntityType<ElopichthysBambusa>> ELOPICHTHYS_BAMBUSA = ENTITIES.register("elopichthys_bambusa",
+            () -> EntityType.Builder.of(ElopichthysBambusa::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("elopichthys_bambusa").toString()));
     public static final RegistryObject<EntityType<AmphiprionOcellaris>> AMPHIPRION_OCELLARIS = ENTITIES.register("amphiprion_ocellaris",
             () -> EntityType.Builder.of(AmphiprionOcellaris::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)

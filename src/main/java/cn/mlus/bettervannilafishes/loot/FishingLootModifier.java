@@ -73,6 +73,7 @@ public class FishingLootModifier extends LootModifier {
             BvfItems.ASTRONOTUS_OCELLATUS,
             BvfItems.CHANNA_MICROPELTES,
             BvfItems.CHANNA_ARGUS,
+            BvfItems.ELOPICHTHYS_BAMBUSA,
             BvfItems.AMPHIPRION_OCELLARIS,
             BvfItems.PREMNAS_BIACULEATUS,
             BvfItems.AMPHIPRION_POLYMNUS,

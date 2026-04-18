@@ -9,7 +9,7 @@ public class SquidMoveControl extends BvfWaterAnimalMoveControl {
     private final DosidicusGigasEntity squid;
 
     public SquidMoveControl(DosidicusGigasEntity pMob) {
-        super(false,pMob);
+        super(true,pMob);
         this.squid = pMob;
     }
 
