@@ -200,10 +200,6 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
     }
 
     @Override
-    protected void handleAirSupply(int pAirSupply) {
-    }
-
-    @Override
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(BvfItems.ELOPICHTHYS_BAMBUSA_BUCKET.get());
     }

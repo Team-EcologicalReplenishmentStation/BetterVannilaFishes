@@ -92,28 +92,16 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_LANCEOLATUS.get())))
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
-                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
         );
         this.add(BvfEntities.EPINEPHELUS_ITAJARA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_ITAJARA.get())))
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
-                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
         );
         this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())))
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
-                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
         );
         this.add(BvfEntities.ACANTHURUS_ACHILLES.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -163,7 +151,6 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.CHAETODON_SPECULUM.get()))));
-        // Cichlid (丽鱼) - 掉落各自的物品
         this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
