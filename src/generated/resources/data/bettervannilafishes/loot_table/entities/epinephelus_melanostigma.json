@@ -21,16 +21,6 @@
         }
       ],
       "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "bettervannilafishes:shark_fin"
-        }
-      ],
-      "rolls": 1.0
     }
   ],
   "random_sequence": "bettervannilafishes:entities/epinephelus_melanostigma"

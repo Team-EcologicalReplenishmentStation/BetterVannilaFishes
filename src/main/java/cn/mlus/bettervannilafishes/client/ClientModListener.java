@@ -3,6 +3,7 @@ package cn.mlus.bettervannilafishes.client;
 import cn.mlus.bettervannilafishes.client.model.block.CichlidSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.CodSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.EpinephelusSpecimenModel;
+import cn.mlus.bettervannilafishes.client.model.block.HusoDauricusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.TigerSharkSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.entity.*;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfRenderer;
@@ -63,6 +64,7 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.AMPHIPRION_CLARKII.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
 		event.registerEntityRenderer(BvfEntities.AMPHIPRION_PERCULA.get(), context -> new BvfRenderer<>(context, new ClownfishModel()));
 		event.registerEntityRenderer(BvfEntities.DOSIDICUS_GIGAS.get(), context -> new BvfRenderer<>(context, new DosidicusGigasModel()));
+		event.registerEntityRenderer(BvfEntities.HUSO_DAURICUS.get(), context -> new BvfRenderer<>(context, new HusoDauricusModel()));
 
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CodSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CodSpecimenModel()));
@@ -84,6 +86,7 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.CHANNA_MICROPELTES_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.CHANNA_ARGUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.HUSO_DAURICUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new HusoDauricusSpecimenModel()));
 	}
 
 }

@@ -60,6 +60,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.AMPHIPRION_CLARKII.get(),"Amphiprion clarkii");
         this.add(BvfEntities.AMPHIPRION_PERCULA.get(),"Amphiprion percula");
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"Dosidicus gigas");
+        this.add(BvfEntities.HUSO_DAURICUS.get(),"Huso dauricus");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -105,6 +106,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get(),"Clark's Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get(),"Orange Clownfish Spawn Egg");
         this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"Humboldt Squid Spawn Egg");
+        this.add(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get(),"Kaluga Sturgeon Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -149,6 +151,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_CLARKII_BUCKET.get(),"Clark's Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_PERCULA_BUCKET.get(),"Orange Clownfish Bucket");
         this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"Humboldt Squid Bucket");
+        this.add(BvfItems.HUSO_DAURICUS_BUCKET.get(),"Kaluga Sturgeon Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -192,6 +195,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ELOPICHTHYS_BAMBUSA.get(),"Richardson");
         this.add(BvfItems.COOKED_CHANNA.get(),"Cooked Snakehead");
         this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"Cooked Richardson");
+        this.add(BvfItems.HUSO_DAURICUS.get(),"Kaluga Sturgeon");
+        this.add(BvfItems.COOKED_HUSO_DAURICUS.get(),"Cooked Kaluga Sturgeon");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"Ocellaris Clownfish");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"Spine-cheeked Clownfish");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"Saddleback Clownfish");
@@ -218,6 +223,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get(),"Channa micropeltes Specimen");
         this.add(BvfItems.CHANNA_ARGUS_SPECIMEN.get(),"Channa argus Specimen");
         this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),"Richardson Specimen");
+        this.add(BvfItems.HUSO_DAURICUS_SPECIMEN.get(),"Kaluga Sturgeon Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");

@@ -71,7 +71,7 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
     protected void registerGoals() {
         this.randomSwimmingGoal = new RandomSwimmingGoal(this, 1, 120);
         Predicate<Entity> dangerousEntity = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.TOP_PREDATOR));
-        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 12.0F, 1f, 1.8f, dangerousEntity::test) {
+        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 12.0F, 2.4f, 2.4f, dangerousEntity::test) {
             @Override
             public boolean canUse() {
                 super.canUse();
@@ -94,18 +94,16 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
             public void start() {
                 super.start();
                 this.mob.setSprinting(true);
-                this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(5);
             }
 
             @Override
             public void stop() {
                 super.stop();
                 this.mob.setSprinting(false);
-                this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(2);
             }
         });
 
-        this.goalSelector.addGoal(2, new ElopichthysMeleeAttackGoal(this, 1.1D, false));
+        this.goalSelector.addGoal(2, new ElopichthysMeleeAttackGoal(this, 2.4D, false));
         this.goalSelector.addGoal(3, this.randomSwimmingGoal);
 
         this.targetSelector.addGoal(0, new HurtByTargetGoal(this));
@@ -189,10 +187,6 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
     @Override
     protected @NotNull SoundEvent getFlopSound() {
         return SoundEvents.TROPICAL_FISH_FLOP;
-    }
-
-    @Override
-    protected void handleAirSupply(int pAirSupply) {
     }
 
     @Override

@@ -30,7 +30,7 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(5);
+        this.mob.setSprinting(true);
     }
 
     @Override
@@ -41,7 +41,6 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(2);
     }
 
     @Override
@@ -52,6 +51,11 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity target) {
         this.resetAttackCooldown();
+
+        if (this.mob.distanceToSqr(target) > 2D) {
+            return;
+        }
+
         this.mob.triggerAnim("extra", "attack");
         TickHelper.tickLater(this.mob.level(), 5, () -> {
             this.mob.swing(InteractionHand.MAIN_HAND);

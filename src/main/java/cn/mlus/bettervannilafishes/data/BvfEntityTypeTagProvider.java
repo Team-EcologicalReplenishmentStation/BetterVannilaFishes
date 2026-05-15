@@ -111,7 +111,8 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())
                 .add(BvfEntities.EPINEPHELUS_ITAJARA.get())
-                .add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get());
+                .add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get())
+                .add(BvfEntities.HUSO_DAURICUS.get());
 
         this.tag(EntityTypeTags.AXOLOTL_HUNT_TARGETS)
                 .add(BvfEntities.BVC_HADDOCK_COD.get())

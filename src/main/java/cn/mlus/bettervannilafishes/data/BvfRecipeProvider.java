@@ -242,6 +242,11 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.ELOPICHTHYS_BAMBUSA.get()), has(BvfItems.ELOPICHTHYS_BAMBUSA.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("elopichthys_bambusa_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.HUSO_DAURICUS_SPECIMEN.get(),1)
+                .requires(BvfItems.HUSO_DAURICUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.HUSO_DAURICUS.get()), has(BvfItems.HUSO_DAURICUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("huso_dauricus_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
@@ -249,6 +254,7 @@ public class BvfRecipeProvider extends RecipeProvider {
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_MICROPELTES.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_ARGUS.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.ELOPICHTHYS_BAMBUSA.get(), BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.HUSO_DAURICUS.get(), BvfItems.COOKED_HUSO_DAURICUS.get(), 0.35f);
     }
 
     private static void buildFoodProcessRecipes(RecipeOutput recipeOutput, Item input, Item output, float xp) {

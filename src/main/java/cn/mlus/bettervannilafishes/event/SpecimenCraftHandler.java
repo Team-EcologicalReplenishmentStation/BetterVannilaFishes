@@ -28,6 +28,10 @@ public class SpecimenCraftHandler {
                     CustomData.update(DataComponents.CUSTOM_DATA, result, (data) -> data.put("Scale", customData.copyTag().get("Scale")));
                     break;
                 }
+                if (customData != null && customData.contains("Variant")) {
+                    CustomData.update(DataComponents.CUSTOM_DATA, result, (data) -> data.put("Variant", customData.copyTag().get("Variant")));
+                    break;
+                }
             }
         }
     }

@@ -59,6 +59,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
         this.simpleItem(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -104,6 +105,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_BUCKET.get());
         this.simpleItem(BvfItems.DOSIDICUS_GIGAS_BUCKET.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -148,6 +150,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ELOPICHTHYS_BAMBUSA.get());
         this.simpleItem(BvfItems.COOKED_CHANNA.get());
         this.simpleItem(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS.get());
+        this.simpleItem(BvfItems.COOKED_HUSO_DAURICUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS.get());
@@ -175,6 +179,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
         this.simpleItem(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
         this.simpleItem(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {

@@ -3,7 +3,9 @@ package cn.mlus.bettervannilafishes.entity.ai;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.control.MoveControl;
+import net.minecraft.world.phys.Vec3;
 
 public class BvfWaterAnimalMoveControl extends MoveControl {
     private final int maxTurnX;
@@ -36,7 +38,7 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
                 float $$4 = (float)(Mth.atan2($$2, $$0) * 57.2957763671875) - 90.0F;
 
                 this.mob.setYRot(this.rotlerp(this.mob.getYRot(), $$4, (float)this.maxTurnY));
-                this.mob.yBodyRot = this.mob.getYRot();
+                this.mob.yBodyRot = Mth.approachDegrees(this.mob.yBodyRot, this.mob.getYRot(), this.maxTurnY);
                 this.mob.yHeadRot = this.mob.getYRot();
                 float $$5 = (float)(this.speedModifier * this.mob.getAttributeValue(Attributes.MOVEMENT_SPEED));
                 if (this.mob.isInWater()) {
@@ -64,8 +66,15 @@ public class BvfWaterAnimalMoveControl extends MoveControl {
 
             }
         } else {
-            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
-                this.fish.randomSwimmingGoal.trigger();
+            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater()) {
+                if (this.mob.getNavigation().isDone()) {
+                    // 导航完成后直接找新位置，不依赖 RandomSwimmingGoal.trigger() 的概率
+                    Vec3 pos = BehaviorUtils.getRandomSwimmablePos(fish, 35, 7);
+                    if (pos != null) {
+                        this.mob.getNavigation().moveTo(pos.x, pos.y, pos.z, 1.0);
+                    }
+                }
+            }
         }
     }
 

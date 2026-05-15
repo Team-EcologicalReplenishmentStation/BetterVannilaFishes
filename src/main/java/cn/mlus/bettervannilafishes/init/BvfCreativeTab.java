@@ -58,6 +58,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get());
                output.accept(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_SPAWN_EGG.get());
+               output.accept(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
                 //Bucket
                output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -103,6 +104,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.CHANNA_ARGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.HUSO_DAURICUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 //Food
                output.accept(BvfItems.HADDOCK_COD.get());
                output.accept(BvfItems.ATLANTIC_COD.get());
@@ -153,6 +155,8 @@ public class BvfCreativeTab {
                output.accept(BvfItems.COOKED_CHANNA.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA.get());
                output.accept(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get());
+               output.accept(BvfItems.HUSO_DAURICUS.get());
+               output.accept(BvfItems.COOKED_HUSO_DAURICUS.get());
                 //Specimen
                output.accept(BvfItems.HADDOCK_COD_SPECIMEN.get());
                output.accept(BvfItems.ATLANTIC_COD_SPECIMEN.get());
@@ -174,6 +178,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
                output.accept(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get());
+               output.accept(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
             }).build());
     
     public static void register(IEventBus eventBus) {

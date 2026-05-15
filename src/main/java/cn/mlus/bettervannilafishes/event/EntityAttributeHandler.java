@@ -10,6 +10,7 @@ import cn.mlus.bettervannilafishes.entity.elopichthys.ElopichthysBambusa;
 import cn.mlus.bettervannilafishes.entity.epinephelus.BvfEpinephelusEntity;
 import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
+import cn.mlus.bettervannilafishes.entity.husodauricus.HusoDauricus;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
@@ -82,6 +83,7 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.AMPHIPRION_CLARKII.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.AMPHIPRION_PERCULA.get(), BvfClownfishEntity.createAttributes().build());
         event.put(BvfEntities.DOSIDICUS_GIGAS.get(), DosidicusGigasEntity.createAttributes().build());
+        event.put(BvfEntities.HUSO_DAURICUS.get(), HusoDauricus.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -130,6 +132,7 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.AMPHIPRION_CLARKII.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.AMPHIPRION_PERCULA.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(BvfEntities.DOSIDICUS_GIGAS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkDeepOceanSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(BvfEntities.HUSO_DAURICUS.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRareWaterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 
     public static boolean checkCodSpawnRules(
@@ -175,7 +178,7 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if(rollSpawn(3, random, spawnType)) {
+        if(rollSpawn(9, random, spawnType)) {
             return checkSurfaceWaterAnimalSpawnRules(level,pos);
         } else {
             return false;

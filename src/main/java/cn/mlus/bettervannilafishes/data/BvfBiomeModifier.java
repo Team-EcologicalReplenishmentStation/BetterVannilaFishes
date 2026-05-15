@@ -85,6 +85,8 @@ public class BvfBiomeModifier
         addSpawn(context, "channa_argus_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.CHANNA_ARGUS.get(), 2, 1, 1));
         addSpawn(context, "elopichthys_bambusa_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), 2, 1, 1));
         addSpawn(context, "dosidicus_gigas", BiomeTags.IS_DEEP_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.DOSIDICUS_GIGAS.get(), 5, 1, 3));
+        addSpawn(context, "huso_dauricus_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
+        addSpawn(context, "huso_dauricus_cold_ocean", Biomes.COLD_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
     }
 
     private static void addSpawn(BootstrapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {
