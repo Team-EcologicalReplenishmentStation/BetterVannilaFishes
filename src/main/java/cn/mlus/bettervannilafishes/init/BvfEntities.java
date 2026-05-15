@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.entity.betta.*;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
@@ -15,7 +16,12 @@ import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusLanceolatus;
 import cn.mlus.bettervannilafishes.entity.epinephelus.EpinephelusMelanostigma;
 import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
+import cn.mlus.bettervannilafishes.entity.husodauricus.HusoDauricus;
+import cn.mlus.bettervannilafishes.entity.katsuwonus.KatsuwonusPelamisEntity;
+import cn.mlus.bettervannilafishes.entity.megalops.MegalopsAtlanticusEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
+import cn.mlus.bettervannilafishes.entity.negaprion.NegaprionAcutidensEntity;
+import cn.mlus.bettervannilafishes.entity.negaprion.NegaprionBrevirostrisEntity;
 import cn.mlus.bettervannilafishes.entity.pufferfish.ObscurePuffer;
 import cn.mlus.bettervannilafishes.entity.pufferfish.PorcupineFish;
 import cn.mlus.bettervannilafishes.entity.pufferfish.YellowFinPuffer;
@@ -92,6 +98,18 @@ public class BvfEntities {
             () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(2.5F,1.6F)
                     .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<KatsuwonusPelamisEntity>> KATSUWONUS_PELAMIS = ENTITIES.register("katsuwonus_pelamis",
+            () -> EntityType.Builder.of(KatsuwonusPelamisEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.2F, 0.6F)
+                    .build(BetterVannilaFishes.prefix("katsuwonus_pelamis").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<NegaprionAcutidensEntity>> NEGAPRION_ACUTIDENS = ENTITIES.register("negaprion_acutidens",
+            () -> EntityType.Builder.of(NegaprionAcutidensEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.25F, 0.8F)
+                    .build(BetterVannilaFishes.prefix("negaprion_acutidens").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<NegaprionBrevirostrisEntity>> NEGAPRION_BREVIROSTRIS = ENTITIES.register("negaprion_brevirostris",
+            () -> EntityType.Builder.of(NegaprionBrevirostrisEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.25F, 0.8F)
+                    .build(BetterVannilaFishes.prefix("negaprion_brevirostris").toString()));
     public static final DeferredHolder<EntityType<?>,EntityType<EpinephelusLanceolatus>> EPINEPHELUS_LANCEOLATUS = ENTITIES.register("epinephelus_lanceolatus",
             () -> EntityType.Builder.of(EpinephelusLanceolatus::new, MobCategory.WATER_AMBIENT)
                     .sized(1.5F, 0.95F)
@@ -213,10 +231,74 @@ public class BvfEntities {
             () -> EntityType.Builder.of(AmphiprionPercula::new, MobCategory.WATER_AMBIENT)
                     .sized(0.6F, 0.4F)
                     .build(BetterVannilaFishes.prefix("amphiprion_percula").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionAkindynos>> AMPHIPRION_AKINDYNOS = ENTITIES.register("amphiprion_akindynos",
+            () -> EntityType.Builder.of(AmphiprionAkindynos::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_akindynos").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionBicinctus>> AMPHIPRION_BICINCTUS = ENTITIES.register("amphiprion_bicinctus",
+            () -> EntityType.Builder.of(AmphiprionBicinctus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_bicinctus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionChrysogaster>> AMPHIPRION_CHRYSOGASTER = ENTITIES.register("amphiprion_chrysogaster",
+            () -> EntityType.Builder.of(AmphiprionChrysogaster::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_chrysogaster").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionChrysopterus>> AMPHIPRION_CHRYSOPTERUS = ENTITIES.register("amphiprion_chrysopterus",
+            () -> EntityType.Builder.of(AmphiprionChrysopterus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_chrysopterus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionLatezonatus>> AMPHIPRION_LATEZONATUS = ENTITIES.register("amphiprion_latezonatus",
+            () -> EntityType.Builder.of(AmphiprionLatezonatus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_latezonatus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionMccullochi>> AMPHIPRION_MCCULLOCHI = ENTITIES.register("amphiprion_mccullochi",
+            () -> EntityType.Builder.of(AmphiprionMccullochi::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_mccullochi").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionMelanopus>> AMPHIPRION_MELANOPUS = ENTITIES.register("amphiprion_melanopus",
+            () -> EntityType.Builder.of(AmphiprionMelanopus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_melanopus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<AmphiprionTricinctus>> AMPHIPRION_TRICINCTUS = ENTITIES.register("amphiprion_tricinctus",
+            () -> EntityType.Builder.of(AmphiprionTricinctus::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("amphiprion_tricinctus").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaSplendens>> BETTA_SPLENDENS = ENTITIES.register("betta_splendens",
+            () -> EntityType.Builder.of(BettaSplendens::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.6F, 0.4F)
+                    .build(BetterVannilaFishes.prefix("betta_splendens").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaImbellis>> BETTA_IMBELLIS = ENTITIES.register("betta_imbellis",
+            () -> EntityType.Builder.of(BettaImbellis::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.4F, 0.3F)
+                    .build(BetterVannilaFishes.prefix("betta_imbellis").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaSmaragdina>> BETTA_SMARAGDINA = ENTITIES.register("betta_smaragdina",
+            () -> EntityType.Builder.of(BettaSmaragdina::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.4F, 0.3F)
+                    .build(BetterVannilaFishes.prefix("betta_smaragdina").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaPicta>> BETTA_PICTA = ENTITIES.register("betta_picta",
+            () -> EntityType.Builder.of(BettaPicta::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.4F, 0.3F)
+                    .build(BetterVannilaFishes.prefix("betta_picta").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaSimplex>> BETTA_SIMPLEX = ENTITIES.register("betta_simplex",
+            () -> EntityType.Builder.of(BettaSimplex::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.4F, 0.3F)
+                    .build(BetterVannilaFishes.prefix("betta_simplex").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BettaBrownorum>> BETTA_BROWNORUM = ENTITIES.register("betta_brownorum",
+            () -> EntityType.Builder.of(BettaBrownorum::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.4F, 0.3F)
+                    .build(BetterVannilaFishes.prefix("betta_brownorum").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<MegalopsAtlanticusEntity>> MEGALOPS_ATLANTICUS = ENTITIES.register("megalops_atlanticus",
+            () -> EntityType.Builder.of(MegalopsAtlanticusEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1F, 0.65F)
+                    .build(BetterVannilaFishes.prefix("megalops_atlanticus").toString()));
     public static final DeferredHolder<EntityType<?>,EntityType<DosidicusGigasEntity>> DOSIDICUS_GIGAS = ENTITIES.register("dosidicus_gigas",
             () -> EntityType.Builder.of(DosidicusGigasEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.5F, 0.9F)
                     .build(BetterVannilaFishes.prefix("dosidicus_gigas").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<HusoDauricus>> HUSO_DAURICUS = ENTITIES.register("huso_dauricus",
+            () -> EntityType.Builder.of(HusoDauricus::new, MobCategory.WATER_CREATURE)
+                    .sized(1.8F, 1.4F)
+                    .build(BetterVannilaFishes.prefix("huso_dauricus").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

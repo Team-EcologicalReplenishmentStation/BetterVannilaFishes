@@ -107,11 +107,13 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_MICROPELTES.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_ARGUS.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.ELOPICHTHYS_BAMBUSA.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.MEGALOPS_ATLANTICUS.get());
         this.tag(BvfTagKeys.TOP_PREDATOR)
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())
                 .add(BvfEntities.EPINEPHELUS_ITAJARA.get())
-                .add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get());
+                .add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get())
+                .add(BvfEntities.HUSO_DAURICUS.get());
 
         this.tag(EntityTypeTags.AXOLOTL_HUNT_TARGETS)
                 .add(BvfEntities.BVC_HADDOCK_COD.get())
@@ -149,6 +151,20 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.AMPHIPRION_POLYMNUS.get())
                 .add(BvfEntities.AMPHIPRION_PERIDERAION.get())
                 .add(BvfEntities.AMPHIPRION_CLARKII.get())
-                .add(BvfEntities.AMPHIPRION_PERCULA.get());
+                .add(BvfEntities.AMPHIPRION_PERCULA.get())
+                .add(BvfEntities.AMPHIPRION_AKINDYNOS.get())
+                .add(BvfEntities.AMPHIPRION_BICINCTUS.get())
+                .add(BvfEntities.AMPHIPRION_CHRYSOGASTER.get())
+                .add(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get())
+                .add(BvfEntities.AMPHIPRION_LATEZONATUS.get())
+                .add(BvfEntities.AMPHIPRION_MCCULLOCHI.get())
+                .add(BvfEntities.AMPHIPRION_MELANOPUS.get())
+                .add(BvfEntities.AMPHIPRION_TRICINCTUS.get())
+                .add(BvfEntities.BETTA_SPLENDENS.get())
+                .add(BvfEntities.BETTA_IMBELLIS.get())
+                .add(BvfEntities.BETTA_SMARAGDINA.get())
+                .add(BvfEntities.BETTA_PICTA.get())
+                .add(BvfEntities.BETTA_SIMPLEX.get())
+                .add(BvfEntities.BETTA_BROWNORUM.get());
     }
 }

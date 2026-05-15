@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_negaprion_acutidens": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:negaprion_acutidens"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_negaprion_acutidens_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_negaprion_acutidens"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_negaprion_acutidens_campfire_cooking"
+    ]
+  }
+}

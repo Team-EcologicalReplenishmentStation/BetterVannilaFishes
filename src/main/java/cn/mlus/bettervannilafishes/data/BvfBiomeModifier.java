@@ -85,6 +85,35 @@ public class BvfBiomeModifier
         addSpawn(context, "channa_argus_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.CHANNA_ARGUS.get(), 2, 1, 1));
         addSpawn(context, "elopichthys_bambusa_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), 2, 1, 1));
         addSpawn(context, "dosidicus_gigas", BiomeTags.IS_DEEP_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.DOSIDICUS_GIGAS.get(), 5, 1, 3));
+        addSpawn(context, "huso_dauricus_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
+        addSpawn(context, "huso_dauricus_cold_ocean", Biomes.COLD_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
+        addSpawn(context, "negaprion_acutidens_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.NEGAPRION_ACUTIDENS.get(), 1, 1, 1));
+        addSpawn(context, "negaprion_acutidens_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NEGAPRION_ACUTIDENS.get(), 1, 1, 1));
+        addSpawn(context, "negaprion_brevirostris_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), 1, 1, 1));
+        addSpawn(context, "negaprion_brevirostris_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), 1, 1, 1));
+        addSpawn(context, "amphiprion_akindynos", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_AKINDYNOS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_bicinctus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_BICINCTUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_chrysogaster", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_CHRYSOGASTER.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_chrysopterus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_latezonatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_LATEZONATUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_mccullochi", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_MCCULLOCHI.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_melanopus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_MELANOPUS.get(), 6, 2, 4));
+        addSpawn(context, "amphiprion_tricinctus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.AMPHIPRION_TRICINCTUS.get(), 6, 2, 4));
+        addSpawn(context, "betta_splendens_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SPLENDENS.get(), 2, 1, 2));
+        addSpawn(context, "betta_splendens_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SPLENDENS.get(), 1, 1, 2));
+        addSpawn(context, "betta_imbellis_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_IMBELLIS.get(), 2, 1, 2));
+        addSpawn(context, "betta_imbellis_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_IMBELLIS.get(), 1, 1, 2));
+        addSpawn(context, "betta_smaragdina_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SMARAGDINA.get(), 2, 1, 2));
+        addSpawn(context, "betta_smaragdina_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SMARAGDINA.get(), 1, 1, 2));
+        addSpawn(context, "betta_picta_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_PICTA.get(), 2, 1, 2));
+        addSpawn(context, "betta_picta_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_PICTA.get(), 1, 1, 2));
+        addSpawn(context, "betta_simplex_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SIMPLEX.get(), 2, 1, 2));
+        addSpawn(context, "betta_simplex_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_SIMPLEX.get(), 1, 1, 2));
+        addSpawn(context, "betta_brownorum_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_BROWNORUM.get(), 2, 1, 2));
+        addSpawn(context, "betta_brownorum_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BETTA_BROWNORUM.get(), 1, 1, 2));
+        addSpawn(context, "megalops_atlanticus_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.MEGALOPS_ATLANTICUS.get(), 1, 2, 3));
+        addSpawn(context, "megalops_atlanticus_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.MEGALOPS_ATLANTICUS.get(), 4, 2, 3));
+        addSpawn(context, "katsuwonus_pelamis", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.KATSUWONUS_PELAMIS.get(), 3, 7, 8));
     }
 
     private static void addSpawn(BootstrapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {

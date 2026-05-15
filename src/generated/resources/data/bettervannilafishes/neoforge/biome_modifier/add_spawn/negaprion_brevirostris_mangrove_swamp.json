@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:mangrove_swamp",
+  "spawners": {
+    "type": "bettervannilafishes:negaprion_brevirostris",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 1
+  }
+}

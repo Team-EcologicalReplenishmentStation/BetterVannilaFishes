@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettervannilafishes:betta_picta"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:tropical_fish"
+  }
+}
