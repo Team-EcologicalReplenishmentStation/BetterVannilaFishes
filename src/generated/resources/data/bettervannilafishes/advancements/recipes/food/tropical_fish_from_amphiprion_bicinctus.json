@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_bicinctus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:amphiprion_bicinctus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_amphiprion_bicinctus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amphiprion_bicinctus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_amphiprion_bicinctus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

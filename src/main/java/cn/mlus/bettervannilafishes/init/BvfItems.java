@@ -111,6 +111,20 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_BUCKET = ITEMS.register("negaprion_acutidens_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.NEGAPRION_ACUTIDENS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS_BUCKET = ITEMS.register("negaprion_brevirostris_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.NEGAPRION_BREVIROSTRIS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS_BUCKET = ITEMS.register("epinephelus_lanceolatus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.EPINEPHELUS_LANCEOLATUS,
@@ -286,6 +300,20 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> HUSO_DAURICUS_BUCKET = ITEMS.register("huso_dauricus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.HUSO_DAURICUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> KATSUWONUS_PELAMIS_BUCKET = ITEMS.register("katsuwonus_pelamis_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.KATSUWONUS_PELAMIS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS_BUCKET = ITEMS.register("amphiprion_ocellaris_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -324,6 +352,111 @@ public class BvfItems {
     public static final RegistryObject<Item> AMPHIPRION_PERCULA_BUCKET = ITEMS.register("amphiprion_percula_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_PERCULA,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_AKINDYNOS_BUCKET = ITEMS.register("amphiprion_akindynos_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_AKINDYNOS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_BICINCTUS_BUCKET = ITEMS.register("amphiprion_bicinctus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_BICINCTUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOGASTER_BUCKET = ITEMS.register("amphiprion_chrysogaster_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_CHRYSOGASTER,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOPTERUS_BUCKET = ITEMS.register("amphiprion_chrysopterus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_CHRYSOPTERUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_LATEZONATUS_BUCKET = ITEMS.register("amphiprion_latezonatus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_LATEZONATUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_MCCULLOCHI_BUCKET = ITEMS.register("amphiprion_mccullochi_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_MCCULLOCHI,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_MELANOPUS_BUCKET = ITEMS.register("amphiprion_melanopus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_MELANOPUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_TRICINCTUS_BUCKET = ITEMS.register("amphiprion_tricinctus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_TRICINCTUS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_SPLENDENS_BUCKET = ITEMS.register("betta_splendens_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_SPLENDENS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_IMBELLIS_BUCKET = ITEMS.register("betta_imbellis_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_IMBELLIS,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_SMARAGDINA_BUCKET = ITEMS.register("betta_smaragdina_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_SMARAGDINA,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_PICTA_BUCKET = ITEMS.register("betta_picta_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_PICTA,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_SIMPLEX_BUCKET = ITEMS.register("betta_simplex_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_SIMPLEX,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BETTA_BROWNORUM_BUCKET = ITEMS.register("betta_brownorum_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BETTA_BROWNORUM,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> MEGALOPS_ATLANTICUS_BUCKET = ITEMS.register("megalops_atlanticus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.MEGALOPS_ATLANTICUS,
                     () -> Fluids.WATER,
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -416,6 +549,20 @@ public class BvfItems {
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPAWN_EGG = ITEMS.register("galeocerdo_cuvier_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.GALEOCERDO_CUVIER,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_SPAWN_EGG = ITEMS.register("negaprion_acutidens_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.NEGAPRION_ACUTIDENS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS_SPAWN_EGG = ITEMS.register("negaprion_brevirostris_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.NEGAPRION_BREVIROSTRIS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -595,6 +742,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> HUSO_DAURICUS_SPAWN_EGG = ITEMS.register("huso_dauricus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.HUSO_DAURICUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS_SPAWN_EGG = ITEMS.register("amphiprion_ocellaris_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -637,6 +791,118 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> AMPHIPRION_AKINDYNOS_SPAWN_EGG = ITEMS.register("amphiprion_akindynos_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_AKINDYNOS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_BICINCTUS_SPAWN_EGG = ITEMS.register("amphiprion_bicinctus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_BICINCTUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOGASTER_SPAWN_EGG = ITEMS.register("amphiprion_chrysogaster_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_CHRYSOGASTER,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOPTERUS_SPAWN_EGG = ITEMS.register("amphiprion_chrysopterus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_CHRYSOPTERUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_LATEZONATUS_SPAWN_EGG = ITEMS.register("amphiprion_latezonatus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_LATEZONATUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_MCCULLOCHI_SPAWN_EGG = ITEMS.register("amphiprion_mccullochi_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_MCCULLOCHI,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_MELANOPUS_SPAWN_EGG = ITEMS.register("amphiprion_melanopus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_MELANOPUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> AMPHIPRION_TRICINCTUS_SPAWN_EGG = ITEMS.register("amphiprion_tricinctus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.AMPHIPRION_TRICINCTUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_SPLENDENS_SPAWN_EGG = ITEMS.register("betta_splendens_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_SPLENDENS,
+                    0x7B2636,
+                    0x2F5C8F,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_IMBELLIS_SPAWN_EGG = ITEMS.register("betta_imbellis_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_IMBELLIS,
+                    0x315B54,
+                    0xD6434D,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_SMARAGDINA_SPAWN_EGG = ITEMS.register("betta_smaragdina_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_SMARAGDINA,
+                    0x1C7B66,
+                    0x5CC5B8,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_PICTA_SPAWN_EGG = ITEMS.register("betta_picta_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_PICTA,
+                    0xA46A45,
+                    0x2D211C,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_SIMPLEX_SPAWN_EGG = ITEMS.register("betta_simplex_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_SIMPLEX,
+                    0xC29B80,
+                    0x5E3B32,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BETTA_BROWNORUM_SPAWN_EGG = ITEMS.register("betta_brownorum_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BETTA_BROWNORUM,
+                    0x6B3E2D,
+                    0xD28B55,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> MEGALOPS_ATLANTICUS_SPAWN_EGG = ITEMS.register("megalops_atlanticus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.MEGALOPS_ATLANTICUS,
+                    0x8E9BA1,
+                    0xE7EEF0,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> KATSUWONUS_PELAMIS_SPAWN_EGG = ITEMS.register("katsuwonus_pelamis_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.KATSUWONUS_PELAMIS,
+                    0x2E5A8C,
+                    0xC4A35A,
+                    new Item.Properties()
+            ));
     //Food
     public static final RegistryObject<Item> HADDOCK_COD = ITEMS.register("haddock_cod",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
@@ -673,6 +939,18 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
+    public static final RegistryObject<Item> NEGAPRION_ACUTIDENS = ITEMS.register("negaprion_acutidens",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
+                    .build())));
+    public static final RegistryObject<Item> COOKED_NEGAPRION_ACUTIDENS = ITEMS.register("cooked_negaprion_acutidens",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS = ITEMS.register("negaprion_brevirostris",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
+                    .build())));
+    public static final RegistryObject<Item> COOKED_NEGAPRION_BREVIROSTRIS = ITEMS.register("cooked_negaprion_brevirostris",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS = ITEMS.register("epinephelus_lanceolatus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .build())));
@@ -740,6 +1018,10 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> COOKED_ELOPICHTHYS_BAMBUSA = ITEMS.register("cooked_elopichthys_bambusa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> HUSO_DAURICUS = ITEMS.register("huso_dauricus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build())));
+    public static final RegistryObject<Item> COOKED_HUSO_DAURICUS = ITEMS.register("cooked_huso_dauricus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8f).build())));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PREMNAS_BIACULEATUS = ITEMS.register("premnas_biaculeatus",
@@ -752,6 +1034,40 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_PERCULA = ITEMS.register("amphiprion_percula",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_AKINDYNOS = ITEMS.register("amphiprion_akindynos",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_BICINCTUS = ITEMS.register("amphiprion_bicinctus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOGASTER = ITEMS.register("amphiprion_chrysogaster",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOPTERUS = ITEMS.register("amphiprion_chrysopterus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_LATEZONATUS = ITEMS.register("amphiprion_latezonatus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_MCCULLOCHI = ITEMS.register("amphiprion_mccullochi",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_MELANOPUS = ITEMS.register("amphiprion_melanopus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> AMPHIPRION_TRICINCTUS = ITEMS.register("amphiprion_tricinctus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_SPLENDENS = ITEMS.register("betta_splendens",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_IMBELLIS = ITEMS.register("betta_imbellis",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_SMARAGDINA = ITEMS.register("betta_smaragdina",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_PICTA = ITEMS.register("betta_picta",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_SIMPLEX = ITEMS.register("betta_simplex",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> BETTA_BROWNORUM = ITEMS.register("betta_brownorum",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+    public static final RegistryObject<Item> MEGALOPS_ATLANTICUS = ITEMS.register("megalops_atlanticus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f).build())));
+    public static final RegistryObject<Item> KATSUWONUS_PELAMIS = ITEMS.register("katsuwonus_pelamis",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
+    public static final RegistryObject<Item> COOKED_KATSUWONUS_PELAMIS = ITEMS.register("cooked_katsuwonus_pelamis",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     //Specimen
     public static final RegistryObject<Item> ATLANTIC_COD_SPECIMEN = ITEMS.register("atlantic_cod_specimen",
             () -> new BlockItem(BvfBlocks.ATLANTIC_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
@@ -769,6 +1085,10 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_SPECIMEN = ITEMS.register("negaprion_acutidens_specimen",
+            () -> new BlockItem(BvfBlocks.NEGAPRION_ACUTIDENS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS_SPECIMEN = ITEMS.register("negaprion_brevirostris_specimen",
+            () -> new BlockItem(BvfBlocks.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS_SPECIMEN = ITEMS.register("epinephelus_lanceolatus_specimen",
             () -> new BlockItem(BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> EPINEPHELUS_ITAJARA_SPECIMEN = ITEMS.register("epinephelus_itajara_specimen",
@@ -793,6 +1113,12 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.CHANNA_ARGUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ELOPICHTHYS_BAMBUSA_SPECIMEN = ITEMS.register("elopichthys_bambusa_specimen",
             () -> new BlockItem(BvfBlocks.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> HUSO_DAURICUS_SPECIMEN = ITEMS.register("huso_dauricus_specimen",
+            () -> new BlockItem(BvfBlocks.HUSO_DAURICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> MEGALOPS_ATLANTICUS_SPECIMEN = ITEMS.register("megalops_atlanticus_specimen",
+            () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> KATSUWONUS_PELAMIS_SPECIMEN = ITEMS.register("katsuwonus_pelamis_specimen",
+            () -> new BlockItem(BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final RegistryObject<Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));
@@ -800,4 +1126,3 @@ public class BvfItems {
         ITEMS.register(eventBus);
     }
 }
-

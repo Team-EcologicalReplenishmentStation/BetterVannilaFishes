@@ -38,6 +38,21 @@
     "bettervannilafishes:amphiprion_polymnus_bucket",
     "bettervannilafishes:amphiprion_perideraion_bucket",
     "bettervannilafishes:amphiprion_clarkii_bucket",
-    "bettervannilafishes:amphiprion_percula_bucket"
+    "bettervannilafishes:amphiprion_percula_bucket",
+    "bettervannilafishes:amphiprion_akindynos_bucket",
+    "bettervannilafishes:amphiprion_bicinctus_bucket",
+    "bettervannilafishes:amphiprion_chrysogaster_bucket",
+    "bettervannilafishes:amphiprion_chrysopterus_bucket",
+    "bettervannilafishes:amphiprion_latezonatus_bucket",
+    "bettervannilafishes:amphiprion_mccullochi_bucket",
+    "bettervannilafishes:amphiprion_melanopus_bucket",
+    "bettervannilafishes:amphiprion_tricinctus_bucket",
+    "bettervannilafishes:betta_splendens_bucket",
+    "bettervannilafishes:betta_imbellis_bucket",
+    "bettervannilafishes:betta_smaragdina_bucket",
+    "bettervannilafishes:betta_picta_bucket",
+    "bettervannilafishes:betta_simplex_bucket",
+    "bettervannilafishes:betta_brownorum_bucket",
+    "bettervannilafishes:megalops_atlanticus_bucket"
   ]
 }

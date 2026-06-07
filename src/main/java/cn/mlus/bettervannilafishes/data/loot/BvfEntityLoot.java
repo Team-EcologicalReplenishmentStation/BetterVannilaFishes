@@ -88,6 +88,26 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
                         .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
         );
+        this.add(BvfEntities.NEGAPRION_ACUTIDENS.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.NEGAPRION_ACUTIDENS.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE))))
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
+                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
+        );
+        this.add(BvfEntities.NEGAPRION_BREVIROSTRIS.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.NEGAPRION_BREVIROSTRIS.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE))))
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get()))
+                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F))))
+        );
         this.add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -214,6 +234,71 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERCULA.get()))));
+        this.add(BvfEntities.AMPHIPRION_AKINDYNOS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_AKINDYNOS.get()))));
+        this.add(BvfEntities.AMPHIPRION_BICINCTUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_BICINCTUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_CHRYSOGASTER.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CHRYSOGASTER.get()))));
+        this.add(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CHRYSOPTERUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_LATEZONATUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_LATEZONATUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_MCCULLOCHI.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_MCCULLOCHI.get()))));
+        this.add(BvfEntities.AMPHIPRION_MELANOPUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_MELANOPUS.get()))));
+        this.add(BvfEntities.AMPHIPRION_TRICINCTUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_TRICINCTUS.get()))));
+        this.add(BvfEntities.BETTA_SPLENDENS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_SPLENDENS.get()))));
+        this.add(BvfEntities.BETTA_IMBELLIS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_IMBELLIS.get()))));
+        this.add(BvfEntities.BETTA_SMARAGDINA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_SMARAGDINA.get()))));
+        this.add(BvfEntities.BETTA_PICTA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_PICTA.get()))));
+        this.add(BvfEntities.BETTA_SIMPLEX.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_SIMPLEX.get()))));
+        this.add(BvfEntities.BETTA_BROWNORUM.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_BROWNORUM.get()))));
+        this.add(BvfEntities.MEGALOPS_ATLANTICUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.MEGALOPS_ATLANTICUS.get()))));
+        this.add(BvfEntities.KATSUWONUS_PELAMIS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.KATSUWONUS_PELAMIS.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE)))));
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -223,6 +308,12 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(Items.INK_SAC))
                         .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 1.0F)))));
+        this.add(BvfEntities.HUSO_DAURICUS.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.HUSO_DAURICUS.get()))
+                        .apply(SmeltItemFunction.smelted().when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, ENTITY_ON_FIRE))))
+                .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0.0F, 2.0F))));
     }
 
     @Override
@@ -230,4 +321,3 @@ public class BvfEntityLoot extends VanillaEntityLoot {
         return ForgeRegistries.ENTITY_TYPES.getValues().stream().filter(entities -> Objects.requireNonNull(ForgeRegistries.ENTITY_TYPES.getKey(entities)).getNamespace().equals(BetterVannilaFishes.MODID));
     }
 }
-

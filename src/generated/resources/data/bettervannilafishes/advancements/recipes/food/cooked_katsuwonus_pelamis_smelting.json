@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_katsuwonus_pelamis": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:katsuwonus_pelamis"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_katsuwonus_pelamis_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_katsuwonus_pelamis",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_katsuwonus_pelamis_smelting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

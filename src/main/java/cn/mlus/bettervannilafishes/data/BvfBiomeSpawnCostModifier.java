@@ -51,7 +51,7 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),0.7,0.7);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_ITAJARA.get(),0.7,0.7);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),0.7,0.7);
-
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.HUSO_DAURICUS.get(),1,0.7);
             }
             if(biome.is(BiomeTags.IS_RIVER)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.BVC_SALMON_MALE.get(),0.7,0.2);
@@ -66,6 +66,7 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_ARGUS.get(),0.8,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ELOPICHTHYS_BAMBUSA.get(),1.2,0.6);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.HUSO_DAURICUS.get(),1,0.7);
             }
             if(biome.is(Biomes.SWAMP) || biome.is(Biomes.MANGROVE_SWAMP)){
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.CHANNA_MICROPELTES.get(),0.8,0.3);

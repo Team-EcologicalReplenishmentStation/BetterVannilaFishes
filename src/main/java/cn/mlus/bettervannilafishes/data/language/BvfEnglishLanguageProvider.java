@@ -28,6 +28,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
+        this.add(BvfEntities.NEGAPRION_ACUTIDENS.get(),"Negaprion acutidens");
+        this.add(BvfEntities.NEGAPRION_BREVIROSTRIS.get(),"Negaprion brevirostris");
         this.add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),"Epinephelus lanceolatus");
         this.add(BvfEntities.EPINEPHELUS_ITAJARA.get(),"Epinephelus itajara");
         this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),"Epinephelus melanostigma");
@@ -58,7 +60,24 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(),"Amphiprion perideraion");
         this.add(BvfEntities.AMPHIPRION_CLARKII.get(),"Amphiprion clarkii");
         this.add(BvfEntities.AMPHIPRION_PERCULA.get(),"Amphiprion percula");
+        this.add(BvfEntities.AMPHIPRION_AKINDYNOS.get(),"Amphiprion akindynos");
+        this.add(BvfEntities.AMPHIPRION_BICINCTUS.get(),"Amphiprion bicinctus");
+        this.add(BvfEntities.AMPHIPRION_CHRYSOGASTER.get(),"Amphiprion chrysogaster");
+        this.add(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get(),"Amphiprion chrysopterus");
+        this.add(BvfEntities.AMPHIPRION_LATEZONATUS.get(),"Amphiprion latezonatus");
+        this.add(BvfEntities.AMPHIPRION_MCCULLOCHI.get(),"Amphiprion mccullochi");
+        this.add(BvfEntities.AMPHIPRION_MELANOPUS.get(),"Amphiprion melanopus");
+        this.add(BvfEntities.AMPHIPRION_TRICINCTUS.get(),"Amphiprion tricinctus");
+        this.add(BvfEntities.BETTA_SPLENDENS.get(),"Betta splendens");
+        this.add(BvfEntities.BETTA_IMBELLIS.get(),"Betta imbellis");
+        this.add(BvfEntities.BETTA_SMARAGDINA.get(),"Betta smaragdina");
+        this.add(BvfEntities.BETTA_PICTA.get(),"Betta picta");
+        this.add(BvfEntities.BETTA_SIMPLEX.get(),"Betta simplex");
+        this.add(BvfEntities.BETTA_BROWNORUM.get(),"Betta brownorum");
+        this.add(BvfEntities.MEGALOPS_ATLANTICUS.get(),"Megalops atlanticus");
+        this.add(BvfEntities.KATSUWONUS_PELAMIS.get(),"Katsuwonus pelamis");
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"Dosidicus gigas");
+        this.add(BvfEntities.HUSO_DAURICUS.get(),"Huso dauricus");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -72,6 +91,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
+        this.add(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get(),"Sicklefin Lemon Shark Spawn Egg");
+        this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get(),"Lemon Shark Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get(),"Giant Grouper Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get(),"Goliath Grouper Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get(),"Blackspotted Grouper Spawn Egg");
@@ -103,7 +124,24 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get(),"Pink Skunk Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get(),"Clark's Clownfish Spawn Egg");
         this.add(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get(),"Orange Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_AKINDYNOS_SPAWN_EGG.get(),"Barrier Reef Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_BICINCTUS_SPAWN_EGG.get(),"Two-band Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_CHRYSOGASTER_SPAWN_EGG.get(),"Mauritian Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_CHRYSOPTERUS_SPAWN_EGG.get(),"Orange-fin Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_LATEZONATUS_SPAWN_EGG.get(),"Wide-band Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_MCCULLOCHI_SPAWN_EGG.get(),"McCulloch's Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_MELANOPUS_SPAWN_EGG.get(),"Cinnamon Clownfish Spawn Egg");
+        this.add(BvfItems.AMPHIPRION_TRICINCTUS_SPAWN_EGG.get(),"Three-band Clownfish Spawn Egg");
+        this.add(BvfItems.BETTA_SPLENDENS_SPAWN_EGG.get(),"Siamese Fighting Fish Spawn Egg");
+        this.add(BvfItems.BETTA_IMBELLIS_SPAWN_EGG.get(),"Crescent Betta Spawn Egg");
+        this.add(BvfItems.BETTA_SMARAGDINA_SPAWN_EGG.get(),"Emerald Betta Spawn Egg");
+        this.add(BvfItems.BETTA_PICTA_SPAWN_EGG.get(),"Spotted Betta Spawn Egg");
+        this.add(BvfItems.BETTA_SIMPLEX_SPAWN_EGG.get(),"Simple Mouthbrooder Spawn Egg");
+        this.add(BvfItems.BETTA_BROWNORUM_SPAWN_EGG.get(),"Brown's Betta Spawn Egg");
+        this.add(BvfItems.MEGALOPS_ATLANTICUS_SPAWN_EGG.get(),"Atlantic Tarpon Spawn Egg");
+        this.add(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get(),"Skipjack Tuna Spawn Egg");
         this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"Humboldt Squid Spawn Egg");
+        this.add(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get(),"Kaluga Sturgeon Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -117,6 +155,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
+        this.add(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get(),"Sicklefin Lemon Shark Bucket");
+        this.add(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get(),"Lemon Shark Bucket");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get(),"Giant Grouper Bucket");
         this.add(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get(),"Goliath Grouper Bucket");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get(),"Blackspotted Grouper Bucket");
@@ -147,7 +187,24 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get(),"Pink Skunk Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_CLARKII_BUCKET.get(),"Clark's Clownfish Bucket");
         this.add(BvfItems.AMPHIPRION_PERCULA_BUCKET.get(),"Orange Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_AKINDYNOS_BUCKET.get(),"Barrier Reef Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_BICINCTUS_BUCKET.get(),"Two-band Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_CHRYSOGASTER_BUCKET.get(),"Mauritian Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_CHRYSOPTERUS_BUCKET.get(),"Orange-fin Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_LATEZONATUS_BUCKET.get(),"Wide-band Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_MCCULLOCHI_BUCKET.get(),"McCulloch's Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_MELANOPUS_BUCKET.get(),"Cinnamon Clownfish Bucket");
+        this.add(BvfItems.AMPHIPRION_TRICINCTUS_BUCKET.get(),"Three-band Clownfish Bucket");
+        this.add(BvfItems.BETTA_SPLENDENS_BUCKET.get(),"Siamese Fighting Fish Bucket");
+        this.add(BvfItems.BETTA_IMBELLIS_BUCKET.get(),"Crescent Betta Bucket");
+        this.add(BvfItems.BETTA_SMARAGDINA_BUCKET.get(),"Emerald Betta Bucket");
+        this.add(BvfItems.BETTA_PICTA_BUCKET.get(),"Spotted Betta Bucket");
+        this.add(BvfItems.BETTA_SIMPLEX_BUCKET.get(),"Simple Mouthbrooder Bucket");
+        this.add(BvfItems.BETTA_BROWNORUM_BUCKET.get(),"Brown's Betta Bucket");
+        this.add(BvfItems.MEGALOPS_ATLANTICUS_BUCKET.get(),"Atlantic Tarpon Bucket");
+        this.add(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get(),"Skipjack Tuna Bucket");
         this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"Humboldt Squid Bucket");
+        this.add(BvfItems.HUSO_DAURICUS_BUCKET.get(),"Kaluga Sturgeon Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -160,6 +217,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH.get(),"Spearfish");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
+        this.add(BvfItems.NEGAPRION_ACUTIDENS.get(),"Sicklefin Lemon Shark");
+        this.add(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get(),"Cooked Sicklefin Lemon Shark");
+        this.add(BvfItems.NEGAPRION_BREVIROSTRIS.get(),"Lemon Shark");
+        this.add(BvfItems.COOKED_NEGAPRION_BREVIROSTRIS.get(),"Cooked Lemon Shark");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS.get(),"Giant Grouper");
         this.add(BvfItems.EPINEPHELUS_ITAJARA.get(),"Goliath Grouper");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),"Blackspotted Grouper");
@@ -191,12 +252,31 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ELOPICHTHYS_BAMBUSA.get(),"Richardson");
         this.add(BvfItems.COOKED_CHANNA.get(),"Cooked Snakehead");
         this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"Cooked Richardson");
+        this.add(BvfItems.HUSO_DAURICUS.get(),"Kaluga Sturgeon");
+        this.add(BvfItems.COOKED_HUSO_DAURICUS.get(),"Cooked Kaluga Sturgeon");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"Ocellaris Clownfish");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"Spine-cheeked Clownfish");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"Saddleback Clownfish");
         this.add(BvfItems.AMPHIPRION_PERIDERAION.get(),"Pink Skunk Clownfish");
         this.add(BvfItems.AMPHIPRION_CLARKII.get(),"Clark's Clownfish");
         this.add(BvfItems.AMPHIPRION_PERCULA.get(),"Orange Clownfish");
+        this.add(BvfItems.AMPHIPRION_AKINDYNOS.get(),"Barrier Reef Clownfish");
+        this.add(BvfItems.AMPHIPRION_BICINCTUS.get(),"Two-band Clownfish");
+        this.add(BvfItems.AMPHIPRION_CHRYSOGASTER.get(),"Mauritian Clownfish");
+        this.add(BvfItems.AMPHIPRION_CHRYSOPTERUS.get(),"Orange-fin Clownfish");
+        this.add(BvfItems.AMPHIPRION_LATEZONATUS.get(),"Wide-band Clownfish");
+        this.add(BvfItems.AMPHIPRION_MCCULLOCHI.get(),"McCulloch's Clownfish");
+        this.add(BvfItems.AMPHIPRION_MELANOPUS.get(),"Cinnamon Clownfish");
+        this.add(BvfItems.AMPHIPRION_TRICINCTUS.get(),"Three-band Clownfish");
+        this.add(BvfItems.BETTA_SPLENDENS.get(),"Siamese Fighting Fish");
+        this.add(BvfItems.BETTA_IMBELLIS.get(),"Crescent Betta");
+        this.add(BvfItems.BETTA_SMARAGDINA.get(),"Emerald Betta");
+        this.add(BvfItems.BETTA_PICTA.get(),"Spotted Betta");
+        this.add(BvfItems.BETTA_SIMPLEX.get(),"Simple Mouthbrooder");
+        this.add(BvfItems.BETTA_BROWNORUM.get(),"Brown's Betta");
+        this.add(BvfItems.MEGALOPS_ATLANTICUS.get(),"Atlantic Tarpon");
+        this.add(BvfItems.KATSUWONUS_PELAMIS.get(),"Skipjack Tuna");
+        this.add(BvfItems.COOKED_KATSUWONUS_PELAMIS.get(),"Cooked Skipjack Tuna");
         this.add(BvfItems.ATLANTIC_COD_SPECIMEN.get(), "Atlantic Cod Specimen");
         this.add(BvfItems.PACIFIC_COD_SPECIMEN.get(), "Pacific Cod Specimen");
         this.add(BvfItems.HADDOCK_COD_SPECIMEN.get(), "Haddock Cod Specimen");
@@ -205,6 +285,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
+        this.add(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get(),"Sicklefin Lemon Shark Specimen");
+        this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(),"Lemon Shark Specimen");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),"Giant Grouper Specimen");
         this.add(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get(),"Goliath Grouper Specimen");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),"Blackspotted Grouper Specimen");
@@ -217,6 +299,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get(),"Channa micropeltes Specimen");
         this.add(BvfItems.CHANNA_ARGUS_SPECIMEN.get(),"Channa argus Specimen");
         this.add(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),"Richardson Specimen");
+        this.add(BvfItems.HUSO_DAURICUS_SPECIMEN.get(),"Kaluga Sturgeon Specimen");
+        this.add(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get(),"Atlantic Tarpon Specimen");
+        this.add(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(),"Skipjack Tuna Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");
@@ -233,4 +318,3 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
     }
     
 }
-

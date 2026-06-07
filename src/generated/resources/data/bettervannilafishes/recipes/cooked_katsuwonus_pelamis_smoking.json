@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "bettervannilafishes:katsuwonus_pelamis"
+  },
+  "result": "bettervannilafishes:cooked_katsuwonus_pelamis"
+}

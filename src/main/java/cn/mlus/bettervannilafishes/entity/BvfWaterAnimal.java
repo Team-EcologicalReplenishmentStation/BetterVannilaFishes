@@ -93,7 +93,7 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
 
     @Override
     protected @NotNull BodyRotationControl createBodyControl() {
-        return new GeneralBodyControl(this);
+        return new GeneralBodyControl(this,10);
     }
 
     public void saveToBucketTag(@NotNull ItemStack pStack) {
@@ -148,6 +148,9 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
         return this.hasFollowers() && this.schoolSize < this.getMaxSchoolSize();
     }
 
+    private int stuckTicks = 0;
+    private Vec3 lastStuckPos = Vec3.ZERO;
+
     public void tick() {
         super.tick();
         if (this.hasFollowers() && this.level().random.nextInt(200) == 1) {
@@ -157,6 +160,21 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
             }
         }
 
+        if (!this.level().isClientSide && this.isInWater() && this.tickCount % 20 == 0) {
+            if (this.distanceToSqr(this.lastStuckPos) < 0.04D) {
+                this.stuckTicks++;
+                if (this.stuckTicks >= 3) {
+                    this.getNavigation().stop();
+                    if (this.randomSwimmingGoal != null) {
+                        this.randomSwimmingGoal.trigger();
+                    }
+                    this.stuckTicks = 0;
+                }
+            } else {
+                this.stuckTicks = 0;
+            }
+            this.lastStuckPos = this.position();
+        }
     }
 
     public boolean hasFollowers() {

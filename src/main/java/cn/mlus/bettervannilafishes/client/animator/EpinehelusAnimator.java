@@ -23,7 +23,7 @@ public class EpinehelusAnimator<T extends BvfEpinephelusEntity> extends GeneralA
             return;
         }
 
-        String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
+        String[] tailBoneNames = {"head","tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
             GeoBone tail = tailBones.get(i);
@@ -41,6 +41,13 @@ public class EpinehelusAnimator<T extends BvfEpinephelusEntity> extends GeneralA
             }else {
                 pitchOfs *= 3.5f;
                 yawOfs *=  3.5f;
+            }
+
+            if (i == 0) {
+                pitchOfs = -pitchOfs;
+                yawOfs = -yawOfs;
+                pitchOfs = Mth.clamp(pitchOfs, -10f, 10f);
+                yawOfs = Mth.clamp(yawOfs, -10f, 10f);
             }
 
             tail.setRotX((float) (tail.getRotX() + Math.toRadians(pitchOfs)));

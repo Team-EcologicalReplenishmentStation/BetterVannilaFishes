@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_chrysogaster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:amphiprion_chrysogaster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_amphiprion_chrysogaster"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amphiprion_chrysogaster",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_amphiprion_chrysogaster"
+    ]
+  },
+  "sends_telemetry_event": false
+}

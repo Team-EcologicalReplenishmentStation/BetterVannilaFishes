@@ -3,7 +3,9 @@ package cn.mlus.bettervannilafishes.entity.ai;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.control.MoveControl;
+import net.minecraft.world.phys.Vec3;
 
 public class BvfFishMoveControl extends MoveControl {
     private final int maxTurnX;
@@ -66,8 +68,15 @@ public class BvfFishMoveControl extends MoveControl {
 
             }
         } else {
-            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater())
-                this.fish.randomSwimmingGoal.trigger();
+            if(neverStop && this.fish.randomSwimmingGoal != null && this.fish.getTarget() == null && this.fish.isInWater()) {
+                if (this.mob.getNavigation().isDone()) {
+                    // 导航完成后直接找新位置，不依赖 RandomSwimmingGoal.trigger() 的概率
+                    Vec3 pos = BehaviorUtils.getRandomSwimmablePos(fish, 35, 7);
+                    if (pos != null) {
+                        this.mob.getNavigation().moveTo(pos.x, pos.y, pos.z, 1.0);
+                    }
+                }
+            }
         }
     }
 

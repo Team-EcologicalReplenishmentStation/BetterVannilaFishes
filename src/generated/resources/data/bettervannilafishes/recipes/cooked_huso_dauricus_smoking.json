@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "bettervannilafishes:huso_dauricus"
+  },
+  "result": "bettervannilafishes:cooked_huso_dauricus"
+}

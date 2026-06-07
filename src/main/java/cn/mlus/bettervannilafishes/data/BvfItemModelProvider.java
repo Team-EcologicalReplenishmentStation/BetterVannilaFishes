@@ -27,6 +27,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
         this.simpleItem(BvfItems.SPEARFISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get());
@@ -57,6 +59,23 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_AKINDYNOS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_BICINCTUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOGASTER_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOPTERUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_LATEZONATUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MCCULLOCHI_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MELANOPUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.AMPHIPRION_TRICINCTUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_SPLENDENS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_IMBELLIS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_SMARAGDINA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_PICTA_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_SIMPLEX_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BETTA_BROWNORUM_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -71,6 +90,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEATHER_STAR_BUCKET.get());
         this.simpleItem(BvfItems.SPEARFISH_BUCKET.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_BUCKET.get());
+        this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get());
+        this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get());
@@ -101,6 +122,23 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII_BUCKET.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_AKINDYNOS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_BICINCTUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOGASTER_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOPTERUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_LATEZONATUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MCCULLOCHI_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MELANOPUS_BUCKET.get());
+        this.simpleItem(BvfItems.AMPHIPRION_TRICINCTUS_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_SPLENDENS_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_IMBELLIS_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_SMARAGDINA_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_PICTA_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_SIMPLEX_BUCKET.get());
+        this.simpleItem(BvfItems.BETTA_BROWNORUM_BUCKET.get());
+        this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_BUCKET.get());
+        this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -115,6 +153,10 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.SPEARFISH.get());
         this.simpleItem(BvfItems.COOKED_SPEARFISH.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
+        this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS.get());
+        this.simpleItem(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get());
+        this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS.get());
+        this.simpleItem(BvfItems.COOKED_NEGAPRION_BREVIROSTRIS.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get());
@@ -147,12 +189,31 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ELOPICHTHYS_BAMBUSA.get());
         this.simpleItem(BvfItems.COOKED_CHANNA.get());
         this.simpleItem(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS.get());
+        this.simpleItem(BvfItems.COOKED_HUSO_DAURICUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS.get());
         this.simpleItem(BvfItems.PREMNAS_BIACULEATUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION.get());
         this.simpleItem(BvfItems.AMPHIPRION_CLARKII.get());
         this.simpleItem(BvfItems.AMPHIPRION_PERCULA.get());
+        this.simpleItem(BvfItems.AMPHIPRION_AKINDYNOS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_BICINCTUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOGASTER.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOPTERUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_LATEZONATUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MCCULLOCHI.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MELANOPUS.get());
+        this.simpleItem(BvfItems.AMPHIPRION_TRICINCTUS.get());
+        this.simpleItem(BvfItems.BETTA_SPLENDENS.get());
+        this.simpleItem(BvfItems.BETTA_IMBELLIS.get());
+        this.simpleItem(BvfItems.BETTA_SMARAGDINA.get());
+        this.simpleItem(BvfItems.BETTA_PICTA.get());
+        this.simpleItem(BvfItems.BETTA_SIMPLEX.get());
+        this.simpleItem(BvfItems.BETTA_BROWNORUM.get());
+        this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS.get());
+        this.simpleItem(BvfItems.KATSUWONUS_PELAMIS.get());
+        this.simpleItem(BvfItems.COOKED_KATSUWONUS_PELAMIS.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_SPECIMEN.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_SPECIMEN.get());
@@ -162,6 +223,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.FEMALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+        this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get());
+        this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get());
@@ -174,6 +237,9 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
         this.simpleItem(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
         this.simpleItem(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get());
+        this.simpleItem(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {
@@ -182,4 +248,3 @@ public class BvfItemModelProvider extends ItemModelProvider {
                 .texture("layer0", this.modLoc("item/" + path));
     }
 }
-

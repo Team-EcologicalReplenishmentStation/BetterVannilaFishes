@@ -68,12 +68,11 @@ public class BvfBleedingEffect extends MobEffect {
         return pDuration > 0 && pDuration % 120 == 0;
     }
 
-    public static void giveBleedingEffect(LivingEntity target, int maxAmp) {
-        giveBleedingEffect(target, 1, maxAmp);
-    }
-
     public static void giveBleedingEffect(LivingEntity target, int step , int maxAmp){
         if(target.level().isClientSide)
+            return;
+
+        if(step == 0 || maxAmp == 0)
             return;
 
         if(target.isDeadOrDying() || target.getMobType().equals(MobType.UNDEAD)) {

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_katsuwonus_pelamis": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:katsuwonus_pelamis"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:katsuwonus_pelamis_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_katsuwonus_pelamis",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:katsuwonus_pelamis_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

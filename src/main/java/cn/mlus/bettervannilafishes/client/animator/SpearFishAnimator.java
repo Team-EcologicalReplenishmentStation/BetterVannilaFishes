@@ -19,7 +19,7 @@ public class SpearFishAnimator<T extends BvfAbstractFish> extends GeneralAnimato
     }
 
     protected void animTail(GeoModel<T> model){
-        String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
+        String[] tailBoneNames = {"head","tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
             GeoBone tail = tailBones.get(i);
@@ -37,6 +37,13 @@ public class SpearFishAnimator<T extends BvfAbstractFish> extends GeneralAnimato
             }else {
                 pitchOfs *= 3f;
                 yawOfs *=  3f;
+            }
+
+            if (i == 0) {
+                pitchOfs = -pitchOfs;
+                yawOfs = -yawOfs;
+                pitchOfs = Mth.clamp(pitchOfs, -10f, 10f);
+                yawOfs = Mth.clamp(yawOfs, -10f, 10f);
             }
 
             tail.setRotX((float) (tail.getRotX() + Math.toRadians(pitchOfs)));

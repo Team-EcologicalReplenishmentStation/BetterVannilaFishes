@@ -1,14 +1,15 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
-import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.animal.WaterAnimal;
+import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
 
 import java.util.List;
 
-public class BvfFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<T> {
+public class BvfFishAnimator<T extends WaterAnimal & GeoAnimatable> extends GeneralAnimator<T> {
     public BvfFishAnimator(T entity) {
         super(entity);
     }
@@ -23,7 +24,7 @@ public class BvfFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<
             return;
         }
 
-        String[] tailBoneNames = {"tail_1","tail_2","tail_3"};
+        String[] tailBoneNames = {"head","tail_1","tail_2","tail_3"};
         List<GeoBone> tailBones = getBonesByName(tailBoneNames, model);
         for(int i = 0; i < tailBones.size(); i++){
             GeoBone tail = tailBones.get(i);
@@ -41,6 +42,13 @@ public class BvfFishAnimator<T extends BvfAbstractFish> extends GeneralAnimator<
             }else {
                 pitchOfs *= 3.5f;
                 yawOfs *=  3.5f;
+            }
+
+            if (i == 0) {
+                pitchOfs = -pitchOfs;
+                yawOfs = -yawOfs;
+                pitchOfs = Mth.clamp(pitchOfs, -5f, 5f);
+                yawOfs = Mth.clamp(yawOfs, -5f, 5f);
             }
 
             tail.setRotX((float) (tail.getRotX() + Math.toRadians(pitchOfs)));

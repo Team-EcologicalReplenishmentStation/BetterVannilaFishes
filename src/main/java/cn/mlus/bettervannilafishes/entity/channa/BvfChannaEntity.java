@@ -103,14 +103,12 @@ public abstract class BvfChannaEntity extends BvfAbstractFish implements BvfEnti
             public void start() {
                 super.start();
                 this.mob.setSprinting(true);
-                this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
             }
 
             @Override
             public void stop() {
                 super.stop();
                 this.mob.setSprinting(false);
-                this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
             }
         });
 

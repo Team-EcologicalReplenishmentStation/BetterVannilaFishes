@@ -8,14 +8,22 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class SharkMeleeAttackGoal extends MeleeAttackGoal {
     BvfWaterAnimal mob;
+    private final int bleedingStep;
+    private final int maxBleedingAmp;
+
     public SharkMeleeAttackGoal(BvfWaterAnimal pMob, double pSpeedModifier, boolean pFollowingTargetEvenIfNotSeen) {
+        this(pMob, pSpeedModifier, pFollowingTargetEvenIfNotSeen, 2, 5);
+    }
+
+    public SharkMeleeAttackGoal(BvfWaterAnimal pMob, double pSpeedModifier, boolean pFollowingTargetEvenIfNotSeen, int bleedingStep, int maxBleedingAmp) {
         super(pMob, pSpeedModifier, pFollowingTargetEvenIfNotSeen);
         this.mob = pMob;
+        this.bleedingStep = bleedingStep;
+        this.maxBleedingAmp = maxBleedingAmp;
     }
 
     @Override
@@ -29,12 +37,6 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
-    public void start() {
-        super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(4);
-    }
-
-    @Override
     public void stop() {
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
@@ -42,7 +44,6 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
     }
 
     @Override
@@ -59,7 +60,7 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
             TickHelper.tickLater(this.mob.level(),15, () ->{
                 this.mob.swing(InteractionHand.MAIN_HAND);
                 this.mob.doHurtTarget(pEnemy);
-                BvfBleedingEffect.giveBleedingEffect(pEnemy,2,5);
+                BvfBleedingEffect.giveBleedingEffect(pEnemy, this.bleedingStep, this.maxBleedingAmp);
                 this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
                 ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
             });

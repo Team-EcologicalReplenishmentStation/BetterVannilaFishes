@@ -1,14 +1,11 @@
 package cn.mlus.bettervannilafishes.entity.channa.ai;
 
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
-import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
 import cn.mlus.bettervannilafishes.util.TickHelper;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class ChannaMeleeAttackGoal extends MeleeAttackGoal {
@@ -29,12 +26,6 @@ public class ChannaMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
-    public void start() {
-        super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
-    }
-
-    @Override
     public void stop() {
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
@@ -42,7 +33,6 @@ public class ChannaMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
     }
 
     @Override

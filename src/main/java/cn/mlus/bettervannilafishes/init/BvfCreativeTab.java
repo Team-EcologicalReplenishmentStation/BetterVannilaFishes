@@ -49,6 +49,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AMPHIPRION_PERIDERAION_SPAWN_EGG.get());
                output.accept(BvfItems.AMPHIPRION_CLARKII_SPAWN_EGG.get());
                output.accept(BvfItems.AMPHIPRION_PERCULA_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_AKINDYNOS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_BICINCTUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_CHRYSOGASTER_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_CHRYSOPTERUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_LATEZONATUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_MCCULLOCHI_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_MELANOPUS_SPAWN_EGG.get());
+               output.accept(BvfItems.AMPHIPRION_TRICINCTUS_SPAWN_EGG.get());
                output.accept(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get());
                output.accept(BvfItems.CHAETODON_STRIATUS_SPAWN_EGG.get());
                output.accept(BvfItems.CHAETODON_UNIMACULATUS_SPAWN_EGG.get());
@@ -59,6 +67,17 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_SPAWN_EGG.get());
                output.accept(BvfItems.CHANNA_ARGUS_SPAWN_EGG.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_SPAWN_EGG.get());
+               output.accept(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
+               output.accept(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get());
+               output.accept(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_SPLENDENS_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_IMBELLIS_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_SMARAGDINA_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_PICTA_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_SIMPLEX_SPAWN_EGG.get());
+               output.accept(BvfItems.BETTA_BROWNORUM_SPAWN_EGG.get());
+               output.accept(BvfItems.MEGALOPS_ATLANTICUS_SPAWN_EGG.get());
+               output.accept(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get());
                 //Bucket
                output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -94,6 +113,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AMPHIPRION_PERIDERAION_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AMPHIPRION_CLARKII_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.AMPHIPRION_PERCULA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_AKINDYNOS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_BICINCTUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_CHRYSOGASTER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_CHRYSOPTERUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_LATEZONATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_MCCULLOCHI_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_MELANOPUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.AMPHIPRION_TRICINCTUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.DOSIDICUS_GIGAS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.CHAETODON_STRIATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.CHAETODON_UNIMACULATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -104,6 +131,17 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.CHANNA_ARGUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.HUSO_DAURICUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_SPLENDENS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_IMBELLIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_SMARAGDINA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_PICTA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_SIMPLEX_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BETTA_BROWNORUM_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.MEGALOPS_ATLANTICUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 //Food
                output.accept(BvfItems.HADDOCK_COD.get());
                output.accept(BvfItems.ATLANTIC_COD.get());
@@ -117,6 +155,10 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SPEARFISH.get());
                output.accept(BvfItems.COOKED_SPEARFISH.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER.get());
+               output.accept(BvfItems.NEGAPRION_ACUTIDENS.get());
+               output.accept(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get());
+               output.accept(BvfItems.NEGAPRION_BREVIROSTRIS.get());
+               output.accept(BvfItems.COOKED_NEGAPRION_BREVIROSTRIS.get());
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS.get());
                output.accept(BvfItems.EPINEPHELUS_ITAJARA.get());
                output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA.get());
@@ -140,6 +182,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.AMPHIPRION_PERIDERAION.get());
                output.accept(BvfItems.AMPHIPRION_CLARKII.get());
                output.accept(BvfItems.AMPHIPRION_PERCULA.get());
+               output.accept(BvfItems.AMPHIPRION_AKINDYNOS.get());
+               output.accept(BvfItems.AMPHIPRION_BICINCTUS.get());
+               output.accept(BvfItems.AMPHIPRION_CHRYSOGASTER.get());
+               output.accept(BvfItems.AMPHIPRION_CHRYSOPTERUS.get());
+               output.accept(BvfItems.AMPHIPRION_LATEZONATUS.get());
+               output.accept(BvfItems.AMPHIPRION_MCCULLOCHI.get());
+               output.accept(BvfItems.AMPHIPRION_MELANOPUS.get());
+               output.accept(BvfItems.AMPHIPRION_TRICINCTUS.get());
                output.accept(BvfItems.HUMBOLDT_SQUID.get());
                output.accept(BvfItems.COOKED_HUMBOLDT_SQUID.get());
                output.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
@@ -154,6 +204,17 @@ public class BvfCreativeTab {
                output.accept(BvfItems.COOKED_CHANNA.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA.get());
                output.accept(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get());
+               output.accept(BvfItems.HUSO_DAURICUS.get());
+               output.accept(BvfItems.COOKED_HUSO_DAURICUS.get());
+               output.accept(BvfItems.BETTA_SPLENDENS.get());
+               output.accept(BvfItems.BETTA_IMBELLIS.get());
+               output.accept(BvfItems.BETTA_SMARAGDINA.get());
+               output.accept(BvfItems.BETTA_PICTA.get());
+               output.accept(BvfItems.BETTA_SIMPLEX.get());
+               output.accept(BvfItems.BETTA_BROWNORUM.get());
+               output.accept(BvfItems.MEGALOPS_ATLANTICUS.get());
+               output.accept(BvfItems.KATSUWONUS_PELAMIS.get());
+               output.accept(BvfItems.COOKED_KATSUWONUS_PELAMIS.get());
                 //Specimen
                output.accept(BvfItems.HADDOCK_COD_SPECIMEN.get());
                output.accept(BvfItems.ATLANTIC_COD_SPECIMEN.get());
@@ -175,10 +236,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.CHANNA_MICROPELTES_SPECIMEN.get());
                output.accept(BvfItems.CHANNA_ARGUS_SPECIMEN.get());
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get());
+               output.accept(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
+               output.accept(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get());
+               output.accept(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get());
+               output.accept(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get());
+               output.accept(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get());
             }).build());
     
     public static void register(IEventBus eventBus) {
         TABS.register(eventBus);
     }
 }
-

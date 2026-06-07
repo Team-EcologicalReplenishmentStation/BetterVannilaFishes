@@ -7,7 +7,6 @@ import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class SquidMeleeAttackGoal extends MeleeAttackGoal {
@@ -28,12 +27,6 @@ public class SquidMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
-    public void start() {
-        super.start();
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(4.2);
-    }
-
-    @Override
     public void stop() {
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
@@ -41,7 +34,6 @@ public class SquidMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.3);
     }
 
     @Override
