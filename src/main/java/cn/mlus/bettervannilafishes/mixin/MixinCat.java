@@ -11,10 +11,21 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Cat.class)
 public class MixinCat {
-    private static final Ingredient food = Ingredient.of(BvfItems.HADDOCK_COD.get(), BvfItems.PACIFIC_COD.get(), BvfItems.ATLANTIC_COD.get(),
-            BvfItems.MALE_SALMON.get(), BvfItems.FEMALE_SALMON.get(), BvfItems.PACIFIC_SALMON.get());
-    @Inject(method = "isFood",at = @At("TAIL"), cancellable = true)
-    public void isFood(ItemStack pStack, CallbackInfoReturnable<Boolean> cir){
-        cir.setReturnValue(cir.getReturnValue() || food.test(pStack));
+    @Inject(method = "isFood", at = @At("TAIL"), cancellable = true)
+    public void isFood(ItemStack pStack, CallbackInfoReturnable<Boolean> cir) {
+        if (cir.getReturnValue()) return;
+
+        Ingredient food = Ingredient.of(
+                BvfItems.HADDOCK_COD.get(),
+                BvfItems.PACIFIC_COD.get(),
+                BvfItems.ATLANTIC_COD.get(),
+                BvfItems.MALE_SALMON.get(),
+                BvfItems.FEMALE_SALMON.get(),
+                BvfItems.PACIFIC_SALMON.get()
+        );
+
+        if (food.test(pStack)) {
+            cir.setReturnValue(true);
+        }
     }
 }
