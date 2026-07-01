@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.item.EnchantedPuffer;
+import cn.mlus.bettervannilafishes.item.RawFishItem;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -905,60 +906,60 @@ public class BvfItems {
             ));
     //Food
     public static final RegistryObject<Item> HADDOCK_COD = ITEMS.register("haddock_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ATLANTIC_COD = ITEMS.register("atlantic_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PACIFIC_COD = ITEMS.register("pacific_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> MALE_SALMON = ITEMS.register("male_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> FEMALE_SALMON = ITEMS.register("female_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PACIFIC_SALMON = ITEMS.register("pacific_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> YELLOW_FIN_PUFFER = ITEMS.register("yellow_fin_puffer",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final RegistryObject<Item> OBSCURE_PUFFER = ITEMS.register("obscure_puffer",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final RegistryObject<Item> PORCUPINE_FISH = ITEMS.register("porcupine_fish",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final RegistryObject<Item> SPEARFISH = ITEMS.register("spearfish",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
     public static final RegistryObject<Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS = ITEMS.register("negaprion_acutidens",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final RegistryObject<Item> COOKED_NEGAPRION_ACUTIDENS = ITEMS.register("cooked_negaprion_acutidens",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS = ITEMS.register("negaprion_brevirostris",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final RegistryObject<Item> COOKED_NEGAPRION_BREVIROSTRIS = ITEMS.register("cooked_negaprion_brevirostris",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> EPINEPHELUS_LANCEOLATUS = ITEMS.register("epinephelus_lanceolatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .build())));
     public static final RegistryObject<Item> EPINEPHELUS_ITAJARA = ITEMS.register("epinephelus_itajara",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .build())));
     public static final RegistryObject<Item> EPINEPHELUS_MELANOSTIGMA = ITEMS.register("epinephelus_melanostigma",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .build())));
     public static final RegistryObject<Item> COOKED_EPINEPHELUS = ITEMS.register("cooked_epinephelus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f)
@@ -966,106 +967,106 @@ public class BvfItems {
     public static final RegistryObject<Item> SHARK_FIN = ITEMS.register("shark_fin",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUMBOLDT_SQUID = ITEMS.register("humboldt_squid",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
     public static final RegistryObject<Item> COOKED_HUMBOLDT_SQUID = ITEMS.register("cooked_humboldt_squid",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.7f).build())));
 
     public static final RegistryObject<Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ACANTHURUS_ACHILLES = ITEMS.register("acanthurus_achilles",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_LEUCOSTERNON = ITEMS.register("acanthurus_leucosternon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PARACANTHURUS_HEPATUS = ITEMS.register("paracanthurus_hepatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_TRIOSTEGUS = ITEMS.register("acanthurus_triostegus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_NIGRICANS = ITEMS.register("acanthurus_nigricans",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_LINEATUS = ITEMS.register("acanthurus_lineatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_STRIATUS = ITEMS.register("chaetodon_striatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_UNIMACULATUS = ITEMS.register("chaetodon_unimaculatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_AURIGA = ITEMS.register("chaetodon_auriga",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_COLLARE = ITEMS.register("chaetodon_collare",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_RETICULATUS = ITEMS.register("chaetodon_reticulatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHAETODON_SPECULUM = ITEMS.register("chaetodon_speculum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AUSTRALOHEROS_FACETUS = ITEMS.register("australoheros_facetus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CICHLASOMA_BIMACULATUM = ITEMS.register("cichlasoma_bimaculatum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> KROBIA_GUIANENSIS = ITEMS.register("krobia_guianensis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AEQUIDENS_TETRAMERUS = ITEMS.register("aequidens_tetramerus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> GYMNOGEOPHAGUS_BALZANII = ITEMS.register("gymnogeophagus_balzanii",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ASTRONOTUS_OCELLATUS = ITEMS.register("astronotus_ocellatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> CHANNA_MICROPELTES = ITEMS.register("channa_micropeltes",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
     public static final RegistryObject<Item> CHANNA_ARGUS = ITEMS.register("channa_argus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
     public static final RegistryObject<Item> ELOPICHTHYS_BAMBUSA = ITEMS.register("elopichthys_bambusa",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
     public static final RegistryObject<Item> COOKED_CHANNA = ITEMS.register("cooked_channa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> COOKED_ELOPICHTHYS_BAMBUSA = ITEMS.register("cooked_elopichthys_bambusa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> HUSO_DAURICUS = ITEMS.register("huso_dauricus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5f).build())));
     public static final RegistryObject<Item> COOKED_HUSO_DAURICUS = ITEMS.register("cooked_huso_dauricus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationMod(0.8f).build())));
     public static final RegistryObject<Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> PREMNAS_BIACULEATUS = ITEMS.register("premnas_biaculeatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_POLYMNUS = ITEMS.register("amphiprion_polymnus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_PERIDERAION = ITEMS.register("amphiprion_perideraion",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_CLARKII = ITEMS.register("amphiprion_clarkii",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_PERCULA = ITEMS.register("amphiprion_percula",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_AKINDYNOS = ITEMS.register("amphiprion_akindynos",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_BICINCTUS = ITEMS.register("amphiprion_bicinctus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_CHRYSOGASTER = ITEMS.register("amphiprion_chrysogaster",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_CHRYSOPTERUS = ITEMS.register("amphiprion_chrysopterus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_LATEZONATUS = ITEMS.register("amphiprion_latezonatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_MCCULLOCHI = ITEMS.register("amphiprion_mccullochi",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_MELANOPUS = ITEMS.register("amphiprion_melanopus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> AMPHIPRION_TRICINCTUS = ITEMS.register("amphiprion_tricinctus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_SPLENDENS = ITEMS.register("betta_splendens",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_IMBELLIS = ITEMS.register("betta_imbellis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_SMARAGDINA = ITEMS.register("betta_smaragdina",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_PICTA = ITEMS.register("betta_picta",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_SIMPLEX = ITEMS.register("betta_simplex",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> BETTA_BROWNORUM = ITEMS.register("betta_brownorum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> MEGALOPS_ATLANTICUS = ITEMS.register("megalops_atlanticus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f).build())));
     public static final RegistryObject<Item> KATSUWONUS_PELAMIS = ITEMS.register("katsuwonus_pelamis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
     public static final RegistryObject<Item> COOKED_KATSUWONUS_PELAMIS = ITEMS.register("cooked_katsuwonus_pelamis",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     //Specimen
