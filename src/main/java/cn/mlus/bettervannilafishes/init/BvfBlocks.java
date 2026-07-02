@@ -60,6 +60,14 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.KATSUWONUS_PELAMIS_SPECIMEN));
     public static final RegistryObject<Block> MEGALOPS_ATLANTICUS_SPECIMEN = BLOCKS.register("megalops_atlanticus_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.MEGALOPS_ATLANTICUS_SPECIMEN));
+    public static final RegistryObject<Block> BLACK_CARP_SPECIMEN = BLOCKS.register("black_carp_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BLACK_CARP_SPECIMEN));
+    public static final RegistryObject<Block> GRASS_CARP_SPECIMEN = BLOCKS.register("grass_carp_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.GRASS_CARP_SPECIMEN));
+    public static final RegistryObject<Block> SILVER_CARP_SPECIMEN = BLOCKS.register("silver_carp_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.SILVER_CARP_SPECIMEN));
+    public static final RegistryObject<Block> BIGHEAD_CARP_SPECIMEN = BLOCKS.register("bighead_carp_specimen",
+            () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BIGHEAD_CARP_SPECIMEN));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -60,6 +60,14 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get()).build(null));
     public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> MEGALOPS_ATLANTICUS_SPECIMEN = BLOCK_ENTITIES.register("megalops_atlanticus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> BLACK_CARP_SPECIMEN = BLOCK_ENTITIES.register("black_carp_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BLACK_CARP_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> GRASS_CARP_SPECIMEN = BLOCK_ENTITIES.register("grass_carp_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GRASS_CARP_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> SILVER_CARP_SPECIMEN = BLOCK_ENTITIES.register("silver_carp_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SILVER_CARP_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> BIGHEAD_CARP_SPECIMEN = BLOCK_ENTITIES.register("bighead_carp_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BIGHEAD_CARP_SPECIMEN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

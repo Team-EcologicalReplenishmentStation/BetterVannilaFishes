@@ -76,6 +76,10 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BLACK_CARP_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.GRASS_CARP_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.SILVER_CARP_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BIGHEAD_CARP_SPAWN_EGG.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_BUCKET.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_BUCKET.get());
@@ -139,6 +143,10 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_BUCKET.get());
         this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get());
         this.simpleItem(BvfItems.HUSO_DAURICUS_BUCKET.get());
+        this.simpleItem(BvfItems.BLACK_CARP_BUCKET.get());
+        this.simpleItem(BvfItems.GRASS_CARP_BUCKET.get());
+        this.simpleItem(BvfItems.SILVER_CARP_BUCKET.get());
+        this.simpleItem(BvfItems.BIGHEAD_CARP_BUCKET.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD.get());
         this.simpleItem(BvfItems.ATLANTIC_COD.get());
@@ -214,6 +222,14 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS.get());
         this.simpleItem(BvfItems.KATSUWONUS_PELAMIS.get());
         this.simpleItem(BvfItems.COOKED_KATSUWONUS_PELAMIS.get());
+        this.simpleItem(BvfItems.BLACK_CARP.get());
+        this.simpleItem(BvfItems.COOKED_BLACK_CARP.get());
+        this.simpleItem(BvfItems.GRASS_CARP.get());
+        this.simpleItem(BvfItems.COOKED_GRASS_CARP.get());
+        this.simpleItem(BvfItems.SILVER_CARP.get());
+        this.simpleItem(BvfItems.COOKED_SILVER_CARP.get());
+        this.simpleItem(BvfItems.BIGHEAD_CARP.get());
+        this.simpleItem(BvfItems.COOKED_BIGHEAD_CARP.get());
 
         this.simpleItem(BvfItems.HADDOCK_COD_SPECIMEN.get());
         this.simpleItem(BvfItems.ATLANTIC_COD_SPECIMEN.get());
@@ -240,6 +256,10 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
         this.simpleItem(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get());
         this.simpleItem(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get());
+        this.simpleItem(BvfItems.BLACK_CARP_SPECIMEN.get());
+        this.simpleItem(BvfItems.GRASS_CARP_SPECIMEN.get());
+        this.simpleItem(BvfItems.SILVER_CARP_SPECIMEN.get());
+        this.simpleItem(BvfItems.BIGHEAD_CARP_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {

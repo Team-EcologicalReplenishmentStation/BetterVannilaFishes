@@ -4,9 +4,11 @@ import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
 import cn.mlus.bettervannilafishes.init.BvfBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -30,6 +32,8 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Locale;
 import java.util.function.Supplier;
 
 public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
@@ -203,5 +207,14 @@ public class FishSpecimen extends BaseEntityBlock implements GeoBlockEntity {
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos blockPos, @NotNull BlockState blockState) {
         return new FishSpecimenBlockEntity(blockPos, blockState);
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack pStack, @org.jetbrains.annotations.Nullable BlockGetter pLevel, @NotNull List<Component> pTooltip, @NotNull TooltipFlag pFlag) {
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+        if (pStack.hasTag() && pStack.getTag().contains("Scale")) {
+            float scale = pStack.getTag().getFloat("Scale");
+            pTooltip.add(Component.literal("Scale:" + String.format(Locale.ROOT, "%.2f", scale)));
+        }
     }
 }

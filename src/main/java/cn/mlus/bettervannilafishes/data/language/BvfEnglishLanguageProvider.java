@@ -78,6 +78,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.KATSUWONUS_PELAMIS.get(),"Katsuwonus pelamis");
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"Dosidicus gigas");
         this.add(BvfEntities.HUSO_DAURICUS.get(),"Huso dauricus");
+        this.add(BvfEntities.BLACK_CARP.get(),"Black Carp");
+        this.add(BvfEntities.GRASS_CARP.get(),"Grass Carp");
+        this.add(BvfEntities.SILVER_CARP.get(),"Silver Carp");
+        this.add(BvfEntities.BIGHEAD_CARP.get(),"Bighead Carp");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "Haddock Cod Spawn Egg");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "Atlantic Cod Spawn Egg");
@@ -142,6 +146,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get(),"Skipjack Tuna Spawn Egg");
         this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"Humboldt Squid Spawn Egg");
         this.add(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get(),"Kaluga Sturgeon Spawn Egg");
+        this.add(BvfItems.BLACK_CARP_SPAWN_EGG.get(),"Black Carp Spawn Egg");
+        this.add(BvfItems.GRASS_CARP_SPAWN_EGG.get(),"Grass Carp Spawn Egg");
+        this.add(BvfItems.SILVER_CARP_SPAWN_EGG.get(),"Silver Carp Spawn Egg");
+        this.add(BvfItems.BIGHEAD_CARP_SPAWN_EGG.get(),"Bighead Carp Spawn Egg");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "Haddock Cod Bucket");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "Atlantic Cod Bucket");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "Pacific Cod Bucket");
@@ -205,6 +213,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get(),"Skipjack Tuna Bucket");
         this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"Humboldt Squid Bucket");
         this.add(BvfItems.HUSO_DAURICUS_BUCKET.get(),"Kaluga Sturgeon Bucket");
+        this.add(BvfItems.BLACK_CARP_BUCKET.get(),"Black Carp Bucket");
+        this.add(BvfItems.GRASS_CARP_BUCKET.get(),"Grass Carp Bucket");
+        this.add(BvfItems.SILVER_CARP_BUCKET.get(),"Silver Carp Bucket");
+        this.add(BvfItems.BIGHEAD_CARP_BUCKET.get(),"Bighead Carp Bucket");
         this.add(BvfItems.HADDOCK_COD.get(), "Haddock Cod");
         this.add(BvfItems.ATLANTIC_COD.get(), "Atlantic Cod");
         this.add(BvfItems.PACIFIC_COD.get(), "Pacific Cod");
@@ -254,6 +266,14 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"Cooked Richardson");
         this.add(BvfItems.HUSO_DAURICUS.get(),"Kaluga Sturgeon");
         this.add(BvfItems.COOKED_HUSO_DAURICUS.get(),"Cooked Kaluga Sturgeon");
+        this.add(BvfItems.BLACK_CARP.get(),"Black Carp");
+        this.add(BvfItems.COOKED_BLACK_CARP.get(),"Cooked Black Carp");
+        this.add(BvfItems.GRASS_CARP.get(),"Grass Carp");
+        this.add(BvfItems.COOKED_GRASS_CARP.get(),"Cooked Grass Carp");
+        this.add(BvfItems.SILVER_CARP.get(),"Silver Carp");
+        this.add(BvfItems.COOKED_SILVER_CARP.get(),"Cooked Silver Carp");
+        this.add(BvfItems.BIGHEAD_CARP.get(),"Bighead Carp");
+        this.add(BvfItems.COOKED_BIGHEAD_CARP.get(),"Cooked Bighead Carp");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"Ocellaris Clownfish");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"Spine-cheeked Clownfish");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"Saddleback Clownfish");
@@ -302,6 +322,10 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.HUSO_DAURICUS_SPECIMEN.get(),"Kaluga Sturgeon Specimen");
         this.add(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get(),"Atlantic Tarpon Specimen");
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(),"Skipjack Tuna Specimen");
+        this.add(BvfItems.BLACK_CARP_SPECIMEN.get(),"Black Carp Specimen");
+        this.add(BvfItems.GRASS_CARP_SPECIMEN.get(),"Grass Carp Specimen");
+        this.add(BvfItems.SILVER_CARP_SPECIMEN.get(),"Silver Carp Specimen");
+        this.add(BvfItems.BIGHEAD_CARP_SPECIMEN.get(),"Bighead Carp Specimen");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "Enchanted Pufferfish");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "Nautilus Blessing");

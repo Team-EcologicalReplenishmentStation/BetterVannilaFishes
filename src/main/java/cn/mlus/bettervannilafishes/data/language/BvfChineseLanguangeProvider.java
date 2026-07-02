@@ -76,6 +76,10 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.KATSUWONUS_PELAMIS.get(),"正鲣");
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(),"美洲大赤鱿");
         this.add(BvfEntities.HUSO_DAURICUS.get(),"达乌尔鳇");
+        this.add(BvfEntities.BLACK_CARP.get(),"青鱼");
+        this.add(BvfEntities.GRASS_CARP.get(),"草鱼");
+        this.add(BvfEntities.SILVER_CARP.get(),"鲢鱼");
+        this.add(BvfEntities.BIGHEAD_CARP.get(),"鳙鱼");
         //Item
         this.add(BvfItems.HADDOCK_COD_SPAWN_EGG.get(), "黑线鳕鱼生成蛋");
         this.add(BvfItems.ATLANTIC_COD_SPAWN_EGG.get(), "大西洋鳕鱼生成蛋");
@@ -140,6 +144,10 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get(),"正鲣生成蛋");
         this.add(BvfItems.DOSIDICUS_GIGAS_SPAWN_EGG.get(),"美洲大赤鱿生成蛋");
         this.add(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get(),"达乌尔鳇生成蛋");
+        this.add(BvfItems.BLACK_CARP_SPAWN_EGG.get(),"青鱼生成蛋");
+        this.add(BvfItems.GRASS_CARP_SPAWN_EGG.get(),"草鱼生成蛋");
+        this.add(BvfItems.SILVER_CARP_SPAWN_EGG.get(),"鲢鱼生成蛋");
+        this.add(BvfItems.BIGHEAD_CARP_SPAWN_EGG.get(),"鳙鱼生成蛋");
         this.add(BvfItems.HADDOCK_COD_BUCKET.get(), "黑线鳕鱼桶");
         this.add(BvfItems.ATLANTIC_COD_BUCKET.get(), "大西洋鳕鱼桶");
         this.add(BvfItems.PACIFIC_COD_BUCKET.get(), "太平洋鳕鱼桶");
@@ -203,6 +211,10 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get(),"正鲣桶");
         this.add(BvfItems.DOSIDICUS_GIGAS_BUCKET.get(),"美洲大赤鱿桶");
         this.add(BvfItems.HUSO_DAURICUS_BUCKET.get(),"达乌尔鳇桶");
+        this.add(BvfItems.BLACK_CARP_BUCKET.get(),"青鱼桶");
+        this.add(BvfItems.GRASS_CARP_BUCKET.get(),"草鱼桶");
+        this.add(BvfItems.SILVER_CARP_BUCKET.get(),"鲢鱼桶");
+        this.add(BvfItems.BIGHEAD_CARP_BUCKET.get(),"鳙鱼桶");
         this.add(BvfItems.HADDOCK_COD.get(), "黑线鳕鱼");
         this.add(BvfItems.ATLANTIC_COD.get(), "大西洋鳕鱼");
         this.add(BvfItems.PACIFIC_COD.get(), "太平洋鳕鱼");
@@ -252,6 +264,14 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(),"熟鳡鱼");
         this.add(BvfItems.HUSO_DAURICUS.get(),"达乌尔鳇");
         this.add(BvfItems.COOKED_HUSO_DAURICUS.get(),"熟达乌尔鳇");
+        this.add(BvfItems.BLACK_CARP.get(),"青鱼");
+        this.add(BvfItems.COOKED_BLACK_CARP.get(),"熟青鱼");
+        this.add(BvfItems.GRASS_CARP.get(),"草鱼");
+        this.add(BvfItems.COOKED_GRASS_CARP.get(),"熟草鱼");
+        this.add(BvfItems.SILVER_CARP.get(),"鲢鱼");
+        this.add(BvfItems.COOKED_SILVER_CARP.get(),"熟鲢鱼");
+        this.add(BvfItems.BIGHEAD_CARP.get(),"鳙鱼");
+        this.add(BvfItems.COOKED_BIGHEAD_CARP.get(),"熟鳙鱼");
         this.add(BvfItems.AMPHIPRION_OCELLARIS.get(),"眼斑双锯鱼");
         this.add(BvfItems.PREMNAS_BIACULEATUS.get(),"棘颊双锯鱼");
         this.add(BvfItems.AMPHIPRION_POLYMNUS.get(),"鞍斑双锯鱼");
@@ -300,6 +320,10 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.HUSO_DAURICUS_SPECIMEN.get(), "达乌尔鳇标本");
         this.add(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get(), "大西洋大海鲢标本");
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(), "正鲣标本");
+        this.add(BvfItems.BLACK_CARP_SPECIMEN.get(), "青鱼标本");
+        this.add(BvfItems.GRASS_CARP_SPECIMEN.get(), "草鱼标本");
+        this.add(BvfItems.SILVER_CARP_SPECIMEN.get(), "鲢鱼标本");
+        this.add(BvfItems.BIGHEAD_CARP_SPECIMEN.get(), "鳙鱼标本");
         this.add(BvfItems.ENCHANTED_PUFFERFISH.get(), "附魔河豚");
 
         this.add(BvfMobEffects.NAUTILUS_BLESSING.get(), "鹦鹉螺祝福");

@@ -113,6 +113,10 @@ public class BvfBiomeModifier
         addSpawn(context, "huso_dauricus_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
         addSpawn(context, "huso_dauricus_cold_ocean", Biomes.COLD_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
         addSpawn(context, "katsuwonus_pelamis", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.KATSUWONUS_PELAMIS.get(), 3, 7, 8));
+        addSpawn(context, "black_carp", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BLACK_CARP.get(), 12, 3, 5));
+        addSpawn(context, "grass_carp", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.GRASS_CARP.get(), 12, 3, 5));
+        addSpawn(context, "silver_carp", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.SILVER_CARP.get(), 12, 3, 5));
+        addSpawn(context, "bighead_carp", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BIGHEAD_CARP.get(), 12, 3, 5));
     }
 
     private static void addSpawn(BootstapContext<BiomeModifier> context, String name, TagKey<Biome> biomes, MobSpawnSettings.SpawnerData... spawns) {

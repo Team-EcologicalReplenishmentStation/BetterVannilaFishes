@@ -29,7 +29,7 @@ public class TigerSharkSpecimenModel extends SpecimenModel<FishSpecimenBlockEnti
     }
 
     @Override
-    public ResourceLocation getModelResource(BlockEntity entity) {
+    public ResourceLocation getModelResource(FishSpecimenBlockEntity entity) {
         int i = entity.getBlockState().getValue(FishSpecimen.HANGING);
         boolean direction = entity.getBlockState().getValue(FishSpecimen.FACING).get2DDataValue() % 2 == 0;
         if(i == 2 && direction){

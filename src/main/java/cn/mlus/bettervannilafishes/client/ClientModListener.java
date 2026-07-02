@@ -5,7 +5,6 @@ import cn.mlus.bettervannilafishes.client.model.block.CichlidSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.CodSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.EpinephelusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.HusoDauricusSpecimenModel;
-import cn.mlus.bettervannilafishes.client.model.block.MegalopsAtlanticusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.NegaprionAcutidensSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.NegaprionBrevirostrisSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.TigerSharkSpecimenModel;
@@ -86,6 +85,10 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.KATSUWONUS_PELAMIS.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.DOSIDICUS_GIGAS.get(), context -> new BvfRenderer<>(context, new DosidicusGigasModel()));
 		event.registerEntityRenderer(BvfEntities.HUSO_DAURICUS.get(), context -> new BvfRenderer<>(context, new HusoDauricusModel()));
+		event.registerEntityRenderer(BvfEntities.BLACK_CARP.get(), context -> new BvfRenderer<>(context, new ChineseCarpModel()));
+		event.registerEntityRenderer(BvfEntities.GRASS_CARP.get(), context -> new BvfRenderer<>(context, new ChineseCarpModel()));
+		event.registerEntityRenderer(BvfEntities.SILVER_CARP.get(), context -> new BvfRenderer<>(context, new ChineseCarpModel()));
+		event.registerEntityRenderer(BvfEntities.BIGHEAD_CARP.get(), context -> new BvfRenderer<>(context, new ChineseCarpModel()));
 
 		event.registerBlockEntityRenderer(BvfBlockEntities.ATLANTIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CodSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.PACIFIC_COD_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new CodSpecimenModel()));
@@ -110,8 +113,12 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.CHANNA_ARGUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.HUSO_DAURICUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new HusoDauricusSpecimenModel()));
-		event.registerBlockEntityRenderer(BvfBlockEntities.MEGALOPS_ATLANTICUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new MegalopsAtlanticusSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.MEGALOPS_ATLANTICUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.KATSUWONUS_PELAMIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.BLACK_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.GRASS_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.SILVER_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.BIGHEAD_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 	}
 
 }

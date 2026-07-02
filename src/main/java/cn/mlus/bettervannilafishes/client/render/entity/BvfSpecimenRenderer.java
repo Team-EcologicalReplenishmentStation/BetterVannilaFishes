@@ -17,11 +17,4 @@ public class BvfSpecimenRenderer extends GeoBlockRenderer<FishSpecimenBlockEntit
     public BvfSpecimenRenderer(GeoModel<FishSpecimenBlockEntity> model) {
         super(model);
     }
-
-    @Override
-    public void preRender(PoseStack poseStack, FishSpecimenBlockEntity animatable, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-        super.preRender(poseStack, animatable, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
-        float scale = animatable.getScale();
-        poseStack.scale(scale, scale, scale);
-    }
 }

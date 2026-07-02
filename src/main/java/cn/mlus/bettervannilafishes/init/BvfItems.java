@@ -308,6 +308,34 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> BLACK_CARP_BUCKET = ITEMS.register("black_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BLACK_CARP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> GRASS_CARP_BUCKET = ITEMS.register("grass_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.GRASS_CARP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> SILVER_CARP_BUCKET = ITEMS.register("silver_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.SILVER_CARP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BIGHEAD_CARP_BUCKET = ITEMS.register("bighead_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BIGHEAD_CARP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> KATSUWONUS_PELAMIS_BUCKET = ITEMS.register("katsuwonus_pelamis_bucket",
             () -> new MobBucketItem(
                     BvfEntities.KATSUWONUS_PELAMIS,
@@ -904,6 +932,34 @@ public class BvfItems {
                     0xC4A35A,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> BLACK_CARP_SPAWN_EGG = ITEMS.register("black_carp_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BLACK_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> GRASS_CARP_SPAWN_EGG = ITEMS.register("grass_carp_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.GRASS_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> SILVER_CARP_SPAWN_EGG = ITEMS.register("silver_carp_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.SILVER_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BIGHEAD_CARP_SPAWN_EGG = ITEMS.register("bighead_carp_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BIGHEAD_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     //Food
     public static final RegistryObject<Item> HADDOCK_COD = ITEMS.register("haddock_cod",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
@@ -1069,6 +1125,22 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
     public static final RegistryObject<Item> COOKED_KATSUWONUS_PELAMIS = ITEMS.register("cooked_katsuwonus_pelamis",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> BLACK_CARP = ITEMS.register("black_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> COOKED_BLACK_CARP = ITEMS.register("cooked_black_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> GRASS_CARP = ITEMS.register("grass_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> COOKED_GRASS_CARP = ITEMS.register("cooked_grass_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> SILVER_CARP = ITEMS.register("silver_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> COOKED_SILVER_CARP = ITEMS.register("cooked_silver_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> BIGHEAD_CARP = ITEMS.register("bighead_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
+    public static final RegistryObject<Item> COOKED_BIGHEAD_CARP = ITEMS.register("cooked_bighead_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     //Specimen
     public static final RegistryObject<Item> ATLANTIC_COD_SPECIMEN = ITEMS.register("atlantic_cod_specimen",
             () -> new BlockItem(BvfBlocks.ATLANTIC_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
@@ -1116,6 +1188,14 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> HUSO_DAURICUS_SPECIMEN = ITEMS.register("huso_dauricus_specimen",
             () -> new BlockItem(BvfBlocks.HUSO_DAURICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BLACK_CARP_SPECIMEN = ITEMS.register("black_carp_specimen",
+            () -> new BlockItem(BvfBlocks.BLACK_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> GRASS_CARP_SPECIMEN = ITEMS.register("grass_carp_specimen",
+            () -> new BlockItem(BvfBlocks.GRASS_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> SILVER_CARP_SPECIMEN = ITEMS.register("silver_carp_specimen",
+            () -> new BlockItem(BvfBlocks.SILVER_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BIGHEAD_CARP_SPECIMEN = ITEMS.register("bighead_carp_specimen",
+            () -> new BlockItem(BvfBlocks.BIGHEAD_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MEGALOPS_ATLANTICUS_SPECIMEN = ITEMS.register("megalops_atlanticus_specimen",
             () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> KATSUWONUS_PELAMIS_SPECIMEN = ITEMS.register("katsuwonus_pelamis_specimen",

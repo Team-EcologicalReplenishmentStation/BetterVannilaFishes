@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 
 public class CodSpecimenModel extends SpecimenModel<FishSpecimenBlockEntity> {
     @Override
-    public ResourceLocation getModelResource(BlockEntity entity) {
+    public ResourceLocation getModelResource(FishSpecimenBlockEntity entity) {
         String path = "cod_specimen";
         int i = entity.getBlockState().getValue(FishSpecimen.HANGING);
         if(i == 1){
