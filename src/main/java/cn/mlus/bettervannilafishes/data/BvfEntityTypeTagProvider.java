@@ -165,6 +165,10 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.BETTA_SMARAGDINA.get())
                 .add(BvfEntities.BETTA_PICTA.get())
                 .add(BvfEntities.BETTA_SIMPLEX.get())
-                .add(BvfEntities.BETTA_BROWNORUM.get());
+                .add(BvfEntities.BETTA_BROWNORUM.get())
+                .add(BvfEntities.BLACK_CARP.get())
+                .add(BvfEntities.GRASS_CARP.get())
+                .add(BvfEntities.SILVER_CARP.get())
+                .add(BvfEntities.BIGHEAD_CARP.get());
     }
 }

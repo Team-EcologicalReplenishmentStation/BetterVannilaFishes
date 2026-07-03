@@ -77,6 +77,10 @@ public class BvfCreativeTab {
                output.accept(BvfItems.HUSO_DAURICUS_SPAWN_EGG.get());
                 output.accept(BvfItems.MEGALOPS_ATLANTICUS_SPAWN_EGG.get());
                 output.accept(BvfItems.KATSUWONUS_PELAMIS_SPAWN_EGG.get());
+               output.accept(BvfItems.BLACK_CARP_SPAWN_EGG.get());
+               output.accept(BvfItems.GRASS_CARP_SPAWN_EGG.get());
+               output.accept(BvfItems.SILVER_CARP_SPAWN_EGG.get());
+               output.accept(BvfItems.BIGHEAD_CARP_SPAWN_EGG.get());
                 //Bucket
                output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -141,6 +145,10 @@ public class BvfCreativeTab {
                output.accept(BvfItems.HUSO_DAURICUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 output.accept(BvfItems.MEGALOPS_ATLANTICUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.KATSUWONUS_PELAMIS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BLACK_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.GRASS_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.SILVER_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BIGHEAD_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 //Food
                output.accept(BvfItems.HADDOCK_COD.get());
                output.accept(BvfItems.ATLANTIC_COD.get());
@@ -204,6 +212,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.MEGALOPS_ATLANTICUS.get());
                output.accept(BvfItems.KATSUWONUS_PELAMIS.get());
                output.accept(BvfItems.COOKED_KATSUWONUS_PELAMIS.get());
+               output.accept(BvfItems.BLACK_CARP.get());
+               output.accept(BvfItems.COOKED_BLACK_CARP.get());
+               output.accept(BvfItems.GRASS_CARP.get());
+               output.accept(BvfItems.COOKED_GRASS_CARP.get());
+               output.accept(BvfItems.SILVER_CARP.get());
+               output.accept(BvfItems.COOKED_SILVER_CARP.get());
+               output.accept(BvfItems.BIGHEAD_CARP.get());
+               output.accept(BvfItems.COOKED_BIGHEAD_CARP.get());
                output.accept(BvfItems.HUMBOLDT_SQUID.get());
                output.accept(BvfItems.COOKED_HUMBOLDT_SQUID.get());
                output.accept(BvfItems.FEATHER_STAR_TENTACLE.get());
@@ -239,7 +255,14 @@ public class BvfCreativeTab {
                output.accept(BvfItems.ELOPICHTHYS_BAMBUSA_SPECIMEN.get());
                output.accept(BvfItems.HUSO_DAURICUS_SPECIMEN.get());
                output.accept(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get());
+               output.accept(BvfItems.OBSCURE_PUFFER_SPECIMEN.get());
+               output.accept(BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get());
+               output.accept(BvfItems.PORCUPINE_FISH_SPECIMEN.get());
                output.accept(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get());
+               output.accept(BvfItems.BLACK_CARP_SPECIMEN.get());
+               output.accept(BvfItems.GRASS_CARP_SPECIMEN.get());
+               output.accept(BvfItems.SILVER_CARP_SPECIMEN.get());
+               output.accept(BvfItems.BIGHEAD_CARP_SPECIMEN.get());
             }).build());
     
     public static void register(IEventBus eventBus) {

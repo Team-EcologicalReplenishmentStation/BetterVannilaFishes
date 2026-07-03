@@ -4,11 +4,10 @@ import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.entity.BlockEntity;
 
 public class EpinephelusSpecimenModel extends SpecimenModel<FishSpecimenBlockEntity> {
     @Override
-    public ResourceLocation getModelResource(BlockEntity entity) {
+    public ResourceLocation getModelResource(FishSpecimenBlockEntity entity) {
         String path = "epinephelus_specimen";
         int i = entity.getBlockState().getValue(FishSpecimen.HANGING);
         if(i == 1){

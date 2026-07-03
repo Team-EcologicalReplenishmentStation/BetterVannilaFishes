@@ -321,6 +321,26 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.KATSUWONUS_PELAMIS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
+        this.add(BvfEntities.BLACK_CARP.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BLACK_CARP.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
+        this.add(BvfEntities.GRASS_CARP.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.GRASS_CARP.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
+        this.add(BvfEntities.SILVER_CARP.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.SILVER_CARP.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
+        this.add(BvfEntities.BIGHEAD_CARP.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.BIGHEAD_CARP.get()))
+                        .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
     }
 
     protected void add(Holder<EntityType<?>> typeProvider, LootTable.Builder table) {

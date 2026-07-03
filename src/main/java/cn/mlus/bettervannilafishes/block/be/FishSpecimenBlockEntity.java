@@ -16,6 +16,8 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEntity {
@@ -35,6 +37,11 @@ public class FishSpecimenBlockEntity extends BlockEntity implements GeoBlockEnti
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
+        AnimationController<FishSpecimenBlockEntity> main = new AnimationController<>(this, "main", 0, state -> {
+            RawAnimation builder = RawAnimation.begin().thenLoop("size");
+            return state.setAndContinue(builder);
+        });
+        controllerRegistrar.add(main);
     }
 
     @Override

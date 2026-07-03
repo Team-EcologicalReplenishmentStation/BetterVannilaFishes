@@ -5,6 +5,10 @@ import cn.mlus.bettervannilafishes.entity.betta.*;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaMicropeltes;
+import cn.mlus.bettervannilafishes.entity.chinesecarp.BigheadCarp;
+import cn.mlus.bettervannilafishes.entity.chinesecarp.BlackCarp;
+import cn.mlus.bettervannilafishes.entity.chinesecarp.GrassCarp;
+import cn.mlus.bettervannilafishes.entity.chinesecarp.SilverCarp;
 import cn.mlus.bettervannilafishes.entity.cichlid.*;
 import cn.mlus.bettervannilafishes.entity.clownfish.*;
 import cn.mlus.bettervannilafishes.entity.cod.AtlanticCod;
@@ -299,6 +303,23 @@ public class BvfEntities {
             () -> EntityType.Builder.of(HusoDauricus::new, MobCategory.WATER_CREATURE)
                     .sized(1.8F, 1.4F)
                     .build(BetterVannilaFishes.prefix("huso_dauricus").toString()));
+
+    public static final DeferredHolder<EntityType<?>,EntityType<BlackCarp>> BLACK_CARP = ENTITIES.register("black_carp",
+            () -> EntityType.Builder.of(BlackCarp::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("black_carp").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<GrassCarp>> GRASS_CARP = ENTITIES.register("grass_carp",
+            () -> EntityType.Builder.of(GrassCarp::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("grass_carp").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<SilverCarp>> SILVER_CARP = ENTITIES.register("silver_carp",
+            () -> EntityType.Builder.of(SilverCarp::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("silver_carp").toString()));
+    public static final DeferredHolder<EntityType<?>,EntityType<BigheadCarp>> BIGHEAD_CARP = ENTITIES.register("bighead_carp",
+            () -> EntityType.Builder.of(BigheadCarp::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.55F)
+                    .build(BetterVannilaFishes.prefix("bighead_carp").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

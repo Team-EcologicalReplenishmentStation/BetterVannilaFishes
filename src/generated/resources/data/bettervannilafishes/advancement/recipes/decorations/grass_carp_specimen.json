@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grass_carp": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:grass_carp"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:grass_carp_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_grass_carp"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:grass_carp_specimen"
+    ]
+  }
+}

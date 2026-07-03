@@ -5,7 +5,6 @@ import cn.mlus.bettervannilafishes.block.FishSpecimen;
 import cn.mlus.bettervannilafishes.block.be.FishSpecimenBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.entity.BlockEntity;
 
 public class TigerSharkSpecimenModel extends SpecimenModel<FishSpecimenBlockEntity> {
     @Override
@@ -29,7 +28,7 @@ public class TigerSharkSpecimenModel extends SpecimenModel<FishSpecimenBlockEnti
     }
 
     @Override
-    public ResourceLocation getModelResource(BlockEntity entity) {
+    public ResourceLocation getModelResource(FishSpecimenBlockEntity entity) {
         int i = entity.getBlockState().getValue(FishSpecimen.HANGING);
         boolean direction = entity.getBlockState().getValue(FishSpecimen.FACING).get2DDataValue() % 2 == 0;
         if(i == 2 && direction){

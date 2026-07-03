@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.item.EnchantedPuffer;
+import cn.mlus.bettervannilafishes.item.RawFishItem;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -345,6 +346,34 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> HUSO_DAURICUS_BUCKET = ITEMS.register("huso_dauricus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.HUSO_DAURICUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> BLACK_CARP_BUCKET = ITEMS.register("black_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BLACK_CARP.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> GRASS_CARP_BUCKET = ITEMS.register("grass_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.GRASS_CARP.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> SILVER_CARP_BUCKET = ITEMS.register("silver_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.SILVER_CARP.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_BUCKET = ITEMS.register("bighead_carp_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BIGHEAD_CARP.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -791,6 +820,34 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> BLACK_CARP_SPAWN_EGG = ITEMS.register("black_carp_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.BLACK_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> GRASS_CARP_SPAWN_EGG = ITEMS.register("grass_carp_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.GRASS_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> SILVER_CARP_SPAWN_EGG = ITEMS.register("silver_carp_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.SILVER_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_SPAWN_EGG = ITEMS.register("bighead_carp_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.BIGHEAD_CARP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS_SPAWN_EGG = ITEMS.register("amphiprion_akindynos_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AMPHIPRION_AKINDYNOS,
@@ -850,115 +907,115 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> BETTA_SPLENDENS_SPAWN_EGG = ITEMS.register("betta_splendens_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_SPLENDENS,
-                    0x7B2636,
-                    0x2F5C8F,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> BETTA_IMBELLIS_SPAWN_EGG = ITEMS.register("betta_imbellis_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_IMBELLIS,
-                    0x315B54,
-                    0xD6434D,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> BETTA_SMARAGDINA_SPAWN_EGG = ITEMS.register("betta_smaragdina_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_SMARAGDINA,
-                    0x1C7B66,
-                    0x5CC5B8,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> BETTA_PICTA_SPAWN_EGG = ITEMS.register("betta_picta_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_PICTA,
-                    0xA46A45,
-                    0x2D211C,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> BETTA_SIMPLEX_SPAWN_EGG = ITEMS.register("betta_simplex_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_SIMPLEX,
-                    0xC29B80,
-                    0x5E3B32,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> BETTA_BROWNORUM_SPAWN_EGG = ITEMS.register("betta_brownorum_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.BETTA_BROWNORUM,
-                    0x6B3E2D,
-                    0xD28B55,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> MEGALOPS_ATLANTICUS_SPAWN_EGG = ITEMS.register("megalops_atlanticus_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.MEGALOPS_ATLANTICUS,
-                    0x8E9BA1,
-                    0xE7EEF0,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS_SPAWN_EGG = ITEMS.register("katsuwonus_pelamis_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.KATSUWONUS_PELAMIS,
-                    0x2E5A8C,
-                    0xC4A35A,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     //Food
     public static final DeferredHolder<Item,Item> HADDOCK_COD = ITEMS.register("haddock_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ATLANTIC_COD = ITEMS.register("atlantic_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> PACIFIC_COD = ITEMS.register("pacific_cod",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> MALE_SALMON = ITEMS.register("male_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> FEMALE_SALMON = ITEMS.register("female_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> PACIFIC_SALMON = ITEMS.register("pacific_salmon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER = ITEMS.register("yellow_fin_puffer",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final DeferredHolder<Item,Item> OBSCURE_PUFFER = ITEMS.register("obscure_puffer",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final DeferredHolder<Item,Item> PORCUPINE_FISH = ITEMS.register("porcupine_fish",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
     public static final DeferredHolder<Item,Item> SPEARFISH = ITEMS.register("spearfish",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final DeferredHolder<Item,Item> NEGAPRION_ACUTIDENS = ITEMS.register("negaprion_acutidens",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final DeferredHolder<Item,Item> COOKED_NEGAPRION_ACUTIDENS = ITEMS.register("cooked_negaprion_acutidens",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f).build())));
     public static final DeferredHolder<Item,Item> NEGAPRION_BREVIROSTRIS = ITEMS.register("negaprion_brevirostris",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
     public static final DeferredHolder<Item,Item> COOKED_NEGAPRION_BREVIROSTRIS = ITEMS.register("cooked_negaprion_brevirostris",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f).build())));
     public static final DeferredHolder<Item,Item> EPINEPHELUS_LANCEOLATUS = ITEMS.register("epinephelus_lanceolatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .build())));
     public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA = ITEMS.register("epinephelus_itajara",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .build())));
     public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA = ITEMS.register("epinephelus_melanostigma",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .build())));
     public static final DeferredHolder<Item,Item> COOKED_EPINEPHELUS = ITEMS.register("cooked_epinephelus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f)
@@ -967,106 +1024,122 @@ public class BvfItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredHolder<Item,Item> HUMBOLDT_SQUID = ITEMS.register("humboldt_squid",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_HUMBOLDT_SQUID = ITEMS.register("cooked_humboldt_squid",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.7f).build())));
     public static final DeferredHolder<Item,Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
     public static final DeferredHolder<Item,Item> ACANTHURUS_ACHILLES = ITEMS.register("acanthurus_achilles",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOSTERNON = ITEMS.register("acanthurus_leucosternon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> PARACANTHURUS_HEPATUS = ITEMS.register("paracanthurus_hepatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_TRIOSTEGUS = ITEMS.register("acanthurus_triostegus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS = ITEMS.register("acanthurus_nigricans",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LINEATUS = ITEMS.register("acanthurus_lineatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_STRIATUS = ITEMS.register("chaetodon_striatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_UNIMACULATUS = ITEMS.register("chaetodon_unimaculatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_AURIGA = ITEMS.register("chaetodon_auriga",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_COLLARE = ITEMS.register("chaetodon_collare",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS = ITEMS.register("chaetodon_reticulatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM = ITEMS.register("chaetodon_speculum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS = ITEMS.register("australoheros_facetus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM = ITEMS.register("cichlasoma_bimaculatum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> KROBIA_GUIANENSIS = ITEMS.register("krobia_guianensis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AEQUIDENS_TETRAMERUS = ITEMS.register("aequidens_tetramerus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> GYMNOGEOPHAGUS_BALZANII = ITEMS.register("gymnogeophagus_balzanii",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ASTRONOTUS_OCELLATUS = ITEMS.register("astronotus_ocellatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHANNA_MICROPELTES = ITEMS.register("channa_micropeltes",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
     public static final DeferredHolder<Item,Item> CHANNA_ARGUS = ITEMS.register("channa_argus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
     public static final DeferredHolder<Item,Item> ELOPICHTHYS_BAMBUSA = ITEMS.register("elopichthys_bambusa",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
     public static final DeferredHolder<Item,Item> COOKED_CHANNA = ITEMS.register("cooked_channa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     public static final DeferredHolder<Item,Item> COOKED_ELOPICHTHYS_BAMBUSA = ITEMS.register("cooked_elopichthys_bambusa",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     public static final DeferredHolder<Item,Item> HUSO_DAURICUS = ITEMS.register("huso_dauricus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.5f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.5f).build())));
     public static final DeferredHolder<Item,Item> COOKED_HUSO_DAURICUS = ITEMS.register("cooked_huso_dauricus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> PREMNAS_BIACULEATUS = ITEMS.register("premnas_biaculeatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_POLYMNUS = ITEMS.register("amphiprion_polymnus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_PERIDERAION = ITEMS.register("amphiprion_perideraion",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CLARKII = ITEMS.register("amphiprion_clarkii",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA = ITEMS.register("amphiprion_percula",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS = ITEMS.register("amphiprion_akindynos",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_BICINCTUS = ITEMS.register("amphiprion_bicinctus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOGASTER = ITEMS.register("amphiprion_chrysogaster",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOPTERUS = ITEMS.register("amphiprion_chrysopterus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_LATEZONATUS = ITEMS.register("amphiprion_latezonatus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_MCCULLOCHI = ITEMS.register("amphiprion_mccullochi",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_MELANOPUS = ITEMS.register("amphiprion_melanopus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_TRICINCTUS = ITEMS.register("amphiprion_tricinctus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SPLENDENS = ITEMS.register("betta_splendens",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_IMBELLIS = ITEMS.register("betta_imbellis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SMARAGDINA = ITEMS.register("betta_smaragdina",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_PICTA = ITEMS.register("betta_picta",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SIMPLEX = ITEMS.register("betta_simplex",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_BROWNORUM = ITEMS.register("betta_brownorum",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> MEGALOPS_ATLANTICUS = ITEMS.register("megalops_atlanticus",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f).build())));
     public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS = ITEMS.register("katsuwonus_pelamis",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_KATSUWONUS_PELAMIS = ITEMS.register("cooked_katsuwonus_pelamis",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final DeferredHolder<Item,Item> BLACK_CARP = ITEMS.register("black_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_BLACK_CARP = ITEMS.register("cooked_black_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final DeferredHolder<Item,Item> GRASS_CARP = ITEMS.register("grass_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_GRASS_CARP = ITEMS.register("cooked_grass_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final DeferredHolder<Item,Item> SILVER_CARP = ITEMS.register("silver_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_SILVER_CARP = ITEMS.register("cooked_silver_carp",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
+    public static final DeferredHolder<Item,Item> BIGHEAD_CARP = ITEMS.register("bighead_carp",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
+    public static final DeferredHolder<Item,Item> COOKED_BIGHEAD_CARP = ITEMS.register("cooked_bighead_carp",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     //Specimen
     public static final DeferredHolder<Item,Item> ATLANTIC_COD_SPECIMEN = ITEMS.register("atlantic_cod_specimen",
@@ -1115,8 +1188,22 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> HUSO_DAURICUS_SPECIMEN = ITEMS.register("huso_dauricus_specimen",
             () -> new BlockItem(BvfBlocks.HUSO_DAURICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> BLACK_CARP_SPECIMEN = ITEMS.register("black_carp_specimen",
+            () -> new BlockItem(BvfBlocks.BLACK_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> GRASS_CARP_SPECIMEN = ITEMS.register("grass_carp_specimen",
+            () -> new BlockItem(BvfBlocks.GRASS_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> SILVER_CARP_SPECIMEN = ITEMS.register("silver_carp_specimen",
+            () -> new BlockItem(BvfBlocks.SILVER_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_SPECIMEN = ITEMS.register("bighead_carp_specimen",
+            () -> new BlockItem(BvfBlocks.BIGHEAD_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> MEGALOPS_ATLANTICUS_SPECIMEN = ITEMS.register("megalops_atlanticus_specimen",
             () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> OBSCURE_PUFFER_SPECIMEN = ITEMS.register("obscure_puffer_specimen",
+            () -> new BlockItem(BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER_SPECIMEN = ITEMS.register("yellow_fin_puffer_specimen",
+            () -> new BlockItem(BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PORCUPINE_FISH_SPECIMEN = ITEMS.register("porcupine_fish_specimen",
+            () -> new BlockItem(BvfBlocks.PORCUPINE_FISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS_SPECIMEN = ITEMS.register("katsuwonus_pelamis_specimen",
             () -> new BlockItem(BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon

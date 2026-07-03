@@ -198,6 +198,23 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(BvfItems.BETTA_BROWNORUM.get()), has(BvfItems.BETTA_BROWNORUM.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_betta_brownorum"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.BLACK_CARP.get())
+                .unlockedBy(getHasName(BvfItems.BLACK_CARP.get()), has(BvfItems.BLACK_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_black_carp"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.GRASS_CARP.get())
+                .unlockedBy(getHasName(BvfItems.GRASS_CARP.get()), has(BvfItems.GRASS_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_grass_carp"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.SILVER_CARP.get())
+                .unlockedBy(getHasName(BvfItems.SILVER_CARP.get()), has(BvfItems.SILVER_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_silver_carp"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH,1)
+                .requires(BvfItems.BIGHEAD_CARP.get())
+                .unlockedBy(getHasName(BvfItems.BIGHEAD_CARP.get()), has(BvfItems.BIGHEAD_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_bighead_carp"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ATLANTIC_COD_SPECIMEN.get(),1)
                 .requires(BvfItems.ATLANTIC_COD.get())
                 .requires(Items.HONEYCOMB)
@@ -318,11 +335,46 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.MEGALOPS_ATLANTICUS.get()), has(BvfItems.MEGALOPS_ATLANTICUS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("megalops_atlanticus_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.OBSCURE_PUFFER_SPECIMEN.get(),1)
+                .requires(BvfItems.OBSCURE_PUFFER.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.OBSCURE_PUFFER.get()), has(BvfItems.OBSCURE_PUFFER.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("obscure_puffer_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get(),1)
+                .requires(BvfItems.YELLOW_FIN_PUFFER.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.YELLOW_FIN_PUFFER.get()), has(BvfItems.YELLOW_FIN_PUFFER.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("yellow_fin_puffer_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.PORCUPINE_FISH_SPECIMEN.get(),1)
+                .requires(BvfItems.PORCUPINE_FISH.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.PORCUPINE_FISH.get()), has(BvfItems.PORCUPINE_FISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("porcupine_fish_specimen"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(),1)
                 .requires(BvfItems.KATSUWONUS_PELAMIS.get())
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.KATSUWONUS_PELAMIS.get()), has(BvfItems.KATSUWONUS_PELAMIS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("katsuwonus_pelamis_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.BLACK_CARP_SPECIMEN.get(),1)
+                .requires(BvfItems.BLACK_CARP.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.BLACK_CARP.get()), has(BvfItems.BLACK_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("black_carp_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.GRASS_CARP_SPECIMEN.get(),1)
+                .requires(BvfItems.GRASS_CARP.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.GRASS_CARP.get()), has(BvfItems.GRASS_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("grass_carp_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.SILVER_CARP_SPECIMEN.get(),1)
+                .requires(BvfItems.SILVER_CARP.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.SILVER_CARP.get()), has(BvfItems.SILVER_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("silver_carp_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.BIGHEAD_CARP_SPECIMEN.get(),1)
+                .requires(BvfItems.BIGHEAD_CARP.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.BIGHEAD_CARP.get()), has(BvfItems.BIGHEAD_CARP.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("bighead_carp_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
@@ -331,6 +383,10 @@ public class BvfRecipeProvider extends RecipeProvider {
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_ARGUS.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.ELOPICHTHYS_BAMBUSA.get(), BvfItems.COOKED_ELOPICHTHYS_BAMBUSA.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUSO_DAURICUS.get(), BvfItems.COOKED_HUSO_DAURICUS.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.BLACK_CARP.get(), BvfItems.COOKED_BLACK_CARP.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.GRASS_CARP.get(), BvfItems.COOKED_GRASS_CARP.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.SILVER_CARP.get(), BvfItems.COOKED_SILVER_CARP.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.BIGHEAD_CARP.get(), BvfItems.COOKED_BIGHEAD_CARP.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.NEGAPRION_ACUTIDENS.get(), BvfItems.COOKED_NEGAPRION_ACUTIDENS.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.NEGAPRION_BREVIROSTRIS.get(), BvfItems.COOKED_NEGAPRION_BREVIROSTRIS.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.KATSUWONUS_PELAMIS.get(), BvfItems.COOKED_KATSUWONUS_PELAMIS.get(), 0.35f);
