@@ -1200,6 +1200,76 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> KATSUWONUS_PELAMIS_SPECIMEN = ITEMS.register("katsuwonus_pelamis_specimen",
             () -> new BlockItem(BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> OBSCURE_PUFFER_SPECIMEN = ITEMS.register("obscure_puffer_specimen",
+            () -> new BlockItem(BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> YELLOW_FIN_PUFFER_SPECIMEN = ITEMS.register("yellow_fin_puffer_specimen",
+            () -> new BlockItem(BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PORCUPINE_FISH_SPECIMEN = ITEMS.register("porcupine_fish_specimen",
+            () -> new BlockItem(BvfBlocks.PORCUPINE_FISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_SPLENDENS_SPECIMEN = ITEMS.register("betta_splendens_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_SPLENDENS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_IMBELLIS_SPECIMEN = ITEMS.register("betta_imbellis_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_IMBELLIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_SMARAGDINA_SPECIMEN = ITEMS.register("betta_smaragdina_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_SMARAGDINA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_PICTA_SPECIMEN = ITEMS.register("betta_picta_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_PICTA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_SIMPLEX_SPECIMEN = ITEMS.register("betta_simplex_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_SIMPLEX_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BETTA_BROWNORUM_SPECIMEN = ITEMS.register("betta_brownorum_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_BROWNORUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ACANTHURUS_ACHILLES_SPECIMEN = ITEMS.register("acanthurus_achilles_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_ACHILLES_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ACANTHURUS_LEUCOSTERNON_SPECIMEN = ITEMS.register("acanthurus_leucosternon_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_LEUCOSTERNON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PARACANTHURUS_HEPATUS_SPECIMEN = ITEMS.register("paracanthurus_hepatus_specimen",
+            () -> new BlockItem(BvfBlocks.PARACANTHURUS_HEPATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ACANTHURUS_TRIOSTEGUS_SPECIMEN = ITEMS.register("acanthurus_triostegus_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_TRIOSTEGUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ACANTHURUS_NIGRICANS_SPECIMEN = ITEMS.register("acanthurus_nigricans_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_NIGRICANS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ACANTHURUS_LINEATUS_SPECIMEN = ITEMS.register("acanthurus_lineatus_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_LINEATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_STRIATUS_SPECIMEN = ITEMS.register("chaetodon_striatus_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_STRIATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_UNIMACULATUS_SPECIMEN = ITEMS.register("chaetodon_unimaculatus_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_UNIMACULATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_AURIGA_SPECIMEN = ITEMS.register("chaetodon_auriga_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_AURIGA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_COLLARE_SPECIMEN = ITEMS.register("chaetodon_collare_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_COLLARE_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_RETICULATUS_SPECIMEN = ITEMS.register("chaetodon_reticulatus_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_RETICULATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CHAETODON_SPECULUM_SPECIMEN = ITEMS.register("chaetodon_speculum_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_SPECULUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_OCELLARIS_SPECIMEN = ITEMS.register("amphiprion_ocellaris_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_OCELLARIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> PREMNAS_BIACULEATUS_SPECIMEN = ITEMS.register("premnas_biaculeatus_specimen",
+            () -> new BlockItem(BvfBlocks.PREMNAS_BIACULEATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_POLYMNUS_SPECIMEN = ITEMS.register("amphiprion_polymnus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_POLYMNUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_PERIDERAION_SPECIMEN = ITEMS.register("amphiprion_perideraion_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_PERIDERAION_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_CLARKII_SPECIMEN = ITEMS.register("amphiprion_clarkii_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_CLARKII_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_PERCULA_SPECIMEN = ITEMS.register("amphiprion_percula_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_PERCULA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_AKINDYNOS_SPECIMEN = ITEMS.register("amphiprion_akindynos_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_AKINDYNOS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_BICINCTUS_SPECIMEN = ITEMS.register("amphiprion_bicinctus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_BICINCTUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOGASTER_SPECIMEN = ITEMS.register("amphiprion_chrysogaster_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_CHRYSOGASTER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_CHRYSOPTERUS_SPECIMEN = ITEMS.register("amphiprion_chrysopterus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_CHRYSOPTERUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_LATEZONATUS_SPECIMEN = ITEMS.register("amphiprion_latezonatus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_LATEZONATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_MCCULLOCHI_SPECIMEN = ITEMS.register("amphiprion_mccullochi_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_MCCULLOCHI_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_MELANOPUS_SPECIMEN = ITEMS.register("amphiprion_melanopus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_MELANOPUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> AMPHIPRION_TRICINCTUS_SPECIMEN = ITEMS.register("amphiprion_tricinctus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_TRICINCTUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     //Weapon
     public static final RegistryObject<Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));

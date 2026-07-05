@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_ocellaris": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:amphiprion_ocellaris"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:amphiprion_ocellaris_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amphiprion_ocellaris",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:amphiprion_ocellaris_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

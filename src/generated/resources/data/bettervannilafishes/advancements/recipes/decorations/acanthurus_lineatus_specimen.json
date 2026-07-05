@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acanthurus_lineatus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:acanthurus_lineatus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:acanthurus_lineatus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_acanthurus_lineatus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:acanthurus_lineatus_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

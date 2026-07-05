@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_tricinctus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:amphiprion_tricinctus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:amphiprion_tricinctus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amphiprion_tricinctus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:amphiprion_tricinctus_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

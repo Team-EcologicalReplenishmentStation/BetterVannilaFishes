@@ -7,6 +7,7 @@ import cn.mlus.bettervannilafishes.client.model.block.EpinephelusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.HusoDauricusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.NegaprionAcutidensSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.NegaprionBrevirostrisSpecimenModel;
+import cn.mlus.bettervannilafishes.client.model.block.SmallFishSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.TigerSharkSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.entity.*;
 import cn.mlus.bettervannilafishes.client.render.entity.BvfRenderer;
@@ -119,6 +120,39 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.GRASS_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.SILVER_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.BIGHEAD_CARP_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_SPLENDENS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_IMBELLIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_SMARAGDINA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_PICTA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_SIMPLEX_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.BETTA_BROWNORUM_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("betta_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ACANTHURUS_ACHILLES_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ACANTHURUS_LEUCOSTERNON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.PARACANTHURUS_HEPATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ACANTHURUS_TRIOSTEGUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ACANTHURUS_NIGRICANS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ACANTHURUS_LINEATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("surgeonfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_STRIATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_UNIMACULATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_AURIGA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_COLLARE_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_RETICULATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.CHAETODON_SPECULUM_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("butterflyfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_OCELLARIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.PREMNAS_BIACULEATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_POLYMNUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_PERIDERAION_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_CLARKII_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_PERCULA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_AKINDYNOS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_BICINCTUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_CHRYSOGASTER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_CHRYSOPTERUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_LATEZONATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_MCCULLOCHI_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_MELANOPUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_TRICINCTUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
 	}
 
 }

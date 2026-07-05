@@ -11,6 +11,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
@@ -357,6 +358,21 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.BIGHEAD_CARP.get()), has(BvfItems.BIGHEAD_CARP.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("bighead_carp_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.OBSCURE_PUFFER_SPECIMEN.get(),1)
+                .requires(BvfItems.OBSCURE_PUFFER.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.OBSCURE_PUFFER.get()), has(BvfItems.OBSCURE_PUFFER.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("obscure_puffer_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get(),1)
+                .requires(BvfItems.YELLOW_FIN_PUFFER.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.YELLOW_FIN_PUFFER.get()), has(BvfItems.YELLOW_FIN_PUFFER.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("yellow_fin_puffer_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.PORCUPINE_FISH_SPECIMEN.get(),1)
+                .requires(BvfItems.PORCUPINE_FISH.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.PORCUPINE_FISH.get()), has(BvfItems.PORCUPINE_FISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("porcupine_fish_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
@@ -407,6 +423,39 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(BvfItems.KATSUWONUS_PELAMIS.get()), has(BvfItems.KATSUWONUS_PELAMIS.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("katsuwonus_pelamis_specimen"));
 
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_SPLENDENS, BvfItems.BETTA_SPLENDENS_SPECIMEN, "betta_splendens_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_IMBELLIS, BvfItems.BETTA_IMBELLIS_SPECIMEN, "betta_imbellis_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_SMARAGDINA, BvfItems.BETTA_SMARAGDINA_SPECIMEN, "betta_smaragdina_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_PICTA, BvfItems.BETTA_PICTA_SPECIMEN, "betta_picta_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_SIMPLEX, BvfItems.BETTA_SIMPLEX_SPECIMEN, "betta_simplex_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.BETTA_BROWNORUM, BvfItems.BETTA_BROWNORUM_SPECIMEN, "betta_brownorum_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.ACANTHURUS_ACHILLES, BvfItems.ACANTHURUS_ACHILLES_SPECIMEN, "acanthurus_achilles_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.ACANTHURUS_LEUCOSTERNON, BvfItems.ACANTHURUS_LEUCOSTERNON_SPECIMEN, "acanthurus_leucosternon_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.PARACANTHURUS_HEPATUS, BvfItems.PARACANTHURUS_HEPATUS_SPECIMEN, "paracanthurus_hepatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.ACANTHURUS_TRIOSTEGUS, BvfItems.ACANTHURUS_TRIOSTEGUS_SPECIMEN, "acanthurus_triostegus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.ACANTHURUS_NIGRICANS, BvfItems.ACANTHURUS_NIGRICANS_SPECIMEN, "acanthurus_nigricans_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.ACANTHURUS_LINEATUS, BvfItems.ACANTHURUS_LINEATUS_SPECIMEN, "acanthurus_lineatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_STRIATUS, BvfItems.CHAETODON_STRIATUS_SPECIMEN, "chaetodon_striatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_UNIMACULATUS, BvfItems.CHAETODON_UNIMACULATUS_SPECIMEN, "chaetodon_unimaculatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_AURIGA, BvfItems.CHAETODON_AURIGA_SPECIMEN, "chaetodon_auriga_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_COLLARE, BvfItems.CHAETODON_COLLARE_SPECIMEN, "chaetodon_collare_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_RETICULATUS, BvfItems.CHAETODON_RETICULATUS_SPECIMEN, "chaetodon_reticulatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.CHAETODON_SPECULUM, BvfItems.CHAETODON_SPECULUM_SPECIMEN, "chaetodon_speculum_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_OCELLARIS, BvfItems.AMPHIPRION_OCELLARIS_SPECIMEN, "amphiprion_ocellaris_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.PREMNAS_BIACULEATUS, BvfItems.PREMNAS_BIACULEATUS_SPECIMEN, "premnas_biaculeatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_POLYMNUS, BvfItems.AMPHIPRION_POLYMNUS_SPECIMEN, "amphiprion_polymnus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_PERIDERAION, BvfItems.AMPHIPRION_PERIDERAION_SPECIMEN, "amphiprion_perideraion_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_CLARKII, BvfItems.AMPHIPRION_CLARKII_SPECIMEN, "amphiprion_clarkii_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_PERCULA, BvfItems.AMPHIPRION_PERCULA_SPECIMEN, "amphiprion_percula_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_AKINDYNOS, BvfItems.AMPHIPRION_AKINDYNOS_SPECIMEN, "amphiprion_akindynos_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_BICINCTUS, BvfItems.AMPHIPRION_BICINCTUS_SPECIMEN, "amphiprion_bicinctus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_CHRYSOGASTER, BvfItems.AMPHIPRION_CHRYSOGASTER_SPECIMEN, "amphiprion_chrysogaster_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_CHRYSOPTERUS, BvfItems.AMPHIPRION_CHRYSOPTERUS_SPECIMEN, "amphiprion_chrysopterus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_LATEZONATUS, BvfItems.AMPHIPRION_LATEZONATUS_SPECIMEN, "amphiprion_latezonatus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_MCCULLOCHI, BvfItems.AMPHIPRION_MCCULLOCHI_SPECIMEN, "amphiprion_mccullochi_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_MELANOPUS, BvfItems.AMPHIPRION_MELANOPUS_SPECIMEN, "amphiprion_melanopus_specimen");
+        addSpecimenRecipe(pWriter, BvfItems.AMPHIPRION_TRICINCTUS, BvfItems.AMPHIPRION_TRICINCTUS_SPECIMEN, "amphiprion_tricinctus_specimen");
+
         buildFoodProcessRecipes(pWriter, BvfItems.KATSUWONUS_PELAMIS.get(), BvfItems.COOKED_KATSUWONUS_PELAMIS.get(), 0.35f);
 
         buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 5)
@@ -438,5 +487,13 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(outputName + "_from_" + inputName + "_smoking"));
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(input), RecipeCategory.FOOD, output, xp, 600)
                 .unlockedBy(getHasName(input), has(input)).save(recipeOutput, BetterVannilaFishes.prefix(outputName + "_from_" + inputName + "_campfire_cooking"));
+    }
+
+    private static void addSpecimenRecipe(Consumer<FinishedRecipe> pWriter, RegistryObject<Item> rawFish, RegistryObject<Item> specimen, String recipeName) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, specimen.get(), 1)
+                .requires(rawFish.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(rawFish.get()), has(rawFish.get()))
+                .save(pWriter, BetterVannilaFishes.prefix(recipeName));
     }
 }

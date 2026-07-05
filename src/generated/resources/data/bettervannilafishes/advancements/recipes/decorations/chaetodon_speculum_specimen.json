@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chaetodon_speculum": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:chaetodon_speculum"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:chaetodon_speculum_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chaetodon_speculum",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:chaetodon_speculum_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

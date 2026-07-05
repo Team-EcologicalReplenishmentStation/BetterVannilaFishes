@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acanthurus_achilles": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:acanthurus_achilles"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:acanthurus_achilles_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_acanthurus_achilles",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:acanthurus_achilles_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

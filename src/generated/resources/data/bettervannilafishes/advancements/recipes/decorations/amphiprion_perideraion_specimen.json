@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_perideraion": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:amphiprion_perideraion"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:amphiprion_perideraion_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_amphiprion_perideraion",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:amphiprion_perideraion_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}
