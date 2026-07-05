@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chaetodon_unimaculatus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:chaetodon_unimaculatus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:chaetodon_unimaculatus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chaetodon_unimaculatus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:chaetodon_unimaculatus_specimen"
+    ]
+  }
+}

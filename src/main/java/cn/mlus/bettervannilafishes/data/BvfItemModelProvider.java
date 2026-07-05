@@ -264,6 +264,38 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.GRASS_CARP_SPECIMEN.get());
         this.simpleItem(BvfItems.SILVER_CARP_SPECIMEN.get());
         this.simpleItem(BvfItems.BIGHEAD_CARP_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_SPLENDENS_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_IMBELLIS_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_SMARAGDINA_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_PICTA_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_SIMPLEX_SPECIMEN.get());
+        this.simpleItem(BvfItems.BETTA_BROWNORUM_SPECIMEN.get());
+        this.simpleItem(BvfItems.ACANTHURUS_ACHILLES_SPECIMEN.get());
+        this.simpleItem(BvfItems.ACANTHURUS_LEUCOSTERNON_SPECIMEN.get());
+        this.simpleItem(BvfItems.PARACANTHURUS_HEPATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.ACANTHURUS_TRIOSTEGUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.ACANTHURUS_NIGRICANS_SPECIMEN.get());
+        this.simpleItem(BvfItems.ACANTHURUS_LINEATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_STRIATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_UNIMACULATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_AURIGA_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_COLLARE_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_RETICULATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.CHAETODON_SPECULUM_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_OCELLARIS_SPECIMEN.get());
+        this.simpleItem(BvfItems.PREMNAS_BIACULEATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_POLYMNUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERIDERAION_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CLARKII_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_PERCULA_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_AKINDYNOS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_BICINCTUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOGASTER_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_CHRYSOPTERUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_LATEZONATUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MCCULLOCHI_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_MELANOPUS_SPECIMEN.get());
+        this.simpleItem(BvfItems.AMPHIPRION_TRICINCTUS_SPECIMEN.get());
     }
 
     private void simpleItem(Item item) {

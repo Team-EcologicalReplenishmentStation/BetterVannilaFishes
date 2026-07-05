@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_premnas_biaculeatus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:premnas_biaculeatus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:premnas_biaculeatus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_premnas_biaculeatus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:premnas_biaculeatus_specimen"
+    ]
+  }
+}

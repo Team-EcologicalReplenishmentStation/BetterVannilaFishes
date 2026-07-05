@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amphiprion_chrysopterus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:amphiprion_chrysopterus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:amphiprion_chrysopterus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amphiprion_chrysopterus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:amphiprion_chrysopterus_specimen"
+    ]
+  }
+}

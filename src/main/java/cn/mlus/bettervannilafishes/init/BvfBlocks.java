@@ -74,6 +74,70 @@ public class BvfBlocks {
             () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.PORCUPINE_FISH_SPECIMEN::get));
     public static final DeferredHolder<Block,Block> KATSUWONUS_PELAMIS_SPECIMEN = BLOCKS.register("katsuwonus_pelamis_specimen",
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.KATSUWONUS_PELAMIS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_SPLENDENS_SPECIMEN = BLOCKS.register("betta_splendens_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_SPLENDENS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_IMBELLIS_SPECIMEN = BLOCKS.register("betta_imbellis_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_IMBELLIS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_SMARAGDINA_SPECIMEN = BLOCKS.register("betta_smaragdina_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_SMARAGDINA_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_PICTA_SPECIMEN = BLOCKS.register("betta_picta_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_PICTA_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_SIMPLEX_SPECIMEN = BLOCKS.register("betta_simplex_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_SIMPLEX_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> BETTA_BROWNORUM_SPECIMEN = BLOCKS.register("betta_brownorum_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BETTA_BROWNORUM_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> ACANTHURUS_ACHILLES_SPECIMEN = BLOCKS.register("acanthurus_achilles_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ACANTHURUS_ACHILLES_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> ACANTHURUS_LEUCOSTERNON_SPECIMEN = BLOCKS.register("acanthurus_leucosternon_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ACANTHURUS_LEUCOSTERNON_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> PARACANTHURUS_HEPATUS_SPECIMEN = BLOCKS.register("paracanthurus_hepatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.PARACANTHURUS_HEPATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> ACANTHURUS_TRIOSTEGUS_SPECIMEN = BLOCKS.register("acanthurus_triostegus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ACANTHURUS_TRIOSTEGUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> ACANTHURUS_NIGRICANS_SPECIMEN = BLOCKS.register("acanthurus_nigricans_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ACANTHURUS_NIGRICANS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> ACANTHURUS_LINEATUS_SPECIMEN = BLOCKS.register("acanthurus_lineatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.ACANTHURUS_LINEATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_STRIATUS_SPECIMEN = BLOCKS.register("chaetodon_striatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_STRIATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_UNIMACULATUS_SPECIMEN = BLOCKS.register("chaetodon_unimaculatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_UNIMACULATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_AURIGA_SPECIMEN = BLOCKS.register("chaetodon_auriga_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_AURIGA_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_COLLARE_SPECIMEN = BLOCKS.register("chaetodon_collare_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_COLLARE_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_RETICULATUS_SPECIMEN = BLOCKS.register("chaetodon_reticulatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_RETICULATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> CHAETODON_SPECULUM_SPECIMEN = BLOCKS.register("chaetodon_speculum_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.CHAETODON_SPECULUM_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_OCELLARIS_SPECIMEN = BLOCKS.register("amphiprion_ocellaris_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_OCELLARIS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> PREMNAS_BIACULEATUS_SPECIMEN = BLOCKS.register("premnas_biaculeatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.PREMNAS_BIACULEATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_POLYMNUS_SPECIMEN = BLOCKS.register("amphiprion_polymnus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_POLYMNUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_PERIDERAION_SPECIMEN = BLOCKS.register("amphiprion_perideraion_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_PERIDERAION_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_CLARKII_SPECIMEN = BLOCKS.register("amphiprion_clarkii_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_CLARKII_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_PERCULA_SPECIMEN = BLOCKS.register("amphiprion_percula_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_PERCULA_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_AKINDYNOS_SPECIMEN = BLOCKS.register("amphiprion_akindynos_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_AKINDYNOS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_BICINCTUS_SPECIMEN = BLOCKS.register("amphiprion_bicinctus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_BICINCTUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_CHRYSOGASTER_SPECIMEN = BLOCKS.register("amphiprion_chrysogaster_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_CHRYSOGASTER_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_CHRYSOPTERUS_SPECIMEN = BLOCKS.register("amphiprion_chrysopterus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_CHRYSOPTERUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_LATEZONATUS_SPECIMEN = BLOCKS.register("amphiprion_latezonatus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_LATEZONATUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_MCCULLOCHI_SPECIMEN = BLOCKS.register("amphiprion_mccullochi_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_MCCULLOCHI_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_MELANOPUS_SPECIMEN = BLOCKS.register("amphiprion_melanopus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_MELANOPUS_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> AMPHIPRION_TRICINCTUS_SPECIMEN = BLOCKS.register("amphiprion_tricinctus_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.AMPHIPRION_TRICINCTUS_SPECIMEN::get));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

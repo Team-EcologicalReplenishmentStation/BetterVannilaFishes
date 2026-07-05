@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chaetodon_auriga": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:chaetodon_auriga"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:chaetodon_auriga_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chaetodon_auriga"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:chaetodon_auriga_specimen"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_betta_splendens": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:betta_splendens"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:betta_splendens_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_betta_splendens"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:betta_splendens_specimen"
+    ]
+  }
+}

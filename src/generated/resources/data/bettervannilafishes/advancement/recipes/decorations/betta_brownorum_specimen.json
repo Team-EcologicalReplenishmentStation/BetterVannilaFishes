@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_betta_brownorum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:betta_brownorum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:betta_brownorum_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_betta_brownorum"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:betta_brownorum_specimen"
+    ]
+  }
+}

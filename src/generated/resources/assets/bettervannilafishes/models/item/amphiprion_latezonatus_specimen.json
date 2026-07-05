@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettervannilafishes:item/amphiprion_latezonatus_specimen"
+  }
+}
