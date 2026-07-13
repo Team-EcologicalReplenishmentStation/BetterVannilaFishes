@@ -103,6 +103,7 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
         );
 
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.ROOSTERFISH.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.DOSIDICUS_GIGAS.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_MICROPELTES.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_ARGUS.get());

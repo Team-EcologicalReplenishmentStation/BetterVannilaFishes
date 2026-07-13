@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:warm_ocean",
+  "spawners": {
+    "type": "bettervannilafishes:roosterfish",
+    "maxCount": 2,
+    "minCount": 1,
+    "weight": 2
+  }
+}

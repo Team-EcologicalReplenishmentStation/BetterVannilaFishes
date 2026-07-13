@@ -48,7 +48,11 @@ public class BvfBiomeModifier
         addSpawn(context, "obscure_puffer_river", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
         addSpawn(context, "nautilus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));
         addSpawn(context, "feather_star", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.FEATHER_STAR.get(), 8, 2, 4));
+        addSpawn(context, "zhikong_scallop", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ZHIKONG_SCALLOP.get(), 6, 2, 4));
+        addSpawn(context, "bay_scallop", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BAY_SCALLOP.get(), 6, 2, 4));
+        addSpawn(context, "yesso_scallop", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.YESSO_SCALLOP.get(), 6, 2, 4));
         addSpawn(context, "spearfish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.SPEARFISH.get(), 5, 1, 2));
+        addSpawn(context, "roosterfish_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ROOSTERFISH.get(), 2, 1, 2));
         addSpawn(context, "galeocerdo_cuvier", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.GALEOCERDO_CUVIER.get(), 1, 1, 1));
         addSpawn(context, "epinephelus_lanceolatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), 1, 1, 1));
         addSpawn(context, "epinephelus_itajara", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.EPINEPHELUS_ITAJARA.get(), 1, 1, 1));
