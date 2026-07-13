@@ -1,6 +1,7 @@
 {
   "values": [
     "bettervannilafishes:spearfish",
+    "bettervannilafishes:roosterfish",
     "bettervannilafishes:dosidicus_gigas",
     "bettervannilafishes:channa_micropeltes",
     "bettervannilafishes:channa_argus",
@@ -8,3 +9,4 @@
     "bettervannilafishes:megalops_atlanticus"
   ]
 }
+

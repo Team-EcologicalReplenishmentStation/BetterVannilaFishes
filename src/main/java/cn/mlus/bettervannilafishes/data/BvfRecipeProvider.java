@@ -253,6 +253,11 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.SPEARFISH.get()), has(BvfItems.SPEARFISH.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("spearfish_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ROOSTERFISH_SPECIMEN.get(),1)
+                .requires(BvfItems.ROOSTERFISH.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.ROOSTERFISH.get()), has(BvfItems.ROOSTERFISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("roosterfish_specimen"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),1)
                 .requires(BvfItems.GALEOCERDO_CUVIER.get())
                 .requires(Items.HONEYCOMB)
@@ -375,6 +380,7 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .save(pWriter, BetterVannilaFishes.prefix("porcupine_fish_specimen"));
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.ROOSTERFISH.get(), BvfItems.COOKED_ROOSTERFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),BvfItems.COOKED_EPINEPHELUS.get(),0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_MICROPELTES.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);
@@ -392,6 +398,10 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(BvfItems.SPEARFISH.get())
                 .unlockedBy(getHasName(BvfItems.SPEARFISH.get()),has(BvfItems.SPEARFISH.get())),"fish_fillet_from_spearfish")
                 .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_spearfish"));
+        buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 7)
+                .requires(BvfItems.ROOSTERFISH.get())
+                .unlockedBy(getHasName(BvfItems.ROOSTERFISH.get()),has(BvfItems.ROOSTERFISH.get())),"fish_fillet_from_roosterfish")
+                .build(pWriter,BetterVannilaFishes.prefix("fish_fillet_from_roosterfish"));
         buildErsRecipe(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ErsItems.FISH_FILLET.get(), 10)
                 .requires(BvfItems.GALEOCERDO_CUVIER.get())
                 .unlockedBy(getHasName(BvfItems.SPEARFISH.get()),has(BvfItems.GALEOCERDO_CUVIER.get())),"fish_fillet_from_tiger_shark")

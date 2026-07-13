@@ -29,6 +29,7 @@ public class BvfBiomeSpawnCostModifier implements BiomeModifier {
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.NAUTILUS.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.FEATHER_STAR.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.3);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ROOSTERFISH.get(),0.7,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.8,0.8);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_OCELLARIS.get(),0.7,0.2);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PREMNAS_BIACULEATUS.get(),0.7,0.2);

@@ -19,7 +19,7 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
-        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get()).add(BvfEntities.DOSIDICUS_GIGAS.get()).add(BvfEntities.CHANNA_MICROPELTES.get()).add(BvfEntities.CHANNA_ARGUS.get()).add(BvfEntities.ELOPICHTHYS_BAMBUSA.get()).add(BvfEntities.MEGALOPS_ATLANTICUS.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get()).add(BvfEntities.ROOSTERFISH.get()).add(BvfEntities.DOSIDICUS_GIGAS.get()).add(BvfEntities.CHANNA_MICROPELTES.get()).add(BvfEntities.CHANNA_ARGUS.get()).add(BvfEntities.ELOPICHTHYS_BAMBUSA.get()).add(BvfEntities.MEGALOPS_ATLANTICUS.get());
         this.tag(BvfTagKeys.TOP_PREDATOR)
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())

@@ -26,7 +26,11 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.PORCUPINE_FISH.get(),"Diodon holocanthus");
         this.add(BvfEntities.NAUTILUS.get(),"Nautilus");
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
+        this.add(BvfEntities.ZHIKONG_SCALLOP.get(),"Chlamys farreri");
+        this.add(BvfEntities.BAY_SCALLOP.get(),"Bay Scallop");
+        this.add(BvfEntities.YESSO_SCALLOP.get(),"Yesso Scallop");
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
+        this.add(BvfEntities.ROOSTERFISH.get(),"Nematistius pectoralis");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
         this.add(BvfEntities.NEGAPRION_ACUTIDENS.get(),"Negaprion acutidens");
         this.add(BvfEntities.NEGAPRION_BREVIROSTRIS.get(),"Negaprion brevirostris");
@@ -93,7 +97,11 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"Obscure Puffer Spawn Egg");
         this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"Porcupine Fish Spawn Egg");
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
+        this.add(BvfItems.ZHIKONG_SCALLOP_SPAWN_EGG.get(),"Chlamys farreri Spawn Egg");
+        this.add(BvfItems.BAY_SCALLOP_SPAWN_EGG.get(),"Bay Scallop Spawn Egg");
+        this.add(BvfItems.YESSO_SCALLOP_SPAWN_EGG.get(),"Yesso Scallop Spawn Egg");
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
+        this.add(BvfItems.ROOSTERFISH_SPAWN_EGG.get(),"Roosterfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get(),"Sicklefin Lemon Shark Spawn Egg");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get(),"Lemon Shark Spawn Egg");
@@ -161,7 +169,11 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"Porcupine Fish Bucket");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"Nautilus Bucket");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
+        this.add(BvfItems.ZHIKONG_SCALLOP_BUCKET.get(),"Chlamys farreri Bucket");
+        this.add(BvfItems.BAY_SCALLOP_BUCKET.get(),"Bay Scallop Bucket");
+        this.add(BvfItems.YESSO_SCALLOP_BUCKET.get(),"Yesso Scallop Bucket");
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
+        this.add(BvfItems.ROOSTERFISH_BUCKET.get(),"Roosterfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get(),"Sicklefin Lemon Shark Bucket");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get(),"Lemon Shark Bucket");
@@ -228,6 +240,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfItems.SPEARFISH.get(),"Spearfish");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
+        this.add(BvfItems.ROOSTERFISH.get(),"Roosterfish");
+        this.add(BvfItems.COOKED_ROOSTERFISH.get(),"Cooked Roosterfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
         this.add(BvfItems.NEGAPRION_ACUTIDENS.get(),"Sicklefin Lemon Shark");
         this.add(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get(),"Cooked Sicklefin Lemon Shark");
@@ -241,6 +255,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.HUMBOLDT_SQUID.get(),"Humboldt Squid");
         this.add(BvfItems.COOKED_HUMBOLDT_SQUID.get(),"Cooked Humboldt Squid");
         this.add(BvfItems.FEATHER_STAR_TENTACLE.get(),"Feather Star Tentacle");
+        this.add(BvfItems.SCALLOP_MEAT.get(),"Scallop Meat");
         this.add(BvfItems.ACANTHURUS_ACHILLES.get(),"Achilles Tang");
         this.add(BvfItems.ACANTHURUS_LEUCOSTERNON.get(),"Powder Blue Tang");
         this.add(BvfItems.PARACANTHURUS_HEPATUS.get(),"Blue Tang");
@@ -304,6 +319,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.MALE_SALMON_SPECIMEN.get(),"Male Salmon Specimen");
         this.add(BvfItems.FEMALE_SALMON_SPECIMEN.get(),"Female Salmon Specimen");
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
+        this.add(BvfItems.ROOSTERFISH_SPECIMEN.get(),"Roosterfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get(),"Sicklefin Lemon Shark Specimen");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(),"Lemon Shark Specimen");

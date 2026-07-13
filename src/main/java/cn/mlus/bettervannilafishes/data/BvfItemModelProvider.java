@@ -25,7 +25,11 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.NAUTILUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.ZHIKONG_SCALLOP_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.BAY_SCALLOP_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.YESSO_SCALLOP_SPAWN_EGG.get());
         this.simpleItem(BvfItems.SPEARFISH_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.ROOSTERFISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
         this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get());
@@ -92,7 +96,11 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.PORCUPINE_FISH_BUCKET.get());
         this.simpleItem(BvfItems.NAUTILUS_BUCKET.get());
         this.simpleItem(BvfItems.FEATHER_STAR_BUCKET.get());
+        this.simpleItem(BvfItems.ZHIKONG_SCALLOP_BUCKET.get());
+        this.simpleItem(BvfItems.BAY_SCALLOP_BUCKET.get());
+        this.simpleItem(BvfItems.YESSO_SCALLOP_BUCKET.get());
         this.simpleItem(BvfItems.SPEARFISH_BUCKET.get());
+        this.simpleItem(BvfItems.ROOSTERFISH_BUCKET.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_BUCKET.get());
         this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get());
         this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get());
@@ -158,8 +166,11 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.OBSCURE_PUFFER.get());
         this.simpleItem(BvfItems.PORCUPINE_FISH.get());
         this.simpleItem(BvfItems.FEATHER_STAR_TENTACLE.get());
+        this.simpleItem(BvfItems.SCALLOP_MEAT.get());
         this.simpleItem(BvfItems.SPEARFISH.get());
         this.simpleItem(BvfItems.COOKED_SPEARFISH.get());
+        this.simpleItem(BvfItems.ROOSTERFISH.get());
+        this.simpleItem(BvfItems.COOKED_ROOSTERFISH.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
         this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS.get());
         this.simpleItem(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get());
@@ -238,6 +249,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.MALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.FEMALE_SALMON_SPECIMEN.get());
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
+        this.simpleItem(BvfItems.ROOSTERFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
         this.simpleItem(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get());
         this.simpleItem(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get());

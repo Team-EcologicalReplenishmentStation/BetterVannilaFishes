@@ -32,6 +32,10 @@ import cn.mlus.bettervannilafishes.entity.pufferfish.YellowFinPuffer;
 import cn.mlus.bettervannilafishes.entity.salmon.FemaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.MaleSalmon;
 import cn.mlus.bettervannilafishes.entity.salmon.PacificSalmon;
+import cn.mlus.bettervannilafishes.entity.scallop.BayScallop;
+import cn.mlus.bettervannilafishes.entity.scallop.YessoScallop;
+import cn.mlus.bettervannilafishes.entity.scallop.ZhikongScallop;
+import cn.mlus.bettervannilafishes.entity.roosterfish.RoosterfishEntity;
 import cn.mlus.bettervannilafishes.entity.spearfish.SpearfishEntity;
 import cn.mlus.bettervannilafishes.entity.squid.DosidicusGigasEntity;
 import cn.mlus.bettervannilafishes.entity.surgeonfish.*;
@@ -97,11 +101,27 @@ public class BvfEntities {
             () -> EntityType.Builder.of(FeatherStarEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.3F,0.8F)
                     .build(BetterVannilaFishes.prefix("feather_star").toString()));
+    public static final RegistryObject<EntityType<ZhikongScallop>> ZHIKONG_SCALLOP = ENTITIES.register("zhikong_scallop",
+            () -> EntityType.Builder.of(ZhikongScallop::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.7F, 0.35F)
+                    .build(BetterVannilaFishes.prefix("zhikong_scallop").toString()));
+    public static final RegistryObject<EntityType<BayScallop>> BAY_SCALLOP = ENTITIES.register("bay_scallop",
+            () -> EntityType.Builder.of(BayScallop::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.7F, 0.35F)
+                    .build(BetterVannilaFishes.prefix("bay_scallop").toString()));
+    public static final RegistryObject<EntityType<YessoScallop>> YESSO_SCALLOP = ENTITIES.register("yesso_scallop",
+            () -> EntityType.Builder.of(YessoScallop::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.7F, 0.35F)
+                    .build(BetterVannilaFishes.prefix("yesso_scallop").toString()));
 
     public static final RegistryObject<EntityType<SpearfishEntity>> SPEARFISH = ENTITIES.register("spearfish",
             () -> EntityType.Builder.of(SpearfishEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.5F,0.5F)
                     .build(BetterVannilaFishes.prefix("spearfish").toString()));
+    public static final RegistryObject<EntityType<RoosterfishEntity>> ROOSTERFISH = ENTITIES.register("roosterfish",
+            () -> EntityType.Builder.of(RoosterfishEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.7F,0.5F)
+                    .build(BetterVannilaFishes.prefix("roosterfish").toString()));
     public static final RegistryObject<EntityType<GaleocerdoCuvierEntity>> GALEOCERDO_CUVIER = ENTITIES.register("galeocerdo_cuvier",
             () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(2.5F,1.6F)

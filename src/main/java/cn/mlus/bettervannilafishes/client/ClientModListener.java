@@ -34,7 +34,11 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.PORCUPINE_FISH.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.NAUTILUS.get(), BvfRenderer::new);
         event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
+		event.registerEntityRenderer(BvfEntities.ZHIKONG_SCALLOP.get(), context -> new BvfRenderer<>(context, new ScallopModel(), 3));
+		event.registerEntityRenderer(BvfEntities.BAY_SCALLOP.get(), context -> new BvfRenderer<>(context, new ScallopModel(), 3));
+		event.registerEntityRenderer(BvfEntities.YESSO_SCALLOP.get(), context -> new BvfRenderer<>(context, new ScallopModel(), 3));
 		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
+		event.registerEntityRenderer(BvfEntities.ROOSTERFISH.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.GALEOCERDO_CUVIER.get(), context -> new BvfRenderer<>(context, new GaleocerdoCuvierModel()));
 		event.registerEntityRenderer(BvfEntities.NEGAPRION_ACUTIDENS.get(), context -> new BvfRenderer<>(context, new NegaprionAcutidensModel()));
 		event.registerEntityRenderer(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), context -> new BvfRenderer<>(context, new NegaprionBrevirostrisModel()));
@@ -98,6 +102,7 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.MALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.FEMALE_SALMON_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.SPEARFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
+		event.registerBlockEntityRenderer(BvfBlockEntities.ROOSTERFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new TigerSharkSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_ACUTIDENS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionAcutidensSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionBrevirostrisSpecimenModel()));
@@ -153,6 +158,10 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_MCCULLOCHI_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
 		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_MELANOPUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
 		event.registerBlockEntityRenderer(BvfBlockEntities.AMPHIPRION_TRICINCTUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("maroon_clownfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.OBSCURE_PUFFER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("obscure_puffer_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.YELLOW_FIN_PUFFER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("yellow_fin_puffer_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.PORCUPINE_FISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("porcupine_fish_specimen")));
+
 	}
 
 }

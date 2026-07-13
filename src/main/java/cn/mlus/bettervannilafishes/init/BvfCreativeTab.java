@@ -27,6 +27,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
                output.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
                output.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
+               output.accept(BvfItems.ROOSTERFISH_SPAWN_EGG.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
@@ -82,6 +83,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.GRASS_CARP_SPAWN_EGG.get());
                output.accept(BvfItems.SILVER_CARP_SPAWN_EGG.get());
                output.accept(BvfItems.BIGHEAD_CARP_SPAWN_EGG.get());
+               output.accept(BvfItems.ZHIKONG_SCALLOP_SPAWN_EGG.get());
+               output.accept(BvfItems.BAY_SCALLOP_SPAWN_EGG.get());
+               output.accept(BvfItems.YESSO_SCALLOP_SPAWN_EGG.get());
                 //Bucket
                output.accept(BvfItems.HADDOCK_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ATLANTIC_COD_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -95,6 +99,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.NAUTILUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ROOSTERFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -150,6 +155,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.GRASS_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.SILVER_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.BIGHEAD_CARP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ZHIKONG_SCALLOP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.BAY_SCALLOP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.YESSO_SCALLOP_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 //Food
                output.accept(BvfItems.HADDOCK_COD.get());
                output.accept(BvfItems.ATLANTIC_COD.get());
@@ -162,6 +170,8 @@ public class BvfCreativeTab {
                output.accept(BvfItems.PORCUPINE_FISH.get());
                output.accept(BvfItems.SPEARFISH.get());
                output.accept(BvfItems.COOKED_SPEARFISH.get());
+               output.accept(BvfItems.ROOSTERFISH.get());
+               output.accept(BvfItems.COOKED_ROOSTERFISH.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER.get());
                output.accept(BvfItems.NEGAPRION_ACUTIDENS.get());
                output.accept(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get());
@@ -231,6 +241,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.COOKED_SILVER_CARP.get());
                output.accept(BvfItems.BIGHEAD_CARP.get());
                output.accept(BvfItems.COOKED_BIGHEAD_CARP.get());
+               output.accept(BvfItems.SCALLOP_MEAT.get());
                 //Specimen
                output.accept(BvfItems.HADDOCK_COD_SPECIMEN.get());
                output.accept(BvfItems.ATLANTIC_COD_SPECIMEN.get());
@@ -239,6 +250,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.MALE_SALMON_SPECIMEN.get());
                output.accept(BvfItems.FEMALE_SALMON_SPECIMEN.get());
                output.accept(BvfItems.SPEARFISH_SPECIMEN.get());
+               output.accept(BvfItems.ROOSTERFISH_SPECIMEN.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());

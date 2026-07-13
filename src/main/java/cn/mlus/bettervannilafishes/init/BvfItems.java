@@ -98,9 +98,37 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> ZHIKONG_SCALLOP_BUCKET = ITEMS.register("zhikong_scallop_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.ZHIKONG_SCALLOP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> BAY_SCALLOP_BUCKET = ITEMS.register("bay_scallop_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BAY_SCALLOP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> YESSO_SCALLOP_BUCKET = ITEMS.register("yesso_scallop_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.YESSO_SCALLOP,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final RegistryObject<Item> SPEARFISH_BUCKET = ITEMS.register("spearfish_bucket",
             () -> new MobBucketItem(
                     BvfEntities.SPEARFISH,
+                    () -> Fluids.WATER,
+                    () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final RegistryObject<Item> ROOSTERFISH_BUCKET = ITEMS.register("roosterfish_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.ROOSTERFISH,
                     () -> Fluids.WATER,
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -568,9 +596,37 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> ZHIKONG_SCALLOP_SPAWN_EGG = ITEMS.register("zhikong_scallop_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.ZHIKONG_SCALLOP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> BAY_SCALLOP_SPAWN_EGG = ITEMS.register("bay_scallop_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.BAY_SCALLOP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> YESSO_SCALLOP_SPAWN_EGG = ITEMS.register("yesso_scallop_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.YESSO_SCALLOP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> SPEARFISH_SPAWN_EGG = ITEMS.register("spearfish_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.SPEARFISH,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final RegistryObject<Item> ROOSTERFISH_SPAWN_EGG = ITEMS.register("roosterfish_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.ROOSTERFISH,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -879,57 +935,57 @@ public class BvfItems {
     public static final RegistryObject<Item> BETTA_SPLENDENS_SPAWN_EGG = ITEMS.register("betta_splendens_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_SPLENDENS,
-                    0x7B2636,
-                    0x2F5C8F,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BETTA_IMBELLIS_SPAWN_EGG = ITEMS.register("betta_imbellis_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_IMBELLIS,
-                    0x315B54,
-                    0xD6434D,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BETTA_SMARAGDINA_SPAWN_EGG = ITEMS.register("betta_smaragdina_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_SMARAGDINA,
-                    0x1C7B66,
-                    0x5CC5B8,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BETTA_PICTA_SPAWN_EGG = ITEMS.register("betta_picta_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_PICTA,
-                    0xA46A45,
-                    0x2D211C,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BETTA_SIMPLEX_SPAWN_EGG = ITEMS.register("betta_simplex_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_SIMPLEX,
-                    0xC29B80,
-                    0x5E3B32,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BETTA_BROWNORUM_SPAWN_EGG = ITEMS.register("betta_brownorum_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.BETTA_BROWNORUM,
-                    0x6B3E2D,
-                    0xD28B55,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> MEGALOPS_ATLANTICUS_SPAWN_EGG = ITEMS.register("megalops_atlanticus_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.MEGALOPS_ATLANTICUS,
-                    0x8E9BA1,
-                    0xE7EEF0,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> KATSUWONUS_PELAMIS_SPAWN_EGG = ITEMS.register("katsuwonus_pelamis_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.KATSUWONUS_PELAMIS,
-                    0x2E5A8C,
-                    0xC4A35A,
+                    0xFFFFFF,
+                    0x000000,
                     new Item.Properties()
             ));
     public static final RegistryObject<Item> BLACK_CARP_SPAWN_EGG = ITEMS.register("black_carp_spawn_egg",
@@ -992,6 +1048,10 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
     public static final RegistryObject<Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
+    public static final RegistryObject<Item> ROOSTERFISH = ITEMS.register("roosterfish",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).build())));
+    public static final RegistryObject<Item> COOKED_ROOSTERFISH = ITEMS.register("cooked_roosterfish",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
@@ -1029,6 +1089,8 @@ public class BvfItems {
 
     public static final RegistryObject<Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SCALLOP_MEAT = ITEMS.register("scallop_meat",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build())));
     public static final RegistryObject<Item> ACANTHURUS_ACHILLES = ITEMS.register("acanthurus_achilles",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build())));
     public static final RegistryObject<Item> ACANTHURUS_LEUCOSTERNON = ITEMS.register("acanthurus_leucosternon",
@@ -1156,6 +1218,8 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.FEMALE_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> SPEARFISH_SPECIMEN = ITEMS.register("spearfish_specimen",
             () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ROOSTERFISH_SPECIMEN = ITEMS.register("roosterfish_specimen",
+            () -> new BlockItem(BvfBlocks.ROOSTERFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_SPECIMEN = ITEMS.register("negaprion_acutidens_specimen",

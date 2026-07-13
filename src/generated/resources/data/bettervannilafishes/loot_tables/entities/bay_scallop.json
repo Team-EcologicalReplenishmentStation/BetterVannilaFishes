@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bettervannilafishes:scallop_meat"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "bettervannilafishes:entities/bay_scallop"
+}
