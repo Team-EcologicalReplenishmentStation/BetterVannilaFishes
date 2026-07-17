@@ -261,6 +261,11 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.GALEOCERDO_CUVIER.get()), has(BvfItems.GALEOCERDO_CUVIER.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("galeocerdo_cuvier_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.ALOPIAS_VULPINUS_SPECIMEN.get(), 1)
+                .requires(BvfItems.ALOPIAS_VULPINUS.get())
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.ALOPIAS_VULPINUS.get()), has(BvfItems.ALOPIAS_VULPINUS.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("alopias_vulpinus_specimen"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),1)
                 .requires(BvfItems.EPINEPHELUS_LANCEOLATUS.get())
                 .requires(Items.HONEYCOMB)
@@ -417,6 +422,7 @@ public class BvfRecipeProvider extends RecipeProvider {
 
         buildFoodProcessRecipes(pWriter, BvfItems.SPEARFISH.get(), BvfItems.COOKED_SPEARFISH.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.ROOSTERFISH.get(), BvfItems.COOKED_ROOSTERFISH.get(), 0.35f);
+        buildFoodProcessRecipes(pWriter, BvfItems.ALOPIAS_VULPINUS.get(), BvfItems.COOKED_ALOPIAS_VULPINUS.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.HUMBOLDT_SQUID.get(), BvfItems.COOKED_HUMBOLDT_SQUID.get(), 0.35f);
         buildFoodProcessRecipes(pWriter, BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),BvfItems.COOKED_EPINEPHELUS.get(),0.35f);
         buildFoodProcessRecipesWithSource(pWriter, BvfItems.CHANNA_MICROPELTES.get(), BvfItems.COOKED_CHANNA.get(), 0.35f);

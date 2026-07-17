@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "minecraft:warm_ocean",
+  "spawners": {
+    "type": "bettervannilafishes:alopias_vulpinus",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 1
+  }
+}

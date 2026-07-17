@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.data;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.init.BvfEntities;
+import cn.mlus.bettervannilafishes.init.BvfTagKeys;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -27,6 +28,8 @@ import java.util.stream.Stream;
 public class BvfBiomeModifier
 {
     public static void register(BootstrapContext<BiomeModifier> context) {
+        register(context, "add_spawn_cost", () -> new BvfBiomeSpawnCostModifier(context.lookup(Registries.BIOME).getOrThrow(BiomeTags.IS_OVERWORLD)));
+
         removeSpawn(context, "cod_ocean", BiomeTags.IS_OCEAN, EntityType.COD);
         removeSpawn(context,"salmon_ocean", BiomeTags.IS_OCEAN, EntityType.SALMON);
         removeSpawn(context,"pufferfish_ocean", BiomeTags.IS_OCEAN, EntityType.PUFFERFISH);
@@ -36,9 +39,9 @@ public class BvfBiomeModifier
         removeSpawn(context, "squid_ocean", BiomeTags.IS_OCEAN, EntityType.SQUID);
         removeSpawn(context, "squid_river", BiomeTags.IS_RIVER, EntityType.SQUID);
 
-        addSpawn(context,"haddock_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_HADDOCK_COD.get(),12,3,9));
-        addSpawn(context,"atlantic_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_ATLANTIC_COD.get(),10,3,9));
-        addSpawn(context,"pacific_cod", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_PACIFIC_COD.get(),12,3,9));
+        addSpawn(context,"haddock_cod", BvfTagKeys.COD_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_HADDOCK_COD.get(),12,3,9));
+        addSpawn(context,"atlantic_cod", BvfTagKeys.COD_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_ATLANTIC_COD.get(),10,3,9));
+        addSpawn(context,"pacific_cod", BvfTagKeys.COD_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_PACIFIC_COD.get(),12,3,9));
         addSpawn(context, "male_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_MALE.get(), 12, 2, 6));
         addSpawn(context, "female_salmon", BiomeTags.IS_RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_FEMALE.get(), 12, 2, 6));
         addSpawn(context, "atlantic_salmon", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.BVC_SALMON_PACIFIC.get(), 12, 3, 9));
@@ -54,6 +57,7 @@ public class BvfBiomeModifier
         addSpawn(context, "spearfish", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.SPEARFISH.get(), 5, 1, 2));
         addSpawn(context, "roosterfish_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ROOSTERFISH.get(), 2, 1, 2));
         addSpawn(context, "galeocerdo_cuvier", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.GALEOCERDO_CUVIER.get(), 1, 1, 1));
+        addSpawn(context, "alopias_vulpinus_warm_ocean", Biomes.WARM_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.ALOPIAS_VULPINUS.get(), 1, 1, 1));
         addSpawn(context, "epinephelus_lanceolatus", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), 1, 1, 1));
         addSpawn(context, "epinephelus_itajara", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.EPINEPHELUS_ITAJARA.get(), 1, 1, 1));
         addSpawn(context, "epinephelus_melanostigma", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(), 1, 1, 1));
@@ -88,7 +92,7 @@ public class BvfBiomeModifier
         addSpawn(context, "channa_argus_swamp", Biomes.SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.CHANNA_ARGUS.get(), 2, 1, 1));
         addSpawn(context, "channa_argus_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.CHANNA_ARGUS.get(), 2, 1, 1));
         addSpawn(context, "elopichthys_bambusa_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.ELOPICHTHYS_BAMBUSA.get(), 2, 1, 1));
-        addSpawn(context, "dosidicus_gigas", BiomeTags.IS_DEEP_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.DOSIDICUS_GIGAS.get(), 5, 1, 3));
+        addSpawn(context, "dosidicus_gigas", BvfTagKeys.DEEP_COLD_OR_FROZEN_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.DOSIDICUS_GIGAS.get(), 5, 1, 3));
         addSpawn(context, "huso_dauricus_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
         addSpawn(context, "huso_dauricus_cold_ocean", Biomes.COLD_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.HUSO_DAURICUS.get(), 1, 1, 1));
         addSpawn(context, "negaprion_acutidens_mangrove_swamp", Biomes.MANGROVE_SWAMP, new MobSpawnSettings.SpawnerData(BvfEntities.NEGAPRION_ACUTIDENS.get(), 1, 1, 1));

@@ -33,6 +33,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
         this.add(BvfEntities.ROOSTERFISH.get(),"Nematistius pectoralis");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
+        this.add(BvfEntities.ALOPIAS_VULPINUS.get(), "Alopias vulpinus");
         this.add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),"Epinephelus lanceolatus");
         this.add(BvfEntities.EPINEPHELUS_ITAJARA.get(),"Epinephelus itajara");
         this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),"Epinephelus melanostigma");
@@ -104,6 +105,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.ROOSTERFISH_SPAWN_EGG.get(),"Roosterfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
+        this.add(BvfItems.ALOPIAS_VULPINUS_SPAWN_EGG.get(), "Common Thresher Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get(),"Giant Grouper Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get(),"Goliath Grouper Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get(),"Blackspotted Grouper Spawn Egg");
@@ -174,6 +176,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.ROOSTERFISH_BUCKET.get(),"Roosterfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
+        this.add(BvfItems.ALOPIAS_VULPINUS_BUCKET.get(), "Common Thresher Bucket");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get(),"Sicklefin Lemon Shark Bucket");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get(),"Lemon Shark Bucket");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get(),"Giant Grouper Bucket");
@@ -242,6 +245,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ROOSTERFISH.get(),"Roosterfish");
         this.add(BvfItems.COOKED_ROOSTERFISH.get(),"Cooked Roosterfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
+        this.add(BvfItems.ALOPIAS_VULPINUS.get(), "Common Thresher");
+        this.add(BvfItems.COOKED_ALOPIAS_VULPINUS.get(), "Cooked Common Thresher");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS.get(),"Giant Grouper");
         this.add(BvfItems.EPINEPHELUS_ITAJARA.get(),"Goliath Grouper");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA.get(),"Blackspotted Grouper");
@@ -320,6 +325,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.ROOSTERFISH_SPECIMEN.get(),"Roosterfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
+        this.add(BvfItems.ALOPIAS_VULPINUS_SPECIMEN.get(), "Common Thresher Specimen");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),"Giant Grouper Specimen");
         this.add(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get(),"Goliath Grouper Specimen");
         this.add(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),"Blackspotted Grouper Specimen");

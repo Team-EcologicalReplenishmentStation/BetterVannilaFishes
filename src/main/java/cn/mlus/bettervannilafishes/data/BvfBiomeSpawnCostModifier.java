@@ -29,6 +29,7 @@ public record BvfBiomeSpawnCostModifier(HolderSet<Biome> biomes) implements Biom
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.SPEARFISH.get(),0.7,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.ROOSTERFISH.get(),0.7,0.3);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.GALEOCERDO_CUVIER.get(),0.8,0.8);
+                builder.getMobSpawnSettings().addMobCharge(BvfEntities.ALOPIAS_VULPINUS.get(),0.8,0.8);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_OCELLARIS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.PREMNAS_BIACULEATUS.get(),0.7,0.1);
                 builder.getMobSpawnSettings().addMobCharge(BvfEntities.AMPHIPRION_POLYMNUS.get(),0.7,0.1);

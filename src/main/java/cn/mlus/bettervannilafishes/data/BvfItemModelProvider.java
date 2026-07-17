@@ -32,6 +32,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.SPEARFISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.ROOSTERFISH_SPAWN_EGG.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+        this.simpleItem(BvfItems.ALOPIAS_VULPINUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get());
@@ -104,6 +105,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.SPEARFISH_BUCKET.get());
         this.simpleItem(BvfItems.ROOSTERFISH_BUCKET.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_BUCKET.get());
+        this.simpleItem(BvfItems.ALOPIAS_VULPINUS_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get());
@@ -175,6 +177,8 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.ROOSTERFISH.get());
         this.simpleItem(BvfItems.COOKED_ROOSTERFISH.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER.get());
+        this.simpleItem(BvfItems.ALOPIAS_VULPINUS.get());
+        this.simpleItem(BvfItems.COOKED_ALOPIAS_VULPINUS.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get());
@@ -252,6 +256,7 @@ public class BvfItemModelProvider extends ItemModelProvider {
         this.simpleItem(BvfItems.SPEARFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.ROOSTERFISH_SPECIMEN.get());
         this.simpleItem(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+        this.simpleItem(BvfItems.ALOPIAS_VULPINUS_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());
         this.simpleItem(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get());

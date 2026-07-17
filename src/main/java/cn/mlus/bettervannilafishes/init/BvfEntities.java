@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
+import cn.mlus.bettervannilafishes.entity.alopias.AlopiasVulpinusEntity;
 import cn.mlus.bettervannilafishes.entity.betta.*;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.*;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
@@ -122,6 +123,10 @@ public class BvfEntities {
             () -> EntityType.Builder.of(GaleocerdoCuvierEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(2.5F,1.6F)
                     .build(BetterVannilaFishes.prefix("galeocerdo_cuvier").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<AlopiasVulpinusEntity>> ALOPIAS_VULPINUS = ENTITIES.register("alopias_vulpinus",
+            () -> EntityType.Builder.of(AlopiasVulpinusEntity::new, MobCategory.WATER_AMBIENT)
+                    .sized(1.8F, 0.8F)
+                    .build(BetterVannilaFishes.prefix("alopias_vulpinus").toString()));
     public static final DeferredHolder<EntityType<?>, EntityType<KatsuwonusPelamisEntity>> KATSUWONUS_PELAMIS = ENTITIES.register("katsuwonus_pelamis",
             () -> EntityType.Builder.of(KatsuwonusPelamisEntity::new, MobCategory.WATER_AMBIENT)
                     .sized(1.2F, 0.6F)

@@ -76,6 +76,11 @@
 					"rotation": {
 						"vector": [0, 0, 0]
 					}
+				},
+				"anal_fin": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -404,6 +409,21 @@
 					}
 				},
 				"head": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"tail_1": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"tail_3": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"dorsal_fin": {
 					"rotation": {
 						"vector": [0, 0, 0]
 					}
