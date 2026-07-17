@@ -5,6 +5,6 @@
     "type": "bettervannilafishes:betta_simplex",
     "maxCount": 2,
     "minCount": 1,
-    "weight": 2
+    "weight": 5
   }
 }

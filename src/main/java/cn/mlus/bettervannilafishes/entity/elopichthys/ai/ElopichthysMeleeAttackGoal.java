@@ -30,16 +30,20 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
     public void start() {
         super.start();
         this.mob.setSprinting(true);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(5);
     }
 
     @Override
     public void stop() {
+        super.stop();
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
             this.mob.setTarget(null);
         }
 
         this.mob.setAggressive(false);
+        this.mob.setSprinting(false);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
     }
 
     @Override

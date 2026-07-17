@@ -29,6 +29,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SPEARFISH_SPAWN_EGG.get());
                output.accept(BvfItems.ROOSTERFISH_SPAWN_EGG.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get());
+               output.accept(BvfItems.ALOPIAS_VULPINUS_SPAWN_EGG.get());
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get());
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPAWN_EGG.get());
                output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG.get());
@@ -101,6 +102,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SPEARFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.ROOSTERFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.GALEOCERDO_CUVIER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.ALOPIAS_VULPINUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -173,6 +175,8 @@ public class BvfCreativeTab {
                output.accept(BvfItems.ROOSTERFISH.get());
                output.accept(BvfItems.COOKED_ROOSTERFISH.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER.get());
+               output.accept(BvfItems.ALOPIAS_VULPINUS.get());
+               output.accept(BvfItems.COOKED_ALOPIAS_VULPINUS.get());
                output.accept(BvfItems.NEGAPRION_ACUTIDENS.get());
                output.accept(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get());
                output.accept(BvfItems.NEGAPRION_BREVIROSTRIS.get());
@@ -252,6 +256,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SPEARFISH_SPECIMEN.get());
                output.accept(BvfItems.ROOSTERFISH_SPECIMEN.get());
                output.accept(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get());
+               output.accept(BvfItems.ALOPIAS_VULPINUS_SPECIMEN.get());
                output.accept(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get());
                output.accept(BvfItems.EPINEPHELUS_ITAJARA_SPECIMEN.get());
                output.accept(BvfItems.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get());

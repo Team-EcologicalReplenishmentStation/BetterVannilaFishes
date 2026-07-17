@@ -8,6 +8,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class SharkMeleeAttackGoal extends MeleeAttackGoal {
@@ -37,13 +38,21 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
+    public void start() {
+        super.start();
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(4);
+    }
+
+    @Override
     public void stop() {
+        super.stop();
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
             this.mob.setTarget(null);
         }
 
         this.mob.setAggressive(false);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1);
     }
 
     @Override
@@ -53,7 +62,7 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity pEnemy, double pDistToEnemySqr) {
-        double d0 = this.getAttackReachSqr(pEnemy) - 3;
+        double d0 = this.getAttackReachSqr(pEnemy) - 5;
         if (pDistToEnemySqr <= d0 && this.getTicksUntilNextAttack() <= 0) {
             this.resetAttackCooldown();
             this.mob.triggerAnim("extra","attack");

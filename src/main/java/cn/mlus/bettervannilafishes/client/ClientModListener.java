@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.client;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.client.model.block.CichlidSpecimenModel;
+import cn.mlus.bettervannilafishes.client.model.block.AlopiasVulpinusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.CodSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.EpinephelusSpecimenModel;
 import cn.mlus.bettervannilafishes.client.model.block.HusoDauricusSpecimenModel;
@@ -40,6 +41,7 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.SPEARFISH.get(), context -> new BvfRenderer<>(context, new SpearfishModel()));
 		event.registerEntityRenderer(BvfEntities.ROOSTERFISH.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.GALEOCERDO_CUVIER.get(), context -> new BvfRenderer<>(context, new GaleocerdoCuvierModel()));
+		event.registerEntityRenderer(BvfEntities.ALOPIAS_VULPINUS.get(), context -> new BvfRenderer<>(context, new AlopiasVulpinusModel()));
 		event.registerEntityRenderer(BvfEntities.NEGAPRION_ACUTIDENS.get(), context -> new BvfRenderer<>(context, new NegaprionAcutidensModel()));
 		event.registerEntityRenderer(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), context -> new BvfRenderer<>(context, new NegaprionBrevirostrisModel()));
 		event.registerEntityRenderer(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), context -> new BvfRenderer<>(context, new EpinephelusModel()));
@@ -104,6 +106,7 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.SPEARFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.ROOSTERFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer());
 		event.registerBlockEntityRenderer(BvfBlockEntities.GALEOCERDO_CUVIER_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new TigerSharkSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.ALOPIAS_VULPINUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new AlopiasVulpinusSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_ACUTIDENS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionAcutidensSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionBrevirostrisSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));

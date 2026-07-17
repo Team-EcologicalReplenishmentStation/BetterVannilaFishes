@@ -36,6 +36,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.SCALLOP_MEAT.get())
                 .add(BvfItems.SPEARFISH.get())
                 .add(BvfItems.ROOSTERFISH.get())
+                .add(BvfItems.ALOPIAS_VULPINUS.get())
                 .add(BvfItems.EPINEPHELUS_LANCEOLATUS.get())
                 .add(BvfItems.EPINEPHELUS_ITAJARA.get())
                 .add(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())

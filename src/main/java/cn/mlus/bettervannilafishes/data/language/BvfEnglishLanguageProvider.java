@@ -32,6 +32,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.SPEARFISH.get(),"Kajikia audax");
         this.add(BvfEntities.ROOSTERFISH.get(),"Nematistius pectoralis");
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),"Galeocerdo cuvier");
+        this.add(BvfEntities.ALOPIAS_VULPINUS.get(),"Common Thresher Shark");
         this.add(BvfEntities.NEGAPRION_ACUTIDENS.get(),"Negaprion acutidens");
         this.add(BvfEntities.NEGAPRION_BREVIROSTRIS.get(),"Negaprion brevirostris");
         this.add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),"Epinephelus lanceolatus");
@@ -103,6 +104,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_SPAWN_EGG.get(),"Spearfish Spawn Egg");
         this.add(BvfItems.ROOSTERFISH_SPAWN_EGG.get(),"Roosterfish Spawn Egg");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPAWN_EGG.get(),"Tiger Shark Spawn Egg");
+        this.add(BvfItems.ALOPIAS_VULPINUS_SPAWN_EGG.get(),"Common Thresher Shark Spawn Egg");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_SPAWN_EGG.get(),"Sicklefin Lemon Shark Spawn Egg");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPAWN_EGG.get(),"Lemon Shark Spawn Egg");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPAWN_EGG.get(),"Giant Grouper Spawn Egg");
@@ -175,6 +177,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_BUCKET.get(),"Spearfish Bucket");
         this.add(BvfItems.ROOSTERFISH_BUCKET.get(),"Roosterfish Bucket");
         this.add(BvfItems.GALEOCERDO_CUVIER_BUCKET.get(),"Tiger Shark Bucket");
+        this.add(BvfItems.ALOPIAS_VULPINUS_BUCKET.get(),"Common Thresher Shark Bucket");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_BUCKET.get(),"Sicklefin Lemon Shark Bucket");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_BUCKET.get(),"Lemon Shark Bucket");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get(),"Giant Grouper Bucket");
@@ -243,6 +246,8 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.ROOSTERFISH.get(),"Roosterfish");
         this.add(BvfItems.COOKED_ROOSTERFISH.get(),"Cooked Roosterfish");
         this.add(BvfItems.GALEOCERDO_CUVIER.get(),"Tiger Shark");
+        this.add(BvfItems.ALOPIAS_VULPINUS.get(),"Common Thresher Shark");
+        this.add(BvfItems.COOKED_ALOPIAS_VULPINUS.get(),"Cooked Common Thresher Shark");
         this.add(BvfItems.NEGAPRION_ACUTIDENS.get(),"Sicklefin Lemon Shark");
         this.add(BvfItems.COOKED_NEGAPRION_ACUTIDENS.get(),"Cooked Sicklefin Lemon Shark");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS.get(),"Lemon Shark");
@@ -321,6 +326,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.SPEARFISH_SPECIMEN.get(),"Spearfish Specimen");
         this.add(BvfItems.ROOSTERFISH_SPECIMEN.get(),"Roosterfish Specimen");
         this.add(BvfItems.GALEOCERDO_CUVIER_SPECIMEN.get(),"Tiger Shark Specimen");
+        this.add(BvfItems.ALOPIAS_VULPINUS_SPECIMEN.get(),"Common Thresher Shark Specimen");
         this.add(BvfItems.NEGAPRION_ACUTIDENS_SPECIMEN.get(),"Sicklefin Lemon Shark Specimen");
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(),"Lemon Shark Specimen");
         this.add(BvfItems.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),"Giant Grouper Specimen");

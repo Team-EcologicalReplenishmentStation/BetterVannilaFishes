@@ -2,13 +2,14 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "bettervannilafishes:scallop_meat"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "bettervannilafishes:entities/yesso_scallop"

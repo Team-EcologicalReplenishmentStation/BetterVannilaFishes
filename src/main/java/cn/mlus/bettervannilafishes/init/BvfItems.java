@@ -140,6 +140,9 @@ public class BvfItems {
                     () -> SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final RegistryObject<Item> ALOPIAS_VULPINUS_BUCKET = ITEMS.register("alopias_vulpinus_bucket",
+            () -> new MobBucketItem(BvfEntities.ALOPIAS_VULPINUS, () -> Fluids.WATER, () -> SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_BUCKET = ITEMS.register("negaprion_acutidens_bucket",
             () -> new MobBucketItem(
                     BvfEntities.NEGAPRION_ACUTIDENS,
@@ -638,6 +641,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final RegistryObject<Item> ALOPIAS_VULPINUS_SPAWN_EGG = ITEMS.register("alopias_vulpinus_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    BvfEntities.ALOPIAS_VULPINUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_SPAWN_EGG = ITEMS.register("negaprion_acutidens_spawn_egg",
             () -> new ForgeSpawnEggItem(
                     BvfEntities.NEGAPRION_ACUTIDENS,
@@ -1056,6 +1066,11 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
+    public static final RegistryObject<Item> ALOPIAS_VULPINUS = ITEMS.register("alopias_vulpinus",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
+                    .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f).build())));
+    public static final RegistryObject<Item> COOKED_ALOPIAS_VULPINUS = ITEMS.register("cooked_alopias_vulpinus",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6f).build())));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS = ITEMS.register("negaprion_acutidens",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
@@ -1222,6 +1237,8 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.ROOSTERFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ALOPIAS_VULPINUS_SPECIMEN = ITEMS.register("alopias_vulpinus_specimen",
+            () -> new BlockItem(BvfBlocks.ALOPIAS_VULPINUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> NEGAPRION_ACUTIDENS_SPECIMEN = ITEMS.register("negaprion_acutidens_specimen",
             () -> new BlockItem(BvfBlocks.NEGAPRION_ACUTIDENS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> NEGAPRION_BREVIROSTRIS_SPECIMEN = ITEMS.register("negaprion_brevirostris_specimen",

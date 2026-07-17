@@ -2,6 +2,7 @@ package cn.mlus.bettervannilafishes.event;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
+import cn.mlus.bettervannilafishes.entity.alopias.AlopiasVulpinusEntity;
 import cn.mlus.bettervannilafishes.entity.betta.BvfBettaEntity;
 import cn.mlus.bettervannilafishes.entity.butterflyfish.BvfButterflyfishEntity;
 import cn.mlus.bettervannilafishes.entity.channa.ChannaArgus;
@@ -35,7 +36,6 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -64,6 +64,7 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.SPEARFISH.get(), SpearfishEntity.createAttributes().build());
         event.put(BvfEntities.ROOSTERFISH.get(), RoosterfishEntity.createAttributes().build());
         event.put(BvfEntities.GALEOCERDO_CUVIER.get(), GaleocerdoCuvierEntity.createAttributes().build());
+        event.put(BvfEntities.ALOPIAS_VULPINUS.get(), AlopiasVulpinusEntity.createAttributes().build());
         event.put(BvfEntities.NEGAPRION_ACUTIDENS.get(), NegaprionAcutidensEntity.createAttributes().build());
         event.put(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), NegaprionBrevirostrisEntity.createAttributes().build());
         event.put(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), BvfEpinephelusEntity.createAttributes().build());
@@ -139,6 +140,7 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.SPEARFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.ROOSTERFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkRoosterfishSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.GALEOCERDO_CUVIER.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.ALOPIAS_VULPINUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.NEGAPRION_ACUTIDENS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.NEGAPRION_BREVIROSTRIS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.EPINEPHELUS_LANCEOLATUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkDeepWarmOceanSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
@@ -201,10 +203,7 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if(level.getBiome(pos).is(Biomes.WARM_OCEAN) || level.getBiome(pos).is(Biomes.LUKEWARM_OCEAN) || level.getBiome(pos).is(Biomes.DEEP_LUKEWARM_OCEAN)){
-            return false;
-        }
-            return WaterAnimal.checkSurfaceWaterAnimalSpawnRules(type, level, spawnType, pos, random);
+        return WaterAnimal.checkSurfaceWaterAnimalSpawnRules(type, level, spawnType, pos, random);
     }
 
     public static boolean checkPufferSpawnRules(
@@ -213,9 +212,6 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if(!level.getBiome(pos).is(Biomes.WARM_OCEAN) && !level.getBiome(pos).is(Biomes.LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.DEEP_LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.RIVER)){
-            return false;
-        }
         return checkSurfaceWaterAnimalSpawnRules(level,pos);
     }
 
@@ -225,9 +221,6 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if(!level.getBiome(pos).is(Biomes.WARM_OCEAN) && !level.getBiome(pos).is(Biomes.LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.DEEP_LUKEWARM_OCEAN) && !level.getBiome(pos).is(Biomes.RIVER)){
-            return false;
-        }
         return checkDeepWaterAnimalSpawnRules(level,pos);
     }
 
@@ -237,13 +230,7 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if (level.getBiome(pos).is(Biomes.MANGROVE_SWAMP)) {
-            return rollSpawn(12, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
-        }
-        if (level.getBiome(pos).is(Biomes.RIVER)) {
-            return rollSpawn(30, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
-        }
-        return false;
+        return rollSpawn(5, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
     }
 
     public static boolean checkMegalopsAtlanticusSpawnRules(
@@ -252,13 +239,7 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if (level.getBiome(pos).is(Biomes.MANGROVE_SWAMP)) {
-            return rollSpawn(35, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
-        }
-        if (level.getBiome(pos).is(Biomes.WARM_OCEAN)) {
-            return rollSpawn(12, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
-        }
-        return false;
+        return rollSpawn(5, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
     }
 
     public static boolean checkRoosterfishSpawnRules(
@@ -267,10 +248,7 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if (!level.getBiome(pos).is(Biomes.WARM_OCEAN)) {
-            return false;
-        }
-        return rollSpawn(12, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
+        return rollSpawn(6, random, spawnType) && checkSurfaceWaterAnimalSpawnRules(level, pos);
     }
 
     public static boolean checkDeepOceanSpawnRules(
@@ -279,9 +257,6 @@ public class EntityAttributeHandler {
             MobSpawnType spawnType,
             BlockPos pos,
             RandomSource random) {
-        if(!level.getBiome(pos).is(Biomes.DEEP_COLD_OCEAN) || !level.getBiome(pos).is(Biomes.DEEP_FROZEN_OCEAN) ){
-            return false;
-        }
         return checkSurfaceWaterAnimalSpawnRules(level,pos);
     }
 

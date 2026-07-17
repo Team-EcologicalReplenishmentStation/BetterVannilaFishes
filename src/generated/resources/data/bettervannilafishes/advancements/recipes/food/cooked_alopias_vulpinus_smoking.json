@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_alopias_vulpinus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:alopias_vulpinus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_alopias_vulpinus_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_alopias_vulpinus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_alopias_vulpinus_smoking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

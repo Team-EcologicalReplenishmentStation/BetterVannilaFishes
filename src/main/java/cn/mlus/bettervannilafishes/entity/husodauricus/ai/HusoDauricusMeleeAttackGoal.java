@@ -6,6 +6,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class HusoDauricusMeleeAttackGoal extends MeleeAttackGoal {
@@ -27,18 +28,26 @@ public class HusoDauricusMeleeAttackGoal extends MeleeAttackGoal {
     }
 
     @Override
+    public void start() {
+        super.start();
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2.5);
+    }
+
+    @Override
     protected void resetAttackCooldown() {
         this.ticksUntilNextAttack = 60;
     }
 
     @Override
     public void stop() {
+        super.stop();
         LivingEntity livingentity = this.mob.getTarget();
         if (!EntitySelector.NO_CREATIVE_OR_SPECTATOR.test(livingentity)) {
             this.mob.setTarget(null);
         }
 
         this.mob.setAggressive(false);
+        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5);
     }
 
     @Override

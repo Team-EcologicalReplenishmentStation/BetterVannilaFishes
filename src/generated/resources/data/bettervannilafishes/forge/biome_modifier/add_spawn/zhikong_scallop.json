@@ -3,8 +3,8 @@
   "biomes": "#minecraft:is_ocean",
   "spawners": {
     "type": "bettervannilafishes:zhikong_scallop",
-    "weight": 6,
+    "maxCount": 4,
     "minCount": 2,
-    "maxCount": 4
+    "weight": 6
   }
 }
