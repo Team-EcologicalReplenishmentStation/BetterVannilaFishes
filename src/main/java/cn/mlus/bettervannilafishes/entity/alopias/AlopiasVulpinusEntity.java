@@ -90,8 +90,12 @@ public class AlopiasVulpinusEntity extends BvfWaterAnimal implements BvfEntity<A
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 32).add(Attributes.ATTACK_DAMAGE, 8)
-                .add(Attributes.MOVEMENT_SPEED, 1.2).add(Attributes.FOLLOW_RANGE, 32).add(NeoForgeMod.SWIM_SPEED, 1);
+        return Mob.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 32)
+                .add(Attributes.ATTACK_DAMAGE, 10)
+                .add(Attributes.MOVEMENT_SPEED, 1.2)
+                .add(Attributes.FOLLOW_RANGE, 32)
+                .add(NeoForgeMod.SWIM_SPEED, 1);
     }
 
     @Override

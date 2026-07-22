@@ -2,11 +2,12 @@ package cn.mlus.bettervannilafishes.entity.katsuwonus;
 
 import cn.mlus.bettervannilafishes.client.animator.BvfFishAnimator;
 import cn.mlus.bettervannilafishes.client.animator.GeneralAnimator;
+import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
-import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
-import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalFollowFlockLeaderGoal;
-import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
+import cn.mlus.bettervannilafishes.entity.ai.BvfFollowFlockLeaderGoal;
 import cn.mlus.bettervannilafishes.init.BvfItems;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -14,8 +15,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.SmoothSwimmingLookControl;
+import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.animal.Bucketable;
-import net.minecraft.world.entity.animal.WaterAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -25,12 +26,11 @@ import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.RawAnimation;
 
-public class KatsuwonusPelamisEntity extends BvfWaterAnimal implements BvfEntity<KatsuwonusPelamisEntity>, Bucketable {
+public class KatsuwonusPelamisEntity extends BvfAbstractFish implements BvfEntity<KatsuwonusPelamisEntity>, Bucketable {
     private final GeneralAnimator<KatsuwonusPelamisEntity> animator;
 
-    public KatsuwonusPelamisEntity(EntityType<? extends WaterAnimal> pEntityType, Level pLevel) {
+    public KatsuwonusPelamisEntity(EntityType<? extends AbstractFish> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.moveControl = new BvfWaterAnimalMoveControl(true, this);
         this.lookControl = new SmoothSwimmingLookControl(this, 10);
         this.animator = new BvfFishAnimator<>(this);
     }
@@ -81,7 +81,7 @@ public class KatsuwonusPelamisEntity extends BvfWaterAnimal implements BvfEntity
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(5, new BvfWaterAnimalFollowFlockLeaderGoal(this));
+        this.goalSelector.addGoal(5, new BvfFollowFlockLeaderGoal(this));
     }
 
     @Override
@@ -92,6 +92,11 @@ public class KatsuwonusPelamisEntity extends BvfWaterAnimal implements BvfEntity
     @Override
     protected @NotNull InteractionResult mobInteract(@NotNull Player pPlayer, @NotNull InteractionHand pHand) {
         return Bucketable.bucketMobPickup(pPlayer, pHand, this).orElse(super.mobInteract(pPlayer, pHand));
+    }
+
+    @Override
+    protected @NotNull SoundEvent getFlopSound() {
+        return SoundEvents.COD_FLOP;
     }
 
     @Override
