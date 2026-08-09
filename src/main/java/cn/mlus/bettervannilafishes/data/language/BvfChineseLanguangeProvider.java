@@ -21,6 +21,9 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"太平洋鲑鱼");
         this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"黄鳍东方鲀");
         this.add(BvfEntities.OBSCURE_PUFFER.get(),"暗纹东方鲀");
+        this.add(BvfEntities.SOARING_LIONFISH.get(),"翱翔蓑鲉");
+        this.add(BvfEntities.RINGED_LIONFISH.get(),"环纹蓑鲉");
+        this.add(BvfEntities.RADIANT_LIONFISH.get(),"辐纹蓑鲉");
         this.add(BvfEntities.PORCUPINE_FISH.get(),"六斑刺豚");
         this.add(BvfEntities.NAUTILUS.get(),"鹦鹉螺");
         this.add(BvfEntities.FEATHER_STAR.get(),"海羽星");
@@ -94,6 +97,9 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get(),"太平洋鲑鱼生成蛋");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get(),"黄鳍东方鲀生成蛋");
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"暗纹东方鲀生成蛋");
+        this.add(BvfItems.SOARING_LIONFISH_SPAWN_EGG.get(),"翱翔蓑鲉生成蛋");
+        this.add(BvfItems.RINGED_LIONFISH_SPAWN_EGG.get(),"环纹蓑鲉生成蛋");
+        this.add(BvfItems.RADIANT_LIONFISH_SPAWN_EGG.get(),"辐纹蓑鲉生成蛋");
         this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"六斑刺豚生成蛋");
         this.add(BvfItems.NAUTILUS_SPAWN_EGG.get(),"鹦鹉螺生成蛋");
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"海羽星生成蛋");
@@ -164,6 +170,9 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_BUCKET.get(),"太平洋鲑鱼桶");
         this.add(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get(),"黄鳍东方鲀桶");
         this.add(BvfItems.OBSCURE_PUFFER_BUCKET.get(),"暗纹东方鲀桶");
+        this.add(BvfItems.SOARING_LIONFISH_BUCKET.get(),"翱翔蓑鲉桶");
+        this.add(BvfItems.RINGED_LIONFISH_BUCKET.get(),"环纹蓑鲉桶");
+        this.add(BvfItems.RADIANT_LIONFISH_BUCKET.get(),"辐纹蓑鲉桶");
         this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"六斑刺豚桶");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"鹦鹉螺桶");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"海羽星桶");
@@ -236,6 +245,7 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON.get(), "太平洋鲑鱼");
         this.add(BvfItems.YELLOW_FIN_PUFFER.get(), "黄鳍东方鲀");
         this.add(BvfItems.OBSCURE_PUFFER.get(), "暗纹东方鲀");
+        this.add(BvfItems.LIONFISH.get(), "蓑鲉");
         this.add(BvfItems.PORCUPINE_FISH.get(), "六斑刺豚");
         this.add(BvfItems.SPEARFISH.get(), "条纹枪鱼");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"熟条纹枪鱼");
@@ -340,6 +350,9 @@ public class BvfChineseLanguangeProvider extends LanguageProvider {
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(), "短吻柠檬鲨标本");
         this.add(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get(), "大西洋大海鲢标本");
         this.add(BvfItems.OBSCURE_PUFFER_SPECIMEN.get(), "暗纹东方鲀标本");
+        this.add(BvfItems.SOARING_LIONFISH_SPECIMEN.get(), "翱翔蓑鲉标本");
+        this.add(BvfItems.RINGED_LIONFISH_SPECIMEN.get(), "环纹蓑鲉标本");
+        this.add(BvfItems.RADIANT_LIONFISH_SPECIMEN.get(), "辐纹蓑鲉标本");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get(), "黄鳍东方鲀标本");
         this.add(BvfItems.PORCUPINE_FISH_SPECIMEN.get(), "六斑刺豚标本");
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(), "正鲣标本");

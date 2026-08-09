@@ -25,7 +25,7 @@
 					"name": "neck_A",
 					"parent": "body",
 					"pivot": [0, 12, -6],
-					"rotation": [0, -10, 0]
+					"rotation": [0, 0, 0]
 				},
 				{
 					"name": "neck",

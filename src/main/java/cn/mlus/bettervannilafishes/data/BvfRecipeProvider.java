@@ -37,6 +37,10 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(BvfItems.PACIFIC_SALMON.get())
                 .unlockedBy(getHasName(BvfItems.PACIFIC_SALMON.get()), has(BvfItems.PACIFIC_SALMON.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("salmon_from_pacific_salmon"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.TROPICAL_FISH, 1)
+                .requires(BvfItems.LIONFISH.get())
+                .unlockedBy(getHasName(BvfItems.LIONFISH.get()), has(BvfItems.LIONFISH.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("tropical_fish_from_lionfish"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.SALMON,1)
                 .requires(BvfItems.MALE_SALMON.get())
                 .unlockedBy(getHasName(BvfItems.MALE_SALMON.get()), has(BvfItems.MALE_SALMON.get()))
@@ -351,6 +355,18 @@ public class BvfRecipeProvider extends RecipeProvider {
                 .requires(Items.HONEYCOMB)
                 .unlockedBy(getHasName(BvfItems.OBSCURE_PUFFER.get()), has(BvfItems.OBSCURE_PUFFER.get()))
                 .save(pWriter, BetterVannilaFishes.prefix("obscure_puffer_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.SOARING_LIONFISH_SPECIMEN.get(), 1)
+                .requires(BvfItems.SOARING_LIONFISH_BUCKET.get()).requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.SOARING_LIONFISH_BUCKET.get()), has(BvfItems.SOARING_LIONFISH_BUCKET.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("soaring_lionfish_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.RINGED_LIONFISH_SPECIMEN.get(), 1)
+                .requires(BvfItems.RINGED_LIONFISH_BUCKET.get()).requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.RINGED_LIONFISH_BUCKET.get()), has(BvfItems.RINGED_LIONFISH_BUCKET.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("ringed_lionfish_specimen"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.RADIANT_LIONFISH_SPECIMEN.get(), 1)
+                .requires(BvfItems.RADIANT_LIONFISH_BUCKET.get()).requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(BvfItems.RADIANT_LIONFISH_BUCKET.get()), has(BvfItems.RADIANT_LIONFISH_BUCKET.get()))
+                .save(pWriter, BetterVannilaFishes.prefix("radiant_lionfish_specimen"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get(),1)
                 .requires(BvfItems.YELLOW_FIN_PUFFER.get())
                 .requires(Items.HONEYCOMB)

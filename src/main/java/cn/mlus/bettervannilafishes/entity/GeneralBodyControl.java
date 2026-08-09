@@ -25,6 +25,7 @@ public class GeneralBodyControl extends BodyRotationControl {
             this.mob.yHeadRot = Mth.rotateIfNecessary(this.mob.yHeadRot, this.mob.yBodyRot, (float)this.mob.getMaxHeadYRot());
         } else {
            super.clientTick();
+           this.mob.yHeadRot = Mth.approachDegrees(this.mob.yHeadRot, this.mob.yBodyRot, this.maxBodyRot);
         }
     }
 }

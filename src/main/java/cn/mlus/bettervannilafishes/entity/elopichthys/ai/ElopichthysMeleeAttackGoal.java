@@ -6,7 +6,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.neoforged.neoforge.common.NeoForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
@@ -19,12 +18,14 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     public boolean canUse() {
-        return super.canUse() && mob.getTarget().isInWater();
+        LivingEntity target = this.mob.getTarget();
+        return target != null && target.isInWater() && super.canUse();
     }
 
     @Override
     public boolean canContinueToUse() {
-        return super.canContinueToUse() && mob.getTarget().isInWater();
+        LivingEntity target = this.mob.getTarget();
+        return target != null && target.isInWater() && super.canContinueToUse();
     }
 
     @Override
@@ -41,6 +42,7 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
+        this.mob.setSprinting(false);
     }
 
     @Override
@@ -50,17 +52,18 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity target) {
-        this.resetAttackCooldown();
-
-        if (this.mob.distanceToSqr(target) > 2D) {
+        if (!this.mob.isWithinMeleeAttackRange(target) || this.getTicksUntilNextAttack() > 0) {
             return;
         }
 
+        this.resetAttackCooldown();
         this.mob.triggerAnim("extra", "attack");
         TickHelper.tickLater(this.mob.level(), 5, () -> {
-            this.mob.swing(InteractionHand.MAIN_HAND);
-            this.mob.doHurtTarget(target);
-            this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            if (target.isAlive() && this.mob.isWithinMeleeAttackRange(target)) {
+                this.mob.swing(InteractionHand.MAIN_HAND);
+                this.mob.doHurtTarget(target);
+                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            }
         });
     }
 }

@@ -1,6 +1,7 @@
 package cn.mlus.bettervannilafishes.client.animator;
 
 import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
+import cn.mlus.bettervannilafishes.entity.roosterfish.RoosterfishEntity;
 import net.minecraft.util.Mth;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -48,6 +49,15 @@ public class SpearFishAnimator<T extends BvfAbstractFish> extends GeneralAnimato
 
             tail.setRotX((float) (tail.getRotX() + Math.toRadians(pitchOfs)));
             tail.setRotY((float) (tail.getRotY() + Math.toRadians(yawOfs)));
+
+            if (i == 1 && entity instanceof RoosterfishEntity) {
+                float dorsalPitchOfs = pitchOfs;
+                float dorsalYawOfs = yawOfs;
+                model.getBone("dorsal_fin2").ifPresent(dorsal -> {
+                    dorsal.setRotX((float) (dorsal.getRotX() + Math.toRadians(dorsalPitchOfs)));
+                    dorsal.setRotY((float) (dorsal.getRotY() + Math.toRadians(dorsalYawOfs)));
+                });
+            }
         }
     }
 }

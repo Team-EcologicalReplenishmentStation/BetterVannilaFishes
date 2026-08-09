@@ -26,6 +26,7 @@ import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
@@ -81,7 +82,9 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
 
     @Override
     public void die(DamageSource pDamageSource) {
-        this.killedByTrident = pDamageSource.is(DamageTypes.TRIDENT);
+        this.killedByTrident = pDamageSource.is(DamageTypes.TRIDENT)
+                || pDamageSource.getEntity() instanceof LivingEntity attacker
+                && attacker.getMainHandItem().is(Items.TRIDENT);
         super.die(pDamageSource);
     }
 
@@ -175,7 +178,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             }
         };
 
-        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.PREDATOR) || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.and((Entity e) -> (shouldAvoidPlayers() && e instanceof Player) || e.getType().is(BvfTagKeys.PREDATOR) || e.getType().is(BvfTagKeys.TOP_PREDATOR));
         this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 16.0F, 1f, 2f, var::test){
             @Override
             public boolean canUse() {
@@ -211,6 +214,10 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
         this.goalSelector.addGoal(2, this.randomSwimmingGoal);
         this.goalSelector.addGoal(3, new TryFindWaterGoal(this));
         this.goalSelector.addGoal(5, new BvfFollowFlockLeaderGoal(this));
+    }
+
+    protected boolean shouldAvoidPlayers() {
+        return true;
     }
 
     @Override

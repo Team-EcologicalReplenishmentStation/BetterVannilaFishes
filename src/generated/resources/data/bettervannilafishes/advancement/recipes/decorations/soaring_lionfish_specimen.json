@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soaring_lionfish_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:soaring_lionfish_bucket"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:soaring_lionfish_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soaring_lionfish_bucket"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:soaring_lionfish_specimen"
+    ]
+  }
+}

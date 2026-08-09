@@ -72,6 +72,12 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.MEGALOPS_ATLANTICUS_SPECIMEN::get));
     public static final DeferredHolder<Block,Block> OBSCURE_PUFFER_SPECIMEN = BLOCKS.register("obscure_puffer_specimen",
             () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.OBSCURE_PUFFER_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> SOARING_LIONFISH_SPECIMEN = BLOCKS.register("soaring_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.SOARING_LIONFISH_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> RINGED_LIONFISH_SPECIMEN = BLOCKS.register("ringed_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.RINGED_LIONFISH_SPECIMEN::get));
+    public static final DeferredHolder<Block,Block> RADIANT_LIONFISH_SPECIMEN = BLOCKS.register("radiant_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.RADIANT_LIONFISH_SPECIMEN::get));
     public static final DeferredHolder<Block,Block> YELLOW_FIN_PUFFER_SPECIMEN = BLOCKS.register("yellow_fin_puffer_specimen",
             () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.YELLOW_FIN_PUFFER_SPECIMEN::get));
     public static final DeferredHolder<Block,Block> PORCUPINE_FISH_SPECIMEN = BLOCKS.register("porcupine_fish_specimen",

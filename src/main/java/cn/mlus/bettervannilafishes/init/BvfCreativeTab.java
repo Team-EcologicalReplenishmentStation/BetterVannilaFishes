@@ -22,6 +22,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get());
                output.accept(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get());
                output.accept(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get());
+               output.accept(BvfItems.SOARING_LIONFISH_SPAWN_EGG.get());
+               output.accept(BvfItems.RINGED_LIONFISH_SPAWN_EGG.get());
+               output.accept(BvfItems.RADIANT_LIONFISH_SPAWN_EGG.get());
                output.accept(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get());
                output.accept(BvfItems.NAUTILUS_SPAWN_EGG.get());
                output.accept(BvfItems.FEATHER_STAR_SPAWN_EGG.get());
@@ -95,6 +98,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.PACIFIC_SALMON_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.OBSCURE_PUFFER_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.SOARING_LIONFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.RINGED_LIONFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+               output.accept(BvfItems.RADIANT_LIONFISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.PORCUPINE_FISH_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.NAUTILUS_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                output.accept(BvfItems.FEATHER_STAR_BUCKET.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
@@ -168,6 +174,7 @@ public class BvfCreativeTab {
                output.accept(BvfItems.PACIFIC_SALMON.get());
                output.accept(BvfItems.YELLOW_FIN_PUFFER.get());
                output.accept(BvfItems.OBSCURE_PUFFER.get());
+               output.accept(BvfItems.LIONFISH.get());
                output.accept(BvfItems.PORCUPINE_FISH.get());
                output.accept(BvfItems.SPEARFISH.get());
                output.accept(BvfItems.COOKED_SPEARFISH.get());
@@ -278,6 +285,9 @@ public class BvfCreativeTab {
                output.accept(BvfItems.SILVER_CARP_SPECIMEN.get());
                output.accept(BvfItems.BIGHEAD_CARP_SPECIMEN.get());
                output.accept(BvfItems.OBSCURE_PUFFER_SPECIMEN.get());
+               output.accept(BvfItems.SOARING_LIONFISH_SPECIMEN.get());
+               output.accept(BvfItems.RINGED_LIONFISH_SPECIMEN.get());
+               output.accept(BvfItems.RADIANT_LIONFISH_SPECIMEN.get());
                output.accept(BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get());
                output.accept(BvfItems.PORCUPINE_FISH_SPECIMEN.get());
                output.accept(BvfItems.BETTA_SPLENDENS_SPECIMEN.get());

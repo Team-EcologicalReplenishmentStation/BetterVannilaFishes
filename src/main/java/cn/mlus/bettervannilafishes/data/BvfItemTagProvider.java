@@ -79,6 +79,7 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.BETTA_SIMPLEX.get())
                 .add(BvfItems.BETTA_BROWNORUM.get())
                 .add(BvfItems.MEGALOPS_ATLANTICUS.get())
+                .add(BvfItems.LIONFISH.get())
                 .addTag(BvfTagKeys.PUFFER);
 
 //        this.tag(ErsTagKeys.KNOWN_FISH)
@@ -125,6 +126,9 @@ public class BvfItemTagProvider extends ItemTagsProvider{
                 .add(BvfItems.PACIFIC_SALMON_BUCKET.get())
                 .add(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get())
                 .add(BvfItems.OBSCURE_PUFFER_BUCKET.get())
+                .add(BvfItems.SOARING_LIONFISH_BUCKET.get())
+                .add(BvfItems.RINGED_LIONFISH_BUCKET.get())
+                .add(BvfItems.RADIANT_LIONFISH_BUCKET.get())
                 .add(BvfItems.PORCUPINE_FISH_BUCKET.get())
                 .add(BvfItems.EPINEPHELUS_LANCEOLATUS_BUCKET.get())
                 .add(BvfItems.EPINEPHELUS_ITAJARA_BUCKET.get())

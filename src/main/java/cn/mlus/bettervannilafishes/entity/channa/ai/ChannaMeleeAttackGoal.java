@@ -50,12 +50,18 @@ public class ChannaMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity target) {
+        if (!this.canPerformAttack(target)) {
+            return;
+        }
+
         this.resetAttackCooldown();
         this.mob.triggerAnim("extra","attack");
         TickHelper.tickLater(this.mob.level(),5, () ->{
-            this.mob.swing(InteractionHand.MAIN_HAND);
-            this.mob.doHurtTarget(target);
-            this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            if (target.isAlive() && this.mob.isWithinMeleeAttackRange(target)) {
+                this.mob.swing(InteractionHand.MAIN_HAND);
+                this.mob.doHurtTarget(target);
+                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            }
         });
     }
 }

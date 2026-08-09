@@ -28,6 +28,7 @@ import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.ai.util.DefaultRandomPos;
 import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
@@ -61,6 +62,13 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
         super.tick();
         if(level().isClientSide)
             animator.tick();
+    }
+
+    @Override
+    public void playerTouch(@NotNull Player player) {
+        if (this.isSprinting() && player instanceof ServerPlayer) {
+            player.hurt(this.damageSources().mobAttack(this), (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE));
+        }
     }
 
     public PanicGoal panicGoal;
@@ -110,11 +118,13 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
             }
         };
 
-        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.and((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.TOP_PREDATOR));
         this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 16.0F, 1f, 2f, var::test) {
             @Override
             public boolean canUse() {
-                super.canUse();
+                if (!super.canUse()) {
+                    return false;
+                }
                 if (this.toAvoid == null) {
                     return false;
                 } else {
@@ -128,6 +138,18 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
                         return this.path != null;
                     }
                 }
+            }
+
+            @Override
+            public void start() {
+                super.start();
+                this.mob.setSprinting(true);
+            }
+
+            @Override
+            public void stop() {
+                super.stop();
+                this.mob.setSprinting(false);
             }
         });
 
@@ -185,7 +207,7 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
                 .add(Attributes.MAX_HEALTH, 10.0)
                 .add(Attributes.MOVEMENT_SPEED,1)
                 .add(NeoForgeMod.SWIM_SPEED,1.5)
-                .add(Attributes.ATTACK_DAMAGE, 1)
+                .add(Attributes.ATTACK_DAMAGE, 20)
                 .add(Attributes.FOLLOW_RANGE,64);
     }
 
@@ -193,7 +215,7 @@ public class SpearfishEntity extends BvfAbstractFish implements BvfEntity<Spearf
     public void aiStep() {
         super.aiStep();
         if(isAggressive()){
-            stompEffect(1f, 1.5f, 20f);
+            stompEffect(1f, 1.5f, (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE));
         }
 
         if(tickCount % 20 == 0){

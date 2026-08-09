@@ -1,5 +1,7 @@
 package cn.mlus.bettervannilafishes.entity;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -7,6 +9,8 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -18,9 +22,13 @@ import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.entity.animal.WaterAnimal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -32,6 +40,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, Bucketable {
+    private boolean killedByTrident;
     @Nullable
     private BvfWaterAnimal leader;
 
@@ -83,6 +92,10 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
         return SoundEvents.FISH_SWIM;
     }
 
+    @Override
+    protected void playStepSound(@NotNull BlockPos pos, @NotNull BlockState state) {
+    }
+
     public boolean fromBucket() {
         return this.entityData.get(FROM_BUCKET);
     }
@@ -106,6 +119,23 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
 
     public @NotNull SoundEvent getPickupSound() {
         return SoundEvents.BUCKET_FILL_FISH;
+    }
+
+    @Override
+    public void die(@NotNull DamageSource source) {
+        this.killedByTrident = source.is(DamageTypes.TRIDENT)
+                || source.getEntity() instanceof net.minecraft.world.entity.LivingEntity attacker
+                && attacker.getMainHandItem().is(Items.TRIDENT);
+        super.die(source);
+    }
+
+    @Nullable
+    @Override
+    public ItemEntity spawnAtLocation(@NotNull ItemStack stack) {
+        if (this.killedByTrident && stack.is(net.minecraft.tags.ItemTags.FISHES) && this instanceof BvfEntity<?> entity) {
+            CustomData.update(DataComponents.CUSTOM_DATA, stack, data -> data.putFloat("Scale", entity.getScale()));
+        }
+        return super.spawnAtLocation(stack);
     }
 
 

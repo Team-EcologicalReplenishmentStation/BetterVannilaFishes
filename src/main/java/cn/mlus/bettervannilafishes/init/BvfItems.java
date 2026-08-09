@@ -77,6 +77,12 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_BUCKET = ITEMS.register("soaring_lionfish_bucket",
+            () -> new MobBucketItem(BvfEntities.SOARING_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_BUCKET = ITEMS.register("ringed_lionfish_bucket",
+            () -> new MobBucketItem(BvfEntities.RINGED_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_BUCKET = ITEMS.register("radiant_lionfish_bucket",
+            () -> new MobBucketItem(BvfEntities.RADIANT_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> PORCUPINE_FISH_BUCKET = ITEMS.register("porcupine_fish_bucket",
             () -> new MobBucketItem(
                     BvfEntities.PORCUPINE_FISH.get(),
@@ -558,6 +564,12 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_SPAWN_EGG = ITEMS.register("soaring_lionfish_spawn_egg",
+            () -> new DeferredSpawnEggItem(BvfEntities.SOARING_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
+    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_SPAWN_EGG = ITEMS.register("ringed_lionfish_spawn_egg",
+            () -> new DeferredSpawnEggItem(BvfEntities.RINGED_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
+    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_SPAWN_EGG = ITEMS.register("radiant_lionfish_spawn_egg",
+            () -> new DeferredSpawnEggItem(BvfEntities.RADIANT_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
     public static final DeferredHolder<Item,Item> PORCUPINE_FISH_SPAWN_EGG = ITEMS.register("porcupine_fish_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.PORCUPINE_FISH,
@@ -1004,6 +1016,9 @@ public class BvfItems {
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
+    public static final DeferredHolder<Item,Item> LIONFISH = ITEMS.register("lionfish",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1f)
+                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 0), 1.0f).build())));
     public static final DeferredHolder<Item,Item> PORCUPINE_FISH = ITEMS.register("porcupine_fish",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
@@ -1236,6 +1251,12 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> OBSCURE_PUFFER_SPECIMEN = ITEMS.register("obscure_puffer_specimen",
             () -> new BlockItem(BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_SPECIMEN = ITEMS.register("soaring_lionfish_specimen",
+            () -> new BlockItem(BvfBlocks.SOARING_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_SPECIMEN = ITEMS.register("ringed_lionfish_specimen",
+            () -> new BlockItem(BvfBlocks.RINGED_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_SPECIMEN = ITEMS.register("radiant_lionfish_specimen",
+            () -> new BlockItem(BvfBlocks.RADIANT_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER_SPECIMEN = ITEMS.register("yellow_fin_puffer_specimen",
             () -> new BlockItem(BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> PORCUPINE_FISH_SPECIMEN = ITEMS.register("porcupine_fish_specimen",

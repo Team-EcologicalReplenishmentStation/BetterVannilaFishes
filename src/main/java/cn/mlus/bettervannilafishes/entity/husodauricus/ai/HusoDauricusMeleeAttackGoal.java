@@ -54,15 +54,17 @@ public class HusoDauricusMeleeAttackGoal extends MeleeAttackGoal {
         if (!this.isTimeToAttack()) {
             return;
         }
-        if (this.mob.distanceToSqr(target) > 2.25D) {
+        if (!this.mob.isWithinMeleeAttackRange(target)) {
             return;
         }
         this.resetAttackCooldown();
         this.mob.triggerAnim("extra", "attack");
         TickHelper.tickLater(this.mob.level(), 6, () -> {
-            this.mob.swing(InteractionHand.MAIN_HAND);
-            this.mob.doHurtTarget(target);
-            this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            if (target.isAlive() && this.mob.isWithinMeleeAttackRange(target)) {
+                this.mob.swing(InteractionHand.MAIN_HAND);
+                this.mob.doHurtTarget(target);
+                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            }
         });
     }
 }

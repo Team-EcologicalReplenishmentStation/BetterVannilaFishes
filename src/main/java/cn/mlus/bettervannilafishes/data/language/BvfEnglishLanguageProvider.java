@@ -24,6 +24,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfEntities.BVC_SALMON_PACIFIC.get(),"Oncorhynchus nerka");
         this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),"Diodon holocanthus");
         this.add(BvfEntities.OBSCURE_PUFFER.get(),"Takifugu obscurus");
+        this.add(BvfEntities.SOARING_LIONFISH.get(),"Pterois volitans");
+        this.add(BvfEntities.RINGED_LIONFISH.get(),"Ringed Lionfish");
+        this.add(BvfEntities.RADIANT_LIONFISH.get(),"Pterois radiata");
         this.add(BvfEntities.PORCUPINE_FISH.get(),"Diodon holocanthus");
         this.add(BvfEntities.NAUTILUS.get(),"Nautilus");
         this.add(BvfEntities.FEATHER_STAR.get(),"Feather Star");
@@ -97,6 +100,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_SPAWN_EGG.get(),"Atlantic Salmon Spawn Egg");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPAWN_EGG.get(),"Yellow Fin Puffer Spawn Egg");
         this.add(BvfItems.OBSCURE_PUFFER_SPAWN_EGG.get(),"Obscure Puffer Spawn Egg");
+        this.add(BvfItems.SOARING_LIONFISH_SPAWN_EGG.get(),"Soaring Lionfish Spawn Egg");
+        this.add(BvfItems.RINGED_LIONFISH_SPAWN_EGG.get(),"Ringed Lionfish Spawn Egg");
+        this.add(BvfItems.RADIANT_LIONFISH_SPAWN_EGG.get(),"Radiant Lionfish Spawn Egg");
         this.add(BvfItems.PORCUPINE_FISH_SPAWN_EGG.get(),"Porcupine Fish Spawn Egg");
         this.add(BvfItems.FEATHER_STAR_SPAWN_EGG.get(),"Feather Star Spawn Egg");
         this.add(BvfItems.ZHIKONG_SCALLOP_SPAWN_EGG.get(),"Chlamys farreri Spawn Egg");
@@ -167,6 +173,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON_BUCKET.get(),"Pacific Salmon Bucket");
         this.add(BvfItems.YELLOW_FIN_PUFFER_BUCKET.get(),"Yellow Fin Puffer Bucket");
         this.add(BvfItems.OBSCURE_PUFFER_BUCKET.get(),"Obscure Puffer Bucket");
+        this.add(BvfItems.SOARING_LIONFISH_BUCKET.get(),"Soaring Lionfish Bucket");
+        this.add(BvfItems.RINGED_LIONFISH_BUCKET.get(),"Ringed Lionfish Bucket");
+        this.add(BvfItems.RADIANT_LIONFISH_BUCKET.get(),"Radiant Lionfish Bucket");
         this.add(BvfItems.PORCUPINE_FISH_BUCKET.get(),"Porcupine Fish Bucket");
         this.add(BvfItems.NAUTILUS_BUCKET.get(),"Nautilus Bucket");
         this.add(BvfItems.FEATHER_STAR_BUCKET.get(),"Feather Star Bucket");
@@ -239,6 +248,7 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.PACIFIC_SALMON.get(), "Pacific Salmon");
         this.add(BvfItems.YELLOW_FIN_PUFFER.get(),"Yellow Fin Puffer");
         this.add(BvfItems.OBSCURE_PUFFER.get(),"Obscure Puffer");
+        this.add(BvfItems.LIONFISH.get(),"Lionfish");
         this.add(BvfItems.PORCUPINE_FISH.get(),"Porcupine Fish");
         this.add(BvfItems.SPEARFISH.get(),"Spearfish");
         this.add(BvfItems.COOKED_SPEARFISH.get(),"Cooked Spearfish");
@@ -343,6 +353,9 @@ public class BvfEnglishLanguageProvider extends LanguageProvider {
         this.add(BvfItems.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(),"Lemon Shark Specimen");
         this.add(BvfItems.MEGALOPS_ATLANTICUS_SPECIMEN.get(),"Atlantic Tarpon Specimen");
         this.add(BvfItems.OBSCURE_PUFFER_SPECIMEN.get(),"Obscure Puffer Specimen");
+        this.add(BvfItems.SOARING_LIONFISH_SPECIMEN.get(),"Soaring Lionfish Specimen");
+        this.add(BvfItems.RINGED_LIONFISH_SPECIMEN.get(),"Ringed Lionfish Specimen");
+        this.add(BvfItems.RADIANT_LIONFISH_SPECIMEN.get(),"Radiant Lionfish Specimen");
         this.add(BvfItems.YELLOW_FIN_PUFFER_SPECIMEN.get(),"Yellow Fin Puffer Specimen");
         this.add(BvfItems.PORCUPINE_FISH_SPECIMEN.get(),"Porcupine Fish Specimen");
         this.add(BvfItems.KATSUWONUS_PELAMIS_SPECIMEN.get(),"Skipjack Tuna Specimen");

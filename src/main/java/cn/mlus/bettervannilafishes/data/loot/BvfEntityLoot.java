@@ -67,6 +67,15 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.OBSCURE_PUFFER.get()))));
+        this.add(BvfEntities.SOARING_LIONFISH.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
+        this.add(BvfEntities.RINGED_LIONFISH.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
+        this.add(BvfEntities.RADIANT_LIONFISH.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
         this.add(BvfEntities.PORCUPINE_FISH.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))

@@ -11,10 +11,13 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.SmoothSwimmingLookControl;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.AbstractFish;
 import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.entity.player.Player;
@@ -25,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.animation.PlayState;
 
 public class KatsuwonusPelamisEntity extends BvfAbstractFish implements BvfEntity<KatsuwonusPelamisEntity>, Bucketable {
     private final GeneralAnimator<KatsuwonusPelamisEntity> animator;
@@ -50,13 +54,17 @@ public class KatsuwonusPelamisEntity extends BvfAbstractFish implements BvfEntit
             }
             return state.setAndContinue(builder);
         });
-        controllerRegistrar.add(main);
+        AnimationController<KatsuwonusPelamisEntity> extra = new AnimationController<>(this, "extra", 0, state -> PlayState.STOP)
+                .triggerableAnim("attack", RawAnimation.begin().thenPlay("animation.attack"));
+        controllerRegistrar.add(main, extra);
     }
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 15.0)
                 .add(Attributes.MOVEMENT_SPEED, 1.0)
+                .add(Attributes.ATTACK_DAMAGE, 3.0)
+                .add(Attributes.FOLLOW_RANGE, 32.0)
                 .add(NeoForgeMod.SWIM_SPEED, 1.5);
     }
 
@@ -81,7 +89,21 @@ public class KatsuwonusPelamisEntity extends BvfAbstractFish implements BvfEntit
     @Override
     protected void registerGoals() {
         super.registerGoals();
+        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5D, false) {
+            @Override
+            protected void checkAndPerformAttack(@NotNull LivingEntity target) {
+                if (!this.canPerformAttack(target)) {
+                    return;
+                }
+
+                KatsuwonusPelamisEntity.this.triggerAnim("extra", "attack");
+                KatsuwonusPelamisEntity.this.doHurtTarget(target);
+                resetAttackCooldown();
+            }
+        });
         this.goalSelector.addGoal(5, new BvfFollowFlockLeaderGoal(this));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 80, true, false,
+                target -> target.getType() != this.getType() && target.getBbWidth() <= 0.7F));
     }
 
     @Override

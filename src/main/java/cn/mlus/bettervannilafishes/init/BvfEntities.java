@@ -23,6 +23,9 @@ import cn.mlus.bettervannilafishes.entity.featherstar.FeatherStarEntity;
 import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
 import cn.mlus.bettervannilafishes.entity.husodauricus.HusoDauricus;
 import cn.mlus.bettervannilafishes.entity.katsuwonus.KatsuwonusPelamisEntity;
+import cn.mlus.bettervannilafishes.entity.lionfish.RadiantLionfish;
+import cn.mlus.bettervannilafishes.entity.lionfish.RingedLionfish;
+import cn.mlus.bettervannilafishes.entity.lionfish.SoaringLionfish;
 import cn.mlus.bettervannilafishes.entity.megalops.MegalopsAtlanticusEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
 import cn.mlus.bettervannilafishes.entity.negaprion.NegaprionAcutidensEntity;
@@ -86,6 +89,15 @@ public class BvfEntities {
             () -> EntityType.Builder.of(ObscurePuffer::new, MobCategory.WATER_AMBIENT)
                     .sized(1F,0.9F)
                     .build(BetterVannilaFishes.prefix("obscure_puffer").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<SoaringLionfish>> SOARING_LIONFISH = ENTITIES.register("soaring_lionfish",
+            () -> EntityType.Builder.of(SoaringLionfish::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.5F).build(BetterVannilaFishes.prefix("soaring_lionfish").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<RingedLionfish>> RINGED_LIONFISH = ENTITIES.register("ringed_lionfish",
+            () -> EntityType.Builder.of(RingedLionfish::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.5F).build(BetterVannilaFishes.prefix("ringed_lionfish").toString()));
+    public static final DeferredHolder<EntityType<?>, EntityType<RadiantLionfish>> RADIANT_LIONFISH = ENTITIES.register("radiant_lionfish",
+            () -> EntityType.Builder.of(RadiantLionfish::new, MobCategory.WATER_AMBIENT)
+                    .sized(0.8F, 0.5F).build(BetterVannilaFishes.prefix("radiant_lionfish").toString()));
     public static final DeferredHolder<EntityType<?>,EntityType<PorcupineFish>> PORCUPINE_FISH = ENTITIES.register("porcupine_fish",
             () -> EntityType.Builder.of(PorcupineFish::new, MobCategory.WATER_AMBIENT)
                     .sized(1F,0.9F)

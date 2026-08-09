@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettervannilafishes:item/radiant_lionfish_specimen"
+  }
+}
