@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#bettervannilafishes:warm_oceans",
+  "spawners": {
+    "type": "bettervannilafishes:radiant_lionfish",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 3
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ringed_lionfish_bucket": { "conditions": { "items": [{ "items": ["bettervannilafishes:ringed_lionfish_bucket"] }] }, "trigger": "minecraft:inventory_changed" },
+    "has_the_recipe": { "conditions": { "recipe": "bettervannilafishes:ringed_lionfish_specimen" }, "trigger": "minecraft:recipe_unlocked" }
+  },
+  "requirements": [["has_ringed_lionfish_bucket", "has_the_recipe"]],
+  "rewards": { "recipes": ["bettervannilafishes:ringed_lionfish_specimen"] },
+  "sends_telemetry_event": false
+}

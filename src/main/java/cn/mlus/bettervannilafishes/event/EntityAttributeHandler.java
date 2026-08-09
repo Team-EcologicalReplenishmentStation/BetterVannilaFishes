@@ -20,6 +20,7 @@ import cn.mlus.bettervannilafishes.entity.megalops.MegalopsAtlanticusEntity;
 import cn.mlus.bettervannilafishes.entity.negaprion.NegaprionAcutidensEntity;
 import cn.mlus.bettervannilafishes.entity.negaprion.NegaprionBrevirostrisEntity;
 import cn.mlus.bettervannilafishes.entity.nautilus.NautilusEntity;
+import cn.mlus.bettervannilafishes.entity.lionfish.Lionfish;
 import cn.mlus.bettervannilafishes.entity.pufferfish.BvfPufferfishEntity;
 import cn.mlus.bettervannilafishes.entity.roosterfish.RoosterfishEntity;
 import cn.mlus.bettervannilafishes.entity.scallop.ScallopEntity;
@@ -55,6 +56,9 @@ public class EntityAttributeHandler {
         event.put(BvfEntities.BVC_SALMON_PACIFIC.get(), BvfAbstractFish.createAttributes().build());
         event.put(BvfEntities.YELLOW_FIN_PUFFER.get(), BvfPufferfishEntity.createAttributes().build());
         event.put(BvfEntities.OBSCURE_PUFFER.get(), BvfPufferfishEntity.createAttributes().build());
+        event.put(BvfEntities.SOARING_LIONFISH.get(), Lionfish.createAttributes().build());
+        event.put(BvfEntities.RINGED_LIONFISH.get(), Lionfish.createAttributes().build());
+        event.put(BvfEntities.RADIANT_LIONFISH.get(), Lionfish.createAttributes().build());
         event.put(BvfEntities.PORCUPINE_FISH.get(), BvfPufferfishEntity.createAttributes().build());
         event.put(BvfEntities.NAUTILUS.get(), NautilusEntity.createAttributes().build());
         event.put(BvfEntities.FEATHER_STAR.get(), FeatherStarEntity.createAttributes().build());
@@ -131,6 +135,9 @@ public class EntityAttributeHandler {
         event.register(BvfEntities.BVC_SALMON_PACIFIC.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.YELLOW_FIN_PUFFER.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.OBSCURE_PUFFER.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.SOARING_LIONFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.RINGED_LIONFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(BvfEntities.RADIANT_LIONFISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.PORCUPINE_FISH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.NAUTILUS.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, EntityAttributeHandler::checkPufferSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(BvfEntities.FEATHER_STAR.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.OCEAN_FLOOR, EntityAttributeHandler::checkCustomWaterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);

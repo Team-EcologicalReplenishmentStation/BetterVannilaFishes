@@ -18,13 +18,15 @@ public class AlopiasFoodGoal extends Goal {
         setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
     }
     @Override public boolean canUse() {
-        if (shark.getTarget() != null) return false;
+        if (!shark.isInWater() || shark.getTarget() != null) return false;
         food = shark.level().getEntitiesOfClass(ItemEntity.class, shark.getBoundingBox().inflate(range),
                 item -> item.isAlive() && item.isInWater() && item.getItem().is(ItemTags.FISHES)).stream()
                 .min(Comparator.comparingDouble(shark::distanceToSqr)).orElse(null);
         return food != null;
     }
-    @Override public boolean canContinueToUse() { return food != null && food.isAlive() && shark.getTarget() == null; }
+    @Override public boolean canContinueToUse() {
+        return shark.isInWater() && food != null && food.isAlive() && food.isInWater() && shark.getTarget() == null;
+    }
     @Override public void tick() {
         shark.getLookControl().setLookAt(food, 20, 20);
         shark.getNavigation().moveTo(food, speed);

@@ -28,10 +28,11 @@ public class SpecimenCraftHandler {
                     continue;
                 if (stack.hasTag() && stack.getTag().contains("Scale")) {
                     result.getOrCreateTag().put("Scale", stack.getTag().get("Scale"));
-                    break;
                 }
                 if (stack.hasTag() && stack.getTag().contains("Variant")) {
                     result.getOrCreateTag().put("Variant", stack.getTag().get("Variant"));
+                }
+                if (stack.hasTag() && (stack.getTag().contains("Scale") || stack.getTag().contains("Variant"))) {
                     break;
                 }
             }

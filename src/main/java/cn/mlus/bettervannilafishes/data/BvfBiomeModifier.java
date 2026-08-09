@@ -47,6 +47,9 @@ public class BvfBiomeModifier
         addSpawn(context, "yellow_fin_puffer", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.YELLOW_FIN_PUFFER.get(), 7, 1, 1));
         addSpawn(context, "porcupine_fish", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.PORCUPINE_FISH.get(), 7, 1, 1));
         addSpawn(context, "obscure_puffer_ocean", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 7, 1, 1));
+        addSpawn(context, "soaring_lionfish_warm_ocean", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.SOARING_LIONFISH.get(), 11, 1, 1));
+        addSpawn(context, "ringed_lionfish_warm_ocean", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.RINGED_LIONFISH.get(), 6, 1, 1));
+        addSpawn(context, "radiant_lionfish_warm_ocean", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.RADIANT_LIONFISH.get(), 3, 1, 1));
         addSpawn(context, "obscure_puffer_river", Biomes.RIVER, new MobSpawnSettings.SpawnerData(BvfEntities.OBSCURE_PUFFER.get(), 8, 3, 4));
         addSpawn(context, "nautilus", BvfTagKeys.WARM_OCEANS, new MobSpawnSettings.SpawnerData(BvfEntities.NAUTILUS.get(), 6, 1, 1));
         addSpawn(context, "feather_star", BiomeTags.IS_OCEAN, new MobSpawnSettings.SpawnerData(BvfEntities.FEATHER_STAR.get(), 8, 2, 4));

@@ -6,6 +6,7 @@ import cn.mlus.bettervannilafishes.entity.BvfAbstractFish;
 import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.GeneralBodyControl;
 import cn.mlus.bettervannilafishes.entity.ai.BvfFishMoveControl;
+import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.entity.elopichthys.ai.ElopichthysMeleeAttackGoal;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import cn.mlus.bettervannilafishes.init.BvfTagKeys;
@@ -28,6 +29,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.control.BodyRotationControl;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.world.entity.ai.goal.TryFindWaterGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.AbstractFish;
@@ -76,7 +78,8 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
     @Override
     protected void registerGoals() {
         this.randomSwimmingGoal = new RandomSwimmingGoal(this, 1, 120);
-        Predicate<Entity> dangerousEntity = EntitySelector.NO_SPECTATORS.or((Entity e) -> e instanceof Player || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        Predicate<Entity> dangerousEntity = EntitySelector.NO_SPECTATORS.and(
+                entity -> entity instanceof Player || entity.getType().is(BvfTagKeys.TOP_PREDATOR));
         this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 12.0F, 2.4f, 2.4f, dangerousEntity::test) {
             @Override
             public boolean canUse() {
@@ -110,10 +113,12 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
         });
 
         this.goalSelector.addGoal(2, new ElopichthysMeleeAttackGoal(this, 2.4D, false));
+        this.goalSelector.addGoal(3, new MoveTowardsFoodGoal(this, 1.2D, 8.0F));
         this.goalSelector.addGoal(3, this.randomSwimmingGoal);
+        this.goalSelector.addGoal(4, new TryFindWaterGoal(this));
 
         this.targetSelector.addGoal(0, new HurtByTargetGoal(this));
-        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 80, true, false,
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 10, true, false,
                 target -> target.getType() != this.getType()
                         && !target.getType().is(BvfTagKeys.PREDATOR)
                         && !target.getType().is(BvfTagKeys.TOP_PREDATOR)));
@@ -135,7 +140,8 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
             return state.setAndContinue(builder);
         });
         AnimationController<ElopichthysBambusa> extra = new AnimationController<>(this, "extra", 2, state -> PlayState.STOP)
-                .triggerableAnim("attack", RawAnimation.begin().thenPlay("animation.attack"));
+                .triggerableAnim("attack", RawAnimation.begin().thenPlay("animation.attack"))
+                .triggerableAnim("eat", RawAnimation.begin().thenPlay("animation.attack"));
         controllerRegistrar.add(main, extra);
     }
 
@@ -143,8 +149,8 @@ public class ElopichthysBambusa extends BvfAbstractFish implements BvfEntity<Elo
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0)
                 .add(Attributes.ARMOR, 0.0)
-                .add(Attributes.ATTACK_DAMAGE, 1.0)
-                .add(Attributes.FOLLOW_RANGE, 24.0)
+                .add(Attributes.ATTACK_DAMAGE, 6.0)
+                .add(Attributes.FOLLOW_RANGE, 48.0)
                 .add(Attributes.MOVEMENT_SPEED, 0.75)
                 .add(ForgeMod.SWIM_SPEED.get(), 2f);
     }

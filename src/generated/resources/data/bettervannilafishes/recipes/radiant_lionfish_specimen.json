@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "bettervannilafishes:radiant_lionfish_bucket" },
+    { "item": "minecraft:honeycomb" }
+  ],
+  "result": { "item": "bettervannilafishes:radiant_lionfish_specimen" }
+}

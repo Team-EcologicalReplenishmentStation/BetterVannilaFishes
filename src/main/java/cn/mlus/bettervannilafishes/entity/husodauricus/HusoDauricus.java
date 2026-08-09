@@ -137,6 +137,7 @@ public class HusoDauricus extends BvfWaterAnimal implements BvfEntity<HusoDauric
         super.registerGoals();
         this.goalSelector.addGoal(1, new PanicGoal(this,1));
         this.goalSelector.addGoal(2, new HusoDauricusMeleeAttackGoal(this, 2, false));
+        this.goalSelector.addGoal(3, new MoveTowardsFoodGoal(this, 1.2D, 8.0F));
 
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, AbstractFish.class, 80, true, false,
                 target -> target.getType() != this.getType()

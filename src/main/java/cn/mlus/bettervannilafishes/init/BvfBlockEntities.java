@@ -74,6 +74,12 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BIGHEAD_CARP_SPECIMEN.get()).build(null));
     public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> OBSCURE_PUFFER_SPECIMEN = BLOCK_ENTITIES.register("obscure_puffer_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> SOARING_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("soaring_lionfish_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SOARING_LIONFISH_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> RINGED_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("ringed_lionfish_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.RINGED_LIONFISH_SPECIMEN.get()).build(null));
+    public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> RADIANT_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("radiant_lionfish_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.RADIANT_LIONFISH_SPECIMEN.get()).build(null));
     public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> YELLOW_FIN_PUFFER_SPECIMEN = BLOCK_ENTITIES.register("yellow_fin_puffer_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get()).build(null));
     public static final RegistryObject<BlockEntityType<FishSpecimenBlockEntity>> PORCUPINE_FISH_SPECIMEN = BLOCK_ENTITIES.register("porcupine_fish_specimen",

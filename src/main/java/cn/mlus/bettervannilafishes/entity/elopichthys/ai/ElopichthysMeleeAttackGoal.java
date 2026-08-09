@@ -6,7 +6,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
 
 public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
@@ -18,19 +17,20 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     public boolean canUse() {
-        return super.canUse() && mob.getTarget().isInWater();
+        LivingEntity target = this.mob.getTarget();
+        return target != null && target.isInWater() && super.canUse();
     }
 
     @Override
     public boolean canContinueToUse() {
-        return super.canContinueToUse() && mob.getTarget().isInWater();
+        LivingEntity target = this.mob.getTarget();
+        return target != null && target.isInWater() && super.canContinueToUse();
     }
 
     @Override
     public void start() {
         super.start();
         this.mob.setSprinting(true);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(5);
     }
 
     @Override
@@ -43,7 +43,6 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
 
         this.mob.setAggressive(false);
         this.mob.setSprinting(false);
-        this.mob.getAttribute(ForgeMod.SWIM_SPEED.get()).setBaseValue(2);
     }
 
     @Override
@@ -53,17 +52,18 @@ public class ElopichthysMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity pEnemy, double pDistToEnemySqr) {
-        this.resetAttackCooldown();
-
-        if (this.mob.distanceToSqr(pEnemy) > 2D) {
+        if (pDistToEnemySqr > this.getAttackReachSqr(pEnemy) || this.getTicksUntilNextAttack() > 0) {
             return;
         }
 
+        this.resetAttackCooldown();
         this.mob.triggerAnim("extra", "attack");
         TickHelper.tickLater(this.mob.level(), 5, () -> {
-            this.mob.swing(InteractionHand.MAIN_HAND);
-            this.mob.doHurtTarget(pEnemy);
-            this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            if (pEnemy.isAlive() && this.mob.distanceToSqr(pEnemy) <= this.getAttackReachSqr(pEnemy) + 1.0D) {
+                this.mob.swing(InteractionHand.MAIN_HAND);
+                this.mob.doHurtTarget(pEnemy);
+                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+            }
         });
     }
 }

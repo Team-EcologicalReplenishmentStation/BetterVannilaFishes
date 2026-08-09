@@ -32,6 +32,9 @@ public final class ClientModListener {
 		event.registerEntityRenderer(BvfEntities.BVC_SALMON_PACIFIC.get(), context -> new BvfRenderer<>(context, new SalmonModel()));
 		event.registerEntityRenderer(BvfEntities.YELLOW_FIN_PUFFER.get(), context -> new BvfRenderer<>(context, new PufferfishModel()));
 		event.registerEntityRenderer(BvfEntities.OBSCURE_PUFFER.get(), context -> new BvfRenderer<>(context, new PufferfishModel()));
+		event.registerEntityRenderer(BvfEntities.SOARING_LIONFISH.get(), context -> new BvfRenderer<>(context, new LionfishModel()));
+		event.registerEntityRenderer(BvfEntities.RINGED_LIONFISH.get(), context -> new BvfRenderer<>(context, new LionfishModel()));
+		event.registerEntityRenderer(BvfEntities.RADIANT_LIONFISH.get(), context -> new BvfRenderer<>(context, new LionfishModel()));
 		event.registerEntityRenderer(BvfEntities.PORCUPINE_FISH.get(), BvfRenderer::new);
 		event.registerEntityRenderer(BvfEntities.NAUTILUS.get(), BvfRenderer::new);
         event.registerEntityRenderer(BvfEntities.FEATHER_STAR.get(), context -> new BvfRenderer<>(context, 0));
@@ -109,6 +112,9 @@ public final class ClientModListener {
 		event.registerBlockEntityRenderer(BvfBlockEntities.ALOPIAS_VULPINUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new AlopiasVulpinusSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_ACUTIDENS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionAcutidensSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.NEGAPRION_BREVIROSTRIS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new NegaprionBrevirostrisSpecimenModel()));
+		event.registerBlockEntityRenderer(BvfBlockEntities.SOARING_LIONFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("lionfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.RINGED_LIONFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("lionfish_specimen")));
+		event.registerBlockEntityRenderer(BvfBlockEntities.RADIANT_LIONFISH_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new SmallFishSpecimenModel("lionfish_specimen")));
 		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_ITAJARA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));
 		event.registerBlockEntityRenderer(BvfBlockEntities.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(), (context) -> new BvfSpecimenRenderer(new EpinephelusSpecimenModel()));

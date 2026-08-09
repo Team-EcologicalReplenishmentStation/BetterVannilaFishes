@@ -62,16 +62,18 @@ public class SharkMeleeAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void checkAndPerformAttack(@NotNull LivingEntity pEnemy, double pDistToEnemySqr) {
-        double d0 = this.getAttackReachSqr(pEnemy) - 5;
+        double d0 = this.getAttackReachSqr(pEnemy);
         if (pDistToEnemySqr <= d0 && this.getTicksUntilNextAttack() <= 0) {
             this.resetAttackCooldown();
             this.mob.triggerAnim("extra","attack");
             TickHelper.tickLater(this.mob.level(),15, () ->{
-                this.mob.swing(InteractionHand.MAIN_HAND);
-                this.mob.doHurtTarget(pEnemy);
-                BvfBleedingEffect.giveBleedingEffect(pEnemy, this.bleedingStep, this.maxBleedingAmp);
-                this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
-                ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
+                if (pEnemy.isAlive() && this.mob.distanceToSqr(pEnemy) <= this.getAttackReachSqr(pEnemy) + 1.0D) {
+                    this.mob.swing(InteractionHand.MAIN_HAND);
+                    this.mob.doHurtTarget(pEnemy);
+                    BvfBleedingEffect.giveBleedingEffect(pEnemy, this.bleedingStep, this.maxBleedingAmp);
+                    this.ticksUntilNextPathRecalculation = 60 + this.mob.getRandom().nextInt(10);
+                    ((SharkNavigation)this.mob.getNavigation()).alterCreatePath(pEnemy,0,-1);
+                }
             });
         }
     }

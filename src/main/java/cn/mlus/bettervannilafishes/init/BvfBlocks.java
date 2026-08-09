@@ -75,6 +75,12 @@ public class BvfBlocks {
             () -> new FishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.BIGHEAD_CARP_SPECIMEN));
     public static final RegistryObject<Block> OBSCURE_PUFFER_SPECIMEN = BLOCKS.register("obscure_puffer_specimen",
             () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.OBSCURE_PUFFER_SPECIMEN));
+    public static final RegistryObject<Block> SOARING_LIONFISH_SPECIMEN = BLOCKS.register("soaring_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.SOARING_LIONFISH_SPECIMEN));
+    public static final RegistryObject<Block> RINGED_LIONFISH_SPECIMEN = BLOCKS.register("ringed_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.RINGED_LIONFISH_SPECIMEN));
+    public static final RegistryObject<Block> RADIANT_LIONFISH_SPECIMEN = BLOCKS.register("radiant_lionfish_specimen",
+            () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.RADIANT_LIONFISH_SPECIMEN));
     public static final RegistryObject<Block> YELLOW_FIN_PUFFER_SPECIMEN = BLOCKS.register("yellow_fin_puffer_specimen",
             () -> new SmallFishSpecimen(Block.Properties.of().strength(1.5f).noOcclusion(), BvfBlockEntities.YELLOW_FIN_PUFFER_SPECIMEN));
     public static final RegistryObject<Block> PORCUPINE_FISH_SPECIMEN = BLOCKS.register("porcupine_fish_specimen",
