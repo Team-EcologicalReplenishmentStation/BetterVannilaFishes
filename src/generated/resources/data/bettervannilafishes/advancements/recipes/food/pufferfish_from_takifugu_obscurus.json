@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_takifugu_obscurus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:takifugu_obscurus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:pufferfish_from_takifugu_obscurus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_takifugu_obscurus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:pufferfish_from_takifugu_obscurus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

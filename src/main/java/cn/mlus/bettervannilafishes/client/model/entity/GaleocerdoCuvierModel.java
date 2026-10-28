@@ -1,7 +1,7 @@
 package cn.mlus.bettervannilafishes.client.model.entity;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.GaleocerdoCuvierEntity;
+import cn.mlus.bettervannilafishes.entity.galeocerdo.GaleocerdoCuvierEntity;
 import net.minecraft.resources.ResourceLocation;
 
 public class GaleocerdoCuvierModel extends BvfModel<GaleocerdoCuvierEntity> {

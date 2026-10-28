@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gadus_morhua": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:gadus_morhua"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:gadus_morhua_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gadus_morhua",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:gadus_morhua_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

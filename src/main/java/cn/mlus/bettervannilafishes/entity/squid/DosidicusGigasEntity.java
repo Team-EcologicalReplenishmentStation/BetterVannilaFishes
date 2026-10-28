@@ -114,9 +114,6 @@ public class DosidicusGigasEntity extends BvfWaterAnimal implements BvfEntity<Do
             this.moveRelative(this.getSpeed(), pTravelVector);
             this.move(MoverType.SELF, this.getDeltaMovement());
             this.setDeltaMovement(this.getDeltaMovement().scale(0.9));
-            if (this.getTarget() == null) {
-                this.setDeltaMovement(this.getDeltaMovement().add(0.0, -0.005, 0.0));
-            }
         } else {
             super.travel(pTravelVector);
         }
@@ -242,5 +239,10 @@ public class DosidicusGigasEntity extends BvfWaterAnimal implements BvfEntity<Do
     @Override
     public @NotNull ItemStack getBucketItemStack() {
         return new ItemStack(BvfItems.DOSIDICUS_GIGAS_BUCKET.get());
+    }
+
+    @Override
+    public boolean canRiderInteract() {
+        return true;
     }
 }

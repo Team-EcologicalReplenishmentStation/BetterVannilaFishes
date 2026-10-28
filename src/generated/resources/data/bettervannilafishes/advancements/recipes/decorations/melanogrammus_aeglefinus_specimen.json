@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_melanogrammus_aeglefinus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:melanogrammus_aeglefinus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:melanogrammus_aeglefinus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_melanogrammus_aeglefinus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:melanogrammus_aeglefinus_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cichla_kelberi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:cichla_kelberi"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cichla_kelberi_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cichla_kelberi",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cichla_kelberi_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

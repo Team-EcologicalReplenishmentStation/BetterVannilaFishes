@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettervannilafishes:item/melanogrammus_aeglefinus_spawn_egg"
+  }
+}

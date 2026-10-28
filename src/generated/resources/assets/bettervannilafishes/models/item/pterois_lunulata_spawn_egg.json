@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettervannilafishes:item/pterois_lunulata_spawn_egg"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kajikia_audax": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:kajikia_audax"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_kajikia_audax_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_kajikia_audax",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_kajikia_audax_smelting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -2,7 +2,7 @@ package cn.mlus.bettervannilafishes.init;
 
 import cn.mlus.bettervannilafishes.BetterVannilaFishes;
 import cn.mlus.bettervannilafishes.effect.BvfBleedingEffect;
-import cn.mlus.bettervannilafishes.effect.NautilusBlessingEffect;
+import cn.mlus.bettervannilafishes.effect.NautilusPompiliusBlessingEffect;
 import cn.mlus.bettervannilafishes.effect.PurificationEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -15,7 +15,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class BvfMobEffects {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, BetterVannilaFishes.MODID);
-    public static final RegistryObject<MobEffect> NAUTILUS_BLESSING = MOB_EFFECTS.register("nautilus_blessing", () -> new NautilusBlessingEffect(MobEffectCategory.BENEFICIAL, 0x808080)
+    public static final RegistryObject<MobEffect> NAUTILUS_POMPILIUS_BLESSING = MOB_EFFECTS.register("nautilus_pompilius_blessing", () -> new NautilusPompiliusBlessingEffect(MobEffectCategory.BENEFICIAL, 0x808080)
             .addAttributeModifier(Attributes.ATTACK_SPEED, "C1433E6F-6644-2C5A-AA46-7BA5BBADBEF3", 0.10000000149011612, AttributeModifier.Operation.MULTIPLY_TOTAL));
     public static final RegistryObject<MobEffect> PURIFICATION = MOB_EFFECTS.register("purification", () -> new PurificationEffect(MobEffectCategory.BENEFICIAL, 0x0000FF));
     public static final RegistryObject<MobEffect> BLEEDING = MOB_EFFECTS.register("bleeding", () -> new BvfBleedingEffect(MobEffectCategory.HARMFUL, 0xFF0000));

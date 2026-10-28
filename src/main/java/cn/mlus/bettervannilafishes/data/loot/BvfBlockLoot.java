@@ -8,7 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class BvfBlockLoot extends VanillaBlockLoot {
     @Override
     protected void generate() {
-//        this.add(BvcBlocks.ATLANTIC_COD_SPECIMEN.get(), block -> this.createSingleItemTable(BvcItems.ATLANTIC_COD_SPECIMEN.get()));
+//        this.add(BvcBlocks.GADUS_MORHUA_SPECIMEN.get(), block -> this.createSingleItemTable(BvcItems.GADUS_MORHUA_SPECIMEN.get()));
     }
 
     @Override

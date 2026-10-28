@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hypophthalmichthys_molitrix": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:hypophthalmichthys_molitrix"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_hypophthalmichthys_molitrix_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_hypophthalmichthys_molitrix",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_hypophthalmichthys_molitrix_smoking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

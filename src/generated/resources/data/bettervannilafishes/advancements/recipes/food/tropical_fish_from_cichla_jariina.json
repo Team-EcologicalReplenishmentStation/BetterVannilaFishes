@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cichla_jariina": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:cichla_jariina"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_cichla_jariina"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cichla_jariina",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_cichla_jariina"
+    ]
+  },
+  "sends_telemetry_event": false
+}

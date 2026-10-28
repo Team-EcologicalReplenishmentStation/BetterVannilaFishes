@@ -104,9 +104,6 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             this.moveRelative(this.getSpeed(), pTravelVector);
             this.move(MoverType.SELF, this.getDeltaMovement());
             this.setDeltaMovement(this.getDeltaMovement().scale(0.9));
-            if (this.getTarget() == null) {
-                this.setDeltaMovement(this.getDeltaMovement().add(0.0, -0.005, 0.0));
-            }
         } else {
             super.travel(pTravelVector);
         }
@@ -180,7 +177,7 @@ public abstract class BvfAbstractFish extends AbstractFish implements GeoEntity{
             }
         };
 
-        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.or((Entity e) -> (shouldAvoidPlayers() && e instanceof Player) || e.getType().is(BvfTagKeys.PREDATOR) || e.getType().is(BvfTagKeys.TOP_PREDATOR));
+        Predicate<Entity> var = EntitySelector.NO_SPECTATORS.and((Entity e) -> (shouldAvoidPlayers() && e instanceof Player) || e.getType().is(BvfTagKeys.PREDATOR) || e.getType().is(BvfTagKeys.TOP_PREDATOR));
         this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 14.0F, 1f, 2f, var::test){
             @Override
             public boolean canUse() {

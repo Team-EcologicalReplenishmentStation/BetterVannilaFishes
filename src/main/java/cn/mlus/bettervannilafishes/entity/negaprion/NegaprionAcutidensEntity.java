@@ -6,11 +6,10 @@ import cn.mlus.bettervannilafishes.entity.BvfEntity;
 import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.ai.SharkMeleeAttackGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
+import cn.mlus.bettervannilafishes.entity.galeocerdo.ai.SharkMeleeAttackGoal;
+import cn.mlus.bettervannilafishes.entity.galeocerdo.navigation.SharkNavigation;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import cn.mlus.bettervannilafishes.init.BvfMobEffects;
-import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -44,7 +43,6 @@ import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 
-import java.util.Arrays;
 import java.util.function.IntFunction;
 
 public class NegaprionAcutidensEntity extends BvfWaterAnimal implements BvfEntity<NegaprionAcutidensEntity>, Bucketable, VariantHolder<NegaprionAcutidensEntity.Variant> {

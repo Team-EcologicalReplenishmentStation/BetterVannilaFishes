@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diodon_holocanthus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:diodon_holocanthus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:pufferfish_from_diodon_holocanthus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_diodon_holocanthus",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:pufferfish_from_diodon_holocanthus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

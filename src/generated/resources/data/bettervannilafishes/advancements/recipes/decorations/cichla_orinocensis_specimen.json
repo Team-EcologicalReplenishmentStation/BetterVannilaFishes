@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cichla_orinocensis": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettervannilafishes:cichla_orinocensis"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cichla_orinocensis_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cichla_orinocensis",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cichla_orinocensis_specimen"
+    ]
+  },
+  "sends_telemetry_event": false
+}

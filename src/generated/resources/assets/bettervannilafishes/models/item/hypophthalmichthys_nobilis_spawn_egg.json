@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettervannilafishes:item/hypophthalmichthys_nobilis_spawn_egg"
+  }
+}
