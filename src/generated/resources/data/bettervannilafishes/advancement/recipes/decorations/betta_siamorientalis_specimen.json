@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_betta_siamorientalis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:betta_siamorientalis"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:betta_siamorientalis_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_betta_siamorientalis"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:betta_siamorientalis_specimen"
+    ]
+  }
+}

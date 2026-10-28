@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gadus_macrocephalus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:gadus_macrocephalus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:gadus_macrocephalus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gadus_macrocephalus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:gadus_macrocephalus_specimen"
+    ]
+  }
+}

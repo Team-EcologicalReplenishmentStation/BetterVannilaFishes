@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "bettervannilafishes:block/atlantic_cod_specimen"
+      "model": "bettervannilafishes:block/gadus_morhua_specimen"
     }
   }
 }

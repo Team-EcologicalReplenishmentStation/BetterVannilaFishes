@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_takifugu_xanthopterus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:takifugu_xanthopterus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:takifugu_xanthopterus_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_takifugu_xanthopterus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:takifugu_xanthopterus_specimen"
+    ]
+  }
+}

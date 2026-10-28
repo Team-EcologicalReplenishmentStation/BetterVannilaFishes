@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ctenopharyngodon_idella": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:ctenopharyngodon_idella"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:ctenopharyngodon_idella_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ctenopharyngodon_idella"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:ctenopharyngodon_idella_specimen"
+    ]
+  }
+}

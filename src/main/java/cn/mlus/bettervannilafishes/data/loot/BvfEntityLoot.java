@@ -29,20 +29,20 @@ public class BvfEntityLoot extends VanillaEntityLoot {
 
     @Override
     public void generate() {
-        this.add(BvfEntities.BVC_HADDOCK_COD.get(), LootTable.lootTable()
+        this.add(BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.HADDOCK_COD.get()))
+                        .add(LootItem.lootTableItem(BvfItems.MELANOGRAMMUS_AEGLEFINUS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.BVC_ATLANTIC_COD.get(), LootTable.lootTable()
+        this.add(BvfEntities.BVC_GADUS_MORHUA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.ATLANTIC_COD.get()))
+                        .add(LootItem.lootTableItem(BvfItems.GADUS_MORHUA.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.BVC_PACIFIC_COD.get(), LootTable.lootTable()
+        this.add(BvfEntities.BVC_GADUS_MACROCEPHALUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PACIFIC_COD.get()))
+                        .add(LootItem.lootTableItem(BvfItems.GADUS_MACROCEPHALUS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
         this.add(BvfEntities.BVC_SALMON_MALE.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -59,35 +59,42 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.PACIFIC_SALMON.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.YELLOW_FIN_PUFFER.get(),LootTable.lootTable()
+        this.add(BvfEntities.TAKIFUGU_XANTHOPTERUS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.YELLOW_FIN_PUFFER.get()))));
-        this.add(BvfEntities.OBSCURE_PUFFER.get(),LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.TAKIFUGU_XANTHOPTERUS.get()))));
+        this.add(BvfEntities.TAKIFUGU_OBSCURUS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.OBSCURE_PUFFER.get()))));
-        this.add(BvfEntities.SOARING_LIONFISH.get(), LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
-        this.add(BvfEntities.RINGED_LIONFISH.get(), LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
-        this.add(BvfEntities.RADIANT_LIONFISH.get(), LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.LIONFISH.get()))));
-        this.add(BvfEntities.PORCUPINE_FISH.get(),LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.TAKIFUGU_OBSCURUS.get()))));
+        this.add(BvfEntities.PTEROIS_VOLITANS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PORCUPINE_FISH.get()))));
-        this.add(BvfEntities.NAUTILUS.get(),LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.PTEROIS_VOLITANS.get()))));
+        this.add(BvfEntities.PTEROIS_LUNULATA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.PTEROIS_LUNULATA.get()))));
+        this.add(BvfEntities.PTEROIS_RADIATA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.PTEROIS_RADIATA.get()))));
+        this.add(BvfEntities.DERMOCHELYS_CORIACEA.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.DERMOCHELYS_CORIACEA.get()))));
+        this.add(BvfEntities.DIODON_HOLOCANTHUS.get(),LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.DIODON_HOLOCANTHUS.get()))));
+        this.add(BvfEntities.NAUTILUS_POMPILIUS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(Items.NAUTILUS_SHELL))));
-        this.add(BvfEntities.FEATHER_STAR.get(),LootTable.lootTable()
+        this.add(BvfEntities.COMATULIDA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.FEATHER_STAR_TENTACLE.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.COMATULIDA_TENTACLE.get()))));
         this.add(BvfEntities.ZHIKONG_SCALLOP.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.SCALLOP_MEAT.get()))));
@@ -97,15 +104,15 @@ public class BvfEntityLoot extends VanillaEntityLoot {
         this.add(BvfEntities.YESSO_SCALLOP.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.SCALLOP_MEAT.get()))));
-        this.add(BvfEntities.SPEARFISH.get(),LootTable.lootTable()
+        this.add(BvfEntities.KAJIKIA_AUDAX.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SPEARFISH.get()))
+                        .add(LootItem.lootTableItem(BvfItems.KAJIKIA_AUDAX.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.ROOSTERFISH.get(),LootTable.lootTable()
+        this.add(BvfEntities.NEMATISTIUS_PECTORALIS.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.ROOSTERFISH.get()))
+                        .add(LootItem.lootTableItem(BvfItems.NEMATISTIUS_PECTORALIS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
 
         this.add(BvfEntities.GALEOCERDO_CUVIER.get(),LootTable.lootTable()
@@ -136,10 +143,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_ITAJARA.get())))
                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
 
-        this.add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),LootTable.lootTable()
+        this.add(BvfEntities.EPINEPHELUS_TUKULA.get(),LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_MELANOSTIGMA.get())))
+                        .add(LootItem.lootTableItem(BvfItems.EPINEPHELUS_TUKULA.get())))
                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
 
         this.add(BvfEntities.DOSIDICUS_GIGAS.get(), LootTable.lootTable()
@@ -173,10 +180,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_TRIOSTEGUS.get()))));
-        this.add(BvfEntities.ACANTHURUS_NIGRICANS.get(), LootTable.lootTable()
+        this.add(BvfEntities.ACANTHURUS_LEUCOPAREIUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_NIGRICANS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.ACANTHURUS_LEUCOPAREIUS.get()))));
         this.add(BvfEntities.ACANTHURUS_LINEATUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -193,10 +200,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.CHAETODON_AURIGA.get()))));
-        this.add(BvfEntities.CHAETODON_COLLARE.get(), LootTable.lootTable()
+        this.add(BvfEntities.CHAETODON_XANTHURUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_COLLARE.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.CHAETODON_XANTHURUS.get()))));
         this.add(BvfEntities.CHAETODON_RETICULATUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -205,30 +212,30 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.CHAETODON_SPECULUM.get()))));
-        this.add(BvfEntities.AUSTRALOHEROS_FACETUS.get(), LootTable.lootTable()
+        this.add(BvfEntities.CICHLA_ORINOCENSIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AUSTRALOHEROS_FACETUS.get()))));
-        this.add(BvfEntities.CICHLASOMA_BIMACULATUM.get(), LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_ORINOCENSIS.get()))));
+        this.add(BvfEntities.CICHLA_JARIINA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.CICHLASOMA_BIMACULATUM.get()))));
-        this.add(BvfEntities.KROBIA_GUIANENSIS.get(), LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_JARIINA.get()))));
+        this.add(BvfEntities.CICHLA_KELBERI.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.KROBIA_GUIANENSIS.get()))));
-        this.add(BvfEntities.AEQUIDENS_TETRAMERUS.get(), LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_KELBERI.get()))));
+        this.add(BvfEntities.CICHLA_PIQUITI.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AEQUIDENS_TETRAMERUS.get()))));
-        this.add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(), LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_PIQUITI.get()))));
+        this.add(BvfEntities.CICHLA_PINIMA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.GYMNOGEOPHAGUS_BALZANII.get()))));
-        this.add(BvfEntities.ASTRONOTUS_OCELLATUS.get(), LootTable.lootTable()
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_PINIMA.get()))));
+        this.add(BvfEntities.CICHLA_OCELLARIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.ASTRONOTUS_OCELLATUS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.CICHLA_OCELLARIS.get()))));
         this.add(BvfEntities.CHANNA_MICROPELTES.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -248,22 +255,18 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_OCELLARIS.get()))));
-        this.add(BvfEntities.PREMNAS_BIACULEATUS.get(), LootTable.lootTable()
+        this.add(BvfEntities.AMPHIPRION_BIACULEATUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.PREMNAS_BIACULEATUS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_BIACULEATUS.get()))));
         this.add(BvfEntities.AMPHIPRION_POLYMNUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_POLYMNUS.get()))));
-        this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(), LootTable.lootTable()
+        this.add(BvfEntities.AMPHIPRION_THIELLEI.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERIDERAION.get()))));
-        this.add(BvfEntities.AMPHIPRION_CLARKII.get(), LootTable.lootTable()
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CLARKII.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_THIELLEI.get()))));
         this.add(BvfEntities.AMPHIPRION_PERCULA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -286,26 +289,30 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.SHARK_FIN.get())))
                 .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F))));
-        this.add(BvfEntities.AMPHIPRION_AKINDYNOS.get(), LootTable.lootTable()
+        this.add(BvfEntities.AMPHIPRION_PERIDERAION.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_AKINDYNOS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_PERIDERAION.get()))));
+        this.add(BvfEntities.AMPHIPRION_CLARKII.get(), LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CLARKII.get()))));
         this.add(BvfEntities.AMPHIPRION_BICINCTUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_BICINCTUS.get()))));
-        this.add(BvfEntities.AMPHIPRION_CHRYSOGASTER.get(), LootTable.lootTable()
+        this.add(BvfEntities.AMPHIPRION_EPHIPPIUM.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CHRYSOGASTER.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_EPHIPPIUM.get()))));
         this.add(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_CHRYSOPTERUS.get()))));
-        this.add(BvfEntities.AMPHIPRION_LATEZONATUS.get(), LootTable.lootTable()
+        this.add(BvfEntities.AMPHIPRION_FRENATUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_LATEZONATUS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.AMPHIPRION_FRENATUS.get()))));
         this.add(BvfEntities.AMPHIPRION_MCCULLOCHI.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -322,10 +329,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.BETTA_SPLENDENS.get()))));
-        this.add(BvfEntities.BETTA_IMBELLIS.get(), LootTable.lootTable()
+        this.add(BvfEntities.BETTA_SIAMORIENTALIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.BETTA_IMBELLIS.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_SIAMORIENTALIS.get()))));
         this.add(BvfEntities.BETTA_SMARAGDINA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -338,10 +345,10 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.BETTA_SIMPLEX.get()))));
-        this.add(BvfEntities.BETTA_BROWNORUM.get(), LootTable.lootTable()
+        this.add(BvfEntities.BETTA_FUSCA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.BETTA_BROWNORUM.get()))));
+                        .add(LootItem.lootTableItem(BvfItems.BETTA_FUSCA.get()))));
         this.add(BvfEntities.MEGALOPS_ATLANTICUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
@@ -351,25 +358,25 @@ public class BvfEntityLoot extends VanillaEntityLoot {
                         .setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(BvfItems.KATSUWONUS_PELAMIS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.BLACK_CARP.get(), LootTable.lootTable()
+        this.add(BvfEntities.MYLOPHARYNGODON_PICEUS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.BLACK_CARP.get()))
+                        .add(LootItem.lootTableItem(BvfItems.MYLOPHARYNGODON_PICEUS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.GRASS_CARP.get(), LootTable.lootTable()
+        this.add(BvfEntities.CTENOPHARYNGODON_IDELLA.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.GRASS_CARP.get()))
+                        .add(LootItem.lootTableItem(BvfItems.CTENOPHARYNGODON_IDELLA.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.SILVER_CARP.get(), LootTable.lootTable()
+        this.add(BvfEntities.HYPOPHTHALMICHTHYS_MOLITRIX.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.SILVER_CARP.get()))
+                        .add(LootItem.lootTableItem(BvfItems.HYPOPHTHALMICHTHYS_MOLITRIX.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
-        this.add(BvfEntities.BIGHEAD_CARP.get(), LootTable.lootTable()
+        this.add(BvfEntities.HYPOPHTHALMICHTHYS_NOBILIS.get(), LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(BvfItems.BIGHEAD_CARP.get()))
+                        .add(LootItem.lootTableItem(BvfItems.HYPOPHTHALMICHTHYS_NOBILIS.get()))
                         .apply(SmeltItemFunction.smelted().when(shouldSmeltLoot()))));
     }
 

@@ -29,7 +29,7 @@ public class AlopiasTailAttackGoal extends MeleeAttackGoal {
     @Override
     public void start() {
         super.start();
-        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(4);
+        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(3);
     }
 
     @Override
@@ -41,7 +41,7 @@ public class AlopiasTailAttackGoal extends MeleeAttackGoal {
         }
 
         this.mob.setAggressive(false);
-        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(1);
+        this.mob.getAttribute(NeoForgeMod.SWIM_SPEED).setBaseValue(0.72);
     }
 
     @Override protected void resetAttackCooldown() { this.ticksUntilNextAttack = 45; }

@@ -26,12 +26,7 @@ import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.RawAnimation;
 
-import java.util.function.Predicate;
-
 public abstract class Lionfish extends BvfAbstractFish implements BvfEntity<Lionfish> {
-    private static final Predicate<LivingEntity> PREDATOR = entity ->
-            entity.getType().is(BvfTagKeys.PREDATOR) || entity.getType().is(BvfTagKeys.TOP_PREDATOR);
-
     private final GeneralAnimator<Lionfish> animator;
 
     protected Lionfish(EntityType<? extends AbstractFish> type, Level level) {
@@ -47,7 +42,25 @@ public abstract class Lionfish extends BvfAbstractFish implements BvfEntity<Lion
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(0, new AvoidEntityGoal<>(this, LivingEntity.class, 12.0F, 1.0D, 2.0D, PREDATOR::test));
+        this.goalSelector.getAvailableGoals().stream()
+                .map(goal -> goal.getGoal())
+                .filter(goal -> goal instanceof AvoidEntityGoal)
+                .toList()
+                .forEach(this.goalSelector::removeGoal);
+        this.goalSelector.addGoal(1, new AvoidEntityGoal<>(this, LivingEntity.class, 12.0F, 1.0D, 2.0D,
+                entity -> entity.getType().is(BvfTagKeys.PREDATOR) || entity.getType().is(BvfTagKeys.TOP_PREDATOR)) {
+            @Override
+            public void start() {
+                super.start();
+                this.mob.setSprinting(true);
+            }
+
+            @Override
+            public void stop() {
+                super.stop();
+                this.mob.setSprinting(false);
+            }
+        });
     }
 
     @Override

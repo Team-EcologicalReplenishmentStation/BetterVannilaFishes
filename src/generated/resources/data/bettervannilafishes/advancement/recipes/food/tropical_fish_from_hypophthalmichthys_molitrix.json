@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hypophthalmichthys_molitrix": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:hypophthalmichthys_molitrix"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:tropical_fish_from_hypophthalmichthys_molitrix"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hypophthalmichthys_molitrix"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:tropical_fish_from_hypophthalmichthys_molitrix"
+    ]
+  }
+}

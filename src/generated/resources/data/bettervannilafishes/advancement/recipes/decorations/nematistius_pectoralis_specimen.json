@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nematistius_pectoralis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:nematistius_pectoralis"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:nematistius_pectoralis_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nematistius_pectoralis"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:nematistius_pectoralis_specimen"
+    ]
+  }
+}

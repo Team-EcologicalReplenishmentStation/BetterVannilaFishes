@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:is_river",
+  "spawners": {
+    "type": "bettervannilafishes:takifugu_obscurus",
+    "maxCount": 4,
+    "minCount": 3,
+    "weight": 8
+  }
+}

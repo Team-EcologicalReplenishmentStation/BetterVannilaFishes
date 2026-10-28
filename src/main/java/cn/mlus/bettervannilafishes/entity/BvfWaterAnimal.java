@@ -12,6 +12,7 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
@@ -204,6 +205,18 @@ public abstract class BvfWaterAnimal extends WaterAnimal implements GeoEntity, B
                 this.stuckTicks = 0;
             }
             this.lastStuckPos = this.position();
+        }
+    }
+
+    @Override
+    public void travel(@NotNull Vec3 travelVector) {
+        if (this.isEffectiveAi() && this.isInWater()) {
+            this.moveRelative(this.getSpeed(), travelVector);
+            this.move(MoverType.SELF, this.getDeltaMovement());
+            // Water animals remain neutrally buoyant instead of slowly sinking.
+            this.setDeltaMovement(this.getDeltaMovement().scale(0.9D));
+        } else {
+            super.travel(travelVector);
         }
     }
 

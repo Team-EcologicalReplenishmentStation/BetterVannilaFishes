@@ -16,9 +16,9 @@ public class MixinCat {
         if (cir.getReturnValue()) return;
 
         Ingredient food = Ingredient.of(
-                BvfItems.HADDOCK_COD.get(),
-                BvfItems.PACIFIC_COD.get(),
-                BvfItems.ATLANTIC_COD.get(),
+                BvfItems.MELANOGRAMMUS_AEGLEFINUS.get(),
+                BvfItems.GADUS_MACROCEPHALUS.get(),
+                BvfItems.GADUS_MORHUA.get(),
                 BvfItems.MALE_SALMON.get(),
                 BvfItems.FEMALE_SALMON.get(),
                 BvfItems.PACIFIC_SALMON.get()

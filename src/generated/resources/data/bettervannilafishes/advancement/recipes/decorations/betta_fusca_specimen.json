@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_betta_fusca": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:betta_fusca"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:betta_fusca_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_betta_fusca"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:betta_fusca_specimen"
+    ]
+  }
+}

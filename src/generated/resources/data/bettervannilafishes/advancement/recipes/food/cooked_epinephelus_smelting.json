@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_epinephelus_melanostigma": {
+    "has_epinephelus_tukula": {
       "conditions": {
         "items": [
           {
-            "items": "bettervannilafishes:epinephelus_melanostigma"
+            "items": "bettervannilafishes:epinephelus_tukula"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_epinephelus_melanostigma"
+      "has_epinephelus_tukula"
     ]
   ],
   "rewards": {

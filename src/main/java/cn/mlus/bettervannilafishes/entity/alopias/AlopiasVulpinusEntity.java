@@ -7,7 +7,7 @@ import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
 import cn.mlus.bettervannilafishes.entity.alopias.ai.AlopiasFoodGoal;
 import cn.mlus.bettervannilafishes.entity.alopias.ai.AlopiasTailAttackGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
+import cn.mlus.bettervannilafishes.entity.galeocerdo.navigation.SharkNavigation;
 import cn.mlus.bettervannilafishes.init.BvfItems;
 import net.minecraft.Util;
 import net.minecraft.core.component.DataComponents;
@@ -91,11 +91,11 @@ public class AlopiasVulpinusEntity extends BvfWaterAnimal implements BvfEntity<A
 
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 32)
+                .add(Attributes.MAX_HEALTH, 60)
                 .add(Attributes.ATTACK_DAMAGE, 10)
                 .add(Attributes.MOVEMENT_SPEED, 1.2)
                 .add(Attributes.FOLLOW_RANGE, 32)
-                .add(NeoForgeMod.SWIM_SPEED, 1);
+                .add(NeoForgeMod.SWIM_SPEED, 0.72);
     }
 
     @Override

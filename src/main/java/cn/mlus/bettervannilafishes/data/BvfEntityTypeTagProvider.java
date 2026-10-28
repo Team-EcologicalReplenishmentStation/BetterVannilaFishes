@@ -21,40 +21,40 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(EntityTypeTags.CAN_BREATHE_UNDER_WATER).add(
-                BvfEntities.BVC_ATLANTIC_COD.get(),
-                BvfEntities.BVC_PACIFIC_COD.get(),
-                BvfEntities.BVC_HADDOCK_COD.get(),
+                BvfEntities.BVC_GADUS_MORHUA.get(),
+                BvfEntities.BVC_GADUS_MACROCEPHALUS.get(),
+                BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS.get(),
                 BvfEntities.BVC_SALMON_FEMALE.get(),
                 BvfEntities.BVC_SALMON_MALE.get(),
                 BvfEntities.BVC_SALMON_PACIFIC.get(),
-                BvfEntities.OBSCURE_PUFFER.get(),
-                BvfEntities.YELLOW_FIN_PUFFER.get(),
-                BvfEntities.NAUTILUS.get(),
-                BvfEntities.AUSTRALOHEROS_FACETUS.get(),
-                BvfEntities.CICHLASOMA_BIMACULATUM.get(),
-                BvfEntities.KROBIA_GUIANENSIS.get(),
-                BvfEntities.AEQUIDENS_TETRAMERUS.get(),
-                BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),
-                BvfEntities.ASTRONOTUS_OCELLATUS.get(),
+                BvfEntities.TAKIFUGU_OBSCURUS.get(),
+                BvfEntities.TAKIFUGU_XANTHOPTERUS.get(),
+                BvfEntities.NAUTILUS_POMPILIUS.get(),
+                BvfEntities.CICHLA_ORINOCENSIS.get(),
+                BvfEntities.CICHLA_PIQUITI.get(),
+                BvfEntities.CICHLA_JARIINA.get(),
+                BvfEntities.CICHLA_KELBERI.get(),
+                BvfEntities.CICHLA_PINIMA.get(),
+                BvfEntities.CICHLA_OCELLARIS.get(),
                 BvfEntities.AMPHIPRION_OCELLARIS.get(),
-                BvfEntities.PREMNAS_BIACULEATUS.get(),
+                BvfEntities.AMPHIPRION_FRENATUS.get(),
                 BvfEntities.AMPHIPRION_POLYMNUS.get(),
                 BvfEntities.AMPHIPRION_PERIDERAION.get(),
                 BvfEntities.AMPHIPRION_CLARKII.get(),
                 BvfEntities.AMPHIPRION_PERCULA.get(),
                 BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),
                 BvfEntities.EPINEPHELUS_ITAJARA.get(),
-                BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),
+                BvfEntities.EPINEPHELUS_TUKULA.get(),
                 BvfEntities.ACANTHURUS_ACHILLES.get(),
                 BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),
                 BvfEntities.PARACANTHURUS_HEPATUS.get(),
                 BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),
-                BvfEntities.ACANTHURUS_NIGRICANS.get(),
+                BvfEntities.ACANTHURUS_LEUCOPAREIUS.get(),
                 BvfEntities.ACANTHURUS_LINEATUS.get(),
                 BvfEntities.CHAETODON_STRIATUS.get(),
                 BvfEntities.CHAETODON_UNIMACULATUS.get(),
                 BvfEntities.CHAETODON_AURIGA.get(),
-                BvfEntities.CHAETODON_COLLARE.get(),
+                BvfEntities.CHAETODON_XANTHURUS.get(),
                 BvfEntities.CHAETODON_RETICULATUS.get(),
                 BvfEntities.CHAETODON_SPECULUM.get(),
                 BvfEntities.CHANNA_ARGUS.get(),
@@ -63,47 +63,47 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
         );
 
         this.tag(EntityTypeTags.NOT_SCARY_FOR_PUFFERFISH).add(
-                BvfEntities.NAUTILUS.get(),
-                BvfEntities.PORCUPINE_FISH.get(),
-                BvfEntities.OBSCURE_PUFFER.get(),
-                BvfEntities.YELLOW_FIN_PUFFER.get(),
-                BvfEntities.BVC_ATLANTIC_COD.get(),
-                BvfEntities.BVC_PACIFIC_COD.get(),
-                BvfEntities.BVC_HADDOCK_COD.get(),
+                BvfEntities.NAUTILUS_POMPILIUS.get(),
+                BvfEntities.DIODON_HOLOCANTHUS.get(),
+                BvfEntities.TAKIFUGU_OBSCURUS.get(),
+                BvfEntities.TAKIFUGU_XANTHOPTERUS.get(),
+                BvfEntities.BVC_GADUS_MORHUA.get(),
+                BvfEntities.BVC_GADUS_MACROCEPHALUS.get(),
+                BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS.get(),
                 BvfEntities.BVC_SALMON_FEMALE.get(),
                 BvfEntities.BVC_SALMON_MALE.get(),
                 BvfEntities.BVC_SALMON_PACIFIC.get(),
-                BvfEntities.AUSTRALOHEROS_FACETUS.get(),
-                BvfEntities.CICHLASOMA_BIMACULATUM.get(),
-                BvfEntities.KROBIA_GUIANENSIS.get(),
-                BvfEntities.AEQUIDENS_TETRAMERUS.get(),
-                BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),
-                BvfEntities.ASTRONOTUS_OCELLATUS.get(),
+                BvfEntities.CICHLA_ORINOCENSIS.get(),
+                BvfEntities.CICHLA_PIQUITI.get(),
+                BvfEntities.CICHLA_JARIINA.get(),
+                BvfEntities.CICHLA_KELBERI.get(),
+                BvfEntities.CICHLA_PINIMA.get(),
+                BvfEntities.CICHLA_OCELLARIS.get(),
                 BvfEntities.AMPHIPRION_OCELLARIS.get(),
-                BvfEntities.PREMNAS_BIACULEATUS.get(),
+                BvfEntities.AMPHIPRION_FRENATUS.get(),
                 BvfEntities.AMPHIPRION_POLYMNUS.get(),
                 BvfEntities.AMPHIPRION_PERIDERAION.get(),
                 BvfEntities.AMPHIPRION_CLARKII.get(),
                 BvfEntities.AMPHIPRION_PERCULA.get(),
                 BvfEntities.EPINEPHELUS_LANCEOLATUS.get(),
                 BvfEntities.EPINEPHELUS_ITAJARA.get(),
-                BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),
+                BvfEntities.EPINEPHELUS_TUKULA.get(),
                 BvfEntities.ACANTHURUS_ACHILLES.get(),
                 BvfEntities.ACANTHURUS_LEUCOSTERNON.get(),
                 BvfEntities.PARACANTHURUS_HEPATUS.get(),
                 BvfEntities.ACANTHURUS_TRIOSTEGUS.get(),
-                BvfEntities.ACANTHURUS_NIGRICANS.get(),
+                BvfEntities.ACANTHURUS_LEUCOPAREIUS.get(),
                 BvfEntities.ACANTHURUS_LINEATUS.get(),
                 BvfEntities.CHAETODON_STRIATUS.get(),
                 BvfEntities.CHAETODON_UNIMACULATUS.get(),
                 BvfEntities.CHAETODON_AURIGA.get(),
-                BvfEntities.CHAETODON_COLLARE.get(),
+                BvfEntities.CHAETODON_XANTHURUS.get(),
                 BvfEntities.CHAETODON_RETICULATUS.get(),
                 BvfEntities.CHAETODON_SPECULUM.get()
         );
 
-        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.SPEARFISH.get());
-        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.ROOSTERFISH.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.KAJIKIA_AUDAX.get());
+        this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.NEMATISTIUS_PECTORALIS.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.DOSIDICUS_GIGAS.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_MICROPELTES.get());
         this.tag(BvfTagKeys.PREDATOR).add(BvfEntities.CHANNA_ARGUS.get());
@@ -113,63 +113,63 @@ public class BvfEntityTypeTagProvider extends EntityTypeTagsProvider {
                 .add(BvfEntities.GALEOCERDO_CUVIER.get())
                 .add(BvfEntities.EPINEPHELUS_LANCEOLATUS.get())
                 .add(BvfEntities.EPINEPHELUS_ITAJARA.get())
-                .add(BvfEntities.EPINEPHELUS_MELANOSTIGMA.get())
+                .add(BvfEntities.EPINEPHELUS_TUKULA.get())
                 .add(BvfEntities.HUSO_DAURICUS.get());
 
         this.tag(EntityTypeTags.AXOLOTL_HUNT_TARGETS)
-                .add(BvfEntities.BVC_HADDOCK_COD.get())
-                .add(BvfEntities.BVC_ATLANTIC_COD.get())
-                .add(BvfEntities.BVC_PACIFIC_COD.get())
+                .add(BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS.get())
+                .add(BvfEntities.BVC_GADUS_MORHUA.get())
+                .add(BvfEntities.BVC_GADUS_MACROCEPHALUS.get())
                 .add(BvfEntities.BVC_SALMON_MALE.get())
                 .add(BvfEntities.BVC_SALMON_FEMALE.get())
                 .add(BvfEntities.BVC_SALMON_PACIFIC.get())
-                .add(BvfEntities.YELLOW_FIN_PUFFER.get())
-                .add(BvfEntities.OBSCURE_PUFFER.get())
-                .add(BvfEntities.PORCUPINE_FISH.get())
+                .add(BvfEntities.TAKIFUGU_XANTHOPTERUS.get())
+                .add(BvfEntities.TAKIFUGU_OBSCURUS.get())
+                .add(BvfEntities.DIODON_HOLOCANTHUS.get())
                 .add(BvfEntities.ACANTHURUS_ACHILLES.get())
                 .add(BvfEntities.ACANTHURUS_LEUCOSTERNON.get())
                 .add(BvfEntities.ACANTHURUS_LINEATUS.get())
-                .add(BvfEntities.ACANTHURUS_NIGRICANS.get())
+                .add(BvfEntities.ACANTHURUS_LEUCOPAREIUS.get())
                 .add(BvfEntities.ACANTHURUS_TRIOSTEGUS.get())
                 .add(BvfEntities.PARACANTHURUS_HEPATUS.get())
                 .add(BvfEntities.CHAETODON_STRIATUS.get())
                 .add(BvfEntities.CHAETODON_UNIMACULATUS.get())
                 .add(BvfEntities.CHAETODON_AURIGA.get())
-                .add(BvfEntities.CHAETODON_COLLARE.get())
+                .add(BvfEntities.CHAETODON_XANTHURUS.get())
                 .add(BvfEntities.CHAETODON_RETICULATUS.get())
                 .add(BvfEntities.CHAETODON_SPECULUM.get())
-                .add(BvfEntities.AUSTRALOHEROS_FACETUS.get())
-                .add(BvfEntities.CICHLASOMA_BIMACULATUM.get())
-                .add(BvfEntities.KROBIA_GUIANENSIS.get())
-                .add(BvfEntities.AEQUIDENS_TETRAMERUS.get())
-                .add(BvfEntities.GYMNOGEOPHAGUS_BALZANII.get())
-                .add(BvfEntities.ASTRONOTUS_OCELLATUS.get())
+                .add(BvfEntities.CICHLA_ORINOCENSIS.get())
+                .add(BvfEntities.CICHLA_JARIINA.get())
+                .add(BvfEntities.CICHLA_KELBERI.get())
+                .add(BvfEntities.CICHLA_PIQUITI.get())
+                .add(BvfEntities.CICHLA_PINIMA.get())
+                .add(BvfEntities.CICHLA_OCELLARIS.get())
                 .add(BvfEntities.CHANNA_MICROPELTES.get())
                 .add(BvfEntities.CHANNA_ARGUS.get())
                 .add(BvfEntities.ELOPICHTHYS_BAMBUSA.get())
                 .add(BvfEntities.AMPHIPRION_OCELLARIS.get())
-                .add(BvfEntities.PREMNAS_BIACULEATUS.get())
+                .add(BvfEntities.AMPHIPRION_BIACULEATUS.get())
                 .add(BvfEntities.AMPHIPRION_POLYMNUS.get())
+                .add(BvfEntities.AMPHIPRION_THIELLEI.get())
+                .add(BvfEntities.AMPHIPRION_PERCULA.get())
                 .add(BvfEntities.AMPHIPRION_PERIDERAION.get())
                 .add(BvfEntities.AMPHIPRION_CLARKII.get())
-                .add(BvfEntities.AMPHIPRION_PERCULA.get())
-                .add(BvfEntities.AMPHIPRION_AKINDYNOS.get())
                 .add(BvfEntities.AMPHIPRION_BICINCTUS.get())
-                .add(BvfEntities.AMPHIPRION_CHRYSOGASTER.get())
+                .add(BvfEntities.AMPHIPRION_EPHIPPIUM.get())
                 .add(BvfEntities.AMPHIPRION_CHRYSOPTERUS.get())
-                .add(BvfEntities.AMPHIPRION_LATEZONATUS.get())
+                .add(BvfEntities.AMPHIPRION_FRENATUS.get())
                 .add(BvfEntities.AMPHIPRION_MCCULLOCHI.get())
                 .add(BvfEntities.AMPHIPRION_MELANOPUS.get())
                 .add(BvfEntities.AMPHIPRION_TRICINCTUS.get())
                 .add(BvfEntities.BETTA_SPLENDENS.get())
-                .add(BvfEntities.BETTA_IMBELLIS.get())
+                .add(BvfEntities.BETTA_SIAMORIENTALIS.get())
                 .add(BvfEntities.BETTA_SMARAGDINA.get())
                 .add(BvfEntities.BETTA_PICTA.get())
                 .add(BvfEntities.BETTA_SIMPLEX.get())
-                .add(BvfEntities.BETTA_BROWNORUM.get())
-                .add(BvfEntities.BLACK_CARP.get())
-                .add(BvfEntities.GRASS_CARP.get())
-                .add(BvfEntities.SILVER_CARP.get())
-                .add(BvfEntities.BIGHEAD_CARP.get());
+                .add(BvfEntities.BETTA_FUSCA.get())
+                .add(BvfEntities.MYLOPHARYNGODON_PICEUS.get())
+                .add(BvfEntities.CTENOPHARYNGODON_IDELLA.get())
+                .add(BvfEntities.HYPOPHTHALMICHTHYS_MOLITRIX.get())
+                .add(BvfEntities.HYPOPHTHALMICHTHYS_NOBILIS.get());
     }
 }

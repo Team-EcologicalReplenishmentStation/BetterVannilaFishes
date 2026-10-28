@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hypophthalmichthys_nobilis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:hypophthalmichthys_nobilis"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:cooked_hypophthalmichthys_nobilis_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hypophthalmichthys_nobilis"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:cooked_hypophthalmichthys_nobilis_campfire_cooking"
+    ]
+  }
+}

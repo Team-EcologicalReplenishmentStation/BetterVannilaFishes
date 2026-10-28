@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pterois_radiata_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bettervannilafishes:pterois_radiata_bucket"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bettervannilafishes:pterois_radiata_specimen"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pterois_radiata_bucket"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bettervannilafishes:pterois_radiata_specimen"
+    ]
+  }
+}

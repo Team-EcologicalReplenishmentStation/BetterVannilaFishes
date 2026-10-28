@@ -21,23 +21,23 @@ public class BvfItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(
             BetterVannilaFishes.MODID);
     //Bucket
-    public static final DeferredHolder<Item,Item> HADDOCK_COD_BUCKET = ITEMS.register("haddock_cod_bucket",
+    public static final DeferredHolder<Item,Item> MELANOGRAMMUS_AEGLEFINUS_BUCKET = ITEMS.register("melanogrammus_aeglefinus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.BVC_HADDOCK_COD.get(),
+                    BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> ATLANTIC_COD_BUCKET = ITEMS.register("atlantic_cod_bucket",
+    public static final DeferredHolder<Item,Item> GADUS_MORHUA_BUCKET = ITEMS.register("gadus_morhua_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.BVC_ATLANTIC_COD.get(),
+                    BvfEntities.BVC_GADUS_MORHUA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> PACIFIC_COD_BUCKET = ITEMS.register("pacific_cod_bucket",
+    public static final DeferredHolder<Item,Item> GADUS_MACROCEPHALUS_BUCKET = ITEMS.register("gadus_macrocephalus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.BVC_PACIFIC_COD.get(),
+                    BvfEntities.BVC_GADUS_MACROCEPHALUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -63,63 +63,83 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER_BUCKET = ITEMS.register("yellow_fin_puffer_bucket",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_XANTHOPTERUS_BUCKET = ITEMS.register("takifugu_xanthopterus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.YELLOW_FIN_PUFFER.get(),
+                    BvfEntities.TAKIFUGU_XANTHOPTERUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> OBSCURE_PUFFER_BUCKET = ITEMS.register("obscure_puffer_bucket",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_OBSCURUS_BUCKET = ITEMS.register("takifugu_obscurus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.OBSCURE_PUFFER.get(),
+                    BvfEntities.TAKIFUGU_OBSCURUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_BUCKET = ITEMS.register("soaring_lionfish_bucket",
-            () -> new MobBucketItem(BvfEntities.SOARING_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_BUCKET = ITEMS.register("ringed_lionfish_bucket",
-            () -> new MobBucketItem(BvfEntities.RINGED_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_BUCKET = ITEMS.register("radiant_lionfish_bucket",
-            () -> new MobBucketItem(BvfEntities.RADIANT_LIONFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> PORCUPINE_FISH_BUCKET = ITEMS.register("porcupine_fish_bucket",
+    public static final DeferredHolder<Item,Item> PTEROIS_VOLITANS_BUCKET = ITEMS.register("pterois_volitans_bucket",
+            () -> new MobBucketItem(BvfEntities.PTEROIS_VOLITANS.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PTEROIS_LUNULATA_BUCKET = ITEMS.register("pterois_lunulata_bucket",
+            () -> new MobBucketItem(BvfEntities.PTEROIS_LUNULATA.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PTEROIS_RADIATA_BUCKET = ITEMS.register("pterois_radiata_bucket",
+            () -> new MobBucketItem(BvfEntities.PTEROIS_RADIATA.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> DIODON_HOLOCANTHUS_BUCKET = ITEMS.register("diodon_holocanthus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.PORCUPINE_FISH.get(),
+                    BvfEntities.DIODON_HOLOCANTHUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> NAUTILUS_BUCKET = ITEMS.register("nautilus_bucket",
+    public static final DeferredHolder<Item,Item> NAUTILUS_POMPILIUS_BUCKET = ITEMS.register("nautilus_pompilius_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.NAUTILUS.get(),
+                    BvfEntities.NAUTILUS_POMPILIUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> FEATHER_STAR_BUCKET = ITEMS.register("feather_star_bucket",
+    public static final DeferredHolder<Item,Item> COMATULIDA_BUCKET = ITEMS.register("comatulida_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.FEATHER_STAR.get(),
+                    BvfEntities.COMATULIDA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
     public static final DeferredHolder<Item,Item> ZHIKONG_SCALLOP_BUCKET = ITEMS.register("zhikong_scallop_bucket",
-            () -> new MobBucketItem(BvfEntities.ZHIKONG_SCALLOP.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> BAY_SCALLOP_BUCKET = ITEMS.register("bay_scallop_bucket",
-            () -> new MobBucketItem(BvfEntities.BAY_SCALLOP.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> YESSO_SCALLOP_BUCKET = ITEMS.register("yesso_scallop_bucket",
-            () -> new MobBucketItem(BvfEntities.YESSO_SCALLOP.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> SPEARFISH_BUCKET = ITEMS.register("spearfish_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.SPEARFISH.get(),
+                    BvfEntities.ZHIKONG_SCALLOP.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> ROOSTERFISH_BUCKET = ITEMS.register("roosterfish_bucket",
-            () -> new MobBucketItem(BvfEntities.ROOSTERFISH.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
-    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER_BUCKET = ITEMS.register("galeocerdo_cuvier_bucket",
+    public static final DeferredHolder<Item,Item> BAY_SCALLOP_BUCKET = ITEMS.register("bay_scallop_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.BAY_SCALLOP.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> YESSO_SCALLOP_BUCKET = ITEMS.register("yesso_scallop_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.YESSO_SCALLOP.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> KAJIKIA_AUDAX_BUCKET = ITEMS.register("kajikia_audax_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.KAJIKIA_AUDAX.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> NEMATISTIUS_PECTORALIS_BUCKET = ITEMS.register("nematistius_pectoralis_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.NEMATISTIUS_PECTORALIS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> GALEOCERDO_CUVIER_BUCKET = ITEMS.register("galeocerdo_cuvier_bucket",
             () -> new MobBucketItem(
                     BvfEntities.GALEOCERDO_CUVIER.get(),
                     Fluids.WATER,
@@ -157,9 +177,16 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_BUCKET = ITEMS.register("epinephelus_melanostigma_bucket",
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_TUKULA_BUCKET = ITEMS.register("epinephelus_tukula_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.EPINEPHELUS_MELANOSTIGMA.get(),
+                    BvfEntities.EPINEPHELUS_TUKULA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> DOSIDICUS_GIGAS_BUCKET = ITEMS.register("dosidicus_gigas_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.DOSIDICUS_GIGAS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -192,9 +219,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS_BUCKET = ITEMS.register("acanthurus_nigricans_bucket",
+    public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOPAREIUS_BUCKET = ITEMS.register("acanthurus_leucopareius_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.ACANTHURUS_NIGRICANS.get(),
+                    BvfEntities.ACANTHURUS_LEUCOPAREIUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -227,9 +254,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE_BUCKET = ITEMS.register("chaetodon_collare_bucket",
+    public static final DeferredHolder<Item,Item> CHAETODON_XANTHURUS_BUCKET = ITEMS.register("chaetodon_xanthurus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.CHAETODON_COLLARE.get(),
+                    BvfEntities.CHAETODON_XANTHURUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -248,44 +275,44 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_BUCKET = ITEMS.register("australoheros_facetus_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_ORINOCENSIS_BUCKET = ITEMS.register("cichla_orinocensis_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.AUSTRALOHEROS_FACETUS.get(),
+                    BvfEntities.CICHLA_ORINOCENSIS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM_BUCKET = ITEMS.register("cichlasoma_bimaculatum_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_JARIINA_BUCKET = ITEMS.register("cichla_jariina_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.CICHLASOMA_BIMACULATUM.get(),
+                    BvfEntities.CICHLA_JARIINA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> KROBIA_GUIANENSIS_BUCKET = ITEMS.register("krobia_guianensis_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_KELBERI_BUCKET = ITEMS.register("cichla_kelberi_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.KROBIA_GUIANENSIS.get(),
+                    BvfEntities.CICHLA_KELBERI.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> AEQUIDENS_TETRAMERUS_BUCKET = ITEMS.register("aequidens_tetramerus_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_PIQUITI_BUCKET = ITEMS.register("cichla_piquiti_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.AEQUIDENS_TETRAMERUS.get(),
+                    BvfEntities.CICHLA_PIQUITI.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> GYMNOGEOPHAGUS_BALZANII_BUCKET = ITEMS.register("gymnogeophagus_balzanii_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_PINIMA_BUCKET = ITEMS.register("cichla_pinima_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.GYMNOGEOPHAGUS_BALZANII.get(),
+                    BvfEntities.CICHLA_PINIMA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> ASTRONOTUS_OCELLATUS_BUCKET = ITEMS.register("astronotus_ocellatus_bucket",
+    public static final DeferredHolder<Item,Item> CICHLA_OCELLARIS_BUCKET = ITEMS.register("cichla_ocellaris_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.ASTRONOTUS_OCELLATUS.get(),
+                    BvfEntities.CICHLA_OCELLARIS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -311,6 +338,48 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
+    public static final DeferredHolder<Item,Item> HUSO_DAURICUS_BUCKET = ITEMS.register("huso_dauricus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.HUSO_DAURICUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> MYLOPHARYNGODON_PICEUS_BUCKET = ITEMS.register("mylopharyngodon_piceus_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.MYLOPHARYNGODON_PICEUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> CTENOPHARYNGODON_IDELLA_BUCKET = ITEMS.register("ctenopharyngodon_idella_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.CTENOPHARYNGODON_IDELLA.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_MOLITRIX_BUCKET = ITEMS.register("hypophthalmichthys_molitrix_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.HYPOPHTHALMICHTHYS_MOLITRIX.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_NOBILIS_BUCKET = ITEMS.register("hypophthalmichthys_nobilis_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.HYPOPHTHALMICHTHYS_NOBILIS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS_BUCKET = ITEMS.register("katsuwonus_pelamis_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.KATSUWONUS_PELAMIS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS_BUCKET = ITEMS.register("amphiprion_ocellaris_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_OCELLARIS.get(),
@@ -318,9 +387,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> PREMNAS_BIACULEATUS_BUCKET = ITEMS.register("premnas_biaculeatus_bucket",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_BIACULEATUS_BUCKET = ITEMS.register("amphiprion_biaculeatus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.PREMNAS_BIACULEATUS.get(),
+                    BvfEntities.AMPHIPRION_BIACULEATUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -328,6 +397,20 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> AMPHIPRION_POLYMNUS_BUCKET = ITEMS.register("amphiprion_polymnus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_POLYMNUS.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_THIELLEI_BUCKET = ITEMS.register("amphiprion_thiellei_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_THIELLEI.get(),
+                    Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)
+            ));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_BUCKET = ITEMS.register("amphiprion_percula_bucket",
+            () -> new MobBucketItem(
+                    BvfEntities.AMPHIPRION_PERCULA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -346,69 +429,6 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_BUCKET = ITEMS.register("amphiprion_percula_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.AMPHIPRION_PERCULA.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> DOSIDICUS_GIGAS_BUCKET = ITEMS.register("dosidicus_gigas_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.DOSIDICUS_GIGAS.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> HUSO_DAURICUS_BUCKET = ITEMS.register("huso_dauricus_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.HUSO_DAURICUS.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> BLACK_CARP_BUCKET = ITEMS.register("black_carp_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.BLACK_CARP.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> GRASS_CARP_BUCKET = ITEMS.register("grass_carp_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.GRASS_CARP.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> SILVER_CARP_BUCKET = ITEMS.register("silver_carp_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.SILVER_CARP.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_BUCKET = ITEMS.register("bighead_carp_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.BIGHEAD_CARP.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS_BUCKET = ITEMS.register("katsuwonus_pelamis_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.KATSUWONUS_PELAMIS.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS_BUCKET = ITEMS.register("amphiprion_akindynos_bucket",
-            () -> new MobBucketItem(
-                    BvfEntities.AMPHIPRION_AKINDYNOS.get(),
-                    Fluids.WATER,
-                    SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)
-            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_BICINCTUS_BUCKET = ITEMS.register("amphiprion_bicinctus_bucket",
             () -> new MobBucketItem(
                     BvfEntities.AMPHIPRION_BICINCTUS.get(),
@@ -416,9 +436,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOGASTER_BUCKET = ITEMS.register("amphiprion_chrysogaster_bucket",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_EPHIPPIUM_BUCKET = ITEMS.register("amphiprion_ephippium_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.AMPHIPRION_CHRYSOGASTER.get(),
+                    BvfEntities.AMPHIPRION_EPHIPPIUM.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -430,9 +450,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_LATEZONATUS_BUCKET = ITEMS.register("amphiprion_latezonatus_bucket",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_FRENATUS_BUCKET = ITEMS.register("amphiprion_frenatus_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.AMPHIPRION_LATEZONATUS.get(),
+                    BvfEntities.AMPHIPRION_FRENATUS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -465,9 +485,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> BETTA_IMBELLIS_BUCKET = ITEMS.register("betta_imbellis_bucket",
+    public static final DeferredHolder<Item,Item> BETTA_SIAMORIENTALIS_BUCKET = ITEMS.register("betta_siamorientalis_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.BETTA_IMBELLIS.get(),
+                    BvfEntities.BETTA_SIAMORIENTALIS.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -493,9 +513,9 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    public static final DeferredHolder<Item,Item> BETTA_BROWNORUM_BUCKET = ITEMS.register("betta_brownorum_bucket",
+    public static final DeferredHolder<Item,Item> BETTA_FUSCA_BUCKET = ITEMS.register("betta_fusca_bucket",
             () -> new MobBucketItem(
-                    BvfEntities.BETTA_BROWNORUM.get(),
+                    BvfEntities.BETTA_FUSCA.get(),
                     Fluids.WATER,
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
@@ -507,24 +527,24 @@ public class BvfItems {
                     SoundEvents.BUCKET_EMPTY_FISH,
                     new Item.Properties().stacksTo(1)
             ));
-    //Spawn Egg
-    public static final DeferredHolder<Item,Item> HADDOCK_COD_SPAWN_EGG = ITEMS.register("haddock_cod_spawn_egg",
+    //Spawn Egg backgroundColor should always be 0xFFFFFF and highlightColor should always be 0x000000.
+    public static final DeferredHolder<Item,Item> MELANOGRAMMUS_AEGLEFINUS_SPAWN_EGG = ITEMS.register("melanogrammus_aeglefinus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.BVC_HADDOCK_COD,
+                    BvfEntities.BVC_MELANOGRAMMUS_AEGLEFINUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> ATLANTIC_COD_SPAWN_EGG = ITEMS.register("atlantic_cod_spawn_egg",
+    public static final DeferredHolder<Item,Item> GADUS_MORHUA_SPAWN_EGG = ITEMS.register("gadus_morhua_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.BVC_ATLANTIC_COD,
+                    BvfEntities.BVC_GADUS_MORHUA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> PACIFIC_COD_SPAWN_EGG = ITEMS.register("pacific_cod_spawn_egg",
+    public static final DeferredHolder<Item,Item> GADUS_MACROCEPHALUS_SPAWN_EGG = ITEMS.register("gadus_macrocephalus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.BVC_PACIFIC_COD,
+                    BvfEntities.BVC_GADUS_MACROCEPHALUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -550,63 +570,106 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER_SPAWN_EGG = ITEMS.register("yellow_fin_puffer_spawn_egg",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_XANTHOPTERUS_SPAWN_EGG = ITEMS.register("takifugu_xanthopterus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.YELLOW_FIN_PUFFER,
+                    BvfEntities.TAKIFUGU_XANTHOPTERUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> OBSCURE_PUFFER_SPAWN_EGG = ITEMS.register("obscure_puffer_spawn_egg",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_OBSCURUS_SPAWN_EGG = ITEMS.register("takifugu_obscurus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.OBSCURE_PUFFER,
+                    BvfEntities.TAKIFUGU_OBSCURUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_SPAWN_EGG = ITEMS.register("soaring_lionfish_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.SOARING_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_SPAWN_EGG = ITEMS.register("ringed_lionfish_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.RINGED_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_SPAWN_EGG = ITEMS.register("radiant_lionfish_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.RADIANT_LIONFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> PORCUPINE_FISH_SPAWN_EGG = ITEMS.register("porcupine_fish_spawn_egg",
+    public static final DeferredHolder<Item,Item> PTEROIS_VOLITANS_SPAWN_EGG = ITEMS.register("pterois_volitans_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.PORCUPINE_FISH,
+                    BvfEntities.PTEROIS_VOLITANS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> NAUTILUS_SPAWN_EGG = ITEMS.register("nautilus_spawn_egg",
+    public static final DeferredHolder<Item,Item> PTEROIS_LUNULATA_SPAWN_EGG = ITEMS.register("pterois_lunulata_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.NAUTILUS,
+                    BvfEntities.PTEROIS_LUNULATA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> FEATHER_STAR_SPAWN_EGG = ITEMS.register("feather_star_spawn_egg",
+    public static final DeferredHolder<Item,Item> PTEROIS_RADIATA_SPAWN_EGG = ITEMS.register("pterois_radiata_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.FEATHER_STAR,
+                    BvfEntities.PTEROIS_RADIATA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> DERMOCHELYS_CORIACEA_SPAWN_EGG = ITEMS.register("dermochelys_coriacea_spawn_egg",
+            () -> new DeferredSpawnEggItem(BvfEntities.DERMOCHELYS_CORIACEA, 0x292D32, 0xA9A49B, new Item.Properties()));
+    public static final DeferredHolder<Item,Item> DERMOCHELYS_CORIACEA_BUCKET = ITEMS.register("dermochelys_coriacea_bucket",
+            () -> new MobBucketItem(BvfEntities.DERMOCHELYS_CORIACEA.get(), Fluids.WATER,
+                    SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> DERMOCHELYS_CORIACEA = ITEMS.register("dermochelys_coriacea",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3).saturationModifier(0.3F).build())));
+    public static final DeferredHolder<Item,Item> DIODON_HOLOCANTHUS_SPAWN_EGG = ITEMS.register("diodon_holocanthus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.DIODON_HOLOCANTHUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> NAUTILUS_POMPILIUS_SPAWN_EGG = ITEMS.register("nautilus_pompilius_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.NAUTILUS_POMPILIUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> COMATULIDA_SPAWN_EGG = ITEMS.register("comatulida_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.COMATULIDA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> ZHIKONG_SCALLOP_SPAWN_EGG = ITEMS.register("zhikong_scallop_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.ZHIKONG_SCALLOP, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> BAY_SCALLOP_SPAWN_EGG = ITEMS.register("bay_scallop_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.BAY_SCALLOP, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> YESSO_SCALLOP_SPAWN_EGG = ITEMS.register("yesso_scallop_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.YESSO_SCALLOP, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final DeferredHolder<Item,Item> SPEARFISH_SPAWN_EGG = ITEMS.register("spearfish_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.SPEARFISH,
+                    BvfEntities.ZHIKONG_SCALLOP,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> ROOSTERFISH_SPAWN_EGG = ITEMS.register("roosterfish_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.ROOSTERFISH, 0xFFFFFF, 0x000000, new Item.Properties()));
-    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER_SPAWN_EGG = ITEMS.register("galeocerdo_cuvier_spawn_egg",
+    public static final DeferredHolder<Item,Item> BAY_SCALLOP_SPAWN_EGG = ITEMS.register("bay_scallop_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.BAY_SCALLOP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> YESSO_SCALLOP_SPAWN_EGG = ITEMS.register("yesso_scallop_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.YESSO_SCALLOP,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> KAJIKIA_AUDAX_SPAWN_EGG = ITEMS.register("kajikia_audax_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.KAJIKIA_AUDAX,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> NEMATISTIUS_PECTORALIS_SPAWN_EGG = ITEMS.register("nematistius_pectoralis_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.NEMATISTIUS_PECTORALIS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> GALEOCERDO_CUVIER_SPAWN_EGG = ITEMS.register("galeocerdo_cuvier_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.GALEOCERDO_CUVIER,
                     0xFFFFFF,
@@ -614,7 +677,12 @@ public class BvfItems {
                     new Item.Properties()
             ));
     public static final DeferredHolder<Item,Item> ALOPIAS_VULPINUS_SPAWN_EGG = ITEMS.register("alopias_vulpinus_spawn_egg",
-            () -> new DeferredSpawnEggItem(BvfEntities.ALOPIAS_VULPINUS, 0xFFFFFF, 0x000000, new Item.Properties()));
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.ALOPIAS_VULPINUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> NEGAPRION_ACUTIDENS_SPAWN_EGG = ITEMS.register("negaprion_acutidens_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.NEGAPRION_ACUTIDENS,
@@ -643,9 +711,16 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_SPAWN_EGG = ITEMS.register("epinephelus_melanostigma_spawn_egg",
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_TUKULA_SPAWN_EGG = ITEMS.register("epinephelus_tukula_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.EPINEPHELUS_MELANOSTIGMA,
+                    BvfEntities.EPINEPHELUS_TUKULA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> DOSIDICUS_GIGAS_SPAWN_EGG = ITEMS.register("dosidicus_gigas_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.DOSIDICUS_GIGAS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -678,9 +753,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS_SPAWN_EGG = ITEMS.register("acanthurus_nigricans_spawn_egg",
+    public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOPAREIUS_SPAWN_EGG = ITEMS.register("acanthurus_leucopareius_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.ACANTHURUS_NIGRICANS,
+                    BvfEntities.ACANTHURUS_LEUCOPAREIUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -713,9 +788,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE_SPAWN_EGG = ITEMS.register("chaetodon_collare_spawn_egg",
+    public static final DeferredHolder<Item,Item> CHAETODON_XANTHURUS_SPAWN_EGG = ITEMS.register("chaetodon_xanthurus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.CHAETODON_COLLARE,
+                    BvfEntities.CHAETODON_XANTHURUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -734,44 +809,44 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_SPAWN_EGG = ITEMS.register("australoheros_facetus_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_ORINOCENSIS_SPAWN_EGG = ITEMS.register("cichla_orinocensis_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.AUSTRALOHEROS_FACETUS,
+                    BvfEntities.CICHLA_ORINOCENSIS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM_SPAWN_EGG = ITEMS.register("cichlasoma_bimaculatum_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_JARIINA_SPAWN_EGG = ITEMS.register("cichla_jariina_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.CICHLASOMA_BIMACULATUM,
+                    BvfEntities.CICHLA_JARIINA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> KROBIA_GUIANENSIS_SPAWN_EGG = ITEMS.register("krobia_guianensis_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_KELBERI_SPAWN_EGG = ITEMS.register("cichla_kelberi_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.KROBIA_GUIANENSIS,
+                    BvfEntities.CICHLA_KELBERI,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> AEQUIDENS_TETRAMERUS_SPAWN_EGG = ITEMS.register("aequidens_tetramerus_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_PIQUITI_SPAWN_EGG = ITEMS.register("cichla_piquiti_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.AEQUIDENS_TETRAMERUS,
+                    BvfEntities.CICHLA_PIQUITI,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> GYMNOGEOPHAGUS_BALZANII_SPAWN_EGG = ITEMS.register("gymnogeophagus_balzanii_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_PINIMA_SPAWN_EGG = ITEMS.register("cichla_pinima_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.GYMNOGEOPHAGUS_BALZANII,
+                    BvfEntities.CICHLA_PINIMA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> ASTRONOTUS_OCELLATUS_SPAWN_EGG = ITEMS.register("astronotus_ocellatus_spawn_egg",
+    public static final DeferredHolder<Item,Item> CICHLA_OCELLARIS_SPAWN_EGG = ITEMS.register("cichla_ocellaris_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.ASTRONOTUS_OCELLATUS,
+                    BvfEntities.CICHLA_OCELLARIS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -797,6 +872,13 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> HUSO_DAURICUS_SPAWN_EGG = ITEMS.register("huso_dauricus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.HUSO_DAURICUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS_SPAWN_EGG = ITEMS.register("amphiprion_ocellaris_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AMPHIPRION_OCELLARIS,
@@ -804,9 +886,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> PREMNAS_BIACULEATUS_SPAWN_EGG = ITEMS.register("premnas_biaculeatus_spawn_egg",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_BIACULEATUS_SPAWN_EGG = ITEMS.register("amphiprion_biaculeatus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.PREMNAS_BIACULEATUS,
+                    BvfEntities.AMPHIPRION_BIACULEATUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -814,6 +896,20 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> AMPHIPRION_POLYMNUS_SPAWN_EGG = ITEMS.register("amphiprion_polymnus_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AMPHIPRION_POLYMNUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_THIELLEI_SPAWN_EGG = ITEMS.register("amphiprion_thiellei_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.AMPHIPRION_THIELLEI,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_SPAWN_EGG = ITEMS.register("amphiprion_percula_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.AMPHIPRION_PERCULA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -832,62 +928,6 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_SPAWN_EGG = ITEMS.register("amphiprion_percula_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.AMPHIPRION_PERCULA,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> DOSIDICUS_GIGAS_SPAWN_EGG = ITEMS.register("dosidicus_gigas_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.DOSIDICUS_GIGAS,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> HUSO_DAURICUS_SPAWN_EGG = ITEMS.register("huso_dauricus_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.HUSO_DAURICUS,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> BLACK_CARP_SPAWN_EGG = ITEMS.register("black_carp_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.BLACK_CARP,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> GRASS_CARP_SPAWN_EGG = ITEMS.register("grass_carp_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.GRASS_CARP,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> SILVER_CARP_SPAWN_EGG = ITEMS.register("silver_carp_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.SILVER_CARP,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_SPAWN_EGG = ITEMS.register("bighead_carp_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.BIGHEAD_CARP,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS_SPAWN_EGG = ITEMS.register("amphiprion_akindynos_spawn_egg",
-            () -> new DeferredSpawnEggItem(
-                    BvfEntities.AMPHIPRION_AKINDYNOS,
-                    0xFFFFFF,
-                    0x000000,
-                    new Item.Properties()
-            ));
     public static final DeferredHolder<Item,Item> AMPHIPRION_BICINCTUS_SPAWN_EGG = ITEMS.register("amphiprion_bicinctus_spawn_egg",
             () -> new DeferredSpawnEggItem(
                     BvfEntities.AMPHIPRION_BICINCTUS,
@@ -895,9 +935,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOGASTER_SPAWN_EGG = ITEMS.register("amphiprion_chrysogaster_spawn_egg",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_EPHIPPIUM_SPAWN_EGG = ITEMS.register("amphiprion_ephippium_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.AMPHIPRION_CHRYSOGASTER,
+                    BvfEntities.AMPHIPRION_EPHIPPIUM,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -909,9 +949,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_LATEZONATUS_SPAWN_EGG = ITEMS.register("amphiprion_latezonatus_spawn_egg",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_FRENATUS_SPAWN_EGG = ITEMS.register("amphiprion_frenatus_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.AMPHIPRION_LATEZONATUS,
+                    BvfEntities.AMPHIPRION_FRENATUS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -944,9 +984,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> BETTA_IMBELLIS_SPAWN_EGG = ITEMS.register("betta_imbellis_spawn_egg",
+    public static final DeferredHolder<Item,Item> BETTA_SIAMORIENTALIS_SPAWN_EGG = ITEMS.register("betta_siamorientalis_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.BETTA_IMBELLIS,
+                    BvfEntities.BETTA_SIAMORIENTALIS,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -972,9 +1012,9 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
-    public static final DeferredHolder<Item,Item> BETTA_BROWNORUM_SPAWN_EGG = ITEMS.register("betta_brownorum_spawn_egg",
+    public static final DeferredHolder<Item,Item> BETTA_FUSCA_SPAWN_EGG = ITEMS.register("betta_fusca_spawn_egg",
             () -> new DeferredSpawnEggItem(
-                    BvfEntities.BETTA_BROWNORUM,
+                    BvfEntities.BETTA_FUSCA,
                     0xFFFFFF,
                     0x000000,
                     new Item.Properties()
@@ -993,12 +1033,40 @@ public class BvfItems {
                     0x000000,
                     new Item.Properties()
             ));
+    public static final DeferredHolder<Item,Item> MYLOPHARYNGODON_PICEUS_SPAWN_EGG = ITEMS.register("mylopharyngodon_piceus_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.MYLOPHARYNGODON_PICEUS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> CTENOPHARYNGODON_IDELLA_SPAWN_EGG = ITEMS.register("ctenopharyngodon_idella_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.CTENOPHARYNGODON_IDELLA,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_MOLITRIX_SPAWN_EGG = ITEMS.register("hypophthalmichthys_molitrix_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.HYPOPHTHALMICHTHYS_MOLITRIX,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_NOBILIS_SPAWN_EGG = ITEMS.register("hypophthalmichthys_nobilis_spawn_egg",
+            () -> new DeferredSpawnEggItem(
+                    BvfEntities.HYPOPHTHALMICHTHYS_NOBILIS,
+                    0xFFFFFF,
+                    0x000000,
+                    new Item.Properties()
+            ));
     //Food
-    public static final DeferredHolder<Item,Item> HADDOCK_COD = ITEMS.register("haddock_cod",
+    public static final DeferredHolder<Item,Item> MELANOGRAMMUS_AEGLEFINUS = ITEMS.register("melanogrammus_aeglefinus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> ATLANTIC_COD = ITEMS.register("atlantic_cod",
+    public static final DeferredHolder<Item,Item> GADUS_MORHUA = ITEMS.register("gadus_morhua",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> PACIFIC_COD = ITEMS.register("pacific_cod",
+    public static final DeferredHolder<Item,Item> GADUS_MACROCEPHALUS = ITEMS.register("gadus_macrocephalus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> MALE_SALMON = ITEMS.register("male_salmon",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -1006,33 +1074,36 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> PACIFIC_SALMON = ITEMS.register("pacific_salmon",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER = ITEMS.register("yellow_fin_puffer",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_XANTHOPTERUS = ITEMS.register("takifugu_xanthopterus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
-    public static final DeferredHolder<Item,Item> OBSCURE_PUFFER = ITEMS.register("obscure_puffer",
+    public static final DeferredHolder<Item,Item> TAKIFUGU_OBSCURUS = ITEMS.register("takifugu_obscurus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
-    public static final DeferredHolder<Item,Item> LIONFISH = ITEMS.register("lionfish",
-            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.1f)
-                    .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 0), 1.0f).build())));
-    public static final DeferredHolder<Item,Item> PORCUPINE_FISH = ITEMS.register("porcupine_fish",
+    public static final DeferredHolder<Item,Item> PTEROIS_VOLITANS = ITEMS.register("pterois_volitans",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> PTEROIS_LUNULATA = ITEMS.register("pterois_lunulata",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> PTEROIS_RADIATA = ITEMS.register("pterois_radiata",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> DIODON_HOLOCANTHUS = ITEMS.register("diodon_holocanthus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f)
                     .effect(() -> new MobEffectInstance(MobEffects.POISON, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0), 1.0f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 0), 1.0f).build())));
-    public static final DeferredHolder<Item,Item> SPEARFISH = ITEMS.register("spearfish",
+    public static final DeferredHolder<Item,Item> KAJIKIA_AUDAX = ITEMS.register("kajikia_audax",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_SPEARFISH = ITEMS.register("cooked_spearfish",
+    public static final DeferredHolder<Item,Item> COOKED_KAJIKIA_AUDAX = ITEMS.register("cooked_kajikia_audax",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final DeferredHolder<Item,Item> ROOSTERFISH = ITEMS.register("roosterfish",
+    public static final DeferredHolder<Item,Item> NEMATISTIUS_PECTORALIS = ITEMS.register("nematistius_pectoralis",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_ROOSTERFISH = ITEMS.register("cooked_roosterfish",
+    public static final DeferredHolder<Item,Item> COOKED_NEMATISTIUS_PECTORALIS = ITEMS.register("cooked_nematistius_pectoralis",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final  DeferredHolder<Item,Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
+    public static final DeferredHolder<Item,Item> GALEOCERDO_CUVIER = ITEMS.register("galeocerdo_cuvier",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 1.0f)
                     .build())));
@@ -1059,20 +1130,20 @@ public class BvfItems {
     public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA = ITEMS.register("epinephelus_itajara",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .build())));
-    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA = ITEMS.register("epinephelus_melanostigma",
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_TUKULA = ITEMS.register("epinephelus_tukula",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f)
                     .build())));
     public static final DeferredHolder<Item,Item> COOKED_EPINEPHELUS = ITEMS.register("cooked_epinephelus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.6f)
                     .build())));
-    public static final  DeferredHolder<Item,Item> SHARK_FIN = ITEMS.register("shark_fin",
+    public static final DeferredHolder<Item,Item> SHARK_FIN = ITEMS.register("shark_fin",
             () -> new Item(new Item.Properties()));
-
     public static final DeferredHolder<Item,Item> HUMBOLDT_SQUID = ITEMS.register("humboldt_squid",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_HUMBOLDT_SQUID = ITEMS.register("cooked_humboldt_squid",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.7f).build())));
-    public static final DeferredHolder<Item,Item> FEATHER_STAR_TENTACLE = ITEMS.register("feather_star_tentacle",
+
+    public static final DeferredHolder<Item,Item> COMATULIDA_TENTACLE = ITEMS.register("comatulida_tentacle",
             () -> new Item(new Item.Properties()));
     public static final DeferredHolder<Item,Item> SCALLOP_MEAT = ITEMS.register("scallop_meat",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
@@ -1084,7 +1155,7 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_TRIOSTEGUS = ITEMS.register("acanthurus_triostegus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS = ITEMS.register("acanthurus_nigricans",
+    public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOPAREIUS = ITEMS.register("acanthurus_leucopareius",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LINEATUS = ITEMS.register("acanthurus_lineatus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -1094,23 +1165,23 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_AURIGA = ITEMS.register("chaetodon_auriga",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE = ITEMS.register("chaetodon_collare",
+    public static final DeferredHolder<Item,Item> CHAETODON_XANTHURUS = ITEMS.register("chaetodon_xanthurus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS = ITEMS.register("chaetodon_reticulatus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM = ITEMS.register("chaetodon_speculum",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS = ITEMS.register("australoheros_facetus",
+    public static final DeferredHolder<Item,Item> CICHLA_ORINOCENSIS = ITEMS.register("cichla_orinocensis",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM = ITEMS.register("cichlasoma_bimaculatum",
+    public static final DeferredHolder<Item,Item> CICHLA_JARIINA = ITEMS.register("cichla_jariina",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> KROBIA_GUIANENSIS = ITEMS.register("krobia_guianensis",
+    public static final DeferredHolder<Item,Item> CICHLA_KELBERI = ITEMS.register("cichla_kelberi",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AEQUIDENS_TETRAMERUS = ITEMS.register("aequidens_tetramerus",
+    public static final DeferredHolder<Item,Item> CICHLA_PIQUITI = ITEMS.register("cichla_piquiti",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> GYMNOGEOPHAGUS_BALZANII = ITEMS.register("gymnogeophagus_balzanii",
+    public static final DeferredHolder<Item,Item> CICHLA_PINIMA = ITEMS.register("cichla_pinima",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> ASTRONOTUS_OCELLATUS = ITEMS.register("astronotus_ocellatus",
+    public static final DeferredHolder<Item,Item> CICHLA_OCELLARIS = ITEMS.register("cichla_ocellaris",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> CHANNA_MICROPELTES = ITEMS.register("channa_micropeltes",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
@@ -1128,25 +1199,25 @@ public class BvfItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS = ITEMS.register("amphiprion_ocellaris",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> PREMNAS_BIACULEATUS = ITEMS.register("premnas_biaculeatus",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_BIACULEATUS = ITEMS.register("amphiprion_biaculeatus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_POLYMNUS = ITEMS.register("amphiprion_polymnus",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_THIELLEI = ITEMS.register("amphiprion_thiellei",
+            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA = ITEMS.register("amphiprion_percula",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_PERIDERAION = ITEMS.register("amphiprion_perideraion",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CLARKII = ITEMS.register("amphiprion_clarkii",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA = ITEMS.register("amphiprion_percula",
-            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS = ITEMS.register("amphiprion_akindynos",
-            () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_BICINCTUS = ITEMS.register("amphiprion_bicinctus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOGASTER = ITEMS.register("amphiprion_chrysogaster",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_EPHIPPIUM = ITEMS.register("amphiprion_ephippium",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOPTERUS = ITEMS.register("amphiprion_chrysopterus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_LATEZONATUS = ITEMS.register("amphiprion_latezonatus",
+    public static final DeferredHolder<Item,Item> AMPHIPRION_FRENATUS = ITEMS.register("amphiprion_frenatus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> AMPHIPRION_MCCULLOCHI = ITEMS.register("amphiprion_mccullochi",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -1156,7 +1227,7 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SPLENDENS = ITEMS.register("betta_splendens",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> BETTA_IMBELLIS = ITEMS.register("betta_imbellis",
+    public static final DeferredHolder<Item,Item> BETTA_SIAMORIENTALIS = ITEMS.register("betta_siamorientalis",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SMARAGDINA = ITEMS.register("betta_smaragdina",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
@@ -1164,7 +1235,7 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> BETTA_SIMPLEX = ITEMS.register("betta_simplex",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
-    public static final DeferredHolder<Item,Item> BETTA_BROWNORUM = ITEMS.register("betta_brownorum",
+    public static final DeferredHolder<Item,Item> BETTA_FUSCA = ITEMS.register("betta_fusca",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).build())));
     public static final DeferredHolder<Item,Item> MEGALOPS_ATLANTICUS = ITEMS.register("megalops_atlanticus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationModifier(0.4f).build())));
@@ -1172,39 +1243,39 @@ public class BvfItems {
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build())));
     public static final DeferredHolder<Item,Item> COOKED_KATSUWONUS_PELAMIS = ITEMS.register("cooked_katsuwonus_pelamis",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final DeferredHolder<Item,Item> BLACK_CARP = ITEMS.register("black_carp",
+    public static final DeferredHolder<Item,Item> MYLOPHARYNGODON_PICEUS = ITEMS.register("mylopharyngodon_piceus",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_BLACK_CARP = ITEMS.register("cooked_black_carp",
+    public static final DeferredHolder<Item,Item> COOKED_MYLOPHARYNGODON_PICEUS = ITEMS.register("cooked_mylopharyngodon_piceus",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final DeferredHolder<Item,Item> GRASS_CARP = ITEMS.register("grass_carp",
+    public static final DeferredHolder<Item,Item> CTENOPHARYNGODON_IDELLA = ITEMS.register("ctenopharyngodon_idella",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_GRASS_CARP = ITEMS.register("cooked_grass_carp",
+    public static final DeferredHolder<Item,Item> COOKED_CTENOPHARYNGODON_IDELLA = ITEMS.register("cooked_ctenopharyngodon_idella",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final DeferredHolder<Item,Item> SILVER_CARP = ITEMS.register("silver_carp",
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_MOLITRIX = ITEMS.register("hypophthalmichthys_molitrix",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_SILVER_CARP = ITEMS.register("cooked_silver_carp",
+    public static final DeferredHolder<Item,Item> COOKED_HYPOPHTHALMICHTHYS_MOLITRIX = ITEMS.register("cooked_hypophthalmichthys_molitrix",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
-    public static final DeferredHolder<Item,Item> BIGHEAD_CARP = ITEMS.register("bighead_carp",
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_NOBILIS = ITEMS.register("hypophthalmichthys_nobilis",
             () -> new RawFishItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build())));
-    public static final DeferredHolder<Item,Item> COOKED_BIGHEAD_CARP = ITEMS.register("cooked_bighead_carp",
+    public static final DeferredHolder<Item,Item> COOKED_HYPOPHTHALMICHTHYS_NOBILIS = ITEMS.register("cooked_hypophthalmichthys_nobilis",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationModifier(0.6f).build())));
     //Specimen
-    public static final DeferredHolder<Item,Item> ATLANTIC_COD_SPECIMEN = ITEMS.register("atlantic_cod_specimen",
-            () -> new BlockItem(BvfBlocks.ATLANTIC_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> PACIFIC_COD_SPECIMEN = ITEMS.register("pacific_cod_specimen",
-            () -> new BlockItem(BvfBlocks.PACIFIC_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> HADDOCK_COD_SPECIMEN = ITEMS.register("haddock_cod_specimen",
-            () -> new BlockItem(BvfBlocks.HADDOCK_COD_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> GADUS_MORHUA_SPECIMEN = ITEMS.register("gadus_morhua_specimen",
+            () -> new BlockItem(BvfBlocks.GADUS_MORHUA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> GADUS_MACROCEPHALUS_SPECIMEN = ITEMS.register("gadus_macrocephalus_specimen",
+            () -> new BlockItem(BvfBlocks.GADUS_MACROCEPHALUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> MELANOGRAMMUS_AEGLEFINUS_SPECIMEN = ITEMS.register("melanogrammus_aeglefinus_specimen",
+            () -> new BlockItem(BvfBlocks.MELANOGRAMMUS_AEGLEFINUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> PACIFIC_SALMON_SPECIMEN = ITEMS.register("pacific_salmon_specimen",
             () -> new BlockItem(BvfBlocks.PACIFIC_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> MALE_SALMON_SPECIMEN = ITEMS.register("male_salmon_specimen",
             () -> new BlockItem(BvfBlocks.MALE_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> FEMALE_SALMON_SPECIMEN = ITEMS.register("female_salmon_specimen",
             () -> new BlockItem(BvfBlocks.FEMALE_SALMON_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> SPEARFISH_SPECIMEN = ITEMS.register("spearfish_specimen",
-            () -> new BlockItem(BvfBlocks.SPEARFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> ROOSTERFISH_SPECIMEN = ITEMS.register("roosterfish_specimen",
-            () -> new BlockItem(BvfBlocks.ROOSTERFISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> KAJIKIA_AUDAX_SPECIMEN = ITEMS.register("kajikia_audax_specimen",
+            () -> new BlockItem(BvfBlocks.KAJIKIA_AUDAX_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> NEMATISTIUS_PECTORALIS_SPECIMEN = ITEMS.register("nematistius_pectoralis_specimen",
+            () -> new BlockItem(BvfBlocks.NEMATISTIUS_PECTORALIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> GALEOCERDO_CUVIER_SPECIMEN = ITEMS.register("galeocerdo_cuvier_specimen",
             () -> new BlockItem(BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> ALOPIAS_VULPINUS_SPECIMEN = ITEMS.register("alopias_vulpinus_specimen",
@@ -1217,20 +1288,20 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> EPINEPHELUS_ITAJARA_SPECIMEN = ITEMS.register("epinephelus_itajara_specimen",
             () -> new BlockItem(BvfBlocks.EPINEPHELUS_ITAJARA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = ITEMS.register("epinephelus_melanostigma_specimen",
-            () -> new BlockItem(BvfBlocks.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AUSTRALOHEROS_FACETUS_SPECIMEN = ITEMS.register("australoheros_facetus_specimen",
-            () -> new BlockItem(BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> CICHLASOMA_BIMACULATUM_SPECIMEN = ITEMS.register("cichlasoma_bimaculatum_specimen",
-            () -> new BlockItem(BvfBlocks.CICHLASOMA_BIMACULATUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> KROBIA_GUIANENSIS_SPECIMEN = ITEMS.register("krobia_guianensis_specimen",
-            () -> new BlockItem(BvfBlocks.KROBIA_GUIANENSIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AEQUIDENS_TETRAMERUS_SPECIMEN = ITEMS.register("aequidens_tetramerus_specimen",
-            () -> new BlockItem(BvfBlocks.AEQUIDENS_TETRAMERUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> GYMNOGEOPHAGUS_BALZANII_SPECIMEN = ITEMS.register("gymnogeophagus_balzanii_specimen",
-            () -> new BlockItem(BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> ASTRONOTUS_OCELLATUS_SPECIMEN = ITEMS.register("astronotus_ocellatus_specimen",
-            () -> new BlockItem(BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> EPINEPHELUS_TUKULA_SPECIMEN = ITEMS.register("epinephelus_tukula_specimen",
+            () -> new BlockItem(BvfBlocks.EPINEPHELUS_TUKULA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_ORINOCENSIS_SPECIMEN = ITEMS.register("cichla_orinocensis_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_ORINOCENSIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_JARIINA_SPECIMEN = ITEMS.register("cichla_jariina_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_JARIINA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_KELBERI_SPECIMEN = ITEMS.register("cichla_kelberi_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_KELBERI_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_PIQUITI_SPECIMEN = ITEMS.register("cichla_piquiti_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_PIQUITI_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_PINIMA_SPECIMEN = ITEMS.register("cichla_pinima_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_PINIMA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CICHLA_OCELLARIS_SPECIMEN = ITEMS.register("cichla_ocellaris_specimen",
+            () -> new BlockItem(BvfBlocks.CICHLA_OCELLARIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHANNA_MICROPELTES_SPECIMEN = ITEMS.register("channa_micropeltes_specimen",
             () -> new BlockItem(BvfBlocks.CHANNA_MICROPELTES_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHANNA_ARGUS_SPECIMEN = ITEMS.register("channa_argus_specimen",
@@ -1239,42 +1310,42 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.ELOPICHTHYS_BAMBUSA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> HUSO_DAURICUS_SPECIMEN = ITEMS.register("huso_dauricus_specimen",
             () -> new BlockItem(BvfBlocks.HUSO_DAURICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> BLACK_CARP_SPECIMEN = ITEMS.register("black_carp_specimen",
-            () -> new BlockItem(BvfBlocks.BLACK_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> GRASS_CARP_SPECIMEN = ITEMS.register("grass_carp_specimen",
-            () -> new BlockItem(BvfBlocks.GRASS_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> SILVER_CARP_SPECIMEN = ITEMS.register("silver_carp_specimen",
-            () -> new BlockItem(BvfBlocks.SILVER_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> BIGHEAD_CARP_SPECIMEN = ITEMS.register("bighead_carp_specimen",
-            () -> new BlockItem(BvfBlocks.BIGHEAD_CARP_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> MYLOPHARYNGODON_PICEUS_SPECIMEN = ITEMS.register("mylopharyngodon_piceus_specimen",
+            () -> new BlockItem(BvfBlocks.MYLOPHARYNGODON_PICEUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CTENOPHARYNGODON_IDELLA_SPECIMEN = ITEMS.register("ctenopharyngodon_idella_specimen",
+            () -> new BlockItem(BvfBlocks.CTENOPHARYNGODON_IDELLA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_MOLITRIX_SPECIMEN = ITEMS.register("hypophthalmichthys_molitrix_specimen",
+            () -> new BlockItem(BvfBlocks.HYPOPHTHALMICHTHYS_MOLITRIX_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> HYPOPHTHALMICHTHYS_NOBILIS_SPECIMEN = ITEMS.register("hypophthalmichthys_nobilis_specimen",
+            () -> new BlockItem(BvfBlocks.HYPOPHTHALMICHTHYS_NOBILIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> MEGALOPS_ATLANTICUS_SPECIMEN = ITEMS.register("megalops_atlanticus_specimen",
             () -> new BlockItem(BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> OBSCURE_PUFFER_SPECIMEN = ITEMS.register("obscure_puffer_specimen",
-            () -> new BlockItem(BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> SOARING_LIONFISH_SPECIMEN = ITEMS.register("soaring_lionfish_specimen",
-            () -> new BlockItem(BvfBlocks.SOARING_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> RINGED_LIONFISH_SPECIMEN = ITEMS.register("ringed_lionfish_specimen",
-            () -> new BlockItem(BvfBlocks.RINGED_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> RADIANT_LIONFISH_SPECIMEN = ITEMS.register("radiant_lionfish_specimen",
-            () -> new BlockItem(BvfBlocks.RADIANT_LIONFISH_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> YELLOW_FIN_PUFFER_SPECIMEN = ITEMS.register("yellow_fin_puffer_specimen",
-            () -> new BlockItem(BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> PORCUPINE_FISH_SPECIMEN = ITEMS.register("porcupine_fish_specimen",
-            () -> new BlockItem(BvfBlocks.PORCUPINE_FISH_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> KATSUWONUS_PELAMIS_SPECIMEN = ITEMS.register("katsuwonus_pelamis_specimen",
             () -> new BlockItem(BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> TAKIFUGU_OBSCURUS_SPECIMEN = ITEMS.register("takifugu_obscurus_specimen",
+            () -> new BlockItem(BvfBlocks.TAKIFUGU_OBSCURUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PTEROIS_VOLITANS_SPECIMEN = ITEMS.register("pterois_volitans_specimen",
+            () -> new BlockItem(BvfBlocks.PTEROIS_VOLITANS_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PTEROIS_LUNULATA_SPECIMEN = ITEMS.register("pterois_lunulata_specimen",
+            () -> new BlockItem(BvfBlocks.PTEROIS_LUNULATA_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> PTEROIS_RADIATA_SPECIMEN = ITEMS.register("pterois_radiata_specimen",
+            () -> new BlockItem(BvfBlocks.PTEROIS_RADIATA_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> TAKIFUGU_XANTHOPTERUS_SPECIMEN = ITEMS.register("takifugu_xanthopterus_specimen",
+            () -> new BlockItem(BvfBlocks.TAKIFUGU_XANTHOPTERUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> DIODON_HOLOCANTHUS_SPECIMEN = ITEMS.register("diodon_holocanthus_specimen",
+            () -> new BlockItem(BvfBlocks.DIODON_HOLOCANTHUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> BETTA_SPLENDENS_SPECIMEN = ITEMS.register("betta_splendens_specimen",
             () -> new BlockItem(BvfBlocks.BETTA_SPLENDENS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> BETTA_IMBELLIS_SPECIMEN = ITEMS.register("betta_imbellis_specimen",
-            () -> new BlockItem(BvfBlocks.BETTA_IMBELLIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> BETTA_SIAMORIENTALIS_SPECIMEN = ITEMS.register("betta_siamorientalis_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_SIAMORIENTALIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> BETTA_SMARAGDINA_SPECIMEN = ITEMS.register("betta_smaragdina_specimen",
             () -> new BlockItem(BvfBlocks.BETTA_SMARAGDINA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> BETTA_PICTA_SPECIMEN = ITEMS.register("betta_picta_specimen",
             () -> new BlockItem(BvfBlocks.BETTA_PICTA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> BETTA_SIMPLEX_SPECIMEN = ITEMS.register("betta_simplex_specimen",
             () -> new BlockItem(BvfBlocks.BETTA_SIMPLEX_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> BETTA_BROWNORUM_SPECIMEN = ITEMS.register("betta_brownorum_specimen",
-            () -> new BlockItem(BvfBlocks.BETTA_BROWNORUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> BETTA_FUSCA_SPECIMEN = ITEMS.register("betta_fusca_specimen",
+            () -> new BlockItem(BvfBlocks.BETTA_FUSCA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> ACANTHURUS_ACHILLES_SPECIMEN = ITEMS.register("acanthurus_achilles_specimen",
             () -> new BlockItem(BvfBlocks.ACANTHURUS_ACHILLES_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOSTERNON_SPECIMEN = ITEMS.register("acanthurus_leucosternon_specimen",
@@ -1283,8 +1354,8 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.PARACANTHURUS_HEPATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> ACANTHURUS_TRIOSTEGUS_SPECIMEN = ITEMS.register("acanthurus_triostegus_specimen",
             () -> new BlockItem(BvfBlocks.ACANTHURUS_TRIOSTEGUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> ACANTHURUS_NIGRICANS_SPECIMEN = ITEMS.register("acanthurus_nigricans_specimen",
-            () -> new BlockItem(BvfBlocks.ACANTHURUS_NIGRICANS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> ACANTHURUS_LEUCOPAREIUS_SPECIMEN = ITEMS.register("acanthurus_leucopareius_specimen",
+            () -> new BlockItem(BvfBlocks.ACANTHURUS_LEUCOPAREIUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> ACANTHURUS_LINEATUS_SPECIMEN = ITEMS.register("acanthurus_lineatus_specimen",
             () -> new BlockItem(BvfBlocks.ACANTHURUS_LINEATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHAETODON_STRIATUS_SPECIMEN = ITEMS.register("chaetodon_striatus_specimen",
@@ -1293,40 +1364,42 @@ public class BvfItems {
             () -> new BlockItem(BvfBlocks.CHAETODON_UNIMACULATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHAETODON_AURIGA_SPECIMEN = ITEMS.register("chaetodon_auriga_specimen",
             () -> new BlockItem(BvfBlocks.CHAETODON_AURIGA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> CHAETODON_COLLARE_SPECIMEN = ITEMS.register("chaetodon_collare_specimen",
-            () -> new BlockItem(BvfBlocks.CHAETODON_COLLARE_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> CHAETODON_XANTHURUS_SPECIMEN = ITEMS.register("chaetodon_xanthurus_specimen",
+            () -> new BlockItem(BvfBlocks.CHAETODON_XANTHURUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHAETODON_RETICULATUS_SPECIMEN = ITEMS.register("chaetodon_reticulatus_specimen",
             () -> new BlockItem(BvfBlocks.CHAETODON_RETICULATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> CHAETODON_SPECULUM_SPECIMEN = ITEMS.register("chaetodon_speculum_specimen",
             () -> new BlockItem(BvfBlocks.CHAETODON_SPECULUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_OCELLARIS_SPECIMEN = ITEMS.register("amphiprion_ocellaris_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_OCELLARIS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> PREMNAS_BIACULEATUS_SPECIMEN = ITEMS.register("premnas_biaculeatus_specimen",
-            () -> new BlockItem(BvfBlocks.PREMNAS_BIACULEATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_BIACULEATUS_SPECIMEN = ITEMS.register("amphiprion_biaculeatus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_BIACULEATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_POLYMNUS_SPECIMEN = ITEMS.register("amphiprion_polymnus_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_POLYMNUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_THIELLEI_SPECIMEN = ITEMS.register("amphiprion_thiellei_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_THIELLEI_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_SPECIMEN = ITEMS.register("amphiprion_percula_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_PERCULA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_PERIDERAION_SPECIMEN = ITEMS.register("amphiprion_perideraion_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_PERIDERAION_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CLARKII_SPECIMEN = ITEMS.register("amphiprion_clarkii_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_CLARKII_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_PERCULA_SPECIMEN = ITEMS.register("amphiprion_percula_specimen",
-            () -> new BlockItem(BvfBlocks.AMPHIPRION_PERCULA_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_AKINDYNOS_SPECIMEN = ITEMS.register("amphiprion_akindynos_specimen",
-            () -> new BlockItem(BvfBlocks.AMPHIPRION_AKINDYNOS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_BICINCTUS_SPECIMEN = ITEMS.register("amphiprion_bicinctus_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_BICINCTUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOGASTER_SPECIMEN = ITEMS.register("amphiprion_chrysogaster_specimen",
-            () -> new BlockItem(BvfBlocks.AMPHIPRION_CHRYSOGASTER_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_EPHIPPIUM_SPECIMEN = ITEMS.register("amphiprion_ephippium_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_EPHIPPIUM_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_CHRYSOPTERUS_SPECIMEN = ITEMS.register("amphiprion_chrysopterus_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_CHRYSOPTERUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
-    public static final DeferredHolder<Item,Item> AMPHIPRION_LATEZONATUS_SPECIMEN = ITEMS.register("amphiprion_latezonatus_specimen",
-            () -> new BlockItem(BvfBlocks.AMPHIPRION_LATEZONATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> AMPHIPRION_FRENATUS_SPECIMEN = ITEMS.register("amphiprion_frenatus_specimen",
+            () -> new BlockItem(BvfBlocks.AMPHIPRION_FRENATUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_MCCULLOCHI_SPECIMEN = ITEMS.register("amphiprion_mccullochi_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_MCCULLOCHI_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_MELANOPUS_SPECIMEN = ITEMS.register("amphiprion_melanopus_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_MELANOPUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
     public static final DeferredHolder<Item,Item> AMPHIPRION_TRICINCTUS_SPECIMEN = ITEMS.register("amphiprion_tricinctus_specimen",
             () -> new BlockItem(BvfBlocks.AMPHIPRION_TRICINCTUS_SPECIMEN.get(),new Item.Properties().stacksTo(1)));
+    public static final DeferredHolder<Item,Item> DERMOCHELYS_CORIACEA_SPECIMEN = ITEMS.register("dermochelys_coriacea_specimen",
+            () -> new BlockItem(BvfBlocks.DERMOCHELYS_CORIACEA_SPECIMEN.get(), new Item.Properties().stacksTo(1)));
     //Weapon
     public static final DeferredHolder<Item,Item> ENCHANTED_PUFFERFISH = ITEMS.register("enchanted_pufferfish",
             () -> new EnchantedPuffer(new Item.Properties()));

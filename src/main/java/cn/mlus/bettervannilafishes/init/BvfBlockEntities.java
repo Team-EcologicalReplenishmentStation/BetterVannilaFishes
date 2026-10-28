@@ -10,22 +10,22 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class BvfBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, BetterVannilaFishes.MODID);
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ATLANTIC_COD_SPECIMEN = BLOCK_ENTITIES.register("atlantic_cod_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ATLANTIC_COD_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PACIFIC_COD_SPECIMEN = BLOCK_ENTITIES.register("pacific_cod_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PACIFIC_COD_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> HADDOCK_COD_SPECIMEN = BLOCK_ENTITIES.register("haddock_cod_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.HADDOCK_COD_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GADUS_MORHUA_SPECIMEN = BLOCK_ENTITIES.register("gadus_morhua_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GADUS_MORHUA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GADUS_MACROCEPHALUS_SPECIMEN = BLOCK_ENTITIES.register("gadus_macrocephalus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GADUS_MACROCEPHALUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> MELANOGRAMMUS_AEGLEFINUS_SPECIMEN = BLOCK_ENTITIES.register("melanogrammus_aeglefinus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.MELANOGRAMMUS_AEGLEFINUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PACIFIC_SALMON_SPECIMEN = BLOCK_ENTITIES.register("pacific_salmon_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PACIFIC_SALMON_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> MALE_SALMON_SPECIMEN = BLOCK_ENTITIES.register("male_salmon_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.MALE_SALMON_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> FEMALE_SALMON_SPECIMEN = BLOCK_ENTITIES.register("female_salmon_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.FEMALE_SALMON_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> SPEARFISH_SPECIMEN = BLOCK_ENTITIES.register("spearfish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SPEARFISH_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ROOSTERFISH_SPECIMEN = BLOCK_ENTITIES.register("roosterfish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ROOSTERFISH_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> KAJIKIA_AUDAX_SPECIMEN = BLOCK_ENTITIES.register("kajikia_audax_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.KAJIKIA_AUDAX_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> NEMATISTIUS_PECTORALIS_SPECIMEN = BLOCK_ENTITIES.register("nematistius_pectoralis_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.NEMATISTIUS_PECTORALIS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GALEOCERDO_CUVIER_SPECIMEN = BLOCK_ENTITIES.register("galeocerdo_cuvier_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GALEOCERDO_CUVIER_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ALOPIAS_VULPINUS_SPECIMEN = BLOCK_ENTITIES.register("alopias_vulpinus_specimen",
@@ -38,20 +38,20 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_LANCEOLATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_ITAJARA_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_itajara_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_ITAJARA_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_MELANOSTIGMA_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_melanostigma_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_MELANOSTIGMA_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AUSTRALOHEROS_FACETUS_SPECIMEN = BLOCK_ENTITIES.register("australoheros_facetus_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AUSTRALOHEROS_FACETUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLASOMA_BIMACULATUM_SPECIMEN = BLOCK_ENTITIES.register("cichlasoma_bimaculatum_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLASOMA_BIMACULATUM_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> KROBIA_GUIANENSIS_SPECIMEN = BLOCK_ENTITIES.register("krobia_guianensis_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.KROBIA_GUIANENSIS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AEQUIDENS_TETRAMERUS_SPECIMEN = BLOCK_ENTITIES.register("aequidens_tetramerus_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AEQUIDENS_TETRAMERUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GYMNOGEOPHAGUS_BALZANII_SPECIMEN = BLOCK_ENTITIES.register("gymnogeophagus_balzanii_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GYMNOGEOPHAGUS_BALZANII_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ASTRONOTUS_OCELLATUS_SPECIMEN = BLOCK_ENTITIES.register("astronotus_ocellatus_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ASTRONOTUS_OCELLATUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> EPINEPHELUS_TUKULA_SPECIMEN = BLOCK_ENTITIES.register("epinephelus_tukula_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.EPINEPHELUS_TUKULA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_ORINOCENSIS_SPECIMEN = BLOCK_ENTITIES.register("cichla_orinocensis_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_ORINOCENSIS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_JARIINA_SPECIMEN = BLOCK_ENTITIES.register("cichla_jariina_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_JARIINA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_KELBERI_SPECIMEN = BLOCK_ENTITIES.register("cichla_kelberi_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_KELBERI_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_PIQUITI_SPECIMEN = BLOCK_ENTITIES.register("cichla_piquiti_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_PIQUITI_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_PINIMA_SPECIMEN = BLOCK_ENTITIES.register("cichla_pinima_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_PINIMA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CICHLA_OCELLARIS_SPECIMEN = BLOCK_ENTITIES.register("cichla_ocellaris_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CICHLA_OCELLARIS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHANNA_MICROPELTES_SPECIMEN = BLOCK_ENTITIES.register("channa_micropeltes_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHANNA_MICROPELTES_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHANNA_ARGUS_SPECIMEN = BLOCK_ENTITIES.register("channa_argus_specimen",
@@ -62,40 +62,40 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.HUSO_DAURICUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> MEGALOPS_ATLANTICUS_SPECIMEN = BLOCK_ENTITIES.register("megalops_atlanticus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.MEGALOPS_ATLANTICUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> OBSCURE_PUFFER_SPECIMEN = BLOCK_ENTITIES.register("obscure_puffer_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.OBSCURE_PUFFER_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> SOARING_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("soaring_lionfish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SOARING_LIONFISH_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> RINGED_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("ringed_lionfish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.RINGED_LIONFISH_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> RADIANT_LIONFISH_SPECIMEN = BLOCK_ENTITIES.register("radiant_lionfish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.RADIANT_LIONFISH_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> YELLOW_FIN_PUFFER_SPECIMEN = BLOCK_ENTITIES.register("yellow_fin_puffer_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.YELLOW_FIN_PUFFER_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PORCUPINE_FISH_SPECIMEN = BLOCK_ENTITIES.register("porcupine_fish_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PORCUPINE_FISH_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> TAKIFUGU_OBSCURUS_SPECIMEN = BLOCK_ENTITIES.register("takifugu_obscurus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.TAKIFUGU_OBSCURUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PTEROIS_VOLITANS_SPECIMEN = BLOCK_ENTITIES.register("pterois_volitans_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PTEROIS_VOLITANS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PTEROIS_LUNULATA_SPECIMEN = BLOCK_ENTITIES.register("pterois_lunulata_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PTEROIS_LUNULATA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PTEROIS_RADIATA_SPECIMEN = BLOCK_ENTITIES.register("pterois_radiata_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PTEROIS_RADIATA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> TAKIFUGU_XANTHOPTERUS_SPECIMEN = BLOCK_ENTITIES.register("takifugu_xanthopterus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.TAKIFUGU_XANTHOPTERUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> DIODON_HOLOCANTHUS_SPECIMEN = BLOCK_ENTITIES.register("diodon_holocanthus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.DIODON_HOLOCANTHUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> KATSUWONUS_PELAMIS_SPECIMEN = BLOCK_ENTITIES.register("katsuwonus_pelamis_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.KATSUWONUS_PELAMIS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BLACK_CARP_SPECIMEN = BLOCK_ENTITIES.register("black_carp_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BLACK_CARP_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> GRASS_CARP_SPECIMEN = BLOCK_ENTITIES.register("grass_carp_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.GRASS_CARP_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> SILVER_CARP_SPECIMEN = BLOCK_ENTITIES.register("silver_carp_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.SILVER_CARP_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BIGHEAD_CARP_SPECIMEN = BLOCK_ENTITIES.register("bighead_carp_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BIGHEAD_CARP_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> MYLOPHARYNGODON_PICEUS_SPECIMEN = BLOCK_ENTITIES.register("mylopharyngodon_piceus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.MYLOPHARYNGODON_PICEUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CTENOPHARYNGODON_IDELLA_SPECIMEN = BLOCK_ENTITIES.register("ctenopharyngodon_idella_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CTENOPHARYNGODON_IDELLA_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> HYPOPHTHALMICHTHYS_MOLITRIX_SPECIMEN = BLOCK_ENTITIES.register("hypophthalmichthys_molitrix_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.HYPOPHTHALMICHTHYS_MOLITRIX_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> HYPOPHTHALMICHTHYS_NOBILIS_SPECIMEN = BLOCK_ENTITIES.register("hypophthalmichthys_nobilis_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.HYPOPHTHALMICHTHYS_NOBILIS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_SPLENDENS_SPECIMEN = BLOCK_ENTITIES.register("betta_splendens_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_SPLENDENS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_IMBELLIS_SPECIMEN = BLOCK_ENTITIES.register("betta_imbellis_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_IMBELLIS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_SIAMORIENTALIS_SPECIMEN = BLOCK_ENTITIES.register("betta_siamorientalis_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_SIAMORIENTALIS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_SMARAGDINA_SPECIMEN = BLOCK_ENTITIES.register("betta_smaragdina_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_SMARAGDINA_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_PICTA_SPECIMEN = BLOCK_ENTITIES.register("betta_picta_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_PICTA_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_SIMPLEX_SPECIMEN = BLOCK_ENTITIES.register("betta_simplex_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_SIMPLEX_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_BROWNORUM_SPECIMEN = BLOCK_ENTITIES.register("betta_brownorum_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_BROWNORUM_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> BETTA_FUSCA_SPECIMEN = BLOCK_ENTITIES.register("betta_fusca_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.BETTA_FUSCA_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_ACHILLES_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_achilles_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ACANTHURUS_ACHILLES_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_LEUCOSTERNON_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_leucosternon_specimen",
@@ -104,8 +104,8 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PARACANTHURUS_HEPATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_TRIOSTEGUS_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_triostegus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ACANTHURUS_TRIOSTEGUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_NIGRICANS_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_nigricans_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ACANTHURUS_NIGRICANS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_LEUCOPAREIUS_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_leucopareius_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ACANTHURUS_LEUCOPAREIUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> ACANTHURUS_LINEATUS_SPECIMEN = BLOCK_ENTITIES.register("acanthurus_lineatus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.ACANTHURUS_LINEATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_STRIATUS_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_striatus_specimen",
@@ -114,40 +114,42 @@ public class BvfBlockEntities {
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_UNIMACULATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_AURIGA_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_auriga_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_AURIGA_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_COLLARE_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_collare_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_COLLARE_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_XANTHURUS_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_xanthurus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_XANTHURUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_RETICULATUS_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_reticulatus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_RETICULATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> CHAETODON_SPECULUM_SPECIMEN = BLOCK_ENTITIES.register("chaetodon_speculum_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.CHAETODON_SPECULUM_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_OCELLARIS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_ocellaris_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_OCELLARIS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> PREMNAS_BIACULEATUS_SPECIMEN = BLOCK_ENTITIES.register("premnas_biaculeatus_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.PREMNAS_BIACULEATUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_BIACULEATUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_biaculeatus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_BIACULEATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_POLYMNUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_polymnus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_POLYMNUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_THIELLEI_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_thiellei_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_THIELLEI_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_PERCULA_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_percula_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_PERCULA_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_PERIDERAION_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_perideraion_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_PERIDERAION_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_CLARKII_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_clarkii_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_CLARKII_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_PERCULA_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_percula_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_PERCULA_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_AKINDYNOS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_akindynos_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_AKINDYNOS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_BICINCTUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_bicinctus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_BICINCTUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_CHRYSOGASTER_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_chrysogaster_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_CHRYSOGASTER_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_EPHIPPIUM_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_ephippium_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_EPHIPPIUM_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_CHRYSOPTERUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_chrysopterus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_CHRYSOPTERUS_SPECIMEN.get()).build(null));
-    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_LATEZONATUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_latezonatus_specimen",
-            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_LATEZONATUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_FRENATUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_frenatus_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_FRENATUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_MCCULLOCHI_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_mccullochi_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_MCCULLOCHI_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_MELANOPUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_melanopus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_MELANOPUS_SPECIMEN.get()).build(null));
     public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> AMPHIPRION_TRICINCTUS_SPECIMEN = BLOCK_ENTITIES.register("amphiprion_tricinctus_specimen",
             () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.AMPHIPRION_TRICINCTUS_SPECIMEN.get()).build(null));
+    public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<FishSpecimenBlockEntity>> DERMOCHELYS_CORIACEA_SPECIMEN = BLOCK_ENTITIES.register("dermochelys_coriacea_specimen",
+            () -> BlockEntityType.Builder.of(FishSpecimenBlockEntity::new, BvfBlocks.DERMOCHELYS_CORIACEA_SPECIMEN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

@@ -7,7 +7,7 @@ import cn.mlus.bettervannilafishes.entity.BvfWaterAnimal;
 import cn.mlus.bettervannilafishes.entity.ai.BvfWaterAnimalMoveControl;
 import cn.mlus.bettervannilafishes.entity.ai.goal.MoveTowardsFoodGoal;
 import cn.mlus.bettervannilafishes.entity.epinephelus.ai.EpinephelusMeleeAttackGoal;
-import cn.mlus.bettervannilafishes.entity.galeocerdocuvier.navigation.SharkNavigation;
+import cn.mlus.bettervannilafishes.entity.galeocerdo.navigation.SharkNavigation;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;

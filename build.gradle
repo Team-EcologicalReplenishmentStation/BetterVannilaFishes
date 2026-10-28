@@ -108,6 +108,14 @@ configurations {
 
 repositories {
     maven {
+        name = 'AurorianSnapshots'
+        url = 'http://rm.aurorian.cn:8081/repository/maven-snapshots/'
+        allowInsecureProtocol = true
+        content {
+            includeGroup 'cn.aurorian.ers'
+        }
+    }
+    maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         content {
@@ -143,7 +151,7 @@ repositories {
 
 dependencies {
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
-//    implementation fg.deobf("curse.maven:ecological-replenishment-station-1322332:7056362")
+    implementation "cn.aurorian.ers:EcologicalReplenishmentStation:1.21.1-1.2.2-SNAPSHOT"
 
     // compile against the JEI API but do not include it at runtime
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"

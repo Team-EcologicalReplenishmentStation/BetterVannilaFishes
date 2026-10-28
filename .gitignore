@@ -24,3 +24,6 @@ runs
 run-data
 
 repo
+
+# Local Gradle user home
+/.gradle-user-home/
